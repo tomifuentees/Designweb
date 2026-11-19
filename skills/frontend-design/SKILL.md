@@ -1,11 +1,11 @@
 ---
 name: frontend-design
-description: "Úsala al construir o rediseñar cualquier sitio web, landing, UI de SaaS, dashboard o componente. Use this skill before writing or restyling any website, landing page, SaaS UI, dashboard, or UI component. Elige un estilo, una paleta, una pareja tipográfica, tokens y un layout (grilla, anchos, patrones) del kit Designweb, y revisa anti-patrones/checklist-revision.md y layout/anti-patrones-layout.md antes de dar la UI por terminada."
+description: "Úsala al construir o rediseñar cualquier sitio web, landing, UI de SaaS, dashboard o componente. Use this skill before writing or restyling any website, landing page, SaaS UI, dashboard, or UI component. Elige un estilo, una paleta, una pareja tipográfica, tokens y un layout (grilla, anchos, patrones) del kit Designweb, define la UX (flujo, estados, formularios, accesibilidad, microcopy) con ux/, y revisa anti-patrones/checklist-revision.md, layout/anti-patrones-layout.md y ux/checklist-ux.md antes de dar la UI por terminada."
 ---
 
 # Diseño frontend
 
-Antes de escribir o retocar UI, decidí con el kit. No arranques por un componente. Las rutas de abajo son relativas a la **raíz del clon de Designweb**, no a esta skill.
+Antes de escribir o retocar UI, decidí con el kit. No arranques por un componente. La UX (que la persona logre la tarea) pesa más que la terminación visual: si hay conflicto, gana la UX. Las rutas de abajo son relativas a la **raíz del clon de Designweb**, no a esta skill.
 
 ## Dónde está el kit
 
@@ -36,6 +36,17 @@ Leé los JSON. Una decisión por eje. El detalle vive en el markdown del slug, n
 
 Íconos, imagen, grano y OG salen de `recursos/README.md`. No uses Lucide por default.
 
+## b2) Definir la UX
+
+Abrí `ux/ux.json` → `problema_a_archivo` y leé solo los archivos que toca el trabajo (`ux/<archivo>.md`). Fijá:
+
+1. **Flujo.** Persona, tarea y contexto en una frase. Pasos con sus salidas: Atrás (estado en la URL), Cancelar, Deshacer. Reversible → hacer + Deshacer; irreversible → confirmación con verbo + objeto (`ux/feedback-notificaciones.md`).
+2. **Estados.** Para cada vista con datos, la matriz de `ux/estados.md`: vacío inicial, sin resultados, cargando (umbrales en `ux.json` → `umbrales.indicador_carga_ms`), error con acción, parcial, éxito proporcional y offline si aplica.
+3. **Formularios.** Si hay: campos mínimos, label visible, `type`/`inputmode`/`autocomplete`, validación al enviar (+ on blur con contenido), resumen de errores + error por campo, submit con pending y sin `disabled` para indicar errores, login con passkeys/pegar (`ux/formularios-inputs.md`).
+4. **Accesibilidad.** HTML semántico primero (`<button>`, `<a href>`, `<dialog>`, `<details>`, `<label>`), foco visible y no tapado, teclado completo, objetivos ≥ 24 px (44 en táctil principal), nada solo al hover, `prefers-reduced-motion` (`ux/accesibilidad.md`, `ux/mobile-touch.md`).
+5. **Microcopy.** Botones verbo + objeto; errores y vacíos con qué pasó + qué hacer, en el idioma del producto (`ux/ux-writing-microcopy.md`). Nada de "Algo salió mal".
+6. **Casos especiales** solo si aplican: checkout (`ux/checkout-ecommerce.md`), búsqueda y filtros (`ux/busqueda-filtros.md`), onboarding (`ux/onboarding-activacion.md`), datos (`ux/tablas-datos-dashboards.md`), IA o agentes (`ux/ux-ia.md`), cancelaciones/cookies/precios (`ux/patrones-oscuros-etica.md`).
+
 ## c) Brief
 
 Escribí esto, corto, **antes** del código:
@@ -47,6 +58,7 @@ Paleta: <slug> — por qué combina con el estilo
 Tipo: <titular> + <cuerpo> — licencia e import
 Tokens: radio, sombra, duración base
 Layout: hero + patrones de sección + gesto; anchos; densidad; foco
+UX: tarea y flujo (salidas); estados que aplican; campos y validación; copy clave
 Piezas: patrones y motion que sí entran
 No entra: el tell más probable de este proyecto y cómo se corta
 ```
@@ -55,10 +67,12 @@ No reabras el menú en cada componente.
 
 ## d) Construir
 
-Aplicá el brief. Nombres de token (`var(--space-6)`, radio y duración del sistema), no hex, `px` o `duration-1000` sueltos. Un acento sólido. Prueba real cerca del inicio (precio, nombre, horario, captura del producto). Meta, alt, favicon y OG no salen de la plantilla.
+Aplicá el brief. Construí los estados junto con el ideal, no después; usá los snippets de `ux/` como base. Nombres de token (`var(--space-6)`, radio y duración del sistema), no hex, `px` o `duration-1000` sueltos. Un acento sólido. Prueba real cerca del inicio (precio, nombre, horario, captura del producto). Meta, alt, favicon y OG no salen de la plantilla.
 
 ## e) Revisar
 
 Pasá `anti-patrones/checklist-revision.md` y el checklist de `layout/anti-patrones-layout.md`. Cada “sí” es un tell. Con tres o más, arreglá antes de cerrar, usando `como_arreglar` en `anti-patrones/catalogo.md`, el slug en `anti-patrones/anti-patrones.json` o el `L-*` en `layout/anti-patrones-layout.md`. Probá a 320 px y a 1440 px: sin scroll horizontal, medida ≤ ~75 caracteres, un foco al desenfocar. No respondas “hacelo más único”.
+
+Después pasá `ux/checklist-ux.md` (ids y severidad 0–4 también en `ux/ux.json` → `checklist`) y los `UX-*` de `ux/anti-patrones-ux.md`. Reportá los ids que fallan con su severidad (`FO-03 ✗ S4`). Un S4 bloquea; con dos o más S3, arreglá antes de cerrar. Probá el flujo crítico solo con teclado y forzá los fallos (API caída, sin resultados, sin permiso).
 
 Salvo brief explícito, no uses Inter, Geist, Roboto, Poppins, Montserrat o Instrument Serif como voz principal, ni índigo, violeta o degradé `from-indigo-* to-purple-*` como identidad. El resto de las prohibiciones está en `anti-patrones/reglas-para-agentes.md`.

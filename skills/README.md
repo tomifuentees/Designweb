@@ -1,6 +1,6 @@
 # Skills
 
-Hoy hay una skill: [`frontend-design`](frontend-design/SKILL.md). Obliga a elegir estilo, paleta, pareja tipográfica, tokens y layout (patrones, anchos, densidad, foco) de este kit antes de escribir UI, y a cerrar contra los checklists de anti-patrones y de layout.
+Hoy hay una skill: [`frontend-design`](frontend-design/SKILL.md). Obliga a elegir estilo, paleta, pareja tipográfica, tokens y layout (patrones, anchos, densidad, foco) de este kit, y a definir la UX (flujo, estados, formularios, accesibilidad, microcopy) con [`ux/`](../ux/README.md) antes de escribir UI. Cierra contra los checklists de anti-patrones, de layout y de UX ([`ux/checklist-ux.md`](../ux/checklist-ux.md)).
 
 ## Instalar
 
@@ -32,5 +32,7 @@ Mantené el clon actualizado: la skill no copia el catálogo, lo lee.
 ## Pegar las reglas en CLAUDE.md
 
 El bloque listo está en [`anti-patrones/reglas-para-agentes.md`](../anti-patrones/reglas-para-agentes.md), dentro del fence `md`. Copiá ese bloque al `CLAUDE.md` (o `AGENTS.md`) del proyecto que se va a diseñar.
+
+Para la UX hay un segundo bloque en [`ux/anti-patrones-ux.md`](../ux/anti-patrones-ux.md#bloque-pegable-para-claudemd-ux); pegalo debajo del primero.
 
 Si el kit no vive en ese proyecto, ajustá las rutas del bloque a la ruta absoluta del clon. La skill elige; el bloque prohíbe los tells en cada sesión, aunque la skill no se dispare.
