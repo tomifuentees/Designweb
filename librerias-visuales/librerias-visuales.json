@@ -1,0 +1,1831 @@
+{
+  "meta": {
+    "titulo": "Catálogo de librerías visuales tipo Cult UI — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "consulta_github": "2026-11-19",
+    "consulta_github_nota": "Estrellas, SPDX y último push leídos el 19 de noviembre de 2026 vía la API de GitHub. Los horarios de push en este JSON están en UTC; en el README se convierten a America/Argentina/Salta (UTC-3).",
+    "total_sitios": 40,
+    "ya_en_componentes": 8,
+    "nuevos": 32,
+    "ya_en_repos_referencia_solo": [
+      "react-bits"
+    ],
+    "objetivo": "Catálogo de sitios tipo Cult UI: librerías y registries de componentes visuales y animados (React + Tailwind, muchos con Motion y CLI de shadcn). No es un dump: cada ficha trae cuándo usarlo, cuándo no, licencia real y 3–5 piezas curadas con URL verificada.",
+    "relacion": {
+      "componentes": "../componentes/componentes.json",
+      "animaciones": "../animaciones/animaciones.json",
+      "anti_patrones": "../anti-patrones/README.md",
+      "tokens": "../tokens/README.md",
+      "repos_referencia": "../recursos/repos-referencia.md"
+    },
+    "fuentes": [
+      "Sitios oficiales, GET 200 el 2026-11-19",
+      "llms.txt / sitemaps / docs de cada librería cuando existían",
+      "API de GitHub (estrellas, licencia SPDX o LICENSE.md leída, último push)",
+      "Reddit: r/shadcn y r/Frontend (nov 2025–feb 2026)",
+      "Posts en X de 2025-06 a 2026-11 (listas de @orcdev, @21st_dev, @naymur_dev, entre otros)"
+    ]
+  },
+  "categorias": [
+    {
+      "id": "componentes-animados",
+      "nombre": "Componentes animados",
+      "descripcion": "Kits copy-paste de UI animada, en la línea de Cult UI (React + Tailwind, muchos con Motion y CLI de shadcn)."
+    },
+    {
+      "id": "bloques-secciones",
+      "nombre": "Bloques y secciones",
+      "descripcion": "Hero, pricing, bento, chat, dashboards: secciones enteras más que átomos."
+    },
+    {
+      "id": "fondos-efectos",
+      "nombre": "Fondos y efectos",
+      "descripcion": "Backgrounds, beams, particles, shaders. Casi nunca son sitios exclusivos: viven dentro de React Bits, Magic, Aceternity, Animata, Badtz, Lukacho."
+    },
+    {
+      "id": "efectos-texto",
+      "nombre": "Efectos de texto",
+      "descripcion": "Split, blur, scramble, generate, gradient text. Misma advertencia: una pieza, no un festival."
+    },
+    {
+      "id": "3d-webgl",
+      "nombre": "3D y WebGL",
+      "descripcion": "Cards 3D, globos, fondos OGL/Three, shaders. Cuidar performance y prefers-reduced-motion."
+    },
+    {
+      "id": "registries-directorios",
+      "nombre": "Registries y directorios",
+      "descripcion": "Dónde descubrir e instalar, no qué pegar a ciegas."
+    }
+  ],
+  "sitios": [
+    {
+      "id": "cult-ui",
+      "nombre": "Cult UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "fondos-efectos"
+      ],
+      "ya_en_componentes": true,
+      "link_oficial": "https://www.cult-ui.com/",
+      "repo": "https://github.com/nolly-studio/cult-ui",
+      "estrellas": 7561,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-10-29T03:57:51Z",
+      "stack": [
+        "React",
+        "Tailwind CSS v4",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @cult-ui/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "microinteracciones de producto",
+        "patrones de UI para agentes y chat",
+        "un gesto animado en controles ya existentes"
+      ],
+      "evitar_en": [
+        "un hero cinematográfico (mejor Magic, Aceternity o React Bits)",
+        "instalar el catálogo entero"
+      ],
+      "destacados": [
+        {
+          "nombre": "Toolbar Expandable",
+          "url": "https://www.cult-ui.com/docs/components/toolbar-expandable"
+        },
+        {
+          "nombre": "Agent Suggest Card Stack",
+          "url": "https://www.cult-ui.com/docs/components/agent-suggest-card-stack"
+        },
+        {
+          "nombre": "AI Blob Warp",
+          "url": "https://www.cult-ui.com/docs/components/ai-blob-warp"
+        },
+        {
+          "nombre": "Dynamic Island",
+          "url": "https://www.cult-ui.com/docs/components/dynamic-island"
+        }
+      ],
+      "notas": "Ficha base en componentes/. Catálogo más chico y más de producto que Magic UI. El namespace @cult-ui viene en el CLI de shadcn; también se puede pasar la URL https://www.cult-ui.com/r/{name}.json. Descripción oficial del repo: 150+ componentes free, MIT.",
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "magic-ui",
+      "nombre": "Magic UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "efectos-texto",
+        "fondos-efectos",
+        "bloques-secciones"
+      ],
+      "ya_en_componentes": true,
+      "link_oficial": "https://magicui.design/",
+      "repo": "https://github.com/magicuidesign/magicui",
+      "estrellas": 23376,
+      "licencia": "MIT (free); Pro con términos propios",
+      "ultimo_push_utc": "2026-11-17T12:47:26Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @magicui/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "un gesto de motion en una landing",
+        "marquee, dock, beam o bento, no los cuatro juntos"
+      ],
+      "evitar_en": [
+        "instalar el catálogo entero",
+        "dashboards de trabajo",
+        "apilar varios efectos 'de Magic' en la misma vista"
+      ],
+      "destacados": [
+        {
+          "nombre": "Marquee",
+          "url": "https://magicui.design/docs/components/marquee"
+        },
+        {
+          "nombre": "Dock",
+          "url": "https://magicui.design/docs/components/dock"
+        },
+        {
+          "nombre": "Animated Beam",
+          "url": "https://magicui.design/docs/components/animated-beam"
+        },
+        {
+          "nombre": "Shimmer Button",
+          "url": "https://magicui.design/docs/components/shimmer-button"
+        },
+        {
+          "nombre": "Bento Grid",
+          "url": "https://magicui.design/docs/components/bento-grid"
+        }
+      ],
+      "notas": "El kit de marketing más citado del ecosistema shadcn. El default de IA lo pega entero: se ve 'de Magic UI' en tres segundos. Pro no se redistribuye como template.",
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "aceternity",
+      "nombre": "Aceternity UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "fondos-efectos",
+        "efectos-texto",
+        "3d-webgl",
+        "bloques-secciones"
+      ],
+      "ya_en_componentes": true,
+      "link_oficial": "https://ui.aceternity.com/",
+      "repo": null,
+      "licencia": "términos propios (hay tier free y planes pagos); no hay repo público verificado",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @aceternity/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "un hero o una sección memorable",
+        "un efecto 3D o de spotlight puntual"
+      ],
+      "evitar_en": [
+        "usarlo como sistema de producto",
+        "apilar spotlight + lamp + beams en la misma página"
+      ],
+      "destacados": [
+        {
+          "nombre": "3D Card Effect",
+          "url": "https://ui.aceternity.com/components/3d-card-effect"
+        },
+        {
+          "nombre": "Spotlight",
+          "url": "https://ui.aceternity.com/components/spotlight"
+        },
+        {
+          "nombre": "Lamp Effect",
+          "url": "https://ui.aceternity.com/components/lamp-effect"
+        },
+        {
+          "nombre": "Background Beams",
+          "url": "https://ui.aceternity.com/components/background-beams"
+        },
+        {
+          "nombre": "Text Generate Effect",
+          "url": "https://ui.aceternity.com/components/text-generate-effect"
+        }
+      ],
+      "notas": "Es el kit que más fácil deja un sitio 'de IA con glow'. Una rareza, no un theme. No se encontró un repositorio público oficial el 19/11/2026.",
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "motion-primitives",
+      "nombre": "Motion Primitives",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "efectos-texto"
+      ],
+      "ya_en_componentes": true,
+      "link_oficial": "https://www.motion-primitives.com/",
+      "repo": "https://github.com/ibelick/motion-primitives",
+      "estrellas": 6987,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-09-28T13:32:11Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion"
+      ],
+      "instalacion": "npx motion-primitives@latest add {name} (también hay namespace @motion-primitives en el directorio de shadcn)",
+      "estado": "activo",
+      "mejor_para": [
+        "componer reveals, morphs y texto animado",
+        "microinteracción de producto más sutil que Magic/Aceternity"
+      ],
+      "evitar_en": [
+        "esperar secciones de landing cerradas"
+      ],
+      "destacados": [
+        {
+          "nombre": "Text Effect",
+          "url": "https://www.motion-primitives.com/docs/text-effect"
+        }
+      ],
+      "notas": "Autor @Ibelick. Building blocks, no templates. Hay un sitio Pro aparte.",
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "animate-ui",
+      "nombre": "Animate UI",
+      "categoria": "componentes-animados",
+      "ya_en_componentes": true,
+      "link_oficial": "https://animate-ui.com/",
+      "repo": "https://github.com/imskyleen/animate-ui",
+      "estrellas": 5090,
+      "licencia": "MIT + Commons Clause",
+      "ultimo_push_utc": "2026-11-15T17:23:35Z",
+      "stack": [
+        "React",
+        "Motion",
+        "shadcn CLI",
+        "Radix / Base UI / React Aria"
+      ],
+      "instalacion": "npx shadcn@latest add @animate-ui/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "animar primitivas familiares (drawer, hover card, blur) si la licencia cierra"
+      ],
+      "evitar_en": [
+        "revender o redistribuir los componentes en su forma original",
+        "meterlo en un kit que se vende"
+      ],
+      "destacados": [
+        {
+          "nombre": "Blur",
+          "url": "https://animate-ui.com/docs/primitives/animate-ui/blur"
+        }
+      ],
+      "notas": "No es un MIT limpio. El repo de GitHub declara SPDX Other; la ficha de componentes/ ya documentó Commons Clause el 19/11/2026.",
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "coss-ui",
+      "nombre": "coss ui (antes Origin UI)",
+      "categoria": "bloques-secciones",
+      "ya_en_componentes": true,
+      "link_oficial": "https://coss.com/ui/docs",
+      "repo": "https://github.com/cosscom/ui",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Base UI",
+        "Tailwind CSS"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "apps de producto",
+        "forms y composiciones densas"
+      ],
+      "evitar_en": [
+        "efectos de marketing como sistema"
+      ],
+      "destacados": [
+        {
+          "nombre": "Documentación de coss ui",
+          "url": "https://coss.com/ui/docs"
+        }
+      ],
+      "notas": "Ficha en componentes/. Origin UI se unió a Cal.com (colección legacy en coss.com/origin). No es un kit 'de glow'; es la capa de producto densa.",
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null,
+      "instalacion": null
+    },
+    {
+      "id": "kibo-ui",
+      "nombre": "Kibo UI",
+      "categoria": "bloques-secciones",
+      "ya_en_componentes": true,
+      "link_oficial": "https://www.kibo-ui.com/",
+      "repo": "https://github.com/shadcnblocks/kibo",
+      "estrellas": 3985,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-05-04T06:00:08Z",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS"
+      ],
+      "instalacion": "npx shadcn@latest add @kibo-ui/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "Gantt, Kanban, editores y componentes avanzados de producto"
+      ],
+      "evitar_en": [
+        "instalarlo como theme de marketing"
+      ],
+      "destacados": [
+        {
+          "nombre": "Gantt",
+          "url": "https://www.kibo-ui.com/components/gantt"
+        }
+      ],
+      "notas": "Creado por Hayden Bleasel. Adquirido por Shadcnblocks el 28 de octubre de 2025. El último push del repo visto el 19/11/2026 es del 4 de mayo de 2026; el sitio seguía vivo.",
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "21st-dev",
+      "nombre": "21st.dev",
+      "categoria": "registries-directorios",
+      "ya_en_componentes": true,
+      "link_oficial": "https://21st.dev/",
+      "repo": null,
+      "licencia": "varía por pieza",
+      "stack": [
+        "mixto",
+        "shadcn registries",
+        "MCP y CLI propios"
+      ],
+      "instalacion": "Explorar y copiar, o instalar vía shadcn CLI / MCP (https://21st.dev/mcp). El paquete @21st-dev/magic es alias del MCP actual.",
+      "estado": "activo",
+      "mejor_para": [
+        "descubrir piezas y librerías de la comunidad",
+        "que un agente busque e instale un registry"
+      ],
+      "evitar_en": [
+        "pegar 15 estilos distintos en un mismo producto",
+        "tratarlo como un design system"
+      ],
+      "destacados": [
+        {
+          "nombre": "Componentes populares",
+          "url": "https://21st.dev/community/components/popular"
+        },
+        {
+          "nombre": "Text Animation (categoría)",
+          "url": "https://21st.dev/community/components/s/text-animation"
+        },
+        {
+          "nombre": "Backgrounds (categoría)",
+          "url": "https://21st.dev/community/components/s/background"
+        },
+        {
+          "nombre": "AI Chat (categoría)",
+          "url": "https://21st.dev/community/components/s/ai-chat"
+        },
+        {
+          "nombre": "Hero Sections (categoría)",
+          "url": "https://21st.dev/community/components/s/hero"
+        }
+      ],
+      "notas": "El llms.txt oficial del 19/11/2026 habla de 12.000+ piezas. No es una librería única. Fundado por Serafim Korablev y Sergey Bunas.",
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "react-bits",
+      "nombre": "React Bits",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "efectos-texto",
+        "fondos-efectos",
+        "3d-webgl"
+      ],
+      "ya_en_repos_referencia": true,
+      "link_oficial": "https://www.reactbits.dev/",
+      "repo": "https://github.com/DavidHDev/react-bits",
+      "estrellas": 52307,
+      "licencia": "MIT + Commons Clause",
+      "licencia_notas": "LICENSE.md leída el 2026-11-19, copyright 2026 David Haz. Se puede usar en una app o sitio comercial. No se pueden vender, sublicenciar ni redistribuir los componentes (ni las tools: Background Studio, Texture Lab, etc.) como pack o servicio.",
+      "ultimo_push_utc": "2026-11-19T14:48:50Z",
+      "stack": [
+        "React",
+        "JS o TS",
+        "CSS o Tailwind",
+        "GSAP / Motion / Three.js / OGL según el componente",
+        "shadcn CLI o jsrepo"
+      ],
+      "instalacion": "npx shadcn@latest add https://reactbits.dev/r/<Component>-<LANG>-<STYLE>  (ejemplo: SplitText-JS-CSS). También hay CLI jsrepo y copy-paste. En el directorio de shadcn aparece el namespace @react-bits.",
+      "estado": "activo",
+      "mejor_para": [
+        "fondos WebGL o texto cinético en un portfolio o launch",
+        "un efecto memorable, no una docena"
+      ],
+      "evitar_en": [
+        "revender los componentes o las tools",
+        "usar Aurora/Silk/Split Text en todos los proyectos (ya es una firma reconocible)",
+        "productos densos de datos"
+      ],
+      "destacados": [
+        {
+          "nombre": "Split Text",
+          "url": "https://www.reactbits.dev/text-animations/split-text"
+        },
+        {
+          "nombre": "Aurora",
+          "url": "https://www.reactbits.dev/backgrounds/aurora"
+        },
+        {
+          "nombre": "Silk",
+          "url": "https://www.reactbits.dev/backgrounds/silk"
+        },
+        {
+          "nombre": "Spotlight Card",
+          "url": "https://www.reactbits.dev/components/spotlight-card"
+        },
+        {
+          "nombre": "Blur Text",
+          "url": "https://www.reactbits.dev/text-animations/blur-text"
+        }
+      ],
+      "notas": "El catálogo free más grande de esta lista. Cuatro variantes de implementación. Ya figuraba en recursos/repos-referencia.md, no en componentes/. El repo se actualizó el mismo 19/11/2026.",
+      "ya_en_componentes": false
+    },
+    {
+      "id": "skiper-ui",
+      "nombre": "Skiper UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "bloques-secciones"
+      ],
+      "link_oficial": "https://skiper-ui.com/",
+      "repo": null,
+      "licencia": "freemium (hay piezas free y un plan pago); no se encontró un repo público oficial el 19/11/2026",
+      "stack": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @skiper-ui/skiper{N}  (los ítems se identifican por número: skiper1, skiper40, etc.)",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "un componente 'un-common' que no está en Magic ni en shadcn core",
+        "interacciones raras de hero, hover o scrollbar"
+      ],
+      "evitar_en": [
+        "usar el plan pago sin leer la licencia",
+        "tratarlo como un sistema completo"
+      ],
+      "destacados": [
+        {
+          "nombre": "Anime.js scrollbar (skiper1)",
+          "url": "https://skiper-ui.com/v1/skiper1"
+        },
+        {
+          "nombre": "Theme toggle btn (skiper26)",
+          "url": "https://skiper-ui.com/v1/skiper26"
+        },
+        {
+          "nombre": "CssLink (skiper40)",
+          "url": "https://skiper-ui.com/v1/skiper40"
+        },
+        {
+          "nombre": "ExpandOnHover (skiper52)",
+          "url": "https://skiper-ui.com/v1/skiper52"
+        },
+        {
+          "nombre": "Quick Start",
+          "url": "https://skiper-ui.com/docs/quick-start"
+        }
+      ],
+      "notas": "Se presenta como 'Un-common Components for shadcn/ui'. El sitemap del 19/11/2026 lista las piezas como /v1/skiperN. Varios posts de 2025–2026 (Reddit, X de @orcdev) lo recomiendan cuando se busca algo que no parezca Magic/Aceternity.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "eldora-ui",
+      "nombre": "Eldora UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "bloques-secciones",
+        "3d-webgl"
+      ],
+      "link_oficial": "https://www.eldoraui.site/",
+      "repo": "https://github.com/karthikmudunuri/eldoraui",
+      "estrellas": 1977,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-09-26T17:39:23Z",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "instalacion": "Copy-paste desde la docs (https://www.eldoraui.site/docs/components); el llms.txt la describe como componentes de landing con React y Tailwind.",
+      "estado": "activo",
+      "mejor_para": [
+        "secciones de landing animadas en la línea de Aceternity, con MIT limpio"
+      ],
+      "evitar_en": [
+        "asumir el mismo ritmo de actualización que Magic o React Bits (último push del repo: 26/09/2026)",
+        "el globo tipo Cobe si el rendimiento duele (comentario frecuente en listas 2025)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Índice de componentes",
+          "url": "https://www.eldoraui.site/docs/components"
+        }
+      ],
+      "notas": "Sitio oficial: eldoraui.site (no .com). Útil como alternativa MIT a Aceternity; revisar que la pieza no sea un clon reconocible.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "hover-dev",
+      "nombre": "Hover.dev",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "bloques-secciones",
+        "3d-webgl",
+        "efectos-texto"
+      ],
+      "link_oficial": "https://www.hover.dev/",
+      "repo": null,
+      "licencia": "freemium (hay componentes free y Hover Pro); no se encontró un repo público oficial el 19/11/2026",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion u otras libs de animación según la pieza"
+      ],
+      "instalacion": "Copy-paste desde las fichas del sitio (el home lo presenta así: tomar el código y soltarlo en el proyecto).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "microinteracciones de hover, botones y héroes con carácter",
+        "detalles táctiles que no se ven en el default de shadcn"
+      ],
+      "evitar_en": [
+        "usar el botón 'Wet Paint' o el glow índigo de sus demos como identidad",
+        "armar toda la landing solo con Hover"
+      ],
+      "destacados": [
+        {
+          "nombre": "Buttons (incluye Wet Paint, Encrypt, Spotlight)",
+          "url": "https://www.hover.dev/components/buttons"
+        },
+        {
+          "nombre": "Hero Sections",
+          "url": "https://www.hover.dev/components/heros"
+        },
+        {
+          "nombre": "Three-D",
+          "url": "https://www.hover.dev/components/three-d"
+        },
+        {
+          "nombre": "Text",
+          "url": "https://www.hover.dev/components/text"
+        },
+        {
+          "nombre": "Cards",
+          "url": "https://www.hover.dev/components/cards"
+        }
+      ],
+      "notas": "Las páginas de categoría resolvieron 200 el 19/11/2026; las fichas individuales no exponen URL estática fácil de scrapear (se renderizan en el cliente). Verificar términos de Pro antes de un uso comercial.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "uiverse",
+      "nombre": "Uiverse",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://uiverse.io/",
+      "repo": "https://github.com/uiverse-io/galaxy",
+      "estrellas": 15047,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2024-09-02T14:32:05Z",
+      "stack": [
+        "HTML/CSS o Tailwind",
+        "funciona fuera de React"
+      ],
+      "instalacion": "Copy-paste desde uiverse.io (elementos de la comunidad, CSS o Tailwind).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "un botón, loader o card CSS aislado, en cualquier stack",
+        "inspiración rápida sin atarse a shadcn"
+      ],
+      "evitar_en": [
+        "pegar 20 elementos de autores distintos ( terminación de collage )",
+        "asumir que el repo galaxy está al día (último push visto: 2/09/2024); el catálogo vivo es el sitio"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://uiverse.io/"
+        }
+      ],
+      "notas": "No es un registry de shadcn: es la biblioteca comunitaria más grande de elementos CSS. El repo galaxy exporta el código; el producto está en el sitio.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "indie-ui",
+      "nombre": "Indie UI",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://ui.indie-starter.dev/",
+      "repo": "https://github.com/alibey-10/indie-ui",
+      "estrellas": 710,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-01-07T13:57:18Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "shadcn",
+        "Motion"
+      ],
+      "instalacion": "Copy-paste desde las docs (https://ui.indie-starter.dev/docs). El repo redirige también desde github.com/Ali-Hussein-dev/indie-ui.",
+      "estado": "ritmo-bajo",
+      "mejor_para": [
+        "botones con carácter, cards con patrón y bento chicos, con MIT"
+      ],
+      "evitar_en": [
+        "depender de actualizaciones frecuentes (último push del repo: 7/01/2026)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Eye-catching buttons",
+          "url": "https://ui.indie-starter.dev/docs/eye-catching-buttons"
+        },
+        {
+          "nombre": "Stateful buttons",
+          "url": "https://ui.indie-starter.dev/docs/stateful-buttons"
+        },
+        {
+          "nombre": "Text animation",
+          "url": "https://ui.indie-starter.dev/docs/text-animation"
+        },
+        {
+          "nombre": "Cards interactive",
+          "url": "https://ui.indie-starter.dev/docs/cards-interactive"
+        },
+        {
+          "nombre": "Bento 6",
+          "url": "https://ui.indie-starter.dev/docs/bento-6"
+        }
+      ],
+      "notas": "Homepage oficial del repo: ui.indie-starter.dev. El usuario de GitHub es alibey-10; Ali-Hussein-dev/indie-ui redirige al mismo repo.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "syntax-ui",
+      "nombre": "SyntaxUI",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://syntaxui.com/",
+      "repo": "https://github.com/SyntaxUI/syntaxui",
+      "estrellas": 991,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-05-18T05:46:35Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion"
+      ],
+      "instalacion": "Copy-paste desde syntaxui.com. Hay una oferta Pro aparte; el repo public es MIT.",
+      "estado": "ritmo-bajo",
+      "mejor_para": [
+        "piezas mínimas y claras, sin el glow de Aceternity"
+      ],
+      "evitar_en": [
+        "esperar un catálogo al ritmo de Magic o React Bits (último push: 18/05/2026)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://syntaxui.com/"
+        }
+      ],
+      "notas": "Las rutas internas de componentes no se expusieron de forma estática en el HTML del 19/11/2026 (sitio muy hidratado). Entrar por la home y elegir.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "smooth-ui",
+      "nombre": "SmoothUI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "bloques-secciones"
+      ],
+      "link_oficial": "https://smoothui.dev/",
+      "repo": "https://github.com/educlopez/smoothui",
+      "estrellas": 1064,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-19T12:37:11Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn/ui"
+      ],
+      "instalacion": "Según las docs de smoothui.dev (llms.txt disponible). Colección animada pensada para convivir con shadcn.",
+      "estado": "activo",
+      "mejor_para": [
+        "secciones de marketing con motion controlado",
+        "un orb o gesto 'premium' puntual"
+      ],
+      "evitar_en": [
+        "apilar varios orbs/blobs (el Siri Orb es reconocible)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Siri Orb",
+          "url": "https://smoothui.dev/docs/components/siri-orb"
+        }
+      ],
+      "notas": "Repo muy activo el 19/11/2026. Aparece en listas de Reddit y X junto a Kokonut y ReUI.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "spectrum-ui",
+      "nombre": "Spectrum UI",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://ui.spectrumhq.in/",
+      "repo": "https://github.com/arihantcodes/spectrum-ui",
+      "estrellas": 1543,
+      "licencia": "Apache-2.0",
+      "ultimo_push_utc": "2026-09-21T07:11:05Z",
+      "stack": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "instalacion": "CLI de shadcn (el sitio y el llms.txt documentan instalación por CLI). No confundir con Adobe Spectrum.",
+      "estado": "activo",
+      "mejor_para": [
+        "botones y cards animados copy-paste, con Apache-2.0",
+        "un metal button o hold-to-confirm, no un theme entero"
+      ],
+      "evitar_en": [
+        "confundirlo con React Spectrum / Adobe",
+        "dejar el look de demo como identidad"
+      ],
+      "destacados": [
+        {
+          "nombre": "Metal Button",
+          "url": "https://ui.spectrumhq.in/docs/metal-button"
+        }
+      ],
+      "notas": "El propio repo se describe como una colección reutilizable construida usando Aceternity, Magic UI y shadcn. Eso es una señal: revisar originalidad de cada pieza antes de copiarla.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "fancy-components",
+      "nombre": "Fancy Components",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "efectos-texto",
+        "fondos-efectos"
+      ],
+      "link_oficial": "https://www.fancycomponents.dev/",
+      "repo": "https://github.com/danielpetho/fancy",
+      "estrellas": 3312,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-03-14T10:34:13Z",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "instalacion": "Agregar el registry en components.json: \"@fancy\": \"https://fancycomponents.dev/r/{name}.json\". Después: npx shadcn add @fancy/{component-name}. Las dependencias extra hay que instalarlas a mano (aviso oficial en la docs de instalación).",
+      "estado": "ritmo-bajo",
+      "mejor_para": [
+        "microinteracciones raras de texto y hover",
+        "un scramble, un morph, un gesto 'weird' bien hecho"
+      ],
+      "evitar_en": [
+        "esperar commits semanales (último push del repo: 14/03/2026); el sitio seguía vivo el 19/11/2026"
+      ],
+      "destacados": [
+        {
+          "nombre": "Scramble Hover",
+          "url": "https://www.fancycomponents.dev/docs/components/text/scramble-hover"
+        },
+        {
+          "nombre": "Docs de instalación",
+          "url": "https://www.fancycomponents.dev/docs/installation"
+        }
+      ],
+      "notas": "Se vende como 'fun and weird'. Es de las mejores fuentes para no caer en el glow genérico, si se elige una sola pieza y se retoca.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "kokonut-ui",
+      "nombre": "Kokonut UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "bloques-secciones"
+      ],
+      "link_oficial": "https://kokonutui.com/",
+      "repo": "https://github.com/kokonut-labs/kokonutui",
+      "estrellas": 2385,
+      "licencia": "MIT (free); hay un Pro aparte",
+      "ultimo_push_utc": "2026-11-16T16:04:52Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn/ui",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @kokonutui/{name}",
+      "estado": "activo",
+      "mejor_para": [
+        "inputs y controles de productos AI (prompt, file chips, stop)",
+        "botones táctiles (command-button, card-flip)"
+      ],
+      "evitar_en": [
+        "usar el catálogo Pro sin leer términos",
+        "copiar el 'AI prompt' idéntico al de todos los wrappers de chat"
+      ],
+      "destacados": [
+        {
+          "nombre": "AI Prompt",
+          "url": "https://kokonutui.com/docs/components/ai-prompt"
+        }
+      ],
+      "notas": "El sitio se presenta como 'Open-Source AI Components for React'. registry.directory listaba 107 ítems. Muy citado en X en 2026 (@21st_dev, @nectxrz).",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "vengence-ui",
+      "nombre": "Vengeance UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "efectos-texto",
+        "fondos-efectos"
+      ],
+      "link_oficial": "https://www.vengenceui.com/",
+      "repo": null,
+      "licencia": "el sitio dice que cada componente es open source; no se encontró un repo público oficial el 19/11/2026 (verificar términos en la ficha)",
+      "stack": [
+        "React",
+        "shadcn CLI"
+      ],
+      "instalacion": "npx shadcn@latest add @vengeanceui/{component}",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "botones y textos con interacción rara (liquid, morph, glitch)",
+        "cuando Magic/Aceternity ya se sienten vistos"
+      ],
+      "evitar_en": [
+        "usar creepy-button o liquid-metal como identidad de un producto serio",
+        "asumir MIT sin leer la página de la pieza"
+      ],
+      "destacados": [
+        {
+          "nombre": "Liquid Button",
+          "url": "https://www.vengenceui.com/components/liquid-button"
+        },
+        {
+          "nombre": "Liquid Metal",
+          "url": "https://www.vengenceui.com/components/liquid-metal"
+        },
+        {
+          "nombre": "Morph Text",
+          "url": "https://www.vengenceui.com/components/morph-text"
+        },
+        {
+          "nombre": "ASCII Glitch Ripple",
+          "url": "https://www.vengenceui.com/components/ascii-glitch-ripple"
+        },
+        {
+          "nombre": "Gooey Text Reveal",
+          "url": "https://www.vengenceui.com/components/gooey-text-reveal"
+        }
+      ],
+      "notas": "Aparece en threads de r/shadcn (feb 2026) como alternativa 'production-ready' y de interacciones únicas. El dominio se escribe vengence (sin 'a' en el medio).",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "animata",
+      "nombre": "Animata",
+      "categoria": "efectos-texto",
+      "categorias_extra": [
+        "componentes-animados",
+        "fondos-efectos"
+      ],
+      "link_oficial": "https://animata.design/",
+      "repo": "https://github.com/codse/animata",
+      "estrellas": 3003,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-03T16:01:21Z",
+      "stack": [
+        "React",
+        "Tailwind CSS v4",
+        "shadcn CLI",
+        "WAAPI en varios textos"
+      ],
+      "instalacion": "npx shadcn add https://animata.design/r/{category}/{name}.json  (ejemplo: https://animata.design/r/container/marquee.json). El registry se lanzó en abril de 2026.",
+      "estado": "activo",
+      "mejor_para": [
+        "presets de texto (gradient, blur, glitch, counter, split)",
+        "botones y widgets animados MIT, sin Commons Clause"
+      ],
+      "evitar_en": [
+        "aplicar 8 presets de texto en un mismo hero"
+      ],
+      "destacados": [
+        {
+          "nombre": "Animated Gradient Text",
+          "url": "https://animata.design/docs/text/animated-gradient-text"
+        },
+        {
+          "nombre": "Guía de text effects 2026",
+          "url": "https://animata.design/docs/guides/animated-react-text-effects"
+        },
+        {
+          "nombre": "Guía de botones animados 2026",
+          "url": "https://animata.design/docs/guides/animated-react-buttons"
+        }
+      ],
+      "notas": "El llms.txt habla de ~130 primitivas. Buena opción cuando se quiere motion de texto con MIT limpio.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "uselayouts",
+      "nombre": "useLayouts",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://uselayouts.com/",
+      "repo": "https://github.com/iurvish/uselayouts",
+      "estrellas": 720,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-03T09:42:00Z",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn / Radix"
+      ],
+      "instalacion": "Copy-paste de un archivo por componente (el home lo presenta así). 69 componentes según el llms.txt del 19/11/2026.",
+      "estado": "activo",
+      "mejor_para": [
+        "microinteracciones y layouts animados en un archivo, MIT"
+      ],
+      "evitar_en": [
+        "confundirlo con UI Layouts / ui-layouts (otro autor, Naymur Rahman)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://uselayouts.com/"
+        }
+      ],
+      "notas": "Repo creado en diciembre de 2025. El sitio afirma 69 componentes interactivos.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "badtz-ui",
+      "nombre": "BadtzUI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "fondos-efectos",
+        "3d-webgl"
+      ],
+      "link_oficial": "https://www.badtz-ui.com/",
+      "repo": "https://github.com/badtzx0/badtz-ui",
+      "estrellas": 269,
+      "licencia": "NOASSERTION en GitHub (hay plan Pro en el sitio; no se leyó un SPDX claro el 19/11/2026)",
+      "ultimo_push_utc": "2026-02-27T15:47:32Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Motion",
+        "shadcn"
+      ],
+      "instalacion": "CLI o snippets desde badtz-ui.com/docs. Verificar términos de las piezas Pro.",
+      "estado": "ritmo-bajo",
+      "mejor_para": [
+        "dock, particles, shaders y cards con motion, si la licencia de esa pieza cierra"
+      ],
+      "evitar_en": [
+        "asumir MIT",
+        "depender de un repo cuyo último push visto es del 27/02/2026"
+      ],
+      "destacados": [
+        {
+          "nombre": "Dock",
+          "url": "https://www.badtz-ui.com/docs/components/dock"
+        },
+        {
+          "nombre": "Particles",
+          "url": "https://www.badtz-ui.com/docs/components/particles"
+        },
+        {
+          "nombre": "Border Beam",
+          "url": "https://www.badtz-ui.com/docs/components/border-beam"
+        },
+        {
+          "nombre": "Cursor Card",
+          "url": "https://www.badtz-ui.com/docs/components/cursor-card"
+        },
+        {
+          "nombre": "Pulse Shader",
+          "url": "https://www.badtz-ui.com/docs/shaders/pulse-shader"
+        }
+      ],
+      "notas": "El sitio seguía vivo. Varias piezas recuerdan a Magic/Aceternity (border-beam, dock): usarlas con criterio de originalidad.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "licencia_notas": null
+    },
+    {
+      "id": "lukacho-ui",
+      "nombre": "Lukacho UI",
+      "categoria": "componentes-animados",
+      "categorias_extra": [
+        "fondos-efectos"
+      ],
+      "link_oficial": "https://ui.lukacho.com/",
+      "repo": null,
+      "licencia": "no se encontró un repo oficial con estrellas/SPDX el 19/11/2026; aparece también en 21st.dev. Verificar términos en cada ficha.",
+      "stack": [
+        "React",
+        "animaciones y charts en el catálogo del sitio"
+      ],
+      "instalacion": "Copy-paste desde ui.lukacho.com/components.",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "cursores custom, backgrounds de grid/beam, un chart animado puntual"
+      ],
+      "evitar_en": [
+        "usar un custom cursor en un dashboard de trabajo",
+        "asumir MIT"
+      ],
+      "destacados": [
+        {
+          "nombre": "Custom Cursor",
+          "url": "https://ui.lukacho.com/components/custom-cursor"
+        },
+        {
+          "nombre": "Figma Cursor",
+          "url": "https://ui.lukacho.com/components/figma-cursor"
+        },
+        {
+          "nombre": "Animated Grid Background",
+          "url": "https://ui.lukacho.com/components/animated-grid-background"
+        },
+        {
+          "nombre": "Background Grid Beam",
+          "url": "https://ui.lukacho.com/components/background-grid-beam"
+        },
+        {
+          "nombre": "Animated Chart",
+          "url": "https://ui.lukacho.com/components/animated-chart"
+        }
+      ],
+      "notas": "El sitio resolvió 200. Hay menciones antiguas en listas de librerías con Motion. No confundir con forks de GitHub no oficiales (se vio uno a 0 estrellas).",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "unlumen",
+      "nombre": "unlumen UI",
+      "categoria": "componentes-animados",
+      "link_oficial": "https://ui.unlumen.com/",
+      "repo": "https://github.com/leovvx/unlumen-ui-docs",
+      "estrellas": 82,
+      "licencia": "MIT en el repo de docs; el sitio distingue componentes open-source y Pro (hay que comprar los Pro)",
+      "ultimo_push_utc": "2026-09-13T18:01:28Z",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Motion"
+      ],
+      "instalacion": "Según ui.unlumen.com y su llms.txt. No tratar el repo de docs como el source completo de las piezas Pro.",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "explorar una librería animada más chica, si se respeta el corte free/Pro"
+      ],
+      "evitar_en": [
+        "copiar piezas Pro o asumir que todo es MIT"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://ui.unlumen.com/"
+        }
+      ],
+      "notas": "El único repo público claro el 19/11/2026 es el de documentación (82 estrellas). El catálogo vive en el sitio.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "shadcnblocks",
+      "nombre": "Shadcnblocks",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://www.shadcnblocks.com/",
+      "repo": "https://github.com/shadcnblocks/shadcn-ui-blocks",
+      "estrellas": 418,
+      "licencia": "NOASSERTION en el repo público (hay bloques free en /blocks/free y planes pagos en el sitio; no se leyó un SPDX claro)",
+      "ultimo_push_utc": "2025-10-09T20:08:07Z",
+      "stack": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "instalacion": "Explorar https://www.shadcnblocks.com/blocks y el recorte free en https://shadcnblocks.com/blocks/free. El repo público no parece el catálogo completo (último push: 9/10/2025).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "secciones de marketing (hero, bento, pricing, careers) sobre shadcn",
+        "cuando hace falta un bloque completo, no un átomo"
+      ],
+      "evitar_en": [
+        "armar un sitio entero con bloques stock sin retocar tipo y color",
+        "confundirlo con blocks.so, que es otro proyecto"
+      ],
+      "destacados": [
+        {
+          "nombre": "Bento",
+          "url": "https://www.shadcnblocks.com/blocks/bento"
+        },
+        {
+          "nombre": "Background pattern",
+          "url": "https://www.shadcnblocks.com/blocks/background-pattern"
+        },
+        {
+          "nombre": "Banner",
+          "url": "https://www.shadcnblocks.com/blocks/banner"
+        },
+        {
+          "nombre": "Book a demo",
+          "url": "https://www.shadcnblocks.com/blocks/book-a-demo"
+        },
+        {
+          "nombre": "Chart card",
+          "url": "https://www.shadcnblocks.com/blocks/chart-card"
+        }
+      ],
+      "notas": "Muy citado por @orcdev como la librería de bloques más consistente. También es el dueño actual de Kibo UI. Verificar licencia de cada bloque (free vs Pro).",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "tailark",
+      "nombre": "Tailark",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://tailark.com/",
+      "repo": null,
+      "licencia": "freemium según el sitio y listas de 2026; no se encontró un repo público de componentes el 19/11/2026 (solo repos auxiliares como tailark/pro-images)",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "instalacion": "Desde tailark.com (bloques y temas). Confirmar términos del plan.",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "landings de conversión con un lenguaje visual más cohesivo que un collage de registries"
+      ],
+      "evitar_en": [
+        "asumir que todo es MIT y publicable como pack"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home",
+          "url": "https://tailark.com/"
+        },
+        {
+          "nombre": "Bloque Quartz",
+          "url": "https://tailark.com/blocks/quartz"
+        }
+      ],
+      "notas": "Autor citado en X como @MeschacIrung. Aparece en casi todas las listas de 'top shadcn block libraries' de 2025–2026 (OrcDev lo tenía alto en octubre de 2025).",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "efferd",
+      "nombre": "Efferd",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://efferd.com/",
+      "repo": "https://github.com/shabanwtf/efferd-ui",
+      "estrellas": 150,
+      "licencia": "NOASSERTION en GitHub; el sitio se presenta para agentes que colocan y themean bloques. Verificar términos.",
+      "ultimo_push_utc": "2025-12-10T12:53:51Z",
+      "stack": [
+        "React",
+        "shadcn/ui"
+      ],
+      "instalacion": "Desde efferd.com (hay docs MCP, incluido Cursor: https://efferd.com/docs/mcp/cursor).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "que un agente arme una landing a partir de bloques ya nombrados (hero-1, hero-2, …)"
+      ],
+      "evitar_en": [
+        "tratar el repo público (último push 10/12/2025, homepage legacy.efferd.com) como la fuente actual; el producto vive en efferd.com"
+      ],
+      "destacados": [
+        {
+          "nombre": "Hero (familia de bloques)",
+          "url": "https://efferd.com/blocks/hero"
+        }
+      ],
+      "notas": "Citado por @21st_dev en septiembre de 2026 junto a Kokonut, HextaUI, ReUI y Cult. Pensado para agentes, no solo para copy-paste humano.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "craft-ui",
+      "nombre": "craftUI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://www.craftui.space/",
+      "repo": null,
+      "licencia": "el llms.txt del sitio describe bloques shadcn/ui; no se encontró un repo público verificable el 19/11/2026 (hardimpactdev/craft-ui devolvió 404). Verificar términos en el sitio.",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS"
+      ],
+      "instalacion": "Desde craftui.space (el sitio y su llms.txt listan secciones, bloques e ilustraciones).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "secciones de SaaS/landing sobre shadcn, si la licencia de esa pieza cierra"
+      ],
+      "evitar_en": [
+        "asumir MIT o un repo oficial que hoy no aparece"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://www.craftui.space/"
+        }
+      ],
+      "notas": "craftui.space redirige a www.craftui.space. GET 200 el 19/11/2026. No inventar un GitHub que no se pudo confirmar.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "launch-ui",
+      "nombre": "Launch UI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://www.launchuicomponents.com/",
+      "repo": "https://github.com/launch-ui/launch-ui",
+      "estrellas": 875,
+      "licencia": "MIT (el repo es un kit/template; hay recorte Pro en el sitio)",
+      "ultimo_push_utc": "2026-11-04T11:11:33Z",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "Radix"
+      ],
+      "instalacion": "Copy/paste o partir del template del repo (es template de GitHub). Docs: https://www.launchuicomponents.com/docs/getting-started/installation",
+      "estado": "activo",
+      "mejor_para": [
+        "armar una landing completa (navbar, hero, bento, pricing, social proof) con un solo lenguaje",
+        "un starter, no un átomo suelto"
+      ],
+      "evitar_en": [
+        "dejar el look de Launch UI sin cambiar tipo, radio y acento"
+      ],
+      "destacados": [
+        {
+          "nombre": "Hero",
+          "url": "https://www.launchuicomponents.com/docs/sections/hero"
+        },
+        {
+          "nombre": "Bento Grid",
+          "url": "https://www.launchuicomponents.com/docs/sections/bento-grid"
+        },
+        {
+          "nombre": "Navbar",
+          "url": "https://www.launchuicomponents.com/docs/sections/navbar"
+        },
+        {
+          "nombre": "Pricing",
+          "url": "https://www.launchuicomponents.com/docs/sections/pricing"
+        },
+        {
+          "nombre": "Glow (componente)",
+          "url": "https://www.launchuicomponents.com/docs/components/glow"
+        }
+      ],
+      "notas": "Se describe como landing page kit copy/paste. El repo público está activo en noviembre de 2026.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "shadcn-studio",
+      "nombre": "Shadcn Studio",
+      "categoria": "bloques-secciones",
+      "categorias_extra": [
+        "registries-directorios"
+      ],
+      "link_oficial": "https://shadcnstudio.com/",
+      "repo": "https://github.com/shadcnstudio/shadcn-studio",
+      "estrellas": 1995,
+      "licencia": "MIT + Commons Clause (y cláusula de no competir)",
+      "licencia_notas": "LICENSE.md leída el 2026-11-19: MIT, más restricción de no vender/redistribuir los componentes sin modificación, y de no usarlo para un producto que compita con shadcn/studio.",
+      "ultimo_push_utc": "2026-08-20T10:38:17Z",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Motion (variantes animadas)",
+        "theme generator",
+        "MCP",
+        "builder"
+      ],
+      "instalacion": "Copy-paste, CLI y herramientas del sitio (theme generator, MCP, builder). El recorte open-source está en el repo; hay capas premium.",
+      "estado": "activo",
+      "mejor_para": [
+        "variantes de componentes y bloques shadcn, más un theme generator",
+        "cuando se necesita un ecosistema (Figma, MCP, templates), no un solo átomo"
+      ],
+      "evitar_en": [
+        "redistribuir las piezas como librería o clonar el producto",
+        "dejar el theme default"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home",
+          "url": "https://shadcnstudio.com/"
+        },
+        {
+          "nombre": "Intro de docs",
+          "url": "https://shadcnstudio.com/docs/getting-started/introduction"
+        }
+      ],
+      "notas": "Muy presente en listas de X 2025–2026 (Ajay Patel / @ajaypatel_aj es el autor más citado). El repo público tiene último push del 20/08/2026; el sitio seguía vivo.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false
+    },
+    {
+      "id": "reui",
+      "nombre": "ReUI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://reui.io/",
+      "repo": "https://github.com/keenthemes/reui",
+      "estrellas": 4197,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-10-16T10:15:56Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Radix y Base UI",
+        "TanStack Table"
+      ],
+      "instalacion": "npx shadcn@latest add (registry de ReUI). El llms.txt del 19/11/2026 habla de 27 primitivas propias y 1.265 ejemplos free, más un recorte premium.",
+      "estado": "activo",
+      "mejor_para": [
+        "product UI densa: data grid, kanban, filtros, gantt, calendar, file upload",
+        "pasar de primitivas shadcn a pantallas reales"
+      ],
+      "evitar_en": [
+        "usarlo como kit de marketing con glow",
+        "instalar 1.200 ejemplos 'porque están'"
+      ],
+      "destacados": [
+        {
+          "nombre": "Catálogo de componentes",
+          "url": "https://reui.io/components"
+        }
+      ],
+      "notas": "Keenthemes. El sitio se presenta en clave anti-default de IA. Buen par de Kibo/coss para producto, no para un hero de partículas.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "intent-ui",
+      "nombre": "Intent UI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://intentui.com/",
+      "repo": "https://github.com/irsyadadl/intentui",
+      "estrellas": 1978,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-19T09:09:40Z",
+      "stack": [
+        "React",
+        "React Aria Components",
+        "Tailwind CSS",
+        "shadcn CLI (namespace @intentui)"
+      ],
+      "instalacion": "npx shadcn@latest add @intentui/{name}  (registry.directory listaba 582 ítems). Usar https://intentui.com (www.intentui.com tenía el certificado SSL vencido el 19/11/2026).",
+      "estado": "activo",
+      "mejor_para": [
+        "una librería accesible copy-paste sobre React Aria, no sobre Radix/Base UI",
+        "cuando se quiere dueñar el código con WAI-ARIA sólido"
+      ],
+      "evitar_en": [
+        "sumarlo a un proyecto que ya está en shadcn + Base UI / Radix (son dos familias de primitivas)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home",
+          "url": "https://intentui.com/"
+        }
+      ],
+      "notas": "Activo el 19/11/2026. No es 'otro Magic UI': es un kit de producto accesible que además publica registry shadcn.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "hextaui",
+      "nombre": "HextaUI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://hextaui.com/",
+      "repo": "https://github.com/preetsuthar17/hextaui",
+      "estrellas": 167,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-16T14:06:07Z",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Base UI"
+      ],
+      "instalacion": "npx shadcn@latest add https://hextaui.com/r/{name}.json",
+      "estado": "activo",
+      "mejor_para": [
+        "bloques de productos AI (chat thread, prompt input, subagents, diff review) con estados loading/error/empty"
+      ],
+      "evitar_en": [
+        "usarlo como librería de marketing genérica"
+      ],
+      "destacados": [
+        {
+          "nombre": "Chat Thread",
+          "url": "https://hextaui.com/blocks/chat-thread"
+        },
+        {
+          "nombre": "Chat Sidebar",
+          "url": "https://hextaui.com/blocks/chat-sidebar"
+        },
+        {
+          "nombre": "Prompt Input",
+          "url": "https://hextaui.com/blocks/prompt-input"
+        },
+        {
+          "nombre": "Subagents",
+          "url": "https://hextaui.com/blocks/subagents"
+        },
+        {
+          "nombre": "Diff Review",
+          "url": "https://hextaui.com/blocks/diff-review"
+        }
+      ],
+      "notas": "Repo relativamente nuevo (creado el 25/09/2026) y ya activo en noviembre. Complementa a Cult/Kokonut en el nicho de UI para agentes.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "dice-ui",
+      "nombre": "Dice UI",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://diceui.com/",
+      "repo": null,
+      "licencia": "no se encontró un repo público oficial verificable el 19/11/2026 (se probaron rutas habituales y no resolvieron). Verificar en el sitio.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "variantes Base UI y Radix"
+      ],
+      "instalacion": "Desde las docs: https://diceui.com/docs/components (hay árboles /docs/components/base/* y /docs/components/radix/*).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "componentes de producto menos comunes (query builder, command stack, data grid, scroll spy, marquee)"
+      ],
+      "evitar_en": [
+        "asumir un SPDX que no se pudo leer"
+      ],
+      "destacados": [
+        {
+          "nombre": "Query Builder",
+          "url": "https://diceui.com/docs/components/base/query-builder"
+        },
+        {
+          "nombre": "Data Grid",
+          "url": "https://diceui.com/docs/components/base/data-grid"
+        },
+        {
+          "nombre": "Command Stack",
+          "url": "https://diceui.com/docs/components/base/command-stack"
+        },
+        {
+          "nombre": "File Upload",
+          "url": "https://diceui.com/docs/components/base/file-upload"
+        },
+        {
+          "nombre": "Marquee",
+          "url": "https://diceui.com/docs/components/base/marquee"
+        }
+      ],
+      "notas": "Aparece en listas de Reddit (dic 2025) y en posts de 'librerías que sí se sienten pulidas'. www.diceui.com redirige a diceui.com.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "blocks-so",
+      "nombre": "blocks.so",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://blocks.so/",
+      "repo": "https://github.com/ephraimduncan/blocks",
+      "estrellas": 1865,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-10-30T19:48:49Z",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "instalacion": "Desde blocks.so y el repo (el sitio se presenta como 60+ bloques free). No confundir con shadcnblocks.com.",
+      "estado": "activo",
+      "mejor_para": [
+        "un set MIT, más chico, de bloques shadcn"
+      ],
+      "evitar_en": [
+        "confundir el nombre 'Shadcn Blocks' del title del sitio con la marca shadcnblocks.com"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home / catálogo",
+          "url": "https://blocks.so/"
+        }
+      ],
+      "notas": "Autor ephraimduncan; se anunció en un comentario de r/webdev (nov 2025). Título del sitio el 19/11/2026: 'Shadcn Blocks - 60+ Free shadcn/ui Components for React'.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "8bitcn",
+      "nombre": "8bitcn/ui",
+      "categoria": "bloques-secciones",
+      "link_oficial": "https://www.8bitcn.com/",
+      "repo": "https://github.com/TheOrcDev/8bitcn-ui",
+      "estrellas": 2083,
+      "licencia": "MIT",
+      "ultimo_push_utc": "2026-11-05T20:29:51Z",
+      "stack": [
+        "React",
+        "shadcn/ui"
+      ],
+      "instalacion": "Desde https://www.8bitcn.com/docs/components (registry shadcn del propio OrcDev).",
+      "estado": "activo",
+      "mejor_para": [
+        "un producto que realmente quiere look retro/8-bit",
+        "salir del default 'SaaS índigo' con una decisión de estilo"
+      ],
+      "evitar_en": [
+        "usarlo 'un poquito' en una app corporativa (el look es una tesis, no un acento)"
+      ],
+      "destacados": [
+        {
+          "nombre": "Componentes",
+          "url": "https://www.8bitcn.com/docs/components"
+        },
+        {
+          "nombre": "Blocks",
+          "url": "https://www.8bitcn.com/docs/blocks"
+        }
+      ],
+      "notas": "De @orcdev, autor de muchas de las listas de X citadas en esta investigación. Es un estilo, no un cajón de efectos.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "licencia_notas": null
+    },
+    {
+      "id": "shadcn-io",
+      "nombre": "shadcn.io",
+      "categoria": "bloques-secciones",
+      "categorias_extra": [
+        "registries-directorios"
+      ],
+      "link_oficial": "https://www.shadcn.io/",
+      "repo": null,
+      "licencia": "verificar en el sitio (hay recorte free y planes). astrae.design redirigió a este dominio el 19/11/2026.",
+      "stack": [
+        "React",
+        "shadcn/ui"
+      ],
+      "instalacion": "Explorar bloques y átomos en shadcn.io (hay /hero-block, /chat-block, /background, /text, etc.).",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "un catálogo grande de bloques para agentes y landings, cuando se elige poco y se tokeniza"
+      ],
+      "evitar_en": [
+        "pegar bloques de 10 categorías distintas",
+        "asumir que astrae.design sigue siendo un producto aparte: el 19/11/2026 redirigía acá"
+      ],
+      "destacados": [
+        {
+          "nombre": "Hero Block",
+          "url": "https://www.shadcn.io/hero-block"
+        },
+        {
+          "nombre": "Chat Block",
+          "url": "https://www.shadcn.io/chat-block"
+        },
+        {
+          "nombre": "Background",
+          "url": "https://www.shadcn.io/background"
+        },
+        {
+          "nombre": "Text",
+          "url": "https://www.shadcn.io/text"
+        },
+        {
+          "nombre": "Pricing Block",
+          "url": "https://www.shadcn.io/pricing-block"
+        }
+      ],
+      "notas": "Algunas listas de 2026 todavía hablan de Astrae (astrae.design). Comprobar siempre el dominio final.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "registry-directory",
+      "nombre": "registry.directory",
+      "categoria": "registries-directorios",
+      "link_oficial": "https://registry.directory/",
+      "repo": null,
+      "licencia": "no aplica (directorio; la licencia es la de cada registry)",
+      "stack": [
+        "explorador del ecosistema de registries shadcn"
+      ],
+      "instalacion": "No instala componentes propios. Sirve para descubrir namespaces y comandos `npx shadcn@latest add @ns/item`.",
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "comparar registries (Kokonut, Intent, etc.) y copiar el comando de instalación",
+        "investigar qué hay publicado antes de sumar otra lib"
+      ],
+      "evitar_en": [
+        "instalar 'todo lo que aparece'"
+      ],
+      "destacados": [
+        {
+          "nombre": "Home",
+          "url": "https://registry.directory/"
+        },
+        {
+          "nombre": "kokonut/ui",
+          "url": "https://registry.directory/kokonut-labs/kokonutui"
+        },
+        {
+          "nombre": "Intent UI",
+          "url": "https://registry.directory/intentui/intentui"
+        }
+      ],
+      "notas": "Se presenta como 'The explorer for the shadcn registry ecosystem'. Complementa el directorio oficial de shadcn.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    },
+    {
+      "id": "shadcn-official-directory",
+      "nombre": "Registry Directory oficial de shadcn",
+      "categoria": "registries-directorios",
+      "link_oficial": "https://ui.shadcn.com/docs/directory",
+      "repo": "https://github.com/shadcn-ui/ui",
+      "licencia": "MIT (el proyecto shadcn/ui; cada registry listado tiene la suya)",
+      "stack": [
+        "directorio oficial de namespaces y registries"
+      ],
+      "instalacion": "Leer https://ui.shadcn.com/docs/registry/namespace y https://ui.shadcn.com/docs/registry/registry-index. Instalar con `npx shadcn@latest add @namespace/item`.",
+      "estado": "activo",
+      "mejor_para": [
+        "la fuente canónica de namespaces (@magicui, @cult-ui, @react-bits, @kibo-ui, etc.)",
+        "antes de inventar una URL de registry"
+      ],
+      "evitar_en": [
+        "saltarlo y copiar registries de tweets sin mirar si siguen listados"
+      ],
+      "destacados": [
+        {
+          "nombre": "Directory",
+          "url": "https://ui.shadcn.com/docs/directory"
+        },
+        {
+          "nombre": "Registry index (docs)",
+          "url": "https://ui.shadcn.com/docs/registry/registry-index"
+        },
+        {
+          "nombre": "Namespaces",
+          "url": "https://ui.shadcn.com/docs/registry/namespace"
+        }
+      ],
+      "notas": "Ya se menciona en componentes/bibliotecas.md. Acá queda como ficha de descubrimiento, no como librería visual en sí.",
+      "ya_en_componentes": false,
+      "ya_en_repos_referencia": false,
+      "categorias_extra": [],
+      "estrellas": null,
+      "licencia_notas": null,
+      "ultimo_push_utc": null
+    }
+  ]
+}
