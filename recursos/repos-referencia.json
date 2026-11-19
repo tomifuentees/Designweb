@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "titulo": "Repositorios de referencia para alimentar Designweb",
+    "consultado": "2026-11-19T10:45:00-03:00",
+    "consultado_label": "19 de noviembre de 2026, 10:45 hora de Salta (UTC-3)",
+    "fuente_numeros": "GitHub API (search_repositories / get_repository) el 19 de noviembre de 2026. Estrellas, last push y licencia no están inventados.",
+    "criterio": "Solo repos y herramientas que no estaban ya en los JSON ni en el markdown de /workspace/frontend-design-kit. Cruzado por nombre y URL.",
+    "total_incluidos": 40,
+    "total_descartados_duplicados": 27,
+    "top_8": [
+      "anthropics-skills",
+      "ui-ux-pro-max",
+      "awesome-design-md",
+      "taste-skill",
+      "impeccable",
+      "awesome-design-systems",
+      "unslop",
+      "open-props"
+    ],
+    "licencias_aviso": "No copiar de forma literal contenido de licencias no permisivas, sin SPDX, CC-BY sin atribución, o identidades de marca (aunque el wrapper sea MIT). Resumir y linkear."
+  },
+  "descartados_ya_en_designweb": [
+    {
+      "name": "shadcn-ui/ui",
+      "where": "componentes/"
+    },
+    {
+      "name": "magicuidesign/magicui",
+      "where": "componentes/"
+    },
+    {
+      "name": "Aceternity UI",
+      "where": "componentes/"
+    },
+    {
+      "name": "21st.dev",
+      "where": "componentes/"
+    },
+    {
+      "name": "park-ui",
+      "where": "componentes/"
+    },
+    {
+      "name": "cosscom/ui (Origin UI) y origin-space/ui-experiments",
+      "where": "componentes/ (ya catalogado como coss ui)"
+    },
+    {
+      "name": "nolly-studio/cult-ui",
+      "where": "componentes/"
+    },
+    {
+      "name": "shadcnblocks/kibo",
+      "where": "componentes/"
+    },
+    {
+      "name": "ibelick/motion-primitives",
+      "where": "componentes/"
+    },
+    {
+      "name": "imskyleen/animate-ui",
+      "where": "componentes/"
+    },
+    {
+      "name": "tremorlabs/tremor",
+      "where": "componentes/"
+    },
+    {
+      "name": "heroui-inc/heroui",
+      "where": "componentes/"
+    },
+    {
+      "name": "radix-ui/primitives",
+      "where": "componentes/"
+    },
+    {
+      "name": "chakra-ui/ark",
+      "where": "componentes/"
+    },
+    {
+      "name": "adobe/react-spectrum",
+      "where": "componentes/"
+    },
+    {
+      "name": "mui/base-ui",
+      "where": "componentes/"
+    },
+    {
+      "name": "motiondivision/motion",
+      "where": "animaciones/"
+    },
+    {
+      "name": "GSAP",
+      "where": "animaciones/"
+    },
+    {
+      "name": "darkroomengineering/lenis",
+      "where": "animaciones/"
+    },
+    {
+      "name": "airbnb/lottie-web",
+      "where": "animaciones/"
+    },
+    {
+      "name": "rive-app/rive-react",
+      "where": "animaciones/"
+    },
+    {
+      "name": "theatre-js/theatre",
+      "where": "animaciones/"
+    },
+    {
+      "name": "formkit/auto-animate",
+      "where": "animaciones/"
+    },
+    {
+      "name": "evilmartians/oklch-picker",
+      "where": "recursos/, paletas/"
+    },
+    {
+      "name": "colorjs",
+      "where": "paletas/herramientas.md"
+    },
+    {
+      "name": "utopia.fyi",
+      "where": "tokens/"
+    },
+    {
+      "name": "funboy322/avoid-ai-design",
+      "where": "anti-patrones/fuentes-investigacion.md"
+    }
+  ],
+  "repos": [
+    {
+      "id": "anthropics-skills",
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 197538,
+      "pushed_at": "2026-11-16T14:22:50Z",
+      "license": "sin SPDX en el repo (cada skill trae LICENSE.txt; revisar antes de copiar)",
+      "license_spdx": null,
+      "license_caveat": "El repo no declara SPDX. La skill frontend-design remite a LICENSE.txt. No copiar el texto de la skill de forma literal hasta confirmar esos términos; sí se puede contrastar la estructura con la skill propia de Designweb.",
+      "what": "Repo oficial de Agent Skills de Anthropic. Incluye skills/frontend-design/SKILL.md: dirección estética deliberada, tipografía no default, escala tipográfica y tells de página generada (una palabra en itálica en el titular, all-caps en labels, etc.).",
+      "take": "Contrastar skills/frontend-design de Designweb con la skill oficial y anotar drifts (tipografía, hero, line-length, anti-defaults). No reemplazar la skill propia: enriquecer anti-patrones/ y skills/ con lo que ellos hayan sumado después.",
+      "folders": [
+        "skills/",
+        "anti-patrones/"
+      ],
+      "mine_first": true,
+      "notes": "Designweb ya tiene una skill propia inspirada en esta idea, pero el repo oficial no estaba listado en el kit local.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-16T14:22:50Z",
+      "pushed_at_salta": "2026-11-16 11:22",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": 1
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 151598,
+      "pushed_at": "2026-11-19T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Skill de diseño con datos locales buscables: 80 estilos (51 activos), 194 paletas por tipo de producto, 74 pairings con imports de Google Fonts, 130 guías UX, 25 tipos de chart y 22 stacks. Se instala en Claude Code, Cursor y otros.",
+      "take": "Minar paletas y pairings que Designweb todavía no tenga (tipografias/pairings.md, paletas/, estilos/). Traer reglas UX y anti-patrones nuevos al catálogo, sin copiar el dataset entero. La skill propia debe seguir eligiendo con los JSON de Designweb, no delegar en este pack.",
+      "folders": [
+        "paletas/",
+        "tipografias/",
+        "estilos/",
+        "anti-patrones/",
+        "skills/"
+      ],
+      "mine_first": true,
+      "notes": "Muy citado en X en 2026 (hilos de skills anti-slop) y en comparativas vs Impeccable (aidesignskills.com, Chase AI).",
+      "sources": [
+        "GitHub API",
+        "X 2026",
+        "chaseai.io"
+      ],
+      "pushed_at_utc": "2026-11-19T00:00:00Z",
+      "pushed_at_salta": "2026-11-19",
+      "pushed_at_precision": "day",
+      "mine_first_rank": 2
+    },
+    {
+      "id": "taste-skill",
+      "name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 118733,
+      "pushed_at": "2026-11-08T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Skills portables anti-slop: dirección de arte, imágenes de referencia y chequeo en el browser. Incluye variantes (gpt-tasteskill, redesign, soft, minimalist, brutalist, stitch/DESIGN.md) e instalación con npx skills add.",
+      "take": "Adaptar la idea de skills por dirección (editorial, brutalista, soft) a estilos/ y a skills/frontend-design, y el flujo de auditoría de un UI existente a anti-patrones/checklist-revision.md. No instalar el pack entero como default: es fácil que el agente copie una estética de moda.",
+      "folders": [
+        "skills/",
+        "estilos/",
+        "anti-patrones/",
+        "inspiracion/"
+      ],
+      "mine_first": true,
+      "notes": "Trending en Reddit (r/BestGitHubRepos, oct 2026) y en hilos de X de skills anti-slop.",
+      "sources": [
+        "GitHub API",
+        "Reddit r/BestGitHubRepos",
+        "X 2026"
+      ],
+      "pushed_at_utc": "2026-11-08T00:00:00Z",
+      "pushed_at_salta": "2026-11-08",
+      "pushed_at_precision": "day",
+      "mine_first_rank": 4
+    },
+    {
+      "id": "impeccable",
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 113237,
+      "pushed_at": "2026-11-18T00:00:00Z",
+      "license": "Apache-2.0",
+      "license_spdx": "Apache-2.0",
+      "license_caveat": "Apache-2.0 permite uso y adaptación con atribución y aviso de cambios. No copiar el runtime/hooks de forma literal si no hace falta; sí se pueden resumir las 62 reglas.",
+      "what": "Vocabulario de diseño para el agente: comandos steer/review/finish (bolder, quieter, typeset, critique, audit, polish) y un detector determinista de slop (62 reglas, sin LLM): Inter everywhere, degradé violeta-azul, cards anidadas, ícono en tile redondeado sobre cada heading, etc.",
+      "take": "Traducir y fusionar las reglas del detector con anti-patrones/ (hoy hay 30 tells). Sumar a reglas-para-agentes.md comandos de revisión (critique/audit) que el agente de Designweb pueda ejecutar al final de un UI.",
+      "folders": [
+        "anti-patrones/",
+        "skills/"
+      ],
+      "mine_first": true,
+      "notes": "Aparecía citado en anti-patrones/fuentes-investigacion.md como detector no confirmado; no estaba catalogado. Ahora el repo está verificado.",
+      "sources": [
+        "GitHub API",
+        "Reddit r/ClaudeCode (comentario, abr 2026)",
+        "X 2026"
+      ],
+      "pushed_at_utc": "2026-11-18T00:00:00Z",
+      "pushed_at_salta": "2026-11-18",
+      "pushed_at_precision": "day",
+      "mine_first_rank": 5
+    },
+    {
+      "id": "unslop",
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 18518,
+      "pushed_at": "2026-11-15T00:00:00Z",
+      "license": "CC-BY-4.0",
+      "license_spdx": "CC-BY-4.0",
+      "license_caveat": "CC-BY-4.0 exige atribución. No copiar SKILL.md ni el texto de las pases de forma literal; resumir el método (audit → direction → pases) y linkear el repo.",
+      "what": "Skill de Claude que parte de un UI 'vibecoded', lista señales de slop, fija una dirección a partir del producto y corrige por pases (espacio, color, íconos, copy, tipo, layout, detalle, motion).",
+      "take": "Tomar el orden de las pases de revisión para enriquecer anti-patrones/checklist-revision.md y el cierre de la skill de Designweb. Útil como método, no como pack que pise los tokens del kit.",
+      "folders": [
+        "anti-patrones/",
+        "skills/"
+      ],
+      "mine_first": true,
+      "notes": "Citado en r/AwesomeGithub (oct 2026).",
+      "sources": [
+        "GitHub API",
+        "Reddit r/AwesomeGithub"
+      ],
+      "pushed_at_utc": "2026-11-15T00:00:00Z",
+      "pushed_at_salta": "2026-11-15",
+      "pushed_at_precision": "day",
+      "mine_first_rank": 7
+    },
+    {
+      "id": "awesome-design-skills",
+      "name": "bergside/awesome-design-skills",
+      "url": "https://github.com/bergside/awesome-design-skills",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 3731,
+      "pushed_at": "2026-06-28T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Registro de 67 skills (SKILL.md + DESIGN.md) para Claude, Cursor, Codex y Google Stitch. Cada carpeta trae tokens, componentes, accesibilidad y quality gates.",
+      "take": "Usarlo como índice: elegir 5–8 skills de sistemas reales que no solapen con estilos/ de Designweb y resumir tokens/tipo/color en estilos/ o paletas/. Last push junio 2026: priorizar las entradas que sigan vivas.",
+      "folders": [
+        "skills/",
+        "estilos/",
+        "paletas/"
+      ],
+      "mine_first": false,
+      "notes": "Last push 28 jun 2026: más índice que repo vivo.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-06-28T00:00:00Z",
+      "pushed_at_salta": "2026-06-28",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "ux-ui-agent-skills",
+      "name": "plugin87/ux-ui-agent-skills",
+      "url": "https://github.com/plugin87/ux-ui-agent-skills",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 3204,
+      "pushed_at": "2026-11-18T07:37:51Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "26 skills de design system para varios agentes: tokens DTCG, WCAG 2.2 AA–AAA, biblioteca de 2.144 design systems y 52 quality gates que fallan el build (no le creen al agente).",
+      "take": "Copiar la idea de gates automáticos (contraste, headings, spacing) a skills/ y a tokens/, no el corpus de 2.144 sistemas. Revisar cómo exportan DTCG y contrastarlo con tokens/tokens.json (DTCG 2025.10).",
+      "folders": [
+        "skills/",
+        "tokens/",
+        "anti-patrones/"
+      ],
+      "mine_first": false,
+      "notes": "Repo muy activo (push 18 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T07:37:51Z",
+      "pushed_at_salta": "2026-11-18 04:37",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "open-design-agent-kit",
+      "name": "feimacode/open-design-agent-kit",
+      "url": "https://github.com/feimacode/open-design-agent-kit",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 1156,
+      "pushed_at": "2026-11-18T19:45:29Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "MIT cubre el kit; los 198 'design systems' pueden describir marcas de terceros. Resumir patrones, no copiar identidades.",
+      "what": "Kit para hacer posters, posts, slides y landings desde el agente, con 198 design systems, checks y export PDF/PNG/PPT.",
+      "take": "Mirar la estructura de checks y los sistemas no-web (slides, poster) solo si se quiere expandir casos/ o un estilo editorial impreso. Baja prioridad frente a skills web.",
+      "folders": [
+        "estilos/",
+        "casos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T19:45:29Z",
+      "pushed_at_salta": "2026-11-18 16:45",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "styleseed",
+      "name": "bitjaru/styleseed",
+      "url": "https://github.com/bitjaru/styleseed",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 1023,
+      "pushed_at": "2026-11-18T09:47:54Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Motor de método de diseño: una skill con 22 workflows internos (juicio fijo, gramáticas, paletas semánticas, compilación de referencias y UI verificada con evidencia).",
+      "take": "Útil para formalizar el 'cómo elige' la skill de Designweb (más de un estilo, paleta semántica, evidencia). No traer los workflows de una pieza.",
+      "folders": [
+        "skills/",
+        "paletas/",
+        "estilos/"
+      ],
+      "mine_first": false,
+      "notes": "Activo (push 18 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T09:47:54Z",
+      "pushed_at_salta": "2026-11-18 06:47",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "superdesign-skill",
+      "name": "superdesigndev/superdesign-skill",
+      "url": "https://github.com/superdesigndev/superdesign-skill",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 1027,
+      "pushed_at": "2026-08-21T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Design skill para Claude Code, Cursor y otros agentes, posicionada explícitamente como 'stop shipping AI-slop UI'.",
+      "take": "Revisar su lista de tells y compararla con anti-patrones/ para no duplicar. Last push ago 2026: chequear si sigue recibiendo reglas nuevas antes de minar en profundidad.",
+      "folders": [
+        "anti-patrones/",
+        "skills/"
+      ],
+      "mine_first": false,
+      "notes": "Sin push desde el 21 ago 2026.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-08-21T00:00:00Z",
+      "pushed_at_salta": "2026-08-21",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "stylekit",
+      "name": "AnxForever/stylekit",
+      "url": "https://github.com/AnxForever/stylekit",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 865,
+      "pushed_at": "2026-11-19T12:58:52Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "149 estilos web/UI curados con prompts listos para agentes, tokens y recetas de componentes. Sitio en stylekit.top.",
+      "take": "Cruzar los 149 estilos con estilos.json (hoy 27) y sumar solo los que no estén (nombre, reglas, un sitio real). Ignorar prompts genéricos que terminen en glassmorphism + indigo.",
+      "folders": [
+        "estilos/",
+        "tokens/",
+        "componentes/"
+      ],
+      "mine_first": false,
+      "notes": "Muy activo (push el 19 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T12:58:52Z",
+      "pushed_at_salta": "2026-11-19 09:58",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "frontend-design-toolkit",
+      "name": "wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+      "url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 1321,
+      "pushed_at": "2026-04-11T11:57:59Z",
+      "license": "sin licencia declarada",
+      "license_spdx": null,
+      "license_caveat": "Sin LICENSE. Tratarlo como índice: linkear, no copiar README ni snippets.",
+      "what": "Recopilación personal de skills, plugins, MCP y trucos de CLAUDE.md que al autor le mejoraron el frontend de Claude Code.",
+      "take": "Usarlo como mapa de herramientas (varios van a aparecer en esta misma lista). No copiar texto. Last push abr 2026: puede estar desactualizado.",
+      "folders": [
+        "recursos/",
+        "skills/"
+      ],
+      "mine_first": false,
+      "notes": "Last push 11 abr 2026.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-04-11T11:57:59Z",
+      "pushed_at_salta": "2026-04-11 08:57",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "qiaomu-design",
+      "name": "joeseesun/qiaomu-design",
+      "url": "https://github.com/joeseesun/qiaomu-design",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 691,
+      "pushed_at": "2026-10-13T06:28:19Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "Los 58 sistemas de sitios reales describen marcas de terceros: resumir patrones, no clonar identidades.",
+      "what": "Skill 'opinada' para Claude Code: anti-UI genérica, 'probador de estilos' y una librería de 58 design systems de sitios reales. Incluye tipografía china.",
+      "take": "El probador de estilos (elegir una dirección y vestir el UI) encaja con estilos/. Los 58 sitios se pueden cruzar con inspiracion/sitios.md. La parte de tipografía china es un hueco del kit actual.",
+      "folders": [
+        "estilos/",
+        "inspiracion/",
+        "tipografias/",
+        "skills/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-10-13T06:28:19Z",
+      "pushed_at_salta": "2026-10-13 03:28",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-design-md",
+      "name": "VoltAgent/awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "category": "design-md",
+      "category_label": "Bibliotecas DESIGN.md",
+      "stars": 128231,
+      "pushed_at": "2026-10-28T15:45:40Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "MIT cubre el markdown del repo, no la identidad visual de las marcas analizadas (Claude, Linear, ElevenLabs, etc.). Está bien estudiar la estructura (palette, typography, componentes, dos/don'ts) y linkear. No copiar paletas, logos ni copy de marca a Designweb ni a un proyecto de un cliente.",
+      "what": "Colección de DESIGN.md al estilo Google Stitch: un markdown por marca/producto (tema, color, tipo, componentes, layout, elevation, dos/don'ts, responsive y prompts). Sitio: getdesign.md. VoltAgent/awesome-claude-design (4.621 estrellas, last push jun 2026) parece la colección anterior de 68 archivos; priorizar esta.",
+      "take": "Adoptar (adaptada) la sección structure de un DESIGN.md para skills/ y para casos/plantilla.md. Extraer patrones recurrentes no-marca (cómo describen spacing o elevation) hacia tokens/ y estilos/. No pegar un DESIGN.md de marca en un proyecto.",
+      "folders": [
+        "skills/",
+        "estilos/",
+        "tokens/",
+        "casos/"
+      ],
+      "mine_first": true,
+      "notes": "Muy mencionado en r/ClaudeCode (1 abr 2026, u/omeraplak) y en hilos de X de 2026.",
+      "sources": [
+        "GitHub API",
+        "Reddit r/ClaudeCode",
+        "X 2026"
+      ],
+      "pushed_at_utc": "2026-10-28T15:45:40Z",
+      "pushed_at_salta": "2026-10-28 12:45",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": 3
+    },
+    {
+      "id": "fudge-design-md",
+      "name": "scroobius-pip/fudge-design-md",
+      "url": "https://github.com/scroobius-pip/fudge-design-md",
+      "category": "design-md",
+      "category_label": "Bibliotecas DESIGN.md",
+      "stars": 124,
+      "pushed_at": "2026-11-16T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "Igual que otras colecciones DESIGN.md: el MIT no autoriza a reusar la identidad de los sitios de referencia.",
+      "what": "DESIGN.md generados a partir de sitios reales capturados por Fudge, con tipografía, color, layout, spacing y screenshots. Menos estrellas, pero vivo y discutido en Reddit (r/ClaudeAI, ago 2026).",
+      "take": "Comparar cómo documentan sitios reales vs el catálogo de inspiracion/sitios.md. Sumar 3–5 referencias nuevas con un 'porqué', no el markdown completo.",
+      "folders": [
+        "inspiracion/",
+        "estilos/",
+        "casos/"
+      ],
+      "mine_first": false,
+      "notes": "Señal alta en Reddit pese a pocas estrellas. Push reciente (16 nov 2026).",
+      "sources": [
+        "GitHub API",
+        "Reddit r/ClaudeAI"
+      ],
+      "pushed_at_utc": "2026-11-16T00:00:00Z",
+      "pushed_at_salta": "2026-11-16",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-design-md-jp",
+      "name": "kzhrknt/awesome-design-md-jp",
+      "url": "https://github.com/kzhrknt/awesome-design-md-jp",
+      "category": "design-md",
+      "category_label": "Bibliotecas DESIGN.md",
+      "stars": 1019,
+      "pushed_at": "2026-11-18T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "Misma precaución de marca que el resto de DESIGN.md.",
+      "what": "Colección DESIGN.md para que un agente arme UI en japonés de forma correcta (tipografía, densidad, convenciones), extendiendo el formato Stitch.",
+      "take": "Hay un hueco en Designweb para tipografía y layout CJK / japonés (el kit tiene estilo japones-inspirado, no reglas de typography japonesa real). Extraer solo esas reglas a tipografias/ y estilos/japones-inspirado.md.",
+      "folders": [
+        "tipografias/",
+        "estilos/"
+      ],
+      "mine_first": false,
+      "notes": "Activo (18 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T00:00:00Z",
+      "pushed_at_salta": "2026-11-18",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-design-systems",
+      "name": "alexpate/awesome-design-systems",
+      "url": "https://github.com/alexpate/awesome-design-systems",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 26400,
+      "pushed_at": "2026-11-13T13:47:50Z",
+      "license": "Unlicense",
+      "license_spdx": "Unlicense",
+      "license_caveat": "Unlicense es permisiva. Los sistemas linkeados tienen su propia licencia (muchos no son MIT).",
+      "what": "La lista canónica de design systems (Polaris, Primer, Carbon, Spectrum, Lightning, etc.), todavía actualizada en nov 2026.",
+      "take": "Recorrer sistemas que Designweb no documenta (Primer, Carbon, Polaris, GOV.UK) y traer a tokens/ y estilos/ solo escalas y principios (espacio, tipo, color semántico), con link. No copiar componentes ni tokens de marca.",
+      "folders": [
+        "tokens/",
+        "estilos/",
+        "componentes/"
+      ],
+      "mine_first": true,
+      "notes": "Lista viva (push 13 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-13T13:47:50Z",
+      "pushed_at_salta": "2026-11-13 10:47",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": 6
+    },
+    {
+      "id": "klaufel-awesome-ds",
+      "name": "klaufel/awesome-design-systems",
+      "url": "https://github.com/klaufel/awesome-design-systems",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 913,
+      "pushed_at": "2026-11-10T00:00:00Z",
+      "license": "CC0-1.0",
+      "license_spdx": "CC0-1.0",
+      "license_caveat": null,
+      "what": "Lista más chica y developer-first: bookmarks, artículos y recursos sobre design systems.",
+      "take": "Minar artículos y repos de tokens/herramientas que no estén en tokens/fuentes-investigacion.md. Complemento de alexpate, no un segundo catálogo paralelo.",
+      "folders": [
+        "tokens/",
+        "recursos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-10T00:00:00Z",
+      "pushed_at_salta": "2026-11-10",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-typography",
+      "name": "Jolg42/awesome-typography",
+      "url": "https://github.com/Jolg42/awesome-typography",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 1554,
+      "pushed_at": "2026-11-18T00:00:00Z",
+      "license": "CC0-1.0",
+      "license_spdx": "CC0-1.0",
+      "license_caveat": null,
+      "what": "Lista curada de tipografía digital: foundries, herramientas, artículos, pairings y recursos.",
+      "take": "Cruzar foundries, herramientas y pairings con tipografias/ (101 fuentes, 28 pairings). Sumar solo lo que falte (herramientas de hinting, optical size, OpenType features, foundries).",
+      "folders": [
+        "tipografias/"
+      ],
+      "mine_first": false,
+      "notes": "Viva (push 18 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T00:00:00Z",
+      "pushed_at_salta": "2026-11-18",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-fonts",
+      "name": "brabadu/awesome-fonts",
+      "url": "https://github.com/brabadu/awesome-fonts",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 2113,
+      "pushed_at": "2026-10-31T19:33:27Z",
+      "license": "sin licencia declarada",
+      "license_spdx": null,
+      "license_caveat": "Sin LICENSE. Usar como índice y linkear; no copiar el README.",
+      "what": "Lista de fuentes y recursos relacionados (Google Fonts, icon fonts, programming fonts).",
+      "take": "Revisar secciones que tipografias/ no cubra (icon fonts ya están en recursos/iconos.md; programming fonts podrían sumar 2–3 alternativas a Geist Mono / Commit Mono). Solo links, no el listado entero.",
+      "folders": [
+        "tipografias/",
+        "recursos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-10-31T19:33:27Z",
+      "pushed_at_salta": "2026-10-31 16:33",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-icons",
+      "name": "vkarampinis/awesome-icons",
+      "url": "https://github.com/vkarampinis/awesome-icons",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 1585,
+      "pushed_at": "2026-11-01T10:12:36Z",
+      "license": "CC0-1.0",
+      "license_spdx": "CC0-1.0",
+      "license_caveat": "CC0 cubre la lista, no cada set de íconos. Cada set tiene su licencia (confirmar antes de usarlo).",
+      "what": "Lista curada de icon fonts y packs SVG.",
+      "take": "Buscar 2–3 sets que no estén en recursos/iconos.md y que no sean Lucide-like. Anotar licencia y 'cuándo'. El kit ya tiene Phosphor, Tabler, Iconoir, Heroicons, Hugeicons, Remix, Radix, Simple Icons, etc.",
+      "folders": [
+        "recursos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-01T10:12:36Z",
+      "pushed_at_salta": "2026-11-01 07:12",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-design-tokens",
+      "name": "sturobson/Awesome-Design-Tokens",
+      "url": "https://github.com/sturobson/Awesome-Design-Tokens",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 1297,
+      "pushed_at": "2026-02-20T13:54:02Z",
+      "license": "Unlicense",
+      "license_spdx": "Unlicense",
+      "license_caveat": null,
+      "what": "Lista de recursos sobre design tokens (artículos, tools, casos).",
+      "take": "Sumar a tokens/fuentes-investigacion.md las tools y lecturas que falten. Last push feb 2026: contrastar fechas; priorizar links todavía vivos.",
+      "folders": [
+        "tokens/"
+      ],
+      "mine_first": false,
+      "notes": "Last push 20 feb 2026.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-02-20T13:54:02Z",
+      "pushed_at_salta": "2026-02-20 10:54",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "inspire",
+      "name": "noahbuscher/inspire",
+      "url": "https://github.com/noahbuscher/inspire",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 1335,
+      "pushed_at": "2024-03-15T10:04:10Z",
+      "license": "sin licencia declarada",
+      "license_spdx": null,
+      "license_caveat": "Sin LICENSE y sin push desde marzo 2024. Solo como índice histórico; no copiar y verificar que los links sigan vivos.",
+      "what": "Colección clásica de links de frontend y web design.",
+      "take": "Baja prioridad. Si se usa, chequear links rotos y cruzar con inspiracion/galerias.md (el kit ya tiene 22 galerías y 55 sitios).",
+      "folders": [
+        "inspiracion/"
+      ],
+      "mine_first": false,
+      "notes": "Desactualizado (last push 15 mar 2024).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2024-03-15T10:04:10Z",
+      "pushed_at_salta": "2024-03-15 07:04",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-web-desktops",
+      "name": "syxanash/awesome-web-desktops",
+      "url": "https://github.com/syxanash/awesome-web-desktops",
+      "category": "awesome-lists",
+      "category_label": "Listas awesome (sistemas, tipo, íconos, inspiración)",
+      "stars": 2155,
+      "pushed_at": "2026-11-16T13:58:46Z",
+      "license": "CC0-1.0",
+      "license_spdx": "CC0-1.0",
+      "license_caveat": null,
+      "what": "Sitios, web apps y portfolios que imitan un sistema operativo de escritorio (win98, mac clásico, XP, webOS). Directorio en simone.computer/webdesktops.",
+      "take": "Sumar 4–6 ejemplos a inspiracion/sitios.md y, si encaja, una nota en estilos/ (navegación experimental / retrofuturismo-y2k / anti-diseño). No es un default de producto; es referencia de interfaz lúdica.",
+      "folders": [
+        "inspiracion/",
+        "estilos/"
+      ],
+      "mine_first": false,
+      "notes": "Vivo (16 nov 2026).",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-16T13:58:46Z",
+      "pushed_at_salta": "2026-11-16 10:58",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "style-dictionary",
+      "name": "style-dictionary/style-dictionary",
+      "url": "https://github.com/style-dictionary/style-dictionary",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 4887,
+      "pushed_at": "2026-11-03T00:00:00Z",
+      "license": "Apache-2.0",
+      "license_spdx": "Apache-2.0",
+      "license_caveat": "Apache-2.0: uso libre con atribución. No hace falta copiar el engine; sí documentar cómo emitir CSS/@theme desde tokens.json.",
+      "what": "Build system canónico para transformar design tokens a CSS, iOS, Android, etc. Antes amzn/style-dictionary; el repo vivo es este. Push nov 2026.",
+      "take": "Documentar en tokens/README.md un flujo Style Dictionary a partir de tokens.json (DTCG 2025.10) hacia tokens.css y theme-tailwind-v4.css. Es la pieza de pipeline que el kit todavía no enseña.",
+      "folders": [
+        "tokens/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-03T00:00:00Z",
+      "pushed_at_salta": "2026-11-03",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "dtcg-community-group",
+      "name": "design-tokens/community-group",
+      "url": "https://github.com/design-tokens/community-group",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 2178,
+      "pushed_at": "2026-11-01T16:13:47Z",
+      "license": "Other (NOASSERTION)",
+      "license_spdx": null,
+      "license_caveat": "Licencia 'Other' / sin SPDX claro. La especificación se consulta y se cita; no copiar el texto normativo de forma extensa.",
+      "what": "Repo oficial de la DTCG: sitio y especificación de design tokens. El kit ya trabaja en formato DTCG 2025.10, pero no linkeaba este repo.",
+      "take": "Agregar el repo y designtokens.org/TR/drafts/ como fuente canónica en tokens/fuentes-investigacion.md, y revisar si 2025.10 del kit sigue alineado con el draft actual.",
+      "folders": [
+        "tokens/"
+      ],
+      "mine_first": false,
+      "notes": "El formato DTCG ya está usado en el kit; el repo en sí no estaba listado.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-01T16:13:47Z",
+      "pushed_at_salta": "2026-11-01 13:13",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "tokens-studio",
+      "name": "tokens-studio/figma-plugin",
+      "url": "https://github.com/tokens-studio/figma-plugin",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 1631,
+      "pushed_at": "2026-11-19T12:52:16Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Plugin oficial Tokens Studio for Figma (antes Figma Tokens). Sigue muy activo.",
+      "take": "Documentar en tokens/ el puente Figma → DTCG → Style Dictionary, para cuando un caso/ arranque en Figma. No hace falta vendor lock-in en la skill.",
+      "folders": [
+        "tokens/",
+        "casos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T12:52:16Z",
+      "pushed_at_salta": "2026-11-19 09:52",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "open-props",
+      "name": "argyleink/open-props",
+      "url": "https://github.com/argyleink/open-props",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 5581,
+      "pushed_at": "2026-10-11T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Set de custom properties CSS (color, tipo, sombra, easing, gradients, z-index, media) para arrancar un sistema consistente y adaptativo, de Adam Argyle.",
+      "take": "Comparar escalas (sombra, easing, gradientes, borders) con tokens/escalas.md y sumar las que Designweb no tenga, sobre todo easings y sombras. No adoptar Open Props entero como default: el kit ya tiene escalas propias.",
+      "folders": [
+        "tokens/",
+        "animaciones/"
+      ],
+      "mine_first": true,
+      "notes": "Pieza de tokens reutilizable, no otra skill viral.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-10-11T00:00:00Z",
+      "pushed_at_salta": "2026-10-11",
+      "pushed_at_precision": "day",
+      "mine_first_rank": 8
+    },
+    {
+      "id": "design-extract",
+      "name": "Manavarya09/design-extract",
+      "url": "https://github.com/Manavarya09/design-extract",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 5156,
+      "pushed_at": "2026-11-18T06:41:01Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "MIT cubre la herramienta. Extraer el design system de un sitio de terceros no te da derecho a reusar su identidad. Usar para estudiar y documentar, o sobre sitios propios / con permiso.",
+      "what": "CLI/MCP que extrae el design system de un sitio (tokens DTCG primitivos+semánticos+compuestos, Tailwind v4, shadcn, Figma variables, audit CSS/WCAG).",
+      "take": "Herramienta para alimentar casos/ (antes/después) y para contrastar tokens de un sitio de inspiracion/sitios.md. Documentar el comando en tokens/ y casos/, no pegar dumps de marcas.",
+      "folders": [
+        "tokens/",
+        "casos/",
+        "inspiracion/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-18T06:41:01Z",
+      "pushed_at_salta": "2026-11-18 03:41",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "dembrandt",
+      "name": "dembrandt/dembrandt",
+      "url": "https://github.com/dembrandt/dembrandt",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 4045,
+      "pushed_at": "2026-11-19T13:00:32Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "Igual que design-extract: la herramienta es MIT; la marca extraída no.",
+      "what": "CLI para extraer en segundos logo, colores, tipografía, bordes y más de cualquier sitio, a tokens (y DESIGN.md). Muy activo.",
+      "take": "Alternativa más liviana a design-extract para armar un DESIGN.md de un sitio de referencia. Misma regla: no clonar la marca, sí documentar el método en casos/ y tokens/.",
+      "folders": [
+        "tokens/",
+        "casos/",
+        "skills/"
+      ],
+      "mine_first": false,
+      "notes": "Push el 19 nov 2026.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T13:00:32Z",
+      "pushed_at_salta": "2026-11-19 10:00",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "design-dna",
+      "name": "zanwei/design-dna",
+      "url": "https://github.com/zanwei/design-dna",
+      "category": "tokens-extraccion",
+      "category_label": "Tokens, DTCG y extracción de sistemas",
+      "stars": 2141,
+      "pushed_at": "2026-08-28T01:58:49Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "MIT del tool; no reusar la identidad de las UIs de referencia.",
+      "what": "Pasa UIs de referencia (imagen, screenshot, URL) a un JSON de 'Design DNA' (tokens + estilo cualitativo + efectos) y después genera UI a partir de tu contenido.",
+      "take": "La forma del JSON (tokens + cualitativo + efectos) puede inspirar un esquema para casos/ o para que la skill elija estilo con más matices. Last push ago 2026.",
+      "folders": [
+        "casos/",
+        "estilos/",
+        "tokens/"
+      ],
+      "mine_first": false,
+      "notes": "Sin push desde el 28 ago 2026.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-08-28T01:58:49Z",
+      "pushed_at_salta": "2026-08-27 22:58",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "fontsource",
+      "name": "fontsource/fontsource",
+      "url": "https://github.com/fontsource/fontsource",
+      "category": "tipografia",
+      "category_label": "Tipografía (infraestructura)",
+      "stars": 6293,
+      "pushed_at": "2026-11-09T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": "MIT cubre el empaquetado. Cada fuente tiene su propia licencia (OFL, SIL, etc.), que es la que hay que respetar al self-hostear.",
+      "what": "Paquetes NPM para self-hostear fuentes open source, sin depender del CDN de Google Fonts.",
+      "take": "Agregar Fontsource a tipografias/README.md como método de import preferido cuando se quiera self-host (privacidad, rendimiento, menos CLS). Completar fonts.json con el paquete npm cuando exista.",
+      "folders": [
+        "tipografias/"
+      ],
+      "mine_first": false,
+      "notes": "El kit ya cita fonts.google.com en muchas fichas, pero no el repo ni el self-host vía Fontsource.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-09T00:00:00Z",
+      "pushed_at_salta": "2026-11-09",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "google-fonts",
+      "name": "google/fonts",
+      "url": "https://github.com/google/fonts",
+      "category": "tipografia",
+      "category_label": "Tipografía (infraestructura)",
+      "stars": 20784,
+      "pushed_at": "2026-11-19T10:14:09Z",
+      "license": "sin SPDX único (licencias por familia, mayoría OFL/Apache)",
+      "license_spdx": null,
+      "license_caveat": "No hay una licencia única del repo. Cada familia declara la suya (casi siempre OFL o Apache). Confirmar en la carpeta de la fuente antes de distribuir archivos.",
+      "what": "Repo canónico de archivos de Google Fonts e issue tracker público. El kit ya usa el catálogo web, pero no apuntaba a este repo.",
+      "take": "Usarlo para bajar/verificar archivos y licencias de las 101 fuentes que salen de Google Fonts, y para detectar familias nuevas. No es un catálogo de tendencias: no pisa tipografias/.",
+      "folders": [
+        "tipografias/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T10:14:09Z",
+      "pushed_at_salta": "2026-11-19 07:14",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "webgradients",
+      "name": "itmeo/webgradients",
+      "url": "https://github.com/itmeo/webgradients",
+      "category": "paletas",
+      "category_label": "Paletas y degradés",
+      "stars": 2505,
+      "pushed_at": "2026-08-03T21:50:58Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "180 degradés CSS/Figma/Sketch/PSD más un dataset JSON pensado también para agentes.",
+      "take": "Sumar el JSON como fuente en paletas/ y recursos/gradientes.md, con la regla ya escrita en el kit: un degradé no es identidad. Filtrar y marcar los que caen en violeta-azul (el tell de IA). Preferir los no-indigo para acentos, no para el hero entero.",
+      "folders": [
+        "paletas/",
+        "recursos/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-08-03T21:50:58Z",
+      "pushed_at_salta": "2026-08-03 18:50",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "react-bits",
+      "name": "DavidHDev/react-bits",
+      "url": "https://github.com/DavidHDev/react-bits",
+      "category": "componentes-motion",
+      "category_label": "Componentes y motion",
+      "stars": 52302,
+      "pushed_at": "2026-11-19T00:00:00Z",
+      "license": "sin SPDX (NOASSERTION)",
+      "license_spdx": null,
+      "license_caveat": "GitHub devuelve NOASSERTION. Confirmar LICENSE del repo antes de copiar un componente. Si no es permisiva, solo linkear.",
+      "what": "Librería grande de componentes React/Next animados e interactivos, 'built for humans and AI agents'. Muy activa.",
+      "take": "Catalogarla en componentes/bibliotecas.md como registro de motion (junto a Magic UI / Motion Primitives, que ya están). Advertir el 'cuándo no': usarla como default produce el mismo slop que Magic UI (marquees, glows, particles en cada sección). Elegir 1 gesto por proyecto.",
+      "folders": [
+        "componentes/",
+        "animaciones/"
+      ],
+      "mine_first": false,
+      "notes": "No confundir con vasanthk/react-bits (patrones de React, CC-BY-4.0), otro repo.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T00:00:00Z",
+      "pushed_at_salta": "2026-11-19",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "daisyui",
+      "name": "saadeghi/daisyui",
+      "url": "https://github.com/saadeghi/daisyui",
+      "category": "componentes-motion",
+      "category_label": "Componentes y motion",
+      "stars": 42906,
+      "pushed_at": "2026-11-16T00:00:00Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "La librería de componentes Tailwind más popular. Temas listos, semántica de clases.",
+      "take": "Agregarla a componentes/bibliotecas.md con un 'cuándo no' fuerte: el tema default de daisyUI es otro look genérico (como el Inter + indigo). Si se usa, hay que retokenizar con paletas/ y tokens/ de Designweb, o no usarla.",
+      "folders": [
+        "componentes/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-16T00:00:00Z",
+      "pushed_at_salta": "2026-11-16",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "animejs",
+      "name": "juliangarnier/anime",
+      "url": "https://github.com/juliangarnier/anime",
+      "category": "componentes-motion",
+      "category_label": "Componentes y motion",
+      "stars": 74900,
+      "pushed_at": "2026-11-02T22:25:55Z",
+      "license": "MIT",
+      "license_spdx": "MIT",
+      "license_caveat": null,
+      "what": "Motor de animación JS (CSS, SVG, canvas, timelines). Vivo en 2026 (anime.js v4). El kit cubre Motion, GSAP, Lenis, Rive, Lottie, Theatre y AutoAnimate, pero no anime.js.",
+      "take": "Ficha en animaciones/herramientas.md y animaciones.json: cuándo usar anime.js vs Motion vs GSAP (peso, SVG, timelines sin React). Sumar 1–2 easings útiles a easing-duracion.md si no están.",
+      "folders": [
+        "animaciones/"
+      ],
+      "mine_first": false,
+      "notes": null,
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-02T22:25:55Z",
+      "pushed_at_salta": "2026-11-02 19:25",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "animate-css",
+      "name": "animate-css/animate.css",
+      "url": "https://github.com/animate-css/animate.css",
+      "category": "componentes-motion",
+      "category_label": "Componentes y motion",
+      "stars": 83029,
+      "pushed_at": "2024-07-29T19:34:21Z",
+      "license": "Other (NOASSERTION; históricamente Hijack/custom + código libre; confirmar LICENSE)",
+      "license_spdx": null,
+      "license_caveat": "SPDX NOASSERTION. Confirmar LICENSE antes de copiar CSS. Además, last push jul 2024.",
+      "what": "Librería clásica de animaciones CSS (fadeIn, bounce, etc.). Altísimas estrellas, pero desactualizada y muy asociada a UI genérica.",
+      "take": "No adoptarla como default de agentes. Como mucho, una nota en animaciones/ de 'qué no usar' (bounce/fadeIn en cada card). Preferir Motion, GSAP, anime.js o CSS nativo (View Transitions, scroll-driven).",
+      "folders": [
+        "animaciones/",
+        "anti-patrones/"
+      ],
+      "mine_first": false,
+      "notes": "Last push 29 jul 2024. Se incluye por ser muy calificado y ausente del kit, con advertencia explícita.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2024-07-29T19:34:21Z",
+      "pushed_at_salta": "2024-07-29 16:34",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    },
+    {
+      "id": "awesome-motion-skills",
+      "name": "frankxai/awesome-motion-design-agent-skills",
+      "url": "https://github.com/frankxai/awesome-motion-design-agent-skills",
+      "category": "componentes-motion",
+      "category_label": "Componentes y motion",
+      "stars": 119,
+      "pushed_at": "2026-11-19T00:00:00Z",
+      "license": "CC0-1.0",
+      "license_spdx": "CC0-1.0",
+      "license_caveat": null,
+      "what": "Lista viva de skills de motion para agentes: GSAP, Motion, Remotion, Lottie y Rive (web, video procedural).",
+      "take": "Aunque es chica, está actualizada el 19 nov 2026 y apunta a skills de motion que animaciones/ no cataloga como skills (Remotion, skills de GSAP). Revisar y linkear las que no dupliquen herramientas ya listadas.",
+      "folders": [
+        "animaciones/",
+        "skills/"
+      ],
+      "mine_first": false,
+      "notes": "Pocas estrellas, alta frescura.",
+      "sources": [
+        "GitHub API"
+      ],
+      "pushed_at_utc": "2026-11-19T00:00:00Z",
+      "pushed_at_salta": "2026-11-19",
+      "pushed_at_precision": "day",
+      "mine_first_rank": null
+    },
+    {
+      "id": "open-design",
+      "name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "category": "workspaces",
+      "category_label": "Workspaces de diseño con agentes",
+      "stars": 108449,
+      "pushed_at": "2026-11-19T11:01:46Z",
+      "license": "Apache-2.0",
+      "license_spdx": "Apache-2.0",
+      "license_caveat": "Apache-2.0 del producto. No es material para copiar a Designweb; es una app.",
+      "what": "Workspace colaborativo local-first de diseño con agentes (motion, prototypes, sites, apps, dashboards, slides, imagen y video). Muy citado en X en 2026 junto a Pro Max, awesome-design-md, taste e Impeccable.",
+      "take": "No minar código. Sí vale probarlo como entorno y, si publica agent-skills o design systems reutilizables, revisarlos después. Baja prioridad para alimentar carpetas del kit.",
+      "folders": [
+        "recursos/"
+      ],
+      "mine_first": false,
+      "notes": "Es un producto, no un knowledge kit. Se incluye por estrellas, actividad y presencia en X, con el alcance bien delimitado.",
+      "sources": [
+        "GitHub API",
+        "X 2026"
+      ],
+      "pushed_at_utc": "2026-11-19T11:01:46Z",
+      "pushed_at_salta": "2026-11-19 08:01",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null
+    }
+  ]
+}
