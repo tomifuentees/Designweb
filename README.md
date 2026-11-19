@@ -17,6 +17,7 @@ Está pensada para dos usos:
 | [`anti-patrones/`](anti-patrones/README.md) | 30 tells de UI de IA documentados en 2025–2026, con arreglo, checklist y reglas para agentes. | ✅ |
 | [`recursos/`](recursos/README.md) | 54 recursos de terminación: íconos (no Lucide por default), ilustración, grano, mesh, mockups, SVG, capturas, favicon y OG. | ✅ |
 | [`componentes/`](componentes/README.md) | 16 librerías o registries y 12 patrones de página (hero, navbar, pricing, forms, etc.), con lo que hace mal el default de IA. | ✅ |
+| [`librerias-visuales/`](librerias-visuales/README.md) | 40 sitios tipo Cult UI: componentes animados, bloques, fondos, texto, 3D y directorios de registries (8 ya estaban en componentes/, 32 nuevos). | ✅ |
 | [`animaciones/`](animaciones/README.md) | Motion, GSAP, View Transitions, scroll-driven CSS, microinteracciones, easing y `prefers-reduced-motion`. | ✅ |
 | [`inspiracion/`](inspiracion/README.md) | 22 galerías, 55 sitios de referencia, 32 cuentas de X y 8 newsletters, con un porqué. | ✅ |
 | [`casos/`](casos/README.md) | Plantilla para documentar proyectos propios (antes / después). Todavía no hay casos cargados. | ⏳ |
