@@ -1,0 +1,882 @@
+{
+  "meta": {
+    "titulo": "Inspiración visual — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "total_galerias": 22,
+    "total_sitios": 55,
+    "total_cuentas_x": 32,
+    "total_newsletters": 8,
+    "objetivo": "Dar referentes con un porqué, cruzados a estilos del kit, sin moodboards de Dribbble ni handles inventados.",
+    "fuente_estilos": "../estilos/estilos.json"
+  },
+  "galerias": [
+    {
+      "id": "recent",
+      "nombre": "Recent (antes Godly)",
+      "url": "https://recent.design/",
+      "http": "200",
+      "para_que": "Landings y marketing de terminación alta, feed diario. Sesgo a lo llamativo.",
+      "notas": "godly.website redirige a recent.design/?ref=godly, que dio 500; usar recent.design."
+    },
+    {
+      "id": "awwwards",
+      "nombre": "Awwwards",
+      "url": "https://www.awwwards.com/",
+      "http": "403-antibot",
+      "para_que": "SOTY y nominees de motion/WebGL. Sesgo de agencia."
+    },
+    {
+      "id": "land-book",
+      "nombre": "Land-book",
+      "url": "https://land-book.com/",
+      "http": "200",
+      "para_que": "Landings filtrables por estilo y tipo de producto."
+    },
+    {
+      "id": "lapa",
+      "nombre": "Lapa Ninja",
+      "url": "https://www.lapa.ninja/",
+      "http": "200",
+      "para_que": "Capturas de landings a gran volumen; calidad irregular."
+    },
+    {
+      "id": "mobbin",
+      "nombre": "Mobbin",
+      "url": "https://mobbin.com/",
+      "http": "200",
+      "para_que": "Flujos de producto reales, no landings."
+    },
+    {
+      "id": "siteinspire",
+      "nombre": "Siteinspire",
+      "url": "https://www.siteinspire.com/",
+      "http": "429",
+      "para_que": "Curaduría clásica, más editorial que SaaS 2026."
+    },
+    {
+      "id": "minimal-gallery",
+      "nombre": "Minimal Gallery",
+      "url": "https://minimal.gallery/",
+      "http": "200",
+      "para_que": "Sitios contenidos y tipográficos, poco cromo."
+    },
+    {
+      "id": "saas-landing-page",
+      "nombre": "SaaS Landing Page",
+      "url": "https://saaslandingpage.com/",
+      "http": "200",
+      "para_que": "Landings de SaaS y startups, a veces por tipo de sección."
+    },
+    {
+      "id": "dark-design",
+      "nombre": "Dark Design",
+      "url": "https://www.dark.design/",
+      "http": "200",
+      "para_que": "Sitios oscuros curados. dark.design redirige a www."
+    },
+    {
+      "id": "one-page-love",
+      "nombre": "One Page Love",
+      "url": "https://onepagelove.com/",
+      "http": "200",
+      "para_que": "One-pagers, portfolios y lanzamientos de una vista."
+    },
+    {
+      "id": "refero",
+      "nombre": "Refero",
+      "url": "https://refero.design/",
+      "http": "200",
+      "para_que": "Patrones de UI de producto real."
+    },
+    {
+      "id": "page-flows",
+      "nombre": "Page Flows (ex Screenlane)",
+      "url": "https://pageflows.com/",
+      "http": "200",
+      "para_que": "Flows grabados de producto. screenlane.com redirige acá."
+    },
+    {
+      "id": "httpster",
+      "nombre": "Httpster",
+      "url": "https://httpster.net/",
+      "http": "200",
+      "para_que": "Sitios con carácter, mix editorial y experimental."
+    },
+    {
+      "id": "hoverstates",
+      "nombre": "Hoverstat.es",
+      "url": "https://www.hoverstat.es/",
+      "http": "200",
+      "para_que": "Sitios raros, internet como medio; contrapeso anti-plantilla."
+    },
+    {
+      "id": "cssda",
+      "nombre": "CSS Design Awards",
+      "url": "https://www.cssdesignawards.com/",
+      "http": "202",
+      "para_que": "Premios, sesgo de agencia."
+    },
+    {
+      "id": "brutalist-websites",
+      "nombre": "Brutalist Websites",
+      "url": "https://www.brutalistwebsites.com/",
+      "http": "200",
+      "para_que": "Observatorio de brutalismo / anti-diseño, no un producto."
+    },
+    {
+      "id": "curated-design",
+      "nombre": "Curated Design",
+      "url": "https://curated.design/",
+      "http": "200",
+      "para_que": "UI curada, más producto que SOTY."
+    },
+    {
+      "id": "landingfolio",
+      "nombre": "Landingfolio",
+      "url": "https://www.landingfolio.com/",
+      "http": "200",
+      "para_que": "Landings y piezas de marketing, calidad mixta."
+    },
+    {
+      "id": "landing-love",
+      "nombre": "Landing Love",
+      "url": "https://www.landing.love/",
+      "http": "200",
+      "para_que": "Landings; barrido."
+    },
+    {
+      "id": "layers",
+      "nombre": "Layers",
+      "url": "https://layers.to/",
+      "http": "200",
+      "para_que": "Comunidad de archivos; no es prueba de producción."
+    },
+    {
+      "id": "saaspo",
+      "nombre": "Saaspo",
+      "url": "https://saaspo.com/",
+      "http": "429",
+      "para_que": "SaaS y dashboards; citado en listas de 2026."
+    },
+    {
+      "id": "design-spells",
+      "nombre": "Design Spells",
+      "url": "https://www.designspells.com/",
+      "http": "429",
+      "para_que": "Microdetalles de interfaz."
+    }
+  ],
+  "sitios": [
+    {
+      "nombre": "Linear",
+      "url": "https://linear.app/",
+      "estilo": "estilo-linear",
+      "por_que": "El producto es la demo: UI real, etiquetas técnicas, cero circus. Míralo, no lo calques."
+    },
+    {
+      "nombre": "Attio",
+      "url": "https://attio.com/",
+      "estilo": "estilo-linear",
+      "por_que": "CRM con ritmo de página de producto y demo en contexto, sin ser un clone 1:1 de Linear."
+    },
+    {
+      "nombre": "Cursor",
+      "url": "https://cursor.com/",
+      "estilo": "estilo-linear",
+      "por_que": "Devtool que vende por la interfaz en uso, no por un hero de gradiente."
+    },
+    {
+      "nombre": "Ramp",
+      "url": "https://ramp.com/",
+      "estilo": "bento-grids",
+      "por_que": "Bento de producto con jerarquía: un mosaico cuenta, el resto acompaña."
+    },
+    {
+      "nombre": "Notion",
+      "url": "https://www.notion.com/",
+      "estilo": "bento-grids",
+      "por_que": "Bloques como sistema, no una grilla de 9 íconos."
+    },
+    {
+      "nombre": "Vercel",
+      "url": "https://vercel.com/",
+      "estilo": "bento-grids",
+      "estilos_secundarios": [
+        "saas-oscuro-premium"
+      ],
+      "por_que": "Marketing de plataforma con mosaicos y producto al frente, en oscuro contenido."
+    },
+    {
+      "nombre": "Raycast",
+      "url": "https://www.raycast.com/",
+      "estilo": "saas-oscuro-premium",
+      "por_que": "Oscuro de producto, microdetalles, un acento; no un neon de plantilla."
+    },
+    {
+      "nombre": "Mercury",
+      "url": "https://mercury.com/",
+      "estilo": "ui-casi-invisible",
+      "por_que": "Banca que se disuelve en tipografía, aire y un filete."
+    },
+    {
+      "nombre": "Resend",
+      "url": "https://resend.com/",
+      "estilo": "ui-casi-invisible",
+      "estilos_secundarios": [
+        "catalogo-tecnico"
+      ],
+      "por_que": "Marketing de API con captions técnicos; el cromo no compite con el código."
+    },
+    {
+      "nombre": "Dub",
+      "url": "https://dub.co/",
+      "estilo": "ui-casi-invisible",
+      "por_que": "Producto de links con interfaz quieta y prueba en la propia pantalla, sin glow."
+    },
+    {
+      "nombre": "Clerk",
+      "url": "https://clerk.com/",
+      "estilo": "ui-casi-invisible",
+      "por_que": "Auth como producto: la UI de marketing no pelea con la de los componentes."
+    },
+    {
+      "nombre": "Cal.com",
+      "url": "https://cal.com/",
+      "estilo": "expresivo-minimo",
+      "por_que": "Una voz (Cal Sans), producto y marketing contenidos, una rareza de oficio."
+    },
+    {
+      "nombre": "Stripe",
+      "url": "https://stripe.com/",
+      "estilo": "expresivo-minimo",
+      "estilos_secundarios": [
+        "ui-casi-invisible"
+      ],
+      "por_que": "Sistema limpio, ilustración y color puntuales, complejo pero no recargado."
+    },
+    {
+      "nombre": "Teenage Engineering",
+      "url": "https://teenage.engineering/",
+      "estilo": "catalogo-tecnico",
+      "estilos_secundarios": [
+        "suizo-internacional"
+      ],
+      "por_que": "Ficha de objeto, captions, grilla dura: el manual como marca."
+    },
+    {
+      "nombre": "ECAL",
+      "url": "https://www.ecal.ch/",
+      "estilo": "suizo-internacional",
+      "por_que": "Escuela como sistema de grilla. Redirige a /fr/.",
+      "nota_http": "200 via /fr/"
+    },
+    {
+      "nombre": "Vitsœ",
+      "url": "https://www.vitsoe.com/",
+      "estilo": "suizo-internacional",
+      "estilos_secundarios": [
+        "minimalismo-monocromo",
+        "expresivo-minimo"
+      ],
+      "por_que": "Objeto, tipo, silencio. Desde este entorno entra a /us.",
+      "nota_http": "200 via /us"
+    },
+    {
+      "nombre": "The Gentlewoman",
+      "url": "https://thegentlewoman.co.uk/",
+      "estilo": "editorial-revista",
+      "por_que": "Pocas piezas, una voz tipográfica, ritmo de revista, nada de UI de más."
+    },
+    {
+      "nombre": "It's Nice That",
+      "url": "https://www.itsnicethat.com/",
+      "estilo": "editorial-revista",
+      "estilos_secundarios": [
+        "risografia-impreso"
+      ],
+      "por_que": "Media de diseño con pulso editorial, puente a un look más impreso."
+    },
+    {
+      "nombre": "WIRED",
+      "url": "https://www.wired.com/",
+      "estilo": "editorial-revista",
+      "por_que": "Revista digital densa, jerarquía de titulares, no un blog de cards iguales."
+    },
+    {
+      "nombre": "Kinfolk",
+      "url": "https://www.kinfolk.com/",
+      "estilo": "editorial-revista",
+      "por_que": "Aire, fotografía y tipografía de lectura: el tempo es el mensaje."
+    },
+    {
+      "nombre": "Gumroad",
+      "url": "https://gumroad.com/",
+      "estilo": "neo-brutalismo",
+      "por_que": "Clásico del palo; confirmá el estado visual actual antes de copiarlo.",
+      "salvedad": "puede haber rediseñado"
+    },
+    {
+      "nombre": "Feastables",
+      "url": "https://feastables.com/",
+      "estilo": "neo-brutalismo",
+      "por_que": "Sabor de empaque y borde duro, en un producto real."
+    },
+    {
+      "nombre": "Roze Bunker",
+      "url": "https://rozebunker.nl/",
+      "estilo": "neo-brutalismo",
+      "por_que": "Brutalismo de local, no de template neobrutal.",
+      "nota_http": "202"
+    },
+    {
+      "nombre": "GT Maru",
+      "url": "https://gt-maru.com/",
+      "estilo": "neo-brutalismo",
+      "por_que": "Specimen que se banca el gesto: peso, acento, cero suavizado de UI kit."
+    },
+    {
+      "nombre": "Starface World",
+      "url": "https://starface.world/",
+      "estilo": "retrofuturismo-y2k",
+      "estilos_secundarios": [
+        "dopamina-saturado"
+      ],
+      "por_que": "Empaque cromado y juguetón. No confundir con starface.com."
+    },
+    {
+      "nombre": "Byline",
+      "url": "https://www.bylinebyline.com/",
+      "estilo": "retrofuturismo-y2k",
+      "estilos_secundarios": [
+        "anti-diseno"
+      ],
+      "por_que": "Early-web / dial-up con carácter de zine, citado en tendencias 2026."
+    },
+    {
+      "nombre": "Boys Club",
+      "url": "https://boysclub.vip/",
+      "estilo": "retrofuturismo-y2k",
+      "por_que": "Gráfica de club y paleta alta, sin pedirle que sea un SaaS."
+    },
+    {
+      "nombre": "Seed",
+      "url": "https://seed.com/",
+      "estilo": "organico-terroso",
+      "por_que": "Cuidado, materia, paleta de cuerpo; referente nature-inspired."
+    },
+    {
+      "nombre": "SPELL",
+      "url": "https://usa.spell.co/",
+      "estilo": "organico-terroso",
+      "estilos_secundarios": [
+        "realismo-tactil"
+      ],
+      "por_que": "Retail de textura y tierra, en la URL US que resolvió acá."
+    },
+    {
+      "nombre": "Patagonia",
+      "url": "https://www.patagonia.com/",
+      "estilo": "organico-terroso",
+      "por_que": "Foto, causa y tipo, no un look eco de plantilla."
+    },
+    {
+      "nombre": "Graza",
+      "url": "https://www.graza.co/",
+      "estilo": "realismo-tactil",
+      "estilos_secundarios": [
+        "grano-ruido"
+      ],
+      "por_que": "El aceite se ve como aceite: materia, no software."
+    },
+    {
+      "nombre": "Liquid Death",
+      "url": "https://liquiddeath.com/",
+      "estilo": "maximalismo",
+      "por_que": "Humor, saturación y empaque coherentes de punta a punta."
+    },
+    {
+      "nombre": "Spotify Newsroom",
+      "url": "https://newsroom.spotify.com/",
+      "estilo": "maximalismo",
+      "por_que": "URL de marca (spotify.com redirige al player). Voz maximal de una marca viva."
+    },
+    {
+      "nombre": "The Row",
+      "url": "https://www.therow.com/",
+      "estilo": "minimalismo-monocromo",
+      "por_que": "Lujo que se sostiene en el recorte y una familia, no en un degradé premium."
+    },
+    {
+      "nombre": "nendo",
+      "url": "https://www.nendo.jp/",
+      "estilo": "japones-inspirado",
+      "estilos_secundarios": [
+        "minimalismo-monocromo"
+      ],
+      "por_que": "El vacío y el objeto pesan más que la UI."
+    },
+    {
+      "nombre": "Shinpaku",
+      "url": "https://shinpaku.co/",
+      "estilo": "japones-inspirado",
+      "por_que": "Retail y cultura con contención, cruce de ejes y poco cromo."
+    },
+    {
+      "nombre": "basement.studio",
+      "url": "https://basement.studio/",
+      "estilo": "grano-ruido",
+      "estilos_secundarios": [
+        "grilla-rota"
+      ],
+      "por_que": "Textura, ritmo irregular y layout que se sale, sin un generador de ruido de CSS."
+    },
+    {
+      "nombre": "Locomotive",
+      "url": "https://locomotive.ca/",
+      "estilo": "tipografia-kinetica",
+      "estilos_secundarios": [
+        "scrollytelling",
+        "navegacion-experimental"
+      ],
+      "por_que": "Tipo y scroll como oficio (redirige a /en). No copiar entero en una PyME.",
+      "nota_http": "200 via /en"
+    },
+    {
+      "nombre": "Glossier",
+      "url": "https://www.glossier.com/",
+      "estilo": "tipografia-kinetica",
+      "estilos_secundarios": [
+        "ilustrado-humano"
+      ],
+      "por_que": "Tipo con carácter de campaña, no de UI kit."
+    },
+    {
+      "nombre": "Osmo",
+      "url": "https://www.osmo.supply/",
+      "estilo": "tipografia-kinetica",
+      "por_que": "Toolkit y cultura GSAP: el motion es el producto, no un adorno.",
+      "nota_http": "osmo.supply redirige a www"
+    },
+    {
+      "nombre": "Framer",
+      "url": "https://www.framer.com/",
+      "estilo": "tipografia-kinetica",
+      "por_que": "El propio site enseña transiciones, no un fade genérico."
+    },
+    {
+      "nombre": "Suno",
+      "url": "https://suno.com/",
+      "estilo": "tipografia-kinetica",
+      "por_que": "Producto de IA con cara de foundry, no el default Geist + glow."
+    },
+    {
+      "nombre": "Are.na",
+      "url": "https://www.are.na/",
+      "estilo": "anti-diseno",
+      "estilos_secundarios": [
+        "navegacion-experimental"
+      ],
+      "por_que": "Red de bloques con UI deliberadamente poco productizada, al servicio de su uso."
+    },
+    {
+      "nombre": "Bruno Simon",
+      "url": "https://bruno-simon.com/",
+      "estilo": "espacial-3d",
+      "por_que": "Portfolio que es un juguete 3D, no un scroll de cards."
+    },
+    {
+      "nombre": "Apple iPhone",
+      "url": "https://www.apple.com/iphone/",
+      "estilo": "scrollytelling",
+      "estilos_secundarios": [
+        "espacial-3d"
+      ],
+      "por_que": "3D y scrollytelling al servicio del objeto, no un filtro Three.js por moda."
+    },
+    {
+      "nombre": "IKEA",
+      "url": "https://www.ikea.com/",
+      "estilo": "espacial-3d",
+      "por_que": "3D y AR al servicio de cómo entra en tu casa, no de un hero de showcase."
+    },
+    {
+      "nombre": "teamLab",
+      "url": "https://www.teamlab.art/",
+      "estilo": "espacial-3d",
+      "estilos_secundarios": [
+        "japones-inspirado"
+      ],
+      "por_que": "Experiencia inmersiva como contenido: el espacio es el medio."
+    },
+    {
+      "nombre": "Recess",
+      "url": "https://takearecess.com/",
+      "estilo": "scrollytelling",
+      "por_que": "Historia de producto al bajar, citada en tendencias 2026; confirmá que el scroll no secuestre."
+    },
+    {
+      "nombre": "The Pudding",
+      "url": "https://pudding.cool/",
+      "estilo": "scrollytelling",
+      "por_que": "Ensayos visuales donde el scroll argumenta, con oficio de datos y edición."
+    },
+    {
+      "nombre": "Figma",
+      "url": "https://www.figma.com/",
+      "estilo": "glassmorfismo",
+      "por_que": "Vidrio y profundidad como acento de un producto denso, no como theme de landing."
+    },
+    {
+      "nombre": "Apple",
+      "url": "https://www.apple.com/",
+      "estilo": "glassmorfismo",
+      "por_que": "Referente de material (el halo Liquid Glass de las guías 2026), no para calcar un blur en cada card."
+    },
+    {
+      "nombre": "Headspace",
+      "url": "https://www.headspace.com/",
+      "estilo": "ilustrado-humano",
+      "estilos_secundarios": [
+        "dopamina-saturado"
+      ],
+      "por_que": "Ilustración de personaje y tono de cuidado, sin pack de AI illustrator."
+    },
+    {
+      "nombre": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "estilo": "navegacion-experimental",
+      "estilos_secundarios": [
+        "grano-ruido"
+      ],
+      "por_que": "La navegación es el producto: un archivo visual que se recorre como lugar."
+    },
+    {
+      "nombre": "Google Arts & Culture",
+      "url": "https://artsandculture.google.com/",
+      "estilo": "navegacion-experimental",
+      "por_que": "Colecciones que se recorren como lugar, no como un listado de cards."
+    },
+    {
+      "nombre": "Ghia",
+      "url": "https://drinkghia.com/",
+      "estilo": "dopamina-saturado",
+      "estilos_secundarios": [
+        "bento-grids"
+      ],
+      "por_que": "Color, empaque y ritmo de secciones; paleta alta, no un arcoíris de UI kit."
+    }
+  ],
+  "cuentas_x": [
+    {
+      "username": "shadcn",
+      "nombre": "shadcn",
+      "url": "https://x.com/shadcn",
+      "tema": "sistemas",
+      "por_que": "Flujo shadcn, registry, Base UI vs Radix, skills para agentes.",
+      "activa": true
+    },
+    {
+      "username": "base_ui",
+      "nombre": "Base UI",
+      "url": "https://x.com/base_ui",
+      "tema": "sistemas",
+      "por_que": "Primitivas unstyled del equipo de Radix / Floating UI / MUI.",
+      "activa": true
+    },
+    {
+      "username": "coss_com",
+      "nombre": "coss.com",
+      "url": "https://x.com/coss_com",
+      "tema": "sistemas",
+      "por_que": "Design system de Cal.com, sucesor de Origin UI.",
+      "activa": true
+    },
+    {
+      "username": "peer_rich",
+      "nombre": "Peer Richelsen",
+      "url": "https://x.com/peer_rich",
+      "tema": "sistemas",
+      "por_que": "Cal.com / coss, anuncios de infra open source.",
+      "activa": true
+    },
+    {
+      "username": "pacovitiello",
+      "nombre": "Pasquale Vitiello",
+      "url": "https://x.com/pacovitiello",
+      "tema": "sistemas",
+      "por_que": "Design engineering en Cal/coss, origen de Origin UI.",
+      "activa": true
+    },
+    {
+      "username": "colmtuite",
+      "nombre": "Colm Tuite",
+      "url": "https://x.com/colmtuite",
+      "tema": "sistemas",
+      "por_que": "Co-creador de Radix y Base UI.",
+      "activa": true
+    },
+    {
+      "username": "haydenbleasel",
+      "nombre": "Hayden Bleasel",
+      "url": "https://x.com/haydenbleasel",
+      "tema": "sistemas",
+      "por_que": "Autor de Kibo UI.",
+      "activa": true
+    },
+    {
+      "username": "magicuidesign",
+      "nombre": "Magic UI",
+      "url": "https://x.com/magicuidesign",
+      "tema": "sistemas",
+      "por_que": "Kit de motion para marketing.",
+      "activa": true
+    },
+    {
+      "username": "peduarte",
+      "nombre": "Pedro Duarte",
+      "url": "https://x.com/peduarte",
+      "tema": "sistemas",
+      "por_que": "Ex Radix, hoy en Raycast; primitivas y producto.",
+      "activa": true
+    },
+    {
+      "username": "jh3yy",
+      "nombre": "Jhey Tompkins",
+      "url": "https://x.com/jh3yy",
+      "tema": "motion-css",
+      "por_que": "CSS creativo: scroll-driven, view transitions, carousels nativos.",
+      "activa": true
+    },
+    {
+      "username": "cassiecodes",
+      "nombre": "Cassie Evans",
+      "url": "https://x.com/cassiecodes",
+      "tema": "motion-css",
+      "por_que": "Equipo GreenSock, SVG y GSAP con oficio.",
+      "activa": true
+    },
+    {
+      "username": "greensock",
+      "nombre": "GSAP",
+      "url": "https://x.com/greensock",
+      "tema": "motion-css",
+      "por_que": "Anuncios de la librería, ahora gratis.",
+      "activa": true
+    },
+    {
+      "username": "motiondotdev",
+      "nombre": "Motion",
+      "url": "https://x.com/motiondotdev",
+      "tema": "motion-css",
+      "por_que": "El toolkit que fue Framer Motion.",
+      "activa": true
+    },
+    {
+      "username": "osmosupply",
+      "nombre": "Osmo",
+      "url": "https://x.com/osmosupply",
+      "tema": "motion-css",
+      "por_que": "Recursos GSAP / Codrops.",
+      "activa": true
+    },
+    {
+      "username": "darkroomdevs",
+      "nombre": "darkroom.engineering",
+      "url": "https://x.com/darkroomdevs",
+      "tema": "motion-css",
+      "por_que": "Estudio detrás de Lenis y runtimes de scroll/WebGL.",
+      "activa": true
+    },
+    {
+      "username": "LenisSmooth",
+      "nombre": "Lenis",
+      "url": "https://x.com/LenisSmooth",
+      "tema": "motion-css",
+      "por_que": "Cuenta del paquete Lenis.",
+      "activa": true
+    },
+    {
+      "username": "Ibelick",
+      "nombre": "Ibelick",
+      "url": "https://x.com/Ibelick",
+      "tema": "motion-css",
+      "por_que": "Motion Primitives y design engineering.",
+      "activa": true
+    },
+    {
+      "username": "argyleink",
+      "nombre": "Adam Argyle",
+      "url": "https://x.com/argyleink",
+      "tema": "motion-css",
+      "por_que": "CSS de producto, Open Props.",
+      "activa": true
+    },
+    {
+      "username": "Una",
+      "nombre": "Una Kravets",
+      "url": "https://x.com/Una",
+      "tema": "motion-css",
+      "por_que": "CSS y estándares, DevRel en Chrome.",
+      "activa": true
+    },
+    {
+      "username": "LeaVerou",
+      "nombre": "Lea Verou",
+      "url": "https://x.com/LeaVerou",
+      "tema": "motion-css",
+      "por_que": "Estándares, CSS, usabilidad.",
+      "activa": true
+    },
+    {
+      "username": "hakimel",
+      "nombre": "Hakim El Hattab",
+      "url": "https://x.com/hakimel",
+      "tema": "motion-css",
+      "por_que": "Slides e interacción de producto.",
+      "activa": true
+    },
+    {
+      "username": "twholman",
+      "nombre": "Tim Holman",
+      "url": "https://x.com/twholman",
+      "tema": "motion-css",
+      "por_que": "Creative coding.",
+      "activa": true
+    },
+    {
+      "username": "sarah_edo",
+      "nombre": "Sarah Drasner",
+      "url": "https://x.com/sarah_edo",
+      "tema": "motion-css",
+      "por_que": "SVG, animación, infra de AI/web en Chrome. No confundir con @sdras.",
+      "activa": true
+    },
+    {
+      "username": "typewolf",
+      "nombre": "Typewolf",
+      "url": "https://x.com/typewolf",
+      "tema": "tipo-oficio",
+      "por_que": "Tipografía en sitios reales.",
+      "activa": true
+    },
+    {
+      "username": "tailwindcss",
+      "nombre": "Tailwind CSS",
+      "url": "https://x.com/tailwindcss",
+      "tema": "tipo-oficio",
+      "por_que": "Cuenta del framework.",
+      "activa": true
+    },
+    {
+      "username": "adamwathan",
+      "nombre": "Adam Wathan",
+      "url": "https://x.com/adamwathan",
+      "tema": "tipo-oficio",
+      "por_que": "Criterio del autor de Tailwind.",
+      "activa": true
+    },
+    {
+      "username": "chriscoyier",
+      "nombre": "Chris Coyier",
+      "url": "https://x.com/chriscoyier",
+      "tema": "tipo-oficio",
+      "por_que": "Oficio CSS (CSS-Tricks, CodePen, ShopTalk).",
+      "activa": true
+    },
+    {
+      "username": "raunofreiberg",
+      "nombre": "Rauno Freiberg",
+      "url": "https://x.com/raunofreiberg",
+      "tema": "tipo-oficio",
+      "por_que": "Detalle de interacción en Vercel; UI casi invisible de verdad.",
+      "activa": true
+    },
+    {
+      "username": "steventey",
+      "nombre": "Steven Tey",
+      "url": "https://x.com/steventey",
+      "tema": "tipo-oficio",
+      "por_que": "Producto (Dub), interfaces claras.",
+      "activa": true
+    },
+    {
+      "username": "webflow",
+      "nombre": "Webflow",
+      "url": "https://x.com/webflow",
+      "tema": "tipo-oficio",
+      "por_que": "Dueños de GSAP; anuncios de licencia.",
+      "activa": true
+    },
+    {
+      "username": "denicmarko",
+      "nombre": "Marko Denic",
+      "url": "https://x.com/denicmarko",
+      "tema": "tipo-oficio",
+      "por_que": "Tips de front, más generalista que visual.",
+      "activa": true
+    },
+    {
+      "username": "JoshWComeau",
+      "nombre": "Josh W. Comeau",
+      "url": "https://x.com/JoshWComeau",
+      "tema": "tipo-oficio",
+      "por_que": "Referencia de oficio CSS/React; la cuenta de X ya no está activa (se fue a Bluesky).",
+      "activa": false
+    }
+  ],
+  "newsletters": [
+    {
+      "nombre": "Sidebar",
+      "url": "https://sidebar.io/",
+      "http": "200",
+      "por_que": "Cinco links de diseño por día de semana."
+    },
+    {
+      "nombre": "Typewolf",
+      "url": "https://www.typewolf.com/",
+      "http": "200",
+      "por_que": "Tipografía en sitios reales y tendencias de uso."
+    },
+    {
+      "nombre": "UX Design Weekly",
+      "url": "https://uxdesignweekly.com/",
+      "http": "200",
+      "por_que": "Roundup semanal de UX, compacto."
+    },
+    {
+      "nombre": "Frontend Focus",
+      "url": "https://frontendfoc.us/",
+      "http": "200",
+      "por_que": "CSS, JS y plataforma web (View Transitions, scroll-driven)."
+    },
+    {
+      "nombre": "CSS Weekly",
+      "url": "https://css-weekly.com/",
+      "http": "200",
+      "por_que": "Una entrega de CSS, sin ruido de AI newsletter."
+    },
+    {
+      "nombre": "It's Nice That",
+      "url": "https://www.itsnicethat.com/newsletters",
+      "http": "200",
+      "por_que": "Cultura visual y estudios; contrapeso editorial."
+    },
+    {
+      "nombre": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/",
+      "http": "200",
+      "por_que": "Artículos largos de oficio: a11y, CSS, diseño."
+    },
+    {
+      "nombre": "Design Systems Surf",
+      "url": "https://designsystems.surf/",
+      "http": "200",
+      "por_que": "Sistemas de diseño, no moodboards."
+    }
+  ],
+  "sin_referentes_de_produccion": [
+    "claymorfismo"
+  ]
+}

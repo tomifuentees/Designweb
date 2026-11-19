@@ -1,0 +1,548 @@
+{
+  "meta": {
+    "titulo": "Catálogo de componentes y librerías — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "total_bibliotecas": 16,
+    "total_patrones": 12,
+    "objetivo": "Dar a un agente de código bases, registries y patrones con oficio, para no caer en el default de shadcn/IA (pill índigo, tres cards, toast que rebota, solo happy path).",
+    "fuente_tipografias": "../tipografias/fonts.json",
+    "fuente_estilos": "../estilos/estilos.json"
+  },
+  "bibliotecas": [
+    {
+      "id": "shadcn-ui",
+      "nombre": "shadcn/ui",
+      "categoria": "flujo-copy-paste",
+      "link_oficial": "https://ui.shadcn.com/",
+      "repo": "https://github.com/shadcn-ui/ui",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Base UI (default desde 2026-07)",
+        "Radix (soportado, -b radix)"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "apps React que quieren dueñar el código",
+        "design systems propios",
+        "instalar registries de terceros"
+      ],
+      "evitar_en": [
+        "usar el tema default como personalidad",
+        "proyectos que no van a retocar tokens"
+      ],
+      "notas": "El 3 de julio de 2026 pasó a default Base UI. El registry acepta @namespace/item y owner/repo/item. shadcn/skills (marzo 2026) ayuda a los agentes a respetar el sistema."
+    },
+    {
+      "id": "base-ui",
+      "nombre": "Base UI",
+      "categoria": "primitivas-headless",
+      "link_oficial": "https://base-ui.com/",
+      "repo": "https://github.com/mui/base-ui",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "unstyled"
+      ],
+      "estado": "estable-activo",
+      "mejor_para": [
+        "proyectos nuevos con shadcn",
+        "design systems accesibles"
+      ],
+      "evitar_en": [
+        "reescribir una app Radix estable solo por moda"
+      ],
+      "notas": "v1.9.0 el 9 de octubre de 2026. Dirección de largo plazo de MUI. Equipo full-time. MUI Base (paquete viejo) está deprecado."
+    },
+    {
+      "id": "radix",
+      "nombre": "Radix Primitives",
+      "categoria": "primitivas-headless",
+      "link_oficial": "https://www.radix-ui.com/",
+      "repo": "https://github.com/radix-ui/primitives",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "unstyled"
+      ],
+      "estado": "mantenido",
+      "mejor_para": [
+        "apps ya en Radix",
+        "init -b radix"
+      ],
+      "evitar_en": [
+        "presentarlo como la opción 'moderna' de un greenfield a finales de 2026 sin una razón"
+      ],
+      "notas": "Releases al menos hasta el 20 de julio de 2026. Último push visto: 14 de octubre de 2026. No está deprecado."
+    },
+    {
+      "id": "ark-ui",
+      "nombre": "Ark UI",
+      "categoria": "primitivas-headless",
+      "link_oficial": "https://ark-ui.com/",
+      "repo": "https://github.com/chakra-ui/ark",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Solid",
+        "Vue",
+        "Svelte"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "design systems multi-framework",
+        "ecosistema Chakra/Panda"
+      ],
+      "evitar_en": [
+        "sumarlo a un proyecto que ya está en shadcn + Base UI"
+      ],
+      "notas": "Mantenido por el equipo de Chakra. Park UI se apoya acá."
+    },
+    {
+      "id": "react-aria",
+      "nombre": "React Aria",
+      "categoria": "primitivas-headless",
+      "link_oficial": "https://react-aria.adobe.com/",
+      "repo": "https://github.com/adobe/react-spectrum",
+      "licencia": "Apache-2.0",
+      "stack": [
+        "React"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "a11y e i18n de empresa",
+        "design systems sin Tailwind como contrato"
+      ],
+      "evitar_en": [
+        "landings rápidas donde la curva no se justifica"
+      ],
+      "notas": "react-spectrum.adobe.com/react-aria/ redirige a react-aria.adobe.com."
+    },
+    {
+      "id": "magic-ui",
+      "nombre": "Magic UI",
+      "categoria": "kit-marketing",
+      "link_oficial": "https://magicui.design/",
+      "repo": "https://github.com/magicuidesign/magicui",
+      "licencia": "MIT (free); Pro con términos propios",
+      "stack": [
+        "React",
+        "Tailwind",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "un gesto de motion en una landing"
+      ],
+      "evitar_en": [
+        "instalar el catálogo entero",
+        "dashboards de trabajo"
+      ],
+      "notas": "Pro no se redistribuye ni se vende como template."
+    },
+    {
+      "id": "aceternity",
+      "nombre": "Aceternity UI",
+      "categoria": "kit-marketing",
+      "link_oficial": "https://ui.aceternity.com/",
+      "repo": null,
+      "licencia": "componentes free con términos propios; Pro sin revender source",
+      "stack": [
+        "React",
+        "Tailwind",
+        "Motion"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "un hero o una sección memorable"
+      ],
+      "evitar_en": [
+        "usarlo como sistema de producto",
+        "apilar spotlight + lamp + beams"
+      ],
+      "notas": "Es el kit que más fácil deja un sitio 'de IA con glow'. Una rareza, no un theme."
+    },
+    {
+      "id": "coss-ui",
+      "nombre": "coss ui (antes Origin UI)",
+      "categoria": "kit-producto",
+      "link_oficial": "https://coss.com/ui/docs",
+      "repo": "https://github.com/cosscom/ui",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Base UI",
+        "Tailwind"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "apps de producto",
+        "forms y composiciones densas"
+      ],
+      "evitar_en": [
+        "efectos de marketing como sistema"
+      ],
+      "notas": "Origin UI se unió a Cal.com el 10 de octubre de 2025. Colección legacy en coss.com/origin, soporte limitado. Roadmap: primitivas, particles, atoms."
+    },
+    {
+      "id": "kibo-ui",
+      "nombre": "Kibo UI",
+      "categoria": "registry-producto",
+      "link_oficial": "https://www.kibo-ui.com/",
+      "repo": "https://github.com/shadcnblocks/kibo",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "shadcn/ui",
+        "Tailwind"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "Gantt, Kanban, editores y componentes avanzados"
+      ],
+      "evitar_en": [
+        "instalarlo como theme"
+      ],
+      "notas": "Creado por Hayden Bleasel. Adquirido por Shadcnblocks el 28 de octubre de 2025. Sigue open source; registry @kibo-ui."
+    },
+    {
+      "id": "cult-ui",
+      "nombre": "Cult UI",
+      "categoria": "kit-motion-ui",
+      "link_oficial": "https://www.cult-ui.com/",
+      "repo": "https://github.com/nolly-studio/cult-ui",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Tailwind",
+        "Motion",
+        "shadcn"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "microinteracciones en controles de producto"
+      ],
+      "evitar_en": [
+        "un hero cinematográfico (mejor Magic o Aceternity)"
+      ],
+      "notas": "Catálogo más chico que Magic UI."
+    },
+    {
+      "id": "motion-primitives",
+      "nombre": "Motion Primitives",
+      "categoria": "kit-motion-ui",
+      "link_oficial": "https://www.motion-primitives.com/",
+      "repo": "https://github.com/ibelick/motion-primitives",
+      "licencia": "MIT",
+      "stack": [
+        "React",
+        "Tailwind",
+        "Motion"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "componer reveals, morphs y texto animado"
+      ],
+      "evitar_en": [
+        "esperar secciones de landing cerradas"
+      ],
+      "notas": "Autor @Ibelick. Building blocks, no templates."
+    },
+    {
+      "id": "animate-ui",
+      "nombre": "Animate UI",
+      "categoria": "kit-motion-ui",
+      "link_oficial": "https://animate-ui.com/",
+      "repo": "https://github.com/imskyleen/animate-ui",
+      "licencia": "MIT + Commons Clause",
+      "stack": [
+        "React",
+        "Motion",
+        "shadcn CLI"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "componentes familiares ya animados, si la licencia cierra"
+      ],
+      "evitar_en": [
+        "revender o redistribuir los componentes en su forma original",
+        "meterlo en un kit que se vende"
+      ],
+      "notas": "LICENSE.md leída el 2026-11-19, copyright 2025 Elliot Sutton. No es un MIT limpio."
+    },
+    {
+      "id": "tremor",
+      "nombre": "Tremor",
+      "categoria": "charts-dashboard",
+      "link_oficial": "https://www.tremor.so/",
+      "repo": "https://github.com/tremorlabs/tremor",
+      "licencia": "Apache-2.0",
+      "stack": [
+        "React",
+        "Tailwind"
+      ],
+      "estado": "ritmo-bajo-incierto",
+      "mejor_para": [
+        "charts y dashboards copy-paste"
+      ],
+      "evitar_en": [
+        "asumir que está en el mismo ritmo que shadcn o Base UI"
+      ],
+      "notas": "Vercel lo adquirió el 22 de enero de 2025. npm @tremor/react 3.18.7 del 13 de enero de 2025. Repo con push el 10 de octubre de 2025. No hay anuncio oficial de deprecación verificado."
+    },
+    {
+      "id": "heroui",
+      "nombre": "HeroUI (antes NextUI)",
+      "categoria": "libreria-completa",
+      "link_oficial": "https://heroui.com/",
+      "repo": "https://github.com/heroui-inc/heroui",
+      "licencia": "Apache-2.0",
+      "stack": [
+        "React",
+        "Tailwind"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "equipos que quieren un sistema empaquetado, no archivos copy-paste"
+      ],
+      "evitar_en": [
+        "dejar el tema default como personalidad"
+      ],
+      "notas": "www.heroui.com redirige a heroui.com. Activo al 18 de noviembre de 2026."
+    },
+    {
+      "id": "park-ui",
+      "nombre": "Park UI",
+      "categoria": "kit-estilado",
+      "link_oficial": "https://park-ui.com/",
+      "repo": null,
+      "licencia": "verificar en el repo (no leída en esta pasada)",
+      "stack": [
+        "Ark UI",
+        "Panda CSS"
+      ],
+      "estado": "sitio-vivo",
+      "mejor_para": [
+        "proyectos ya en Panda/Chakra"
+      ],
+      "evitar_en": [
+        "sumarlo a un stack Tailwind/shadcn"
+      ],
+      "notas": "GET 200 el 19/11/2026. SPDX no verificado acá."
+    },
+    {
+      "id": "21st-dev",
+      "nombre": "21st.dev",
+      "categoria": "directorio-registry",
+      "link_oficial": "https://21st.dev/",
+      "repo": null,
+      "licencia": "varía por pieza",
+      "stack": [
+        "mixto",
+        "shadcn registries"
+      ],
+      "estado": "activo",
+      "mejor_para": [
+        "descubrir piezas de la comunidad"
+      ],
+      "evitar_en": [
+        "pegar 15 estilos distintos en un mismo producto"
+      ],
+      "notas": "No es una librería única. Tratarlo como galería."
+    }
+  ],
+  "patrones": [
+    {
+      "slug": "hero",
+      "archivo": "hero.md",
+      "nombre": "Hero",
+      "fuentes_recomendadas": [
+        "cabinet-grotesk",
+        "fraunces",
+        "satoshi",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "expresivo-minimo",
+        "editorial-revista",
+        "catalogo-tecnico"
+      ],
+      "error_ia": "Hero centrado, degradé violeta, dos pills, mockup de dashboard inventado, eyebrow 'New'.",
+      "terminacion_pro": "Una promesa, una rareza tipográfica, un objeto real, un CTA."
+    },
+    {
+      "slug": "navbar",
+      "archivo": "navbar.md",
+      "nombre": "Navbar",
+      "fuentes_recomendadas": [
+        "satoshi",
+        "switzer",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "ui-casi-invisible",
+        "suizo-internacional"
+      ],
+      "error_ia": "Barra con backdrop-blur, dos CTAs pill, menú mobile de overlay con degradé.",
+      "terminacion_pro": "Altura contenida, ítem activo con filete, atajo de búsqueda, aria en el toggle."
+    },
+    {
+      "slug": "pricing",
+      "archivo": "pricing.md",
+      "nombre": "Pricing",
+      "fuentes_recomendadas": [
+        "cabinet-grotesk",
+        "satoshi",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "catalogo-tecnico",
+        "expresivo-minimo"
+      ],
+      "error_ia": "Tres cards gemelas, la del medio con scale y badge índigo 'Most popular'.",
+      "terminacion_pro": "Comparación en tabla o filas alineadas, plan marcado con un filete, precios en mono, números reales."
+    },
+    {
+      "slug": "features",
+      "archivo": "features.md",
+      "nombre": "Features",
+      "fuentes_recomendadas": [
+        "bricolage-grotesque",
+        "cabinet-grotesk",
+        "satoshi",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "catalogo-tecnico",
+        "editorial-revista",
+        "bento-grids",
+        "expresivo-minimo"
+      ],
+      "error_ia": "Tres cards con ícono Lucide en circulito, o un bento de 9 tiles del mismo peso, emojis como ícono.",
+      "terminacion_pro": "Lista tipográfica, ritmo editorial o bento con jerarquía. Verbos concretos, no slogans."
+    },
+    {
+      "slug": "testimonials",
+      "archivo": "testimonials.md",
+      "nombre": "Testimonials",
+      "fuentes_recomendadas": [
+        "newsreader",
+        "fraunces",
+        "satoshi"
+      ],
+      "estilos_afines": [
+        "editorial-revista",
+        "ilustrado-humano"
+      ],
+      "error_ia": "Slider de avatares inventados, 5 estrellas, quotes intercambiables.",
+      "terminacion_pro": "Citas reales, atribuibles, pocas, con voz tipográfica. Si no hay permiso, no se publica."
+    },
+    {
+      "slug": "faq",
+      "archivo": "faq.md",
+      "nombre": "FAQ",
+      "fuentes_recomendadas": [
+        "satoshi",
+        "switzer"
+      ],
+      "estilos_afines": [
+        "expresivo-minimo",
+        "ui-casi-invisible"
+      ],
+      "error_ia": "Diez preguntas SEO ('What is X?') con lorem, accordion default.",
+      "terminacion_pro": "Preguntas que alguien hizo, details nativo o accordion a11y, escape a soporte."
+    },
+    {
+      "slug": "footer",
+      "archivo": "footer.md",
+      "nombre": "Footer",
+      "fuentes_recomendadas": [
+        "satoshi"
+      ],
+      "estilos_afines": [
+        "suizo-internacional",
+        "expresivo-minimo"
+      ],
+      "error_ia": "Cinco columnas de links inventados, fila de redes que la marca no usa, copyright desactualizado.",
+      "terminacion_pro": "Mapa corto, legal visible, contraste AA, newsletter solo si se va a mandar."
+    },
+    {
+      "slug": "forms",
+      "archivo": "forms.md",
+      "nombre": "Formularios",
+      "fuentes_recomendadas": [
+        "satoshi",
+        "figtree",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "ui-casi-invisible",
+        "catalogo-tecnico"
+      ],
+      "error_ia": "Solo happy path, label que desaparece, error 'Something went wrong', botón índigo.",
+      "terminacion_pro": "Estados vacío, carga, error y éxito. Label visible, aria-invalid, no borrar lo escrito."
+    },
+    {
+      "slug": "tables",
+      "archivo": "tables.md",
+      "nombre": "Tablas",
+      "fuentes_recomendadas": [
+        "satoshi",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "catalogo-tecnico"
+      ],
+      "error_ia": "Cada fila es una card rounded-2xl, montos a la izquierda, badges índigo.",
+      "terminacion_pro": "Números a la derecha, tabular-nums, encabezados fijos, vacío y carga dentro de la tabla."
+    },
+    {
+      "slug": "dashboards",
+      "archivo": "dashboards.md",
+      "nombre": "Dashboards",
+      "fuentes_recomendadas": [
+        "satoshi",
+        "switzer",
+        "ibm-plex-mono"
+      ],
+      "estilos_afines": [
+        "ui-casi-invisible",
+        "catalogo-tecnico",
+        "saas-oscuro-premium"
+      ],
+      "error_ia": "Muro de KPI cards, 'Welcome back, John', charts que no contestan nada, métricas inventadas.",
+      "terminacion_pro": "Una pregunta primero, pocos números con contexto, filtros visibles. Nunca inventar cifras."
+    },
+    {
+      "slug": "empty-states",
+      "archivo": "empty-states.md",
+      "nombre": "Empty states",
+      "fuentes_recomendadas": [
+        "satoshi"
+      ],
+      "estilos_afines": [
+        "expresivo-minimo",
+        "ilustrado-humano"
+      ],
+      "error_ia": "Astronauta 3D, 'Nothing here yet', el mismo empty para filtro vacío y para falta de permiso.",
+      "terminacion_pro": "Copy concreto por caso (aún no hay / no encontró / sin permiso / falló) y una acción."
+    },
+    {
+      "slug": "toasts",
+      "archivo": "toasts.md",
+      "nombre": "Toasts",
+      "fuentes_recomendadas": [
+        "satoshi"
+      ],
+      "estilos_afines": [
+        "ui-casi-invisible"
+      ],
+      "error_ia": "Bounce desde abajo, 'Success!', toasts para cada clic, errores críticos que desaparecen.",
+      "terminacion_pro": "Aviso transitorio, undo si aplica, cierre visible, respeta prefers-reduced-motion. Los errores de form no van acá."
+    }
+  ]
+}

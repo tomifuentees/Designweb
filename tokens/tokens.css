@@ -1,0 +1,102 @@
+/* frontend-design-kit — escalas decididas
+ * Foto del 19 de noviembre de 2026 (America/Argentina/Salta).
+ * El color semántico no vive acá: pegá una paleta de ../paletas/ (bg, surface, text, accent…).
+ * Prefer-reduced-motion está al final: no lo saques.
+ */
+
+:root {
+  /* Espacio — base 4 px. Usá estos pasos, no gaps inventados. */
+  --space-0: 0rem;
+  --space-1: 0.25rem;   /*  4 px */
+  --space-2: 0.5rem;    /*  8 px */
+  --space-3: 0.75rem;   /* 12 px */
+  --space-4: 1rem;      /* 16 px */
+  --space-5: 1.25rem;   /* 20 px */
+  --space-6: 1.5rem;    /* 24 px */
+  --space-8: 2rem;      /* 32 px */
+  --space-10: 2.5rem;   /* 40 px */
+  --space-12: 3rem;     /* 48 px */
+  --space-16: 4rem;     /* 64 px */
+  --space-20: 5rem;     /* 80 px */
+  --space-24: 6rem;     /* 96 px */
+  --space-32: 8rem;     /* 128 px */
+  --space-section-sm: var(--space-16);
+  --space-section: var(--space-24);
+  --space-section-lg: var(--space-32);
+
+  /* Radio — un default por proyecto, casi siempre md. */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  --radius-default: var(--radius-md);
+
+  /* Elevación — poca. El borde suele alcanzar. */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px oklch(0 0 0 / 0.06);
+  --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.08);
+  --shadow-md: 0 8px 24px -8px oklch(0 0 0 / 0.12);
+  --shadow-lg: 0 24px 48px -12px oklch(0 0 0 / 0.18);
+
+  /* Tipo fluido, viewport 320–1240 px. Cuerpo 16→18. */
+  --text-caption: clamp(0.8125rem, 0.7908rem + 0.1087vw, 0.8750rem);
+  --text-sm:      clamp(0.8750rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --text-body:    clamp(1.0000rem, 0.9565rem + 0.2174vw, 1.1250rem);
+  --text-lg:      clamp(1.1250rem, 1.0815rem + 0.2174vw, 1.2500rem);
+  --text-h4:      clamp(1.2500rem, 1.1630rem + 0.4348vw, 1.5000rem);
+  --text-h3:      clamp(1.5000rem, 1.3696rem + 0.6522vw, 1.8750rem);
+  --text-h2:      clamp(1.8750rem, 1.6576rem + 1.0870vw, 2.5000rem);
+  --text-h1:      clamp(2.5000rem, 2.1522rem + 1.7391vw, 3.5000rem);
+  --text-display: clamp(3.0000rem, 2.4783rem + 2.6087vw, 4.5000rem);
+
+  --leading-display: 1.05;
+  --leading-heading: 1.15;
+  --leading-tight: 1.25;
+  --leading-body: 1.5;
+  --leading-body-lg: 1.6;
+  --leading-mono: 1.4;
+
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-widest: 0.16em;
+
+  /* Motion */
+  --duration-instant: 0ms;
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 280ms;
+  --duration-deliberate: 400ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Breakpoints (iguales a Tailwind v4), por si los necesitás en CSS puro */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 20;
+  --z-sticky: 30;
+  --z-overlay: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+  --z-max: 70;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --duration-deliberate: 0ms;
+  }
+}

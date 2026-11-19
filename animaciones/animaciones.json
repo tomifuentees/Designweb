@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "titulo": "Catálogo de animación frontend — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "total_herramientas": 10,
+    "objetivo": "Elegir la herramienta justa, con easing, duración y prefers-reduced-motion, en vez del fade-in genérico de IA.",
+    "relacionados": [
+      "../estilos/tipografia-kinetica.md",
+      "../estilos/scrollytelling.md",
+      "../componentes/bibliotecas.md"
+    ]
+  },
+  "herramientas": [
+    {
+      "id": "motion",
+      "nombre": "Motion (ex Framer Motion)",
+      "link_oficial": "https://motion.dev/",
+      "repo": "https://github.com/motiondivision/motion",
+      "licencia": "MIT",
+      "estado": "activo",
+      "mejor_para": [
+        "UI React",
+        "layout y gestos",
+        "stagger de listas"
+      ],
+      "evitar_en": [
+        "scrollytelling largo que GSAP o CSS resuelven más barato"
+      ],
+      "notas": "Independiente desde noviembre de 2024. Import vigente: motion/react. Motor de Magic UI, Cult UI y Motion Primitives."
+    },
+    {
+      "id": "gsap",
+      "nombre": "GSAP",
+      "link_oficial": "https://gsap.com/",
+      "repo": null,
+      "licencia": "Standard No Charge (Webflow), 2025-04-30",
+      "estado": "activo-gratis",
+      "mejor_para": [
+        "timelines complejas",
+        "ScrollTrigger",
+        "SplitText",
+        "morph SVG"
+      ],
+      "evitar_en": [
+        "hover de un botón",
+        "construir un builder visual que compita con Webflow"
+      ],
+      "notas": "Todos los plugins de Club son gratis, también comercial, desde el 30 de abril de 2025. SplitText reescrito en 3.13 con mejores práctica de aria. Leé la licencia vigente."
+    },
+    {
+      "id": "lenis",
+      "nombre": "Lenis",
+      "link_oficial": "https://lenis.dev/",
+      "repo": "https://github.com/darkroomengineering/lenis",
+      "licencia": "MIT",
+      "estado": "activo",
+      "mejor_para": [
+        "smooth scroll, integrado con GSAP ticker"
+      ],
+      "evitar_en": [
+        "scroll-jacking",
+        "apilarlo con otro motor de smooth scroll"
+      ],
+      "notas": "lenis.darkroom.engineering redirige a lenis.dev. Darkroom Engineering. Apagar o suavizar con reduced motion."
+    },
+    {
+      "id": "view-transitions",
+      "nombre": "View Transitions API",
+      "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API",
+      "repo": null,
+      "licencia": "plataforma-web",
+      "estado": "same-document-baseline-nuevo-2025-10-14",
+      "mejor_para": [
+        "morph de lista a detalle",
+        "cambio de página o de tema"
+      ],
+      "evitar_en": [
+        "asumir paridad cross-document en todos los browsers sin Can I Use"
+      ],
+      "notas": "Same-document entró a Baseline Newly available el 14 de octubre de 2025 con Firefox 144. Types no venían en Firefox 144."
+    },
+    {
+      "id": "scroll-driven-css",
+      "nombre": "CSS scroll-driven animations",
+      "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations",
+      "repo": null,
+      "licencia": "plataforma-web",
+      "estado": "solido-en-chromium-y-safari-26",
+      "mejor_para": [
+        "reveals, progreso de lectura, carousels nativos"
+      ],
+      "evitar_en": [
+        "motion crítico solo en esta API sin fallback",
+        "animar top o box-shadow"
+      ],
+      "notas": "Verificar Firefox en Can I Use al implementar. Referentes de oficio: @jh3yy, 2025-2026."
+    },
+    {
+      "id": "starting-style",
+      "nombre": "@starting-style",
+      "link_oficial": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@starting-style",
+      "repo": null,
+      "licencia": "plataforma-web",
+      "estado": "amplio-soporte",
+      "mejor_para": [
+        "entrada de dialog, popover y tooltip desde display:none"
+      ],
+      "evitar_en": [
+        "setTimeout + class como primera opción"
+      ],
+      "notas": "Combinar con transition-behavior: allow-discrete."
+    },
+    {
+      "id": "rive",
+      "nombre": "Rive",
+      "link_oficial": "https://rive.app/",
+      "repo": "https://github.com/rive-app/rive-react",
+      "licencia": "MIT (runtime); el editor y el .riv tienen su plan",
+      "estado": "activo",
+      "mejor_para": [
+        "controles interactivos con state machine"
+      ],
+      "evitar_en": [
+        "fondos de toda una landing",
+        "olvidar un estático de fallback"
+      ],
+      "notas": "Leé el plan de Rive antes de un trabajo de cliente."
+    },
+    {
+      "id": "lottie",
+      "nombre": "Lottie / lottie-web",
+      "link_oficial": "https://lottiefiles.com/",
+      "repo": "https://github.com/airbnb/lottie-web",
+      "licencia": "MIT",
+      "estado": "vivo-ritmo-calmo",
+      "mejor_para": [
+        "un loop o reveal puntual"
+      ],
+      "evitar_en": [
+        "UI interactiva (preferí Rive)",
+        "varios Lottie pesados en mobile"
+      ],
+      "notas": "Último push visto de lottie-web: 2025-09-01. Considerá DotLottie y un estático con reduced motion."
+    },
+    {
+      "id": "theatre-js",
+      "nombre": "Theatre.js",
+      "link_oficial": "https://www.theatrejs.com/",
+      "repo": "https://github.com/theatre-js/theatre",
+      "licencia": "Apache-2.0",
+      "estado": "sin-push-desde-2024-08-14",
+      "mejor_para": [
+        "referencia de timeline editable (histórico)"
+      ],
+      "evitar_en": [
+        "elegirlo como motor nuevo sin confirmar actividad del repo"
+      ],
+      "notas": "Sitio 200, repo no archivado, pero sin commits recientes a esta fecha. Alternativas vivas: GSAP o Motion + R3F."
+    },
+    {
+      "id": "auto-animate",
+      "nombre": "Auto-Animate (FormKit)",
+      "link_oficial": "https://auto-animate.formkit.com/",
+      "repo": "https://github.com/formkit/auto-animate",
+      "licencia": "MIT",
+      "estado": "activo",
+      "mejor_para": [
+        "listas que se reordenan con cero config"
+      ],
+      "evitar_en": [
+        "árboles DOM enormes",
+        "morphs de layout que piden Motion"
+      ],
+      "notas": "Push el 7 de noviembre de 2026."
+    }
+  ],
+  "recetas": [
+    {
+      "id": "hover",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "120-180",
+      "easing": "ease-out",
+      "error_ia": "translate-y + shadow-2xl + scale en cada card"
+    },
+    {
+      "id": "press",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "80-120",
+      "easing": "ease-out",
+      "error_ia": "solo hover, o ripple Material en un sitio que no lo es"
+    },
+    {
+      "id": "reveal",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "400-600",
+      "easing": "ease-out",
+      "error_ia": "fade-in de toda la página, o delays largos tipo AOS"
+    },
+    {
+      "id": "stagger",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "40-70 por ítem",
+      "easing": "ease-out",
+      "error_ia": "12 ítems que tardan 2 s en aparecer"
+    },
+    {
+      "id": "number-counter",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "600-900",
+      "easing": "ease-out fuerte",
+      "error_ia": "odometer eterno o count-up en cada render; números inventados"
+    },
+    {
+      "id": "marquee",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "20000-40000 por loop",
+      "easing": "linear",
+      "error_ia": "marquee rápido, sin pausa, logos que no son clientes"
+    },
+    {
+      "id": "text-split",
+      "archivo": "microinteracciones.md",
+      "duracion_ms": "500 + stagger 40ms",
+      "easing": "power2.out",
+      "error_ia": "split por letra en un párrafo, sin aria; preferí GSAP SplitText 3.13+"
+    }
+  ]
+}

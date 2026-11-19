@@ -1,0 +1,82 @@
+/* frontend-design-kit — bloque @theme para Tailwind CSS v4
+ * Docs: https://tailwindcss.com/docs/theme
+ * v4.0: https://tailwindcss.com/blog/tailwindcss-v4 (22 de enero de 2025)
+ *
+ * Pegá este archivo (o su contenido) junto al @import "tailwindcss".
+ * Los colores semánticos se mapean a variables que define la paleta
+ * (../paletas/): --bg, --surface, --text, --accent, etc.
+ * No copies indigo-500 acá.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  /* Base de espacio: p-4 = 1rem, p-6 = 1.5rem, etc. */
+  --spacing: 0.25rem;
+
+  /* Radios → rounded-sm, rounded-md, rounded-lg… */
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Sombras → shadow-xs… (sin glow de acento) */
+  --shadow-xs: 0 1px 2px oklch(0 0 0 / 0.06);
+  --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.08);
+  --shadow-md: 0 8px 24px -8px oklch(0 0 0 / 0.12);
+  --shadow-lg: 0 24px 48px -12px oklch(0 0 0 / 0.18);
+
+  /* Tipo fluido → text-body, text-h1, text-display… */
+  --text-caption: clamp(0.8125rem, 0.7908rem + 0.1087vw, 0.8750rem);
+  --text-sm:      clamp(0.8750rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --text-body:    clamp(1.0000rem, 0.9565rem + 0.2174vw, 1.1250rem);
+  --text-lg:      clamp(1.1250rem, 1.0815rem + 0.2174vw, 1.2500rem);
+  --text-h4:      clamp(1.2500rem, 1.1630rem + 0.4348vw, 1.5000rem);
+  --text-h3:      clamp(1.5000rem, 1.3696rem + 0.6522vw, 1.8750rem);
+  --text-h2:      clamp(1.8750rem, 1.6576rem + 1.0870vw, 2.5000rem);
+  --text-h1:      clamp(2.5000rem, 2.1522rem + 1.7391vw, 3.5000rem);
+  --text-display: clamp(3.0000rem, 2.4783rem + 2.6087vw, 4.5000rem);
+
+  --leading-display: 1.05;
+  --leading-heading: 1.15;
+  --leading-tight: 1.25;
+  --leading-body: 1.5;
+  --leading-body-lg: 1.6;
+  --leading-mono: 1.4;
+
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-widest: 0.16em;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Breakpoints v4 (rem). Un 3xl es opcional, no default. */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+}
+
+/* Colores semánticos: se leen en runtime desde :root / .dark
+ * que define la paleta. @theme inline los convierte en utilidades
+ * (bg-canvas, text-ink, bg-accent…) sin clonar el valor. */
+@theme inline {
+  --color-canvas: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-text: var(--accent-text);
+  --color-success: var(--success);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+}

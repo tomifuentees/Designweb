@@ -1,0 +1,578 @@
+{
+  "meta": {
+    "titulo": "Catálogo de recursos de terminación — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "total": 54,
+    "objetivo": "Íconos, ilustraciones, texturas, gradientes, mockups, placeholders, SVG, beautifiers y generadores de favicon/OG, con licencia y un ‘cuándo’, para que un agente no caiga en Lucide + unDraw violeta + favicon de Vite.",
+    "categorias": [
+      "capturas",
+      "favicon-og",
+      "gradientes",
+      "iconos",
+      "ilustraciones",
+      "imagenes",
+      "mockups",
+      "svg",
+      "texturas"
+    ]
+  },
+  "recursos": [
+    {
+      "id": "phosphor",
+      "nombre": "Phosphor Icons",
+      "categoria": "iconos",
+      "url": "https://phosphoricons.com/",
+      "repo": "https://github.com/phosphor-icons/core",
+      "licencia": "MIT",
+      "cuando": "Set principal de un producto que no quiere el look Lucide/shadcn. Seis pesos, incluido duotone: esa sola variante ya cambia la voz.",
+      "cuando_no": "Si el proyecto ya está lleno de Lucide y no vas a migrar todo el set (no mezcles familias).",
+      "notas": "El reemplazo más citado frente al default de IA. Regular, bold, fill, duotone, light, thin."
+    },
+    {
+      "id": "tabler",
+      "nombre": "Tabler Icons",
+      "categoria": "iconos",
+      "url": "https://tabler.io/icons",
+      "repo": "https://github.com/tabler/tabler-icons",
+      "licencia": "MIT",
+      "cuando": "Dashboards y admin: trazo consistente, muchos íconos de producto (tablas, filtros, settings).",
+      "cuando_no": "Como segundo set en el mismo UI que Phosphor o Lucide.",
+      "notas": "Muy usados en paneles. El sitio oficial es tabler.io/icons."
+    },
+    {
+      "id": "iconoir",
+      "nombre": "Iconoir",
+      "categoria": "iconos",
+      "url": "https://iconoir.com/",
+      "repo": "https://github.com/iconoir-icons/iconoir",
+      "licencia": "MIT",
+      "cuando": "Querés un trazo más ‘diseñado’ que Lucide, sin irte a un pack comercial.",
+      "cuando_no": "Si necesitás una librería enorme tipo 10k íconos: no es esa.",
+      "notas": "Docs propias en iconoir.com. MIT, SVG."
+    },
+    {
+      "id": "heroicons",
+      "nombre": "Heroicons",
+      "categoria": "iconos",
+      "url": "https://heroicons.com/",
+      "repo": "https://github.com/tailwindlabs/heroicons",
+      "licencia": "MIT",
+      "cuando": "Proyectos Tailwind que quieren el set del propio equipo (outline + solid). Más ‘oficial Tailwind’ que Lucide, y menos ubicuo en apps AI-coded.",
+      "cuando_no": "Si ya estás tratando de alejarte de todo el look Tailwind UI.",
+      "notas": "Hecho por Tailwind Labs. No confundir con heroicons.dev, que a veces es un mirror."
+    },
+    {
+      "id": "hugeicons-free",
+      "nombre": "Hugeicons (free)",
+      "categoria": "iconos",
+      "url": "https://hugeicons.com/",
+      "repo": "https://github.com/hugeicons/hugeicons",
+      "licencia": "MIT (solo el pack free)",
+      "cuando": "Necesitás más detalle o más cobertura que Phosphor/Tabler, y te alcanza el set free.",
+      "cuando_no": "No redistribuyas los packs Pro. La licencia paga no es MIT. Confirmá en hugeicons.com/docs/faqs/license-questions qué ícono es free.",
+      "notas": "Free MIT; Pro es de pago por asiento y no se redistribuye como fuente. Citado seguido en listados de 2026."
+    },
+    {
+      "id": "lucide",
+      "nombre": "Lucide",
+      "categoria": "iconos",
+      "url": "https://lucide.dev/",
+      "repo": "https://github.com/lucide-icons/lucide",
+      "licencia": "ISC",
+      "cuando": "Último recurso, o un proyecto que ya está en shadcn y no puede migrar ahora. Es limpio y consistente: por eso se volvió el default.",
+      "cuando_no": "Como primera elección de un kit que busca no parecer AI-coded. Ver anti-patrón lucide-por-default y el post de Om Patel (7 de marzo de 2026).",
+      "notas": "Fork de Feather. Es el set de shadcn/ui. Bueno, y por eso está en todas partes."
+    },
+    {
+      "id": "remix-icon",
+      "nombre": "Remix Icon",
+      "categoria": "iconos",
+      "url": "https://remixicon.com/",
+      "repo": "https://github.com/Remix-Design/RemixIcon",
+      "licencia": "Apache-2.0",
+      "cuando": "Necesitás outline + fill de la misma forma, con una cobertura amplia (editor, media, Commerce).",
+      "cuando_no": "Mezclado con otro set de trazo distinto.",
+      "notas": "Muy completo. Apache-2.0, no MIT: compatible con uso comercial, distintas obligaciones de atribución que MIT."
+    },
+    {
+      "id": "radix-icons",
+      "nombre": "Radix Icons",
+      "categoria": "iconos",
+      "url": "https://www.radix-ui.com/icons",
+      "repo": "https://github.com/radix-ui/icons",
+      "licencia": "MIT",
+      "cuando": "UI de componentes (15–16 px) en un producto que ya usa Radix: flechas, checks, carets, alineados al sistema.",
+      "cuando_no": "Como librería general de features (es un set chico, de interfaz).",
+      "notas": "Pensado para chrome de UI, no para ilustrar ‘features’ de una landing."
+    },
+    {
+      "id": "simple-icons",
+      "nombre": "Simple Icons",
+      "categoria": "iconos",
+      "url": "https://simpleicons.org/",
+      "repo": "https://github.com/simple-icons/simple-icons",
+      "licencia": "CC0-1.0 (las marcas siguen siendo de sus dueños)",
+      "cuando": "Logos de marcas (Stripe, GitHub, etc.) en un footer o un ‘integrates with’.",
+      "cuando_no": "Como set de UI. Respetá las brand guidelines de cada logo: CC0 cubre el SVG del repo, no el uso de la marca.",
+      "notas": "Solo marcas. El uso no está ‘libre de restricciones de trademark’."
+    },
+    {
+      "id": "bootstrap-icons",
+      "nombre": "Bootstrap Icons",
+      "categoria": "iconos",
+      "url": "https://icons.getbootstrap.com/",
+      "repo": "https://github.com/twbs/icons",
+      "licencia": "MIT",
+      "cuando": "Un proyecto que ya vive en Bootstrap y no quiere sumar otra familia.",
+      "cuando_no": "Si estás saliendo del look Bootstrap o si ya hay otro set.",
+      "notas": "Consistentes, reconocibles, y por eso también un poco ‘de plantilla’."
+    },
+    {
+      "id": "material-symbols",
+      "nombre": "Material Symbols",
+      "categoria": "iconos",
+      "url": "https://fonts.google.com/icons",
+      "repo": "https://github.com/google/material-design-icons",
+      "licencia": "Apache-2.0",
+      "cuando": "Producto que ya habla el idioma Material, o cuando necesitás una cobertura enorme con ejes variables (peso, fill, grade).",
+      "cuando_no": "Como voz de una marca que no es Google-like: se reconoce a metros.",
+      "notas": "Variable. No es un atajo para ‘verse serio’."
+    },
+    {
+      "id": "icones",
+      "nombre": "Icônes",
+      "categoria": "iconos",
+      "url": "https://icones.js.org/",
+      "repo": "https://github.com/iconify/iconify",
+      "licencia": "Varía por set (es un agregador)",
+      "cuando": "Explorar familias (Iconify) y comparar trazos antes de elegir un set único.",
+      "cuando_no": "Como excusa para mezclar cinco sets en un mismo UI. Elegí uno y quedate.",
+      "notas": "Iconify/Icônes no es una licencia: cada colección trae la suya. Leé la del set que uses."
+    },
+    {
+      "id": "undraw",
+      "nombre": "unDraw",
+      "categoria": "ilustraciones",
+      "url": "https://undraw.co/",
+      "licencia": "unDraw License (uso libre, con condiciones actuales en el sitio)",
+      "cuando": "Necesitás una escena SVG recortable y le vas a cambiar el acento a la paleta del proyecto.",
+      "cuando_no": "Como héroe de una marca que quiere verse única: el estilo unDraw ya se reconoce. Confirmá la licencia vigente al descargar (cambió a lo largo de los años).",
+      "notas": "Cambiá el color de acento. No dejes el morado por default (otra vez)."
+    },
+    {
+      "id": "open-peeps",
+      "nombre": "Open Peeps",
+      "categoria": "ilustraciones",
+      "url": "https://www.openpeeps.com/",
+      "licencia": "CC-BY-4.0",
+      "cuando": "Personajes ‘recortables’, diversos, con pinta humana y no 3D plástica.",
+      "cuando_no": "Si no podés atribuir (CC-BY). No lo mezcles con renders 3D de otra librería.",
+      "notas": "Buen contrapeso al ‘plastic AI illustration’ de Utsubo. Atribución requerida."
+    },
+    {
+      "id": "humaaans",
+      "nombre": "Humaaans",
+      "categoria": "ilustraciones",
+      "url": "https://www.humaaans.com/",
+      "licencia": "CC-BY-4.0",
+      "cuando": "Personajes con paleta custom, en la línea de Pablo Stanley (también Open Peeps, DrawKit-adjacent).",
+      "cuando_no": "Sin atribución. Como único lenguaje de una marca premium que necesita fotos reales.",
+      "notas": "Mismo universo que Open Peeps: humano, plano, customizable."
+    },
+    {
+      "id": "blush",
+      "nombre": "Blush",
+      "categoria": "ilustraciones",
+      "url": "https://blush.design/",
+      "licencia": "Varía por artista / plan (hay free y paid)",
+      "cuando": "Querés un estilo de un ilustrador concreto, no un pack genérico.",
+      "cuando_no": "Sin leer la licencia de ese pack. No asumas MIT.",
+      "notas": "Marketplace. El valor está en quedarte con un artista, no en mezclar cinco."
+    },
+    {
+      "id": "storyset",
+      "nombre": "Storyset",
+      "categoria": "ilustraciones",
+      "url": "https://storyset.com/",
+      "licencia": "Licencia Freepik / Storyset (revisar términos vigentes; suele pedir atribución en el plan free)",
+      "cuando": "Escenas animables (Lottie/SVG) para un onboarding, si aceptás el look y la atribución.",
+      "cuando_no": "Como héroe de una marca que no quiere parecer Freepik.",
+      "notas": "Útil, reconocible. Leé los términos antes de un uso comercial sin atribución."
+    },
+    {
+      "id": "fotos-reales",
+      "nombre": "Foto real (prioridad)",
+      "categoria": "ilustraciones",
+      "url": "https://unsplash.com/",
+      "licencia": "Depende de la fuente (Unsplash License en Unsplash; no todas las ‘fotos’ de internet son libres)",
+      "cuando": "Casi siempre que el producto vende materia, personas o un lugar. Es el arreglo más citado al tell de la ilustración plástica.",
+      "cuando_no": "Fotos de stock que parecen de bank (las mismas oficinas, las mismas hands-on-laptop). Preferí propias.",
+      "notas": "Ver también pexels e imagenes.md. La mejor ilustración, a menudo, es no ilustrar."
+    },
+    {
+      "id": "fffuel",
+      "nombre": "fffuel",
+      "categoria": "texturas",
+      "url": "https://www.fffuel.co/",
+      "licencia": "Revisar cada generador (la mayoría de los SVG exportados son para uso propio; confirmá en el sitio)",
+      "cuando": "Ruido, grain, papeles, ondas y fondos SVG rápidos, sobre todo para el estilo grano-ruido o riso.",
+      "cuando_no": "Como identidad completa. La textura es un acento, no un tema.",
+      "notas": "Suite de generadores SVG (rrrite, ss//lurry, etc.). Muy usada en web design 2024–2026."
+    },
+    {
+      "id": "haikei",
+      "nombre": "Haikei",
+      "categoria": "texturas",
+      "url": "https://haikei.app/",
+      "licencia": "Revisar los términos de export (hay plan free y paid)",
+      "cuando": "Blobs, waves, stacks y fondos SVG ‘organizados’, no un ruido suelto.",
+      "cuando_no": "Como fondo de un SaaS que quiere UI casi invisible.",
+      "notas": "Generadores: blob, wave, layered peaks, blurry gradients. Export SVG/PNG."
+    },
+    {
+      "id": "grain-css",
+      "nombre": "Grano en CSS (SVG feTurbulence)",
+      "categoria": "texturas",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence",
+      "licencia": "Técnica (el snippet es tuyo)",
+      "cuando": "Un grano liviano, sin request de imagen, para matar el pulido ‘de IA’. Va con el estilo grano-ruido.",
+      "cuando_no": "Un ruido pesado que ensucia el texto o que no se apaga en `prefers-reduced-motion` si está animado.",
+      "notas": "Un SVG de 64–128 px con feTurbulence + `mix-blend-mode: overlay` a 4–8 % suele alcanzar. No hace falta una librería."
+    },
+    {
+      "id": "shadergradient",
+      "nombre": "Shader Gradient",
+      "categoria": "texturas",
+      "url": "https://www.shadergradient.co/",
+      "licencia": "Revisar términos y pack (hay herramientas free y assets pagos)",
+      "cuando": "Un mesh 3D suave como recorte, no como fondo de toda la landing.",
+      "cuando_no": "Detrás de un hero de ‘AI platform’ (se parece demasiado al glow de plantilla si el color es violeta).",
+      "notas": "Útil en espacial-3d o como textura de un tile. Elegí colores de la paleta del proyecto."
+    },
+    {
+      "id": "hero-patterns",
+      "nombre": "Hero Patterns",
+      "categoria": "texturas",
+      "url": "https://heropatterns.com/",
+      "licencia": "CC-BY-4.0 (Steve Schoger)",
+      "cuando": "Un patrón SVG discreto (puntos, líneas, topografía) en un fondo, con el acento de la paleta.",
+      "cuando_no": "Un patrón gritón detrás de un bloque de lectura.",
+      "notas": "Clásico, atribuible, sigue siendo útil. Cambiá el color al token de borde o de acento al 8–12 %."
+    },
+    {
+      "id": "transparent-textures",
+      "nombre": "Transparent Textures",
+      "categoria": "texturas",
+      "url": "https://www.transparenttextures.com/",
+      "licencia": "Casi todos son libres para uso; leé el aviso de cada textura",
+      "cuando": "Papel, ruido o tela en un fondo de editorial o de realismo táctil.",
+      "cuando_no": "Texturas pesadas que pesan en mobile o que rompen el contraste del texto.",
+      "notas": "Tiles PNG. Mantené la opacidad baja."
+    },
+    {
+      "id": "oklch-picker",
+      "nombre": "OKLCH Color Picker (Evil Martians)",
+      "categoria": "gradientes",
+      "url": "https://oklch.com/",
+      "repo": "https://github.com/evilmartians/oklch-picker",
+      "licencia": "Open source (repo)",
+      "cuando": "Elegir paradas de un degradé en OKLCH para que el medio no se ensucie, o chequear gamut.",
+      "cuando_no": "Para improvisar un degradé de identidad índigo-violeta.",
+      "notas": "También está en paletas/herramientas.md. Acá importa como herramienta de mesh/ramps limpias."
+    },
+    {
+      "id": "whatamesh",
+      "nombre": "What a Mesh",
+      "categoria": "gradientes",
+      "url": "https://whatamesh.vercel.app/",
+      "licencia": "Revisar el repo/demo (uso de la obra exportada: confirmá)",
+      "cuando": "Un mesh gradient CSS/JS como fondo de un recorte, con colores de la paleta.",
+      "cuando_no": "Como fondo de todo un SaaS ‘AI’. Evitá paradas índigo/violeta.",
+      "notas": "Demo popular de mesh en el browser. Tratá el export como un recorte, no como marca."
+    },
+    {
+      "id": "mesher",
+      "nombre": "Meshé / CSS Hero Mesher",
+      "categoria": "gradientes",
+      "url": "https://csshero.org/mesher/",
+      "licencia": "Herramienta online; el CSS exportado es tuyo, confirmá términos",
+      "cuando": "Armar un mesh en CSS puro (varios radiales) con los tokens del proyecto.",
+      "cuando_no": "Si te empuja a una paleta saturada tipo sky-indigo-pink.",
+      "notas": "Genera `background-image` con varios `radial-gradient`. Pegá tus hex/OKLCH, no los de la demo."
+    },
+    {
+      "id": "realtime-colors",
+      "nombre": "Realtime Colors",
+      "categoria": "gradientes",
+      "url": "https://www.realtimecolors.com/",
+      "licencia": "Herramienta free; el tema exportado es tuyo",
+      "cuando": "Ver un degradé o una paleta aplicada a un sitio, no a un recuadro.",
+      "cuando_no": "Como único paso: exportá y formalizá roles (ver paletas/).",
+      "notas": "Documentado también en paletas/herramientas.md."
+    },
+    {
+      "id": "coolors-grad",
+      "nombre": "Coolors (gradientes y paletas)",
+      "categoria": "gradientes",
+      "url": "https://coolors.co/",
+      "licencia": "Herramienta; el export es tuyo",
+      "cuando": "Explorar paradas. Después medí contraste.",
+      "cuando_no": "Cinco hex sin roles y un degradé ‘bonito’ como identidad.",
+      "notas": "Ver paletas/herramientas.md."
+    },
+    {
+      "id": "shots-so",
+      "nombre": "shots.so",
+      "categoria": "mockups",
+      "url": "https://shots.so/",
+      "licencia": "Herramienta (el export de tu captura es tuyo; los devices tienen términos del producto)",
+      "cuando": "Poner una captura real del producto en un device, con un fondo de la paleta, no un template de marketing genérico.",
+      "cuando_no": "Para inventar una UI falsa dentro de un MacBook stock (ver anti-patrón mockup-de-notebook-generico).",
+      "notas": "También sirve como ‘screenshot beautifier’. Usalo con una captura verdadera."
+    },
+    {
+      "id": "mockuphone",
+      "nombre": "MockuPhone",
+      "categoria": "mockups",
+      "url": "https://mockuphone.com/",
+      "licencia": "Revisar términos de cada device (muchos son free con atribución o uso personal/comercial según el pack)",
+      "cuando": "Device frames clásicos, rápidos, sin una cuenta.",
+      "cuando_no": "Si el pack específico no permite uso comercial y el proyecto lo es.",
+      "notas": "Veterano. Confirmá la licencia del frame que bajes."
+    },
+    {
+      "id": "deviceframes",
+      "nombre": "Device Frames",
+      "categoria": "mockups",
+      "url": "https://deviceframes.com/",
+      "licencia": "Revisar el plan (hay free y paid)",
+      "cuando": "Frames de teléfonos y laptops más actualizados que un pack de 2019.",
+      "cuando_no": "Si te empuja a una escena de ‘lifestyle’ genérica.",
+      "notas": "Útil cuando shots.so no cubre el device."
+    },
+    {
+      "id": "mockuuups",
+      "nombre": "Mockuuups",
+      "categoria": "mockups",
+      "url": "https://www.mockuuups.studio/",
+      "licencia": "Comercial / suscripción (no asumas free)",
+      "cuando": "Escenas más producidas, si el presupuesto lo permite.",
+      "cuando_no": "Como default de un proyecto chico. El stock de escenas también se reconoce.",
+      "notas": "Paid. No es necesario para un recorte honesto del producto."
+    },
+    {
+      "id": "rotato",
+      "nombre": "Rotato",
+      "categoria": "mockups",
+      "url": "https://rotato.app/",
+      "licencia": "App de pago (macOS)",
+      "cuando": "Mocks 3D de device con tu captura, con control de cámara, para un recorte de producto.",
+      "cuando_no": "Si no hay presupuesto o si una PNG ortográfica alcanza.",
+      "notas": "Muy usado en landings de apps. El valor está en tu pantalla, no en el chamfer del iPhone."
+    },
+    {
+      "id": "unsplash",
+      "nombre": "Unsplash",
+      "categoria": "imagenes",
+      "url": "https://unsplash.com/",
+      "licencia": "Unsplash License (uso amplio, con límites: no vender la foto en sí, no usar para entrenar ciertos modelos según términos vigentes)",
+      "cuando": "Foto de apoyo cuando no hay foto propia, buscando algo específico, no ‘office laptop’. Leé la licencia vigente.",
+      "cuando_no": "Las mismas 20 fotos de coworking que aparecen en cada plantilla.",
+      "notas": "Preferí fotógrafos y búsquedas raras. Atribución no es obligatoria pero es de oficio."
+    },
+    {
+      "id": "pexels",
+      "nombre": "Pexels",
+      "categoria": "imagenes",
+      "url": "https://www.pexels.com/",
+      "licencia": "Pexels License (revisar términos vigentes)",
+      "cuando": "Igual que Unsplash: stock libre, con criterio.",
+      "cuando_no": "Retratos que parecen generados o la misma ‘happy team’.",
+      "notas": "Cruzá la búsqueda y mirá el encuadre: si parece plantilla, es plantilla."
+    },
+    {
+      "id": "lorem-picsum",
+      "nombre": "Lorem Picsum",
+      "categoria": "imagenes",
+      "url": "https://picsum.photos/",
+      "licencia": "Las fotos salen de Unsplash; la API es un placeholder",
+      "cuando": "Placeholders en desarrollo, con tamaño real, no un gray box eterno.",
+      "cuando_no": "En producción, como si fueran la foto de la marca.",
+      "notas": "`https://picsum.photos/seed/maat/1600/900` da una imagen estable por seed."
+    },
+    {
+      "id": "placehold",
+      "nombre": "placehold.co",
+      "categoria": "imagenes",
+      "url": "https://placehold.co/",
+      "licencia": "Servicio de placeholder (no es un banco de fotos)",
+      "cuando": "Un rectángulo con las medidas y el color del token, para armar layout.",
+      "cuando_no": "Como imagen final.",
+      "notas": "Reemplazo moderno de placeholder.com. Podés pasar el hex del fondo."
+    },
+    {
+      "id": "dummyimage",
+      "nombre": "Dummy Image",
+      "categoria": "imagenes",
+      "url": "https://dummyimage.com/",
+      "licencia": "Servicio de placeholder",
+      "cuando": "Igual que placehold.co, si preferís este host.",
+      "cuando_no": "En producción.",
+      "notas": "Veterano, sigue vivo."
+    },
+    {
+      "id": "svgomg",
+      "nombre": "SVGOMG",
+      "categoria": "svg",
+      "url": "https://jakearchibald.github.io/svgomg/",
+      "repo": "https://github.com/jakearchibald/svgomg",
+      "licencia": "MIT (la herramienta); el SVG es tuyo",
+      "cuando": "Antes de commitear cualquier SVG: lo achica y limpia basura de Figma/Illustrator.",
+      "cuando_no": "Con ‘precision’ tan baja que deforma un logo.",
+      "notas": "La herramienta de limpieza SVG más citada. Usala siempre."
+    },
+    {
+      "id": "boxy-svg",
+      "nombre": "Boxy SVG",
+      "categoria": "svg",
+      "url": "https://boxy-svg.com/",
+      "licencia": "App (hay plan pago); tus archivos son tuyos",
+      "cuando": "Editar un SVG con un editor pensado para SVG, no como un AI de vectores.",
+      "cuando_no": "Si Figma ya cubre el flujo y no querés otra app.",
+      "notas": "Útil para íconos y ajustes finos de path."
+    },
+    {
+      "id": "getwaves",
+      "nombre": "Get Waves",
+      "categoria": "svg",
+      "url": "https://getwaves.io/",
+      "licencia": "Herramienta; el SVG exportado es tuyo (confirmá en el sitio)",
+      "cuando": "Un divisor o un fondo de ola, con los colores de la paleta, no un hero entero de waves violeta.",
+      "cuando_no": "Como rasgo de identidad de un SaaS 2026 (ya se usó mucho).",
+      "notas": "Generador simple. Recoloré al token."
+    },
+    {
+      "id": "blobmaker",
+      "nombre": "Blobmaker",
+      "categoria": "svg",
+      "url": "https://www.blobmaker.app/",
+      "licencia": "Herramienta; confirmá términos del export",
+      "cuando": "Una forma orgánica puntual (un recorte, una máscara), no un fondo de blobs de plantilla.",
+      "cuando_no": "Blobs de colores pastel detrás de un hero centrado (es un cliché previo a la IA, y la IA lo repite).",
+      "notas": "Un blob, bien usado, es una rareza. Cinco blobs, un template."
+    },
+    {
+      "id": "svg-repo",
+      "nombre": "SVG Repo",
+      "categoria": "svg",
+      "url": "https://www.svgrepo.com/",
+      "licencia": "VARÍA POR ARCHIVO (CC, MIT, propietaria). No asumas que es libre.",
+      "cuando": "Buscar un ícono o una ilustración suelta, leyendo la licencia de esa pieza.",
+      "cuando_no": "Descargar un pack entero ‘porque está en SVG Repo’. Es la forma más rápida de meter un archivo con licencia incompatible.",
+      "notas": "Advertencia fuerte: cada asset trae su licencia. Leéla."
+    },
+    {
+      "id": "shots-beauty",
+      "nombre": "shots.so (beautify)",
+      "categoria": "capturas",
+      "url": "https://shots.so/",
+      "licencia": "Herramienta (tu captura es tuya)",
+      "cuando": "Una captura de producto o de un componente, con fondo de la paleta, sombra o grano contenidos, para un README, un OG o una doc.",
+      "cuando_no": "Para disfrazar una UI genérica de ‘beauty shot’.",
+      "notas": "El mismo producto que en mockups. Acá, el valor es el frame y el fondo, no un device."
+    },
+    {
+      "id": "ray-so",
+      "nombre": "ray.so",
+      "categoria": "capturas",
+      "url": "https://ray.so/",
+      "licencia": "Herramienta de Vercel (tu snippet es tuyo)",
+      "cuando": "Una captura de código para un artículo o un OG, con un tema que no sea el default violeta si podés evitarlo.",
+      "cuando_no": "Como única imagen de una landing de producto (no es el producto).",
+      "notas": "Muy usado en Twitter/X de devs. Cambiá el padding y el tema."
+    },
+    {
+      "id": "carbon",
+      "nombre": "Carbon",
+      "categoria": "capturas",
+      "url": "https://carbon.now.sh/",
+      "licencia": "MIT (open source)",
+      "cuando": "Capturas de código autoalojables o con más control que ray.so.",
+      "cuando_no": "El tema default de Carbon también se reconoce; ajustalo.",
+      "notas": "Repo carbon-app/carbon. Clásico, sigue vigente."
+    },
+    {
+      "id": "snappify",
+      "nombre": "snappify",
+      "categoria": "capturas",
+      "url": "https://snappify.com/",
+      "licencia": "Freemium / pago según plan",
+      "cuando": "Anotaciones, several frames, presentaciones de código o de UI más producidas.",
+      "cuando_no": "Si Carbon o shots alcanzan. No hace falta un plan pago para un README.",
+      "notas": "Tiene templates de mesh: no caigas en el violeta de la plantilla."
+    },
+    {
+      "id": "screenzy",
+      "nombre": "Screenzy",
+      "categoria": "capturas",
+      "url": "https://screenzy.io/",
+      "licencia": "Herramienta; confirmá términos",
+      "cuando": "Beautify rápido de una captura, con fondos y devices simples.",
+      "cuando_no": "Si el resultado se ve idéntico a todas las otras Screenzy del timeline.",
+      "notas": "Alternativa ligera a shots.so."
+    },
+    {
+      "id": "realfavicongenerator",
+      "nombre": "RealFaviconGenerator",
+      "categoria": "favicon-og",
+      "url": "https://realfavicongenerator.net/",
+      "licencia": "Herramienta (tus assets son tuyos)",
+      "cuando": "Generar el set completo (ICO, apple-touch, android, safari mask, manifest) a partir de un SVG o PNG del mark.",
+      "cuando_no": "Para ‘inventar’ un isotipo. El input tiene que ser la marca, no un ícono genérico de Lucide.",
+      "notas": "Sigue siendo la referencia. Un favicon de Vite/Next es un tell (Utsubo / Drop The Hassle)."
+    },
+    {
+      "id": "favicon-io",
+      "nombre": "favicon.io",
+      "categoria": "favicon-og",
+      "url": "https://favicon.io/",
+      "licencia": "Herramienta",
+      "cuando": "Un favicon de texto o un Emoji, para un draft interno, no para una marca seria.",
+      "cuando_no": "Como isotipo final de un producto (se reconoce, y el emoji como mark es otro tell si se abusa).",
+      "notas": "Útil en un spike. Después reemplazalo."
+    },
+    {
+      "id": "opengraph-xyz",
+      "nombre": "opengraph.xyz",
+      "categoria": "favicon-og",
+      "url": "https://www.opengraph.xyz/",
+      "licencia": "Herramienta de preview",
+      "cuando": "Inspeccionar cómo se ve el OG de una URL (Twitter/X, Slack, iMessage, LinkedIn) antes de compartir.",
+      "cuando_no": "Como generador de la imagen: es un previewer.",
+      "notas": "Obligatorio pasarlo antes de anunciar un lanzamiento."
+    },
+    {
+      "id": "vercel-og",
+      "nombre": "@vercel/og + Satori",
+      "categoria": "favicon-og",
+      "url": "https://vercel.com/docs/functions/og-image-generation",
+      "repo": "https://github.com/vercel/satori",
+      "licencia": "El runtime de Vercel + Satori (licencia del paquete: ver repo)",
+      "cuando": "OG dinámicos (título + autor + tema de la paleta) en un sitio Next/Vercel, sin un PNG estático por página.",
+      "cuando_no": "Si no estás en ese ecosistema y un PNG bien hecho alcanza.",
+      "notas": "Documentación oficial de Vercel. Diseñá la tarjeta con los tokens del kit, no con el ejemplo violeta."
+    },
+    {
+      "id": "og-playground",
+      "nombre": "OG Image Playground",
+      "categoria": "favicon-og",
+      "url": "https://og-playground.vercel.app/",
+      "licencia": "Demo (Satori)",
+      "cuando": "Probar markup de Satori en el browser antes de integrarlo.",
+      "cuando_no": "Como host de producción de tus OG.",
+      "notas": "Playground oficial-adyacente del ecosistema Satori."
+    }
+  ]
+}
