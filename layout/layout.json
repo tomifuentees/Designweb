@@ -1,0 +1,850 @@
+{
+  "$schema_note": "Machine-readable del kit Designweb, carpeta layout/. Foto 2026-11-19. Valores de espacio y breakpoints vienen de ../tokens/; los marcados propuesta=true aún no están en tokens.",
+  "version": "2026-11-19",
+  "fuentes": "fuentes-investigacion.md",
+  "grillas": {
+    "columnas_por_breakpoint": [
+      {
+        "desde": "0",
+        "columnas": 4,
+        "gutter": "--space-4",
+        "margen": "--space-4"
+      },
+      {
+        "desde": "--breakpoint-md (48rem)",
+        "columnas": 8,
+        "gutter": "--space-6",
+        "margen": "--space-6"
+      },
+      {
+        "desde": "--breakpoint-lg (64rem)",
+        "columnas": 12,
+        "gutter": "--space-6",
+        "margen": "--space-6"
+      }
+    ],
+    "referencias": {
+      "material3_window_classes": [
+        {
+          "clase": "compact",
+          "dp": "<600",
+          "panes": 1,
+          "margen_dp": 16
+        },
+        {
+          "clase": "medium",
+          "dp": "600-839",
+          "panes": 1,
+          "margen_dp": 24
+        },
+        {
+          "clase": "expanded",
+          "dp": "840-1199",
+          "panes": 2,
+          "margen_dp": 24
+        },
+        {
+          "clase": "large",
+          "dp": "1200-1599",
+          "panes": 2,
+          "margen_dp": 24
+        },
+        {
+          "clase": "extra-large",
+          "dp": ">=1600",
+          "panes": "2-3",
+          "margen_dp": 24
+        }
+      ],
+      "carbon_2x": [
+        {
+          "bp": "sm",
+          "px": 320,
+          "columnas": 4
+        },
+        {
+          "bp": "md",
+          "px": 672,
+          "columnas": 8
+        },
+        {
+          "bp": "lg",
+          "px": 1056,
+          "columnas": 16
+        },
+        {
+          "bp": "xlg",
+          "px": 1312,
+          "columnas": 16
+        },
+        {
+          "bp": "max",
+          "px": 1584,
+          "columnas": 16
+        }
+      ]
+    },
+    "tipos": [
+      {
+        "slug": "una-columna",
+        "usar": "artículo, docs, legal",
+        "evitar": "catálogo, dashboard"
+      },
+      {
+        "slug": "columnas-12-8-4",
+        "usar": "landing, marketing",
+        "evitar": "repartir siempre span 4 + 4 + 4"
+      },
+      {
+        "slug": "modular",
+        "usar": "catálogo, bento, galería",
+        "evitar": "contenido de altura impredecible"
+      },
+      {
+        "slug": "asimetrica",
+        "usar": "editorial, portfolio, hero",
+        "evitar": "formularios largos",
+        "splits": [
+          "7/5",
+          "8/4",
+          "3/9",
+          "2/10"
+        ]
+      },
+      {
+        "slug": "baseline",
+        "usar": "lectura larga",
+        "evitar": "UI densa con íconos e inputs",
+        "css": "margin-block-start: 1rlh"
+      },
+      {
+        "slug": "compuesta",
+        "usar": "revista, dirección de arte",
+        "evitar": "sin alguien que la sostenga"
+      }
+    ],
+    "pagina_con_lineas_con_nombre": "grid-template-columns: [full-start] minmax(var(--gutter), 1fr) [breakout-start] minmax(0, var(--breakout)) [content-start] var(--content) [content-end] minmax(0, var(--breakout)) [breakout-end] minmax(var(--gutter), 1fr) [full-end]",
+    "auto_grid": "repeat(auto-fit, minmax(min(16rem, 100%), 1fr))",
+    "reglas": [
+      "minmax(0, 1fr) en lugar de 1fr",
+      "pocos spans repetidos",
+      "una ruptura de grilla por composición",
+      "el DOM manda el orden (WCAG 1.3.2 / 2.4.3)"
+    ]
+  },
+  "soporte_css": {
+    "fuente": "web-features 3.46.0",
+    "features": [
+      {
+        "id": "subgrid",
+        "baseline": "amplio",
+        "desde": "2026-03-15"
+      },
+      {
+        "id": "container-queries",
+        "baseline": "amplio",
+        "desde": "2025-08-14"
+      },
+      {
+        "id": "has",
+        "baseline": "amplio",
+        "desde": "2026-06-19"
+      },
+      {
+        "id": "rlh",
+        "baseline": "amplio",
+        "desde": "2026-05-21"
+      },
+      {
+        "id": "aspect-ratio",
+        "baseline": "amplio",
+        "desde": "2024-03-20"
+      },
+      {
+        "id": "viewport-unit-variants",
+        "baseline": "amplio",
+        "desde": "2025-06-05",
+        "nota": "svh/dvh/lvh"
+      },
+      {
+        "id": "container-style-queries",
+        "baseline": "nuevo",
+        "desde": "2026-05-19"
+      },
+      {
+        "id": "text-wrap-balance",
+        "baseline": "nuevo",
+        "desde": "2024-05-13"
+      },
+      {
+        "id": "round-mod-rem",
+        "baseline": "nuevo",
+        "desde": "2024-05-17"
+      },
+      {
+        "id": "text-wrap-pretty",
+        "baseline": "no"
+      },
+      {
+        "id": "text-box",
+        "baseline": "no"
+      },
+      {
+        "id": "grid-lanes",
+        "baseline": "no",
+        "nota": "solo Safari 26.4+; usar display:grid de fallback"
+      },
+      {
+        "id": "anchor-positioning",
+        "baseline": "no"
+      }
+    ]
+  },
+  "proporciones": {
+    "escalas_modulares": [
+      {
+        "razon": 1.125,
+        "nombre": "segunda mayor",
+        "uso": "UI densa"
+      },
+      {
+        "razon": 1.2,
+        "nombre": "tercera menor",
+        "uso": "producto, docs"
+      },
+      {
+        "razon": 1.25,
+        "nombre": "tercera mayor",
+        "uso": "marketing equilibrado"
+      },
+      {
+        "razon": 1.333,
+        "nombre": "cuarta justa",
+        "uso": "landing con titulares fuertes"
+      },
+      {
+        "razon": 1.5,
+        "nombre": "quinta justa",
+        "uso": "editorial"
+      },
+      {
+        "razon": 1.618,
+        "nombre": "áurea",
+        "uso": "pocos pasos; crece rápido"
+      }
+    ],
+    "escala_tipo_kit": "fluida (Utopia, 320-1240 px), ajustada a mano; no reemplazar. Ver ../tokens/escalas.md",
+    "proporcion_aurea": {
+      "evidencia": "débil; preferencia sensible al método y al rango de estímulos",
+      "uso": "una razón más, no argumento"
+    },
+    "medida": {
+      "min_caracteres": 45,
+      "ideal_caracteres": 66,
+      "max_caracteres": 75,
+      "max_wcag_aaa": 80,
+      "css_una_familia": "max-inline-size: min(65ch, 100%)",
+      "css_familias_mixtas": "max-inline-size: 34rem",
+      "fuentes": [
+        "Bringhurst",
+        "Baymard 2022",
+        "WCAG 2.2 1.4.8"
+      ]
+    },
+    "ratios_imagen": [
+      {
+        "ratio": "16 / 9",
+        "uso": "video, capturas apaisadas"
+      },
+      {
+        "ratio": "3 / 2",
+        "uso": "fotografía"
+      },
+      {
+        "ratio": "4 / 3",
+        "uso": "capturas de app"
+      },
+      {
+        "ratio": "1 / 1",
+        "uso": "avatares, producto"
+      },
+      {
+        "ratio": "4 / 5",
+        "uso": "retrato, editorial"
+      },
+      {
+        "ratio": "1200 / 630",
+        "uso": "imagen OG (1.91:1)"
+      }
+    ],
+    "splits": [
+      {
+        "split": "6/6",
+        "sensacion": "estable, comparativo"
+      },
+      {
+        "split": "7/5",
+        "sensacion": "protagonista + apoyo"
+      },
+      {
+        "split": "8/4",
+        "sensacion": "contenido + aside"
+      },
+      {
+        "split": "3/9",
+        "sensacion": "navegación + trabajo"
+      },
+      {
+        "split": "3/5-2/5",
+        "sensacion": "hero editorial (Schoger)"
+      }
+    ]
+  },
+  "contenedores": {
+    "tailwind_v4_container_rem": {
+      "3xs": 16,
+      "2xs": 18,
+      "xs": 20,
+      "sm": 24,
+      "md": 28,
+      "lg": 32,
+      "xl": 36,
+      "2xl": 42,
+      "3xl": 48,
+      "4xl": 56,
+      "5xl": 64,
+      "6xl": 72,
+      "7xl": 80
+    },
+    "roles": [
+      {
+        "var": "--layout-content",
+        "valor": "42rem",
+        "tailwind": "max-w-2xl",
+        "propuesta": true
+      },
+      {
+        "var": "--layout-wide",
+        "valor": "72rem",
+        "tailwind": "max-w-6xl",
+        "propuesta": true
+      },
+      {
+        "var": "--layout-full",
+        "valor": "100%",
+        "tailwind": "w-full",
+        "propuesta": true
+      },
+      {
+        "var": "--measure",
+        "valor": "65ch",
+        "tailwind": "max-w-prose",
+        "propuesta": true
+      },
+      {
+        "var": "--measure-mixed",
+        "valor": "34rem",
+        "tailwind": "max-w-[34rem]",
+        "propuesta": true
+      }
+    ],
+    "regla": "tres anchos por proyecto"
+  },
+  "espaciado": {
+    "base": "4px (--spacing: 0.25rem)",
+    "pasos_layout": [
+      "--space-2",
+      "--space-4",
+      "--space-6",
+      "--space-8",
+      "--space-12",
+      "--space-16",
+      "--space-24"
+    ],
+    "pasos_componente": [
+      "--space-1",
+      "--space-3",
+      "--space-5"
+    ],
+    "regla_proximidad": "espacio interno < espacio externo",
+    "escalera": [
+      {
+        "relacion": "ícono-label",
+        "token": "--space-2"
+      },
+      {
+        "relacion": "título-párrafo / label-input",
+        "token": "--space-2 a --space-3"
+      },
+      {
+        "relacion": "ítem-ítem",
+        "token": "--space-4"
+      },
+      {
+        "relacion": "bloque-bloque en sección",
+        "token": "--space-8 a --space-12"
+      },
+      {
+        "relacion": "sección-sección",
+        "token": "--space-section-sm | --space-section | --space-section-lg"
+      }
+    ],
+    "secciones": {
+      "min_valores_distintos_por_pagina": 2,
+      "movil": "~60-70% del desktop (py-16 md:py-24)"
+    },
+    "fluido_propuesto": [
+      {
+        "var": "--space-fluid-gutter",
+        "valor": "clamp(1rem, 0.6522rem + 1.7391vw, 2rem)",
+        "px": "16-32",
+        "propuesta": true
+      },
+      {
+        "var": "--space-fluid-block",
+        "valor": "clamp(2rem, 1.3043rem + 3.4783vw, 4rem)",
+        "px": "32-64",
+        "propuesta": true
+      },
+      {
+        "var": "--space-fluid-section",
+        "valor": "clamp(4rem, 2.6087rem + 6.9565vw, 8rem)",
+        "px": "64-128",
+        "propuesta": true
+      }
+    ],
+    "densidad": [
+      {
+        "nivel": "compacto",
+        "uso": "tablas, dashboards",
+        "interior": "--space-2/--space-3",
+        "gap": "--space-2 a --space-3",
+        "alto_control_px": 32
+      },
+      {
+        "nivel": "comodo",
+        "uso": "SaaS, apps (default)",
+        "interior": "--space-3/--space-4",
+        "gap": "--space-4",
+        "alto_control_px": 40
+      },
+      {
+        "nivel": "aireado",
+        "uso": "marketing, editorial",
+        "interior": "--space-6+",
+        "gap": "--space-6 a --space-8",
+        "alto_control_px": "44-48"
+      }
+    ],
+    "objetivo_tactil_min_px": 24
+  },
+  "jerarquia": {
+    "max_tamanos_protagonistas": 3,
+    "max_variaciones_contraste": 3,
+    "focos_por_vista": 1,
+    "test": "desenfocar 5-10 px",
+    "actitudes_escala": [
+      "contraste-alto (editorial, marca)",
+      "contraste-bajo (producto, docs)"
+    ],
+    "patrones_lectura": {
+      "F": "aparece con texto sin estructura; es negativo",
+      "layer-cake": "el más eficiente; headings con contenido",
+      "Z": "heurística de composición, no hallazgo de eyetracking"
+    }
+  },
+  "primitivos": [
+    {
+      "slug": "stack",
+      "que": "flujo vertical con espacio uniforme",
+      "css": ".stack{display:flex;flex-direction:column}.stack>*+*{margin-block-start:var(--stack-space,var(--space-4))}",
+      "tailwind": "flex flex-col gap-4"
+    },
+    {
+      "slug": "box",
+      "que": "caja con padding y borde",
+      "css": ".box{padding:var(--space-6);border:1px solid var(--border);outline:1px solid transparent;outline-offset:-1px}",
+      "tailwind": "p-6 border border-line"
+    },
+    {
+      "slug": "center",
+      "que": "columna centrada con medida",
+      "css": ".center{box-sizing:content-box;max-inline-size:var(--measure,65ch);margin-inline:auto;padding-inline:var(--space-4)}",
+      "tailwind": "mx-auto max-w-prose px-4"
+    },
+    {
+      "slug": "cluster",
+      "que": "grupo que envuelve",
+      "css": ".cluster{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center}",
+      "tailwind": "flex flex-wrap items-center gap-3"
+    },
+    {
+      "slug": "sidebar",
+      "que": "aside fijo + contenido que crece, sin breakpoint",
+      "css": ".with-sidebar{display:flex;flex-wrap:wrap;gap:var(--space-6)}.with-sidebar>:first-child{flex-basis:16rem;flex-grow:1}.with-sidebar>:last-child{flex-basis:0;flex-grow:999;min-inline-size:50%}"
+    },
+    {
+      "slug": "switcher",
+      "que": "fila o columna según umbral",
+      "css": ".switcher{display:flex;flex-wrap:wrap;gap:var(--space-4)}.switcher>*{flex-grow:1;flex-basis:calc((40rem - 100%) * 999)}"
+    },
+    {
+      "slug": "cover",
+      "que": "alto mínimo con un elemento centrado",
+      "css": ".cover{display:flex;flex-direction:column;min-block-size:100svh}.cover>.principal{margin-block:auto}"
+    },
+    {
+      "slug": "grid",
+      "que": "grilla automática sin desborde",
+      "css": "display:grid;grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr))",
+      "tailwind": "grid grid-cols-[repeat(auto-fit,minmax(min(16rem,100%),1fr))]"
+    },
+    {
+      "slug": "frame",
+      "que": "recorte con ratio",
+      "css": ".frame{aspect-ratio:var(--ratio,16/9);overflow:hidden}.frame>img{inline-size:100%;block-size:100%;object-fit:cover}",
+      "tailwind": "aspect-video overflow-hidden"
+    },
+    {
+      "slug": "reel",
+      "que": "carrusel horizontal nativo",
+      "css": ".reel{display:flex;gap:var(--space-4);overflow-x:auto;scroll-snap-type:x mandatory}.reel>*{flex:0 0 min(80%,20rem);scroll-snap-align:start}"
+    },
+    {
+      "slug": "imposter",
+      "que": "superpuesto centrado (modal, overlay)",
+      "css": "position:absolute;inset-block-start:50%;inset-inline-start:50%;translate:-50% -50%"
+    },
+    {
+      "slug": "container",
+      "que": "define un contenedor para @container",
+      "css": "container-type:inline-size",
+      "tailwind": "@container"
+    }
+  ],
+  "patrones": [
+    {
+      "id": 1,
+      "slug": "hero-split-asimetrico",
+      "tipo": "hero",
+      "proporcion": "7/5 o 3/5-2/5, alineado arriba",
+      "tailwind": "grid lg:grid-cols-12 items-start; col-span-7 / col-span-5",
+      "error_ia": "todo centrado, botones gemelos",
+      "ancla": "patrones-layout.md#1-hero-split-asimétrico-75",
+      "proyectos": [
+        "saas",
+        "devtool",
+        "comercio"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "hero-editorial",
+      "tipo": "hero",
+      "proporcion": "titular 12/12 + fila 3/3/·/4",
+      "error_ia": "titular corto centrado en max-w-3xl",
+      "ancla": "patrones-layout.md#2-hero-editorial-titular-a-ancho-completo",
+      "proyectos": [
+        "editorial",
+        "portfolio",
+        "marca"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "hero-producto-a-sangre",
+      "tipo": "hero",
+      "proporcion": "texto en content; captura content-start / full-end",
+      "error_ia": "mockup de MacBook flotando",
+      "ancla": "patrones-layout.md#3-hero-con-producto-que-sale-del-contenedor",
+      "proyectos": [
+        "saas",
+        "devtool",
+        "portfolio"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "hero-cifra",
+      "tipo": "hero",
+      "proporcion": "cifra display, titular h3",
+      "error_ia": "fila de 4 stats iguales",
+      "ancla": "patrones-layout.md#4-hero-de-prueba-una-cifra-protagonista",
+      "proyectos": [
+        "comercio",
+        "saas"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "bento-jerarquico",
+      "tipo": "seccion",
+      "proporcion": "celda hero 2x2, resto 1x1 y 2x1; 6-9 celdas",
+      "error_ia": "3x2 de celdas iguales",
+      "ancla": "patrones-layout.md#5-bento-con-jerarquía",
+      "proyectos": [
+        "saas",
+        "devtool"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "filas-feature-variadas",
+      "tipo": "seccion",
+      "proporcion": "5/7; romper a la tercera fila",
+      "error_ia": "zigzag 6/6 x 4",
+      "ancla": "patrones-layout.md#6-filas-de-feature-split-alternado-con-variación",
+      "proyectos": [
+        "saas",
+        "comercio"
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "lista-visual-sticky",
+      "tipo": "seccion",
+      "proporcion": "4/8 o 5/7, visual sticky",
+      "error_ia": "4 cards con ícono",
+      "ancla": "patrones-layout.md#7-lista-de-features--visual-pegajoso-sticky",
+      "proyectos": [
+        "saas",
+        "devtool"
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "heading-lateral",
+      "tipo": "seccion",
+      "proporcion": "4/8 o 3/9, heading sticky",
+      "error_ia": "heading centrado en cada sección",
+      "ancla": "patrones-layout.md#8-encabezado-de-sección-lateral-48",
+      "proyectos": [
+        "saas",
+        "editorial",
+        "docs"
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "articulo-breakout",
+      "tipo": "contenido",
+      "proporcion": "content + breakout + full; párrafos 65ch",
+      "error_ia": "prose max-w-none",
+      "ancla": "patrones-layout.md#9-artículo-con-breakout-y-notas-al-margen",
+      "proyectos": [
+        "editorial",
+        "blog"
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "docs-tres-columnas",
+      "tipo": "contenido",
+      "proporcion": "16rem / minmax(0,1fr) / 14rem",
+      "error_ia": "contenido sin medida",
+      "ancla": "patrones-layout.md#10-docs-de-tres-columnas",
+      "proyectos": [
+        "docs",
+        "devtool"
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "galeria-masonry",
+      "tipo": "contenido",
+      "proporcion": "2-4 columnas, ratios mezclados",
+      "error_ia": "3x3 de cuadrados con hover zoom",
+      "ancla": "patrones-layout.md#11-galería--portfolio-masonry-progresivo",
+      "proyectos": [
+        "portfolio",
+        "comercio"
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "app-shell",
+      "tipo": "app",
+      "proporcion": "sidebar 16rem, topbar 56-64px",
+      "error_ia": "Welcome back + 14 íconos iguales",
+      "ancla": "patrones-layout.md#12-app-shell-con-sidebar",
+      "proyectos": [
+        "app",
+        "dashboard"
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "dashboard",
+      "tipo": "app",
+      "proporcion": "KPIs en cluster; 8/4; tabla 12",
+      "error_ia": "4 KPIs + 2 gráficos 6/6 en cards",
+      "ancla": "patrones-layout.md#13-dashboard",
+      "proyectos": [
+        "dashboard"
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "form-etiqueta-lateral",
+      "tipo": "app",
+      "proporcion": "4/8 con subgrid",
+      "error_ia": "formulario centrado de una columna para settings",
+      "ancla": "patrones-layout.md#14-formulario-de-configuración-etiqueta-lateral",
+      "proyectos": [
+        "app"
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "pricing",
+      "tipo": "conversion",
+      "proporcion": "auto-fit + subgrid; destacado por contraste",
+      "error_ia": "plan del medio con scale-105 y badge",
+      "ancla": "patrones-layout.md#15-pricing",
+      "proyectos": [
+        "saas",
+        "devtool"
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "testimonio-principal",
+      "tipo": "conversion",
+      "proporcion": "8/4",
+      "error_ia": "carrusel de 3 cards con estrellas",
+      "ancla": "patrones-layout.md#16-testimonios-una-cita-grande--secundarias",
+      "proyectos": [
+        "saas",
+        "comercio",
+        "marca"
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "faq-lateral",
+      "tipo": "conversion",
+      "proporcion": "4/8, medida <=65ch",
+      "error_ia": "acordeón centrado",
+      "ancla": "patrones-layout.md#17-faq-con-heading-lateral",
+      "proyectos": [
+        "saas",
+        "comercio"
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "cta-footer",
+      "tipo": "conversion",
+      "proporcion": "CTA centrado único; footer 2fr repeat(3,1fr)",
+      "error_ia": "CTA en card con degradé; footer de 4 columnas iguales",
+      "ancla": "patrones-layout.md#18-cta-final-y-footer",
+      "proyectos": [
+        "todos"
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "canvas-grid",
+      "tipo": "gesto",
+      "proporcion": "bordes 1px al 10% hasta el viewport",
+      "error_ia": "no aplica (es una corrección)",
+      "ancla": "patrones-layout.md#19-canvas-grid-líneas-de-grilla-visibles",
+      "proyectos": [
+        "saas",
+        "devtool",
+        "editorial"
+      ]
+    }
+  ],
+  "receta_por_proyecto": [
+    {
+      "proyecto": "saas",
+      "hero": [
+        1,
+        3
+      ],
+      "secciones": [
+        5,
+        7,
+        15
+      ],
+      "ancho": "--layout-wide"
+    },
+    {
+      "proyecto": "editorial",
+      "hero": [
+        2
+      ],
+      "secciones": [
+        9,
+        16
+      ],
+      "ancho": "--layout-content"
+    },
+    {
+      "proyecto": "portfolio",
+      "hero": [
+        2,
+        3
+      ],
+      "secciones": [
+        11,
+        19
+      ],
+      "ancho": "full"
+    },
+    {
+      "proyecto": "comercio",
+      "hero": [
+        3,
+        4
+      ],
+      "secciones": [
+        6,
+        11,
+        15
+      ],
+      "ancho": "--layout-wide"
+    },
+    {
+      "proyecto": "app",
+      "hero": [],
+      "secciones": [
+        12,
+        13,
+        14
+      ],
+      "ancho": "100% con sidebar"
+    },
+    {
+      "proyecto": "docs",
+      "hero": [],
+      "secciones": [
+        10
+      ],
+      "ancho": "65-75ch"
+    }
+  ],
+  "regla_composicion": "un hero, 2-3 patrones de sección, un gesto",
+  "anti_patrones": [
+    "L-todo-centrado",
+    "L-fila-de-tres-iguales",
+    "L-padding-uniforme",
+    "L-espacio-ambiguo",
+    "L-sin-medida",
+    "L-sin-ejes",
+    "L-zigzag-infinito",
+    "L-orden-de-plantilla",
+    "L-todo-en-cards",
+    "L-dos-focos",
+    "L-escala-tibia",
+    "L-breakpoint-por-componente",
+    "L-reorden-visual",
+    "L-columna-que-desborda",
+    "L-imagen-sin-ratio",
+    "L-hero-100vh",
+    "L-densidad-mezclada",
+    "L-romper-todo"
+  ],
+  "checklist": "anti-patrones-layout.md#checklist-de-layout"
+}

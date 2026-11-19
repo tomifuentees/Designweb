@@ -1,6 +1,6 @@
 # Skills
 
-Hoy hay una skill: [`frontend-design`](frontend-design/SKILL.md). Obliga a elegir estilo, paleta, pareja tipográfica y tokens de este kit antes de escribir UI, y a cerrar contra el checklist de anti-patrones.
+Hoy hay una skill: [`frontend-design`](frontend-design/SKILL.md). Obliga a elegir estilo, paleta, pareja tipográfica, tokens y layout (patrones, anchos, densidad, foco) de este kit antes de escribir UI, y a cerrar contra los checklists de anti-patrones y de layout.
 
 ## Instalar
 
