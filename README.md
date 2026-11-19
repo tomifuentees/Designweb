@@ -11,7 +11,7 @@ Está pensada para dos usos:
 | Carpeta | Qué tiene | Estado |
 |---|---|---|
 | [`tipografias/`](tipografias/README.md) | 101 tipografías en tendencia, por categoría, con licencia, uso, pareja e import. 28 pairings. Reglas anti-IA genérica. | ✅ |
-| `estilos/` | Fichas de estilos visuales (bento, brutalism, editorial, dark premium…) | ⏳ |
+| [`estilos/`](estilos/README.md) | 27 estilos visuales 2025–2026 (bento, editorial, SaaS oscuro, anti-IA genérica, etc.), con reglas, sitios reales y `estilos.json`. | ✅ |
 | `paletas/` | Paletas probadas con tokens | ⏳ |
 | `componentes/` | Hero, pricing, navbar, cards bien resueltos | ⏳ |
 | `animaciones/` | Microinteracciones y efectos | ⏳ |

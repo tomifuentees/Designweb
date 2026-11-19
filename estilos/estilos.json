@@ -1,0 +1,1551 @@
+{
+  "meta": {
+    "titulo": "Catálogo de estilos visuales — frontend-design-kit",
+    "idioma": "es-AR",
+    "actualizado": "2026-11-19",
+    "zona_horaria": "America/Argentina/Salta",
+    "total": 27,
+    "objetivo": "Ayudar a agentes de código a elegir un lenguaje visual con oficio, evitando los defaults genéricos de IA (degradé violeta, Inter, cards idénticas, emoji-iconos, hero centrado + 3 features, glass por todos lados).",
+    "fuente_tipografias": "../tipografias/fonts.json"
+  },
+  "estilos": [
+    {
+      "slug": "bento-grids",
+      "nombre": "Bento grids",
+      "vigencia": "establecido",
+      "mood": "Modular, ordenado, producto",
+      "mejor_para": [
+        "SaaS",
+        "landing",
+        "e-commerce"
+      ],
+      "evitar_en": [
+        "dashboard denso",
+        "contenido de altura impredecible",
+        "más de ~12 mosaicos"
+      ],
+      "fuentes_recomendadas": [
+        "satoshi",
+        "switzer",
+        "mona-sans",
+        "cabinet-grotesk",
+        "ibm-plex-mono",
+        "commit-mono"
+      ],
+      "tokens": {
+        "radius": "8–16 px, el mismo en todos los tiles (0 px si el sistema es suizo)",
+        "border": "1 px a bajo contraste (blanco u oscuro al 8–12%)",
+        "shadow": "casi ninguna, o muy corta; el borde define el tile",
+        "palette_hints": [
+          "fondo y tiles primos, no arcoíris",
+          "un acento en un solo tile o dato",
+          "recortes de UI reales"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "nombre": "Ramp",
+          "url": "https://ramp.com/"
+        },
+        {
+          "nombre": "Attio",
+          "url": "https://attio.com/"
+        },
+        {
+          "nombre": "Vercel",
+          "url": "https://vercel.com/"
+        },
+        {
+          "nombre": "Apple iPhone",
+          "url": "https://www.apple.com/iphone/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        }
+      ]
+    },
+    {
+      "slug": "neo-brutalismo",
+      "nombre": "Neo-brutalismo",
+      "vigencia": "enfriamiento-como-tema",
+      "mood": "Ruidoso, gráfico, directo",
+      "mejor_para": [
+        "campañas",
+        "consumer",
+        "CTA de acento"
+      ],
+      "evitar_en": [
+        "salud",
+        "banca",
+        "legal",
+        "SaaS B2B de confianza",
+        "dashboards",
+        "formularios largos"
+      ],
+      "fuentes_recomendadas": [
+        "clash-display",
+        "bricolage-grotesque",
+        "syne",
+        "unbounded",
+        "karrik",
+        "space-grotesk",
+        "space-mono"
+      ],
+      "tokens": {
+        "radius": "0 px, o 4–8 px tipo sticker, constante",
+        "border": "2–4 px sólidos, casi siempre negros",
+        "shadow": "hard offset sin blur (p. ej. 6px 6px 0 0 #111); en hover se aprieta",
+        "palette_hints": [
+          "pocos colores saturados y planos",
+          "amarillo, rosa, azul eléctrico, negro, crema",
+          "sin degradé violeta"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Gumroad",
+          "url": "https://gumroad.com/",
+          "nota": "clásico, confirmar estado visual actual"
+        },
+        {
+          "nombre": "Feastables",
+          "url": "https://feastables.com/"
+        },
+        {
+          "nombre": "Roze Bunker",
+          "url": "https://rozebunker.nl/"
+        },
+        {
+          "nombre": "GT Maru specimen",
+          "url": "https://gt-maru.com/"
+        }
+      ]
+    },
+    {
+      "slug": "suizo-internacional",
+      "nombre": "Suizo / internacional",
+      "vigencia": "perenne",
+      "mood": "Preciso, objetivo, tipográfico",
+      "mejor_para": [
+        "estudios",
+        "instituciones",
+        "finanzas",
+        "editorial de datos",
+        "portfolios profesionales"
+      ],
+      "evitar_en": [
+        "marcas artesanales o infantiles",
+        "landings sin contenido denso que ordenar"
+      ],
+      "fuentes_recomendadas": [
+        "sohne",
+        "neue-montreal",
+        "suisse-intl",
+        "untitled-sans",
+        "monument-grotesk",
+        "graphik",
+        "switzer",
+        "mona-sans",
+        "public-sans",
+        "ibm-plex-mono"
+      ],
+      "tokens": {
+        "radius": "0 px",
+        "border": "hairline 1 px, filetes editoriales",
+        "shadow": "ninguna",
+        "palette_hints": [
+          "blanco, negro, un gris de texto",
+          "un acento puntual (rojo, amarillo o institucional)"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "ECAL",
+          "url": "https://www.ecal.ch/"
+        },
+        {
+          "nombre": "Teenage Engineering",
+          "url": "https://teenage.engineering/"
+        },
+        {
+          "nombre": "Vitsœ",
+          "url": "https://www.vitsoe.com/"
+        },
+        {
+          "nombre": "Resend",
+          "url": "https://resend.com/"
+        },
+        {
+          "nombre": "Mercury",
+          "url": "https://mercury.com/"
+        }
+      ]
+    },
+    {
+      "slug": "editorial-revista",
+      "nombre": "Editorial / revista",
+      "vigencia": "contrapeso-en-auge",
+      "mood": "Literario, cálido, autoritativo",
+      "mejor_para": [
+        "medios",
+        "agencias",
+        "lujo callado",
+        "landings con lectura",
+        "e-commerce con relato"
+      ],
+      "evitar_en": [
+        "dashboards",
+        "onboardings cortos",
+        "SaaS sin texto de verdad",
+        "disfraz de pricing de tres columnas"
+      ],
+      "fuentes_recomendadas": [
+        "fraunces",
+        "zodiak",
+        "boska",
+        "editorial-new",
+        "signifier",
+        "reckless",
+        "tiempos-headline",
+        "newsreader",
+        "source-serif-4",
+        "tiempos-text",
+        "literata",
+        "switzer",
+        "sohne",
+        "untitled-sans"
+      ],
+      "tokens": {
+        "radius": "0–4 px en imágenes",
+        "border": "filetes finos en tinta (negro cálido, marrón, rojo de revista)",
+        "shadow": "casi ninguna; si hay, de papel, cálida y corta",
+        "palette_hints": [
+          "fondos crema/papel (#f4efe6)",
+          "tinta oscura cálida, no gris frío",
+          "un acento de imprenta",
+          "evitar violeta de SaaS"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "The Gentlewoman",
+          "url": "https://thegentlewoman.co.uk/"
+        },
+        {
+          "nombre": "It's Nice That",
+          "url": "https://www.itsnicethat.com/"
+        },
+        {
+          "nombre": "WIRED",
+          "url": "https://www.wired.com/"
+        },
+        {
+          "nombre": "Kinfolk",
+          "url": "https://www.kinfolk.com/"
+        }
+      ]
+    },
+    {
+      "slug": "saas-oscuro-premium",
+      "nombre": "SaaS oscuro premium",
+      "vigencia": "dominante",
+      "mood": "Técnico, premium, contenido",
+      "mejor_para": [
+        "devtools",
+        "B2B",
+        "product-led",
+        "fintech técnica"
+      ],
+      "evitar_en": [
+        "PyME local",
+        "oficio jurídico",
+        "e-commerce de comida",
+        "marcas de calidez",
+        "sitios sin producto que mostrar"
+      ],
+      "fuentes_recomendadas": [
+        "sohne",
+        "neue-montreal",
+        "twk-lausanne",
+        "abc-diatype",
+        "satoshi",
+        "mona-sans",
+        "berkeley-mono",
+        "ibm-plex-mono",
+        "commit-mono"
+      ],
+      "tokens": {
+        "radius": "8–16 px en el recorte de producto; 6–10 px en controles",
+        "border": "1 px blanco al 8–12%",
+        "shadow": "pocas; glow solo localizado en un estado activo, no halo violeta de hero",
+        "palette_hints": [
+          "fondo #0b0c0f–#111",
+          "un solo acento",
+          "sin degradé índigo de esquina a esquina"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "nombre": "Raycast",
+          "url": "https://www.raycast.com/"
+        },
+        {
+          "nombre": "Cursor",
+          "url": "https://cursor.com/"
+        },
+        {
+          "nombre": "Vercel",
+          "url": "https://vercel.com/"
+        },
+        {
+          "nombre": "Resend",
+          "url": "https://resend.com/"
+        },
+        {
+          "nombre": "Mercury",
+          "url": "https://mercury.com/"
+        }
+      ]
+    },
+    {
+      "slug": "estilo-linear",
+      "nombre": "Estilo Linear",
+      "vigencia": "muy-copiado",
+      "mood": "Especificación, demo viva",
+      "mejor_para": [
+        "productos cuya UI es el argumento",
+        "devtools",
+        "productividad"
+      ],
+      "evitar_en": [
+        "marcas que no son de software",
+        "landings sin demo real del producto"
+      ],
+      "fuentes_recomendadas": [
+        "abc-diatype",
+        "mona-sans",
+        "switzer",
+        "sohne",
+        "satoshi",
+        "berkeley-mono",
+        "commit-mono",
+        "ibm-plex-mono"
+      ],
+      "tokens": {
+        "radius": "8–12 px en el chasis del producto",
+        "border": "hairlines blanco al ~10%",
+        "shadow": "mínimas; la profundidad la da el recorte de UI",
+        "palette_hints": [
+          "negro/grafito y un acento",
+          "elegir un acento que no sea el púrpura de Linear",
+          "etiquetas tipo FIG, no badges neón"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/",
+          "nota": "la fuente; mirarla, no calcarla"
+        },
+        {
+          "nombre": "Attio",
+          "url": "https://attio.com/"
+        },
+        {
+          "nombre": "Ramp",
+          "url": "https://ramp.com/"
+        },
+        {
+          "nombre": "Cursor",
+          "url": "https://cursor.com/"
+        }
+      ]
+    },
+    {
+      "slug": "ui-casi-invisible",
+      "nombre": "UI casi invisible",
+      "vigencia": "emergente",
+      "mood": "Quieto, confiable, tipográfico",
+      "mejor_para": [
+        "dashboards",
+        "fintech",
+        "plataformas de datos",
+        "herramientas internas"
+      ],
+      "evitar_en": [
+        "cultura",
+        "moda",
+        "food",
+        "campañas que necesitan calor"
+      ],
+      "fuentes_recomendadas": [
+        "untitled-sans",
+        "sohne",
+        "suisse-intl",
+        "switzer",
+        "figtree",
+        "public-sans",
+        "atkinson-hyperlegible",
+        "ibm-plex-mono"
+      ],
+      "tokens": {
+        "radius": "4–8 px, o 0; nunca un radio espectacular",
+        "border": "1 px al 6–12% de opacidad; muchos bloques no necesitan borde",
+        "shadow": "no, salvo un popover de 1 px de aire",
+        "palette_hints": [
+          "superficie casi igual al fondo",
+          "color semántico antes que acento decorativo",
+          "un acento, usado poco"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/",
+          "nota": "ejemplo citado por Bubble"
+        },
+        {
+          "nombre": "Mercury",
+          "url": "https://mercury.com/"
+        },
+        {
+          "nombre": "Resend",
+          "url": "https://resend.com/"
+        },
+        {
+          "nombre": "Stripe",
+          "url": "https://stripe.com/"
+        },
+        {
+          "nombre": "Cal.com",
+          "url": "https://cal.com/"
+        }
+      ]
+    },
+    {
+      "slug": "retrofuturismo-y2k",
+      "nombre": "Retrofuturismo / Y2K",
+      "vigencia": "nicho-estable",
+      "mood": "Nostálgico, cromado, lúdico",
+      "mejor_para": [
+        "moda",
+        "música",
+        "belleza",
+        "microsites",
+        "campañas"
+      ],
+      "evitar_en": [
+        "salud",
+        "banca",
+        "legal",
+        "B2B sobrio",
+        "dashboards"
+      ],
+      "fuentes_recomendadas": [
+        "clash-display",
+        "panchang",
+        "unbounded",
+        "syne",
+        "space-grotesk",
+        "space-mono",
+        "departure-mono"
+      ],
+      "tokens": {
+        "radius": "pills, círculos o clip-path; no rounded-xl uniforme",
+        "border": "cromo (degradé metálico 1–2 px) o pixel-border negro",
+        "shadow": "destellos e inner-shadows metálicos, no sombra suave de card",
+        "palette_hints": [
+          "plata, celeste hielo, fucsia, lima, negro lustroso",
+          "degradé de cromo o duotono de campaña",
+          "no el violeta-índigo de plantilla"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Starface World",
+          "url": "https://starface.world/",
+          "nota": "no confundir con starface.com (telefonía)"
+        },
+        {
+          "nombre": "Byline",
+          "url": "https://www.bylinebyline.com/"
+        },
+        {
+          "nombre": "Boys Club",
+          "url": "https://boysclub.vip/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        },
+        {
+          "nombre": "Feastables",
+          "url": "https://feastables.com/"
+        }
+      ]
+    },
+    {
+      "slug": "organico-terroso",
+      "nombre": "Orgánico / terroso",
+      "vigencia": "emergente",
+      "mood": "Cálido, físico, cercano",
+      "mejor_para": [
+        "comida",
+        "bienestar",
+        "sustentabilidad",
+        "oficio",
+        "PyMEs físicas"
+      ],
+      "evitar_en": [
+        "devtools",
+        "exchanges",
+        "dashboards de ops",
+        "marcas sin materia real"
+      ],
+      "fuentes_recomendadas": [
+        "fraunces",
+        "boska",
+        "sentient",
+        "zodiak",
+        "newsreader",
+        "source-serif-4",
+        "cabinet-grotesk",
+        "bricolage-grotesque",
+        "shantell-sans"
+      ],
+      "tokens": {
+        "radius": "12–24 px, o recortes orgánicos con mesura",
+        "border": "finos, en tinta marrón o verde oscuro al 20%",
+        "shadow": "cálidas, cortas, baja opacidad (luz de tarde)",
+        "palette_hints": [
+          "terracota, oliva, arena, crema, óxido, verde profundo",
+          "fondos #f3eadf / #efe6d6",
+          "evitar púrpura y neones"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Seed",
+          "url": "https://seed.com/"
+        },
+        {
+          "nombre": "SPELL",
+          "url": "https://usa.spell.co/"
+        },
+        {
+          "nombre": "Patagonia",
+          "url": "https://www.patagonia.com/"
+        },
+        {
+          "nombre": "Graza",
+          "url": "https://www.graza.co/"
+        },
+        {
+          "nombre": "Aesop",
+          "url": "https://www.aesop.com/",
+          "nota": "GET 403 antibot en esta pasada, no 404"
+        }
+      ]
+    },
+    {
+      "slug": "maximalismo",
+      "nombre": "Maximalismo",
+      "vigencia": "en-auge",
+      "mood": "Denso, ruidoso, memorable",
+      "mejor_para": [
+        "marcas de actitud",
+        "cultura",
+        "campañas",
+        "música",
+        "streetwear"
+      ],
+      "evitar_en": [
+        "productos de confianza",
+        "dashboards",
+        "SaaS B2B sin esa voz",
+        "checkouts enteros"
+      ],
+      "fuentes_recomendadas": [
+        "druk",
+        "clash-display",
+        "agrandir",
+        "obviously",
+        "syne",
+        "melodrama",
+        "bricolage-grotesque",
+        "space-grotesk"
+      ],
+      "tokens": {
+        "radius": "libres pero deliberados (sticker o marco duro); evitar el radio medio de SaaS",
+        "border": "gruesos, invertidos, o el tipo haciendo de borde",
+        "shadow": "duras o ninguna; no shadow suave homogénea",
+        "palette_hints": [
+          "alto contraste",
+          "pocos colores usados a lo grande",
+          "p. ej. amarillo a sangre + negro"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Liquid Death",
+          "url": "https://liquiddeath.com/"
+        },
+        {
+          "nombre": "Starface World",
+          "url": "https://starface.world/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        },
+        {
+          "nombre": "Spotify Newsroom",
+          "url": "https://newsroom.spotify.com/",
+          "nota": "spotify.com redirige al player; se cita esta URL de la marca"
+        }
+      ]
+    },
+    {
+      "slug": "minimalismo-monocromo",
+      "nombre": "Minimalismo monocromo",
+      "vigencia": "perenne",
+      "mood": "Callado, caro, disciplinado",
+      "mejor_para": [
+        "lujo",
+        "banca",
+        "moda",
+        "arquitectura",
+        "portfolios serios"
+      ],
+      "evitar_en": [
+        "dashboards que necesitan color semántico",
+        "marcas infantiles o de dopamina"
+      ],
+      "fuentes_recomendadas": [
+        "neue-montreal",
+        "sohne",
+        "twk-lausanne",
+        "suisse-intl",
+        "canela",
+        "signifier",
+        "switzer",
+        "general-sans"
+      ],
+      "tokens": {
+        "radius": "0, o 2–4 px; fotos a menudo a vivo",
+        "border": "hairline negro o gris, o solo contraste tipográfico",
+        "shadow": "ninguna",
+        "palette_hints": [
+          "negro, blanco, un rango de grises",
+          "un acento a lo sumo una vez"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Mercury",
+          "url": "https://mercury.com/"
+        },
+        {
+          "nombre": "The Row",
+          "url": "https://www.therow.com/"
+        },
+        {
+          "nombre": "Vitsœ",
+          "url": "https://www.vitsoe.com/"
+        },
+        {
+          "nombre": "nendo",
+          "url": "https://www.nendo.jp/"
+        }
+      ]
+    },
+    {
+      "slug": "grano-ruido",
+      "nombre": "Grano y ruido",
+      "vigencia": "establecido-como-tecnica",
+      "mood": "Táctil, analógico, anti-IA",
+      "mejor_para": [
+        "acento sobre editorial",
+        "oscuro",
+        "riso",
+        "anti-diseño",
+        "héroes y tapas"
+      ],
+      "evitar_en": [
+        "dashboards densos",
+        "texto chico",
+        "overlays de alta opacidad",
+        "loops animados de ruido"
+      ],
+      "fuentes_recomendadas": [
+        "reckless",
+        "signifier",
+        "karrik",
+        "monument-grotesk",
+        "zodiak"
+      ],
+      "tokens": {
+        "radius": "los hereda el estilo anfitrión",
+        "border": "los hereda el estilo anfitrión",
+        "shadow": "si hay, un poco sucia; no un blur perfecto",
+        "palette_hints": [
+          "ruido monocromo al 4–8% de opacidad",
+          "o duotono de una tinta",
+          "tile SVG/PNG chico, no un JPG de 4 MB"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Graza",
+          "url": "https://www.graza.co/"
+        },
+        {
+          "nombre": "basement.studio",
+          "url": "https://basement.studio/"
+        },
+        {
+          "nombre": "Cosmos",
+          "url": "https://www.cosmos.so/"
+        },
+        {
+          "nombre": "Bruno Simon",
+          "url": "https://bruno-simon.com/"
+        }
+      ]
+    },
+    {
+      "slug": "tipografia-kinetica",
+      "nombre": "Tipografía cinética",
+      "vigencia": "establecido",
+      "mood": "Expresivo, dirigido, memorable",
+      "mejor_para": [
+        "heroes",
+        "lanzamientos",
+        "portfolios",
+        "campañas"
+      ],
+      "evitar_en": [
+        "navegación",
+        "tablas",
+        "precios",
+        "body copy",
+        "cada heading de la página"
+      ],
+      "fuentes_recomendadas": [
+        "fraunces",
+        "bricolage-grotesque",
+        "recursive",
+        "roboto-flex",
+        "mona-sans",
+        "cabinet-grotesk",
+        "clash-display"
+      ],
+      "tokens": {
+        "radius": "los del estilo anfitrión",
+        "border": "los del estilo anfitrión",
+        "shadow": "los del estilo anfitrión",
+        "palette_hints": [
+          "no pide paleta propia",
+          "evitar animar además un degradé violeta",
+          "obligatorio prefers-reduced-motion"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "nombre": "Locomotive",
+          "url": "https://locomotive.ca/"
+        },
+        {
+          "nombre": "Glossier",
+          "url": "https://www.glossier.com/"
+        },
+        {
+          "nombre": "Samsung US",
+          "url": "https://www.samsung.com/us/"
+        },
+        {
+          "nombre": "basement.studio",
+          "url": "https://basement.studio/"
+        }
+      ]
+    },
+    {
+      "slug": "anti-diseno",
+      "nombre": "Anti-diseño / brutalismo anti-grilla",
+      "vigencia": "establecido",
+      "mood": "Crudo, deliberadamente feo, indie",
+      "mejor_para": [
+        "estudios experimentales",
+        "cultura",
+        "editoriales independientes",
+        "arte"
+      ],
+      "evitar_en": [
+        "e-commerce de masas",
+        "banca",
+        "salud",
+        "SaaS que todavía explica qué hace"
+      ],
+      "fuentes_recomendadas": [
+        "karrik",
+        "space-mono",
+        "departure-mono",
+        "ibm-plex-mono",
+        "fragment-mono",
+        "public-sans"
+      ],
+      "tokens": {
+        "radius": "0",
+        "border": "1 px negro o color de sistema",
+        "shadow": "no, o dura de 1–2 px; nunca blur",
+        "palette_hints": [
+          "blanco de documento, azul de link, o paleta pobre",
+          "evitar púrpura de plantilla y dark premium"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Are.na",
+          "url": "https://www.are.na/"
+        },
+        {
+          "nombre": "Brutalist Websites",
+          "url": "https://brutalistwebsites.com/",
+          "nota": "galería del palo, no un producto"
+        },
+        {
+          "nombre": "Byline",
+          "url": "https://www.bylinebyline.com/"
+        },
+        {
+          "nombre": "Teenage Engineering",
+          "url": "https://teenage.engineering/",
+          "nota": "vecino Swiss-grid brutalism, no anti-diseño puro"
+        }
+      ]
+    },
+    {
+      "slug": "claymorfismo",
+      "nombre": "Claymorfismo",
+      "vigencia": "nicho-estable",
+      "mood": "Blando, juguetón, de juguete",
+      "mejor_para": [
+        "onboarding",
+        "kids",
+        "educación",
+        "un momento lúdico de fintech"
+      ],
+      "evitar_en": [
+        "tablas",
+        "settings",
+        "landings B2B",
+        "sistemas completos",
+        "SaaS oscuro"
+      ],
+      "fuentes_recomendadas": [
+        "satoshi",
+        "outfit",
+        "plus-jakarta-sans",
+        "agrandir",
+        "figtree"
+      ],
+      "tokens": {
+        "radius": "20–40 px o pills",
+        "border": "casi ninguno; la forma la dan las sombras",
+        "shadow": "exterior suave + dos interiores (luz arriba-izq, sombra abajo-der) del mismo tinte que el fondo",
+        "palette_hints": [
+          "pasteles (celeste, menta, durazno, lila claro)",
+          "fondo pastel del mismo tinte, no blanco puro",
+          "evitar púrpura saturado de plantilla"
+        ]
+      },
+      "ejemplos": [],
+      "nota_ejemplos": "En esta pasada no se verificaron tres sitios de marketing en producción cuyo look completo sea claymorfismo. Tratarlo como componente, no como referencia de sitio."
+    },
+    {
+      "slug": "espacial-3d",
+      "nombre": "Espacial / 3D",
+      "vigencia": "en-auge",
+      "mood": "Inmersivo, material, demo",
+      "mejor_para": [
+        "producto físico",
+        "fashion 3D",
+        "portfolios de motion",
+        "espacios / AR"
+      ],
+      "evitar_en": [
+        "SaaS sin objeto",
+        "fondos 3D detrás de un form",
+        "proyectos sin budget de performance y QA"
+      ],
+      "fuentes_recomendadas": [
+        "satoshi",
+        "sohne",
+        "abc-diatype",
+        "switzer",
+        "neue-montreal",
+        "ibm-plex-mono"
+      ],
+      "tokens": {
+        "radius": "chasis mínimo o ninguno; no enmarcar el canvas en una card",
+        "border": "mínimo o ninguno",
+        "shadow": "las del mundo 3D, no shadow-2xl de CSS bajo el canvas",
+        "palette_hints": [
+          "iluminación coherente (key + fill)",
+          "fondo neutro o un entorno",
+          "no un degradé violeta de stock"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Bruno Simon",
+          "url": "https://bruno-simon.com/"
+        },
+        {
+          "nombre": "Apple iPhone",
+          "url": "https://www.apple.com/iphone/"
+        },
+        {
+          "nombre": "IKEA",
+          "url": "https://www.ikea.com/"
+        },
+        {
+          "nombre": "teamLab",
+          "url": "https://www.teamlab.art/"
+        },
+        {
+          "nombre": "Locomotive",
+          "url": "https://locomotive.ca/"
+        }
+      ]
+    },
+    {
+      "slug": "japones-inspirado",
+      "nombre": "Inspiración japonesa",
+      "vigencia": "vivo",
+      "mood": "Contención, ritmo, vacío",
+      "mejor_para": [
+        "cultura",
+        "retail de objeto",
+        "editorial",
+        "hospitality",
+        "estudios"
+      ],
+      "evitar_en": [
+        "'asian flair' decorativo",
+        "dashboards densos",
+        "kanji o sakura de stock"
+      ],
+      "fuentes_recomendadas": [
+        "neue-montreal",
+        "suisse-intl",
+        "monument-grotesk",
+        "untitled-sans",
+        "sohne",
+        "switzer",
+        "mona-sans"
+      ],
+      "tokens": {
+        "radius": "0 o muy pocos; fotos a vivo o con filete fino",
+        "border": "hairlines; un índice o sello en lugar de un badge",
+        "shadow": "ninguna",
+        "palette_hints": [
+          "blanco, tinta, un rojo o índigo puntuales",
+          "a veces papel cálido",
+          "paleta corta, sin neones"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Shinpaku",
+          "url": "https://shinpaku.co/"
+        },
+        {
+          "nombre": "nendo",
+          "url": "https://www.nendo.jp/"
+        },
+        {
+          "nombre": "MUJI Europe",
+          "url": "https://www.muji.eu/",
+          "nota": "muji.com no respondió desde este entorno"
+        },
+        {
+          "nombre": "teamLab",
+          "url": "https://www.teamlab.art/"
+        }
+      ]
+    },
+    {
+      "slug": "dopamina-saturado",
+      "nombre": "Dopamina / paletas saturadas",
+      "vigencia": "en-auge",
+      "mood": "Alegre, alto contraste, energético",
+      "mejor_para": [
+        "juventud",
+        "belleza",
+        "wellness lúdico",
+        "F&B",
+        "campañas"
+      ],
+      "evitar_en": [
+        "banca",
+        "salud clínica",
+        "legal",
+        "dashboards de ops"
+      ],
+      "fuentes_recomendadas": [
+        "clash-display",
+        "agrandir",
+        "syne",
+        "degular",
+        "outfit",
+        "plus-jakarta-sans",
+        "cabinet-grotesk"
+      ],
+      "tokens": {
+        "radius": "un corte recto o un redondeo grande, elegido y repetido",
+        "border": "ninguno, o un borde negro que sujete el color",
+        "shadow": "no hacen falta; si hay, dura o un glow del color de marca",
+        "palette_hints": [
+          "1–2 colores de alta saturación + un neutro",
+          "color sacado del producto, no de un generador de paletas SaaS",
+          "no es un degradé índigo de plantilla"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Starface World",
+          "url": "https://starface.world/"
+        },
+        {
+          "nombre": "Headspace",
+          "url": "https://www.headspace.com/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        },
+        {
+          "nombre": "Lush",
+          "url": "https://www.lush.com/",
+          "nota": "citada por Figma; GET 403 antibot en esta pasada"
+        }
+      ]
+    },
+    {
+      "slug": "scrollytelling",
+      "nombre": "Scrollytelling",
+      "vigencia": "establecido",
+      "mood": "Narrativo, guiado, cinematográfico",
+      "mejor_para": [
+        "lanzamientos",
+        "long-form",
+        "producto físico",
+        "cases"
+      ],
+      "evitar_en": [
+        "dashboards",
+        "pricing",
+        "blogs cotidianos",
+        "homes para escanear",
+        "scroll-jacking"
+      ],
+      "fuentes_recomendadas": [
+        "newsreader",
+        "fraunces",
+        "source-serif-4",
+        "tiempos-text",
+        "tiempos-headline",
+        "switzer",
+        "ibm-plex-mono"
+      ],
+      "tokens": {
+        "radius": "los del estilo anfitrión",
+        "border": "los del estilo anfitrión",
+        "shadow": "los del estilo anfitrión",
+        "palette_hints": [
+          "el scroll no es una paleta",
+          "contenido en el HTML, no solo en un canvas",
+          "prefers-reduced-motion = artículo estático en el mismo orden"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Apple iPhone",
+          "url": "https://www.apple.com/iphone/"
+        },
+        {
+          "nombre": "Recess",
+          "url": "https://takearecess.com/"
+        },
+        {
+          "nombre": "The Pudding",
+          "url": "https://pudding.cool/"
+        },
+        {
+          "nombre": "Locomotive",
+          "url": "https://locomotive.ca/"
+        }
+      ]
+    },
+    {
+      "slug": "glassmorfismo",
+      "nombre": "Glassmorfismo",
+      "vigencia": "revivido-sobreuado-como-tema",
+      "mood": "Vítreo, espacial, frágil",
+      "mejor_para": [
+        "acento en header sticky",
+        "modal",
+        "dock o control flotante sobre foto o 3D"
+      ],
+      "evitar_en": [
+        "tema de un landing completo",
+        "tablas",
+        "párrafos largos",
+        "fondos planos",
+        "combo con degradé violeta"
+      ],
+      "fuentes_recomendadas": [
+        "satoshi",
+        "switzer",
+        "mona-sans",
+        "general-sans"
+      ],
+      "tokens": {
+        "radius": "12–20 px en paneles flotantes; 0 en un header a ancho",
+        "border": "1 px solid rgba(255,255,255,.25) o negro al 15% sobre claro",
+        "shadow": "muy suave o ninguna; una sombra fuerte lo vuelve card",
+        "palette_hints": [
+          "fondo semitransparente + blur 16px",
+          "fallback sólido si no hay backdrop-filter",
+          "el texto debe contrastar con el fallback, no solo con la foto"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Apple",
+          "url": "https://www.apple.com/"
+        },
+        {
+          "nombre": "Figma",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "nombre": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "nombre": "Resend",
+          "url": "https://resend.com/"
+        }
+      ]
+    },
+    {
+      "slug": "catalogo-tecnico",
+      "nombre": "Catálogo técnico",
+      "vigencia": "visible",
+      "mood": "Manual, preciso, documental",
+      "mejor_para": [
+        "hardware",
+        "APIs",
+        "industrial",
+        "marcas built-not-decorated",
+        "docs que también son marketing"
+      ],
+      "evitar_en": [
+        "beauty lúdica",
+        "restaurants",
+        "marcas que necesitan calor",
+        "landings sin objeto o spec que fichar"
+      ],
+      "fuentes_recomendadas": [
+        "abc-diatype",
+        "favorit",
+        "monument-grotesk",
+        "ibm-plex-sans",
+        "sohne",
+        "ibm-plex-mono",
+        "berkeley-mono",
+        "fragment-mono",
+        "switzer"
+      ],
+      "tokens": {
+        "radius": "0, o 2–4 px en thumbnails",
+        "border": "1 px; tablas y filetes antes que cards",
+        "shadow": "ninguna de CSS; la foto puede tener sombra de estudio",
+        "palette_hints": [
+          "neutros de estudio",
+          "un acento funcional (stock, alerta)",
+          "sin degradé"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Teenage Engineering",
+          "url": "https://teenage.engineering/"
+        },
+        {
+          "nombre": "Resend",
+          "url": "https://resend.com/"
+        },
+        {
+          "nombre": "Mercury",
+          "url": "https://mercury.com/"
+        },
+        {
+          "nombre": "Stripe",
+          "url": "https://stripe.com/"
+        }
+      ]
+    },
+    {
+      "slug": "ilustrado-humano",
+      "nombre": "Ilustrado / hecho a mano",
+      "vigencia": "emergente",
+      "mood": "Cercano, dibujado, imperfecto",
+      "mejor_para": [
+        "educación",
+        "wellness",
+        "marcas con personaje",
+        "onboarding",
+        "PyMEs con ilustrador"
+      ],
+      "evitar_en": [
+        "ilustración de generador o de stock",
+        "banca institucional",
+        "paneles de datos (salvo un empty state)"
+      ],
+      "fuentes_recomendadas": [
+        "bricolage-grotesque",
+        "cabinet-grotesk",
+        "fraunces",
+        "karrik",
+        "shantell-sans"
+      ],
+      "tokens": {
+        "radius": "blandos si el trazo es blando; rectos si es tinta",
+        "border": "mínimos; un trazo dibujado puede hacer de borde",
+        "shadow": "mínimas; no una card con shadow suave alrededor del dibujo",
+        "palette_hints": [
+          "la paleta sale de la ilustración",
+          "pocas tintas, como un riso o un cuaderno"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Headspace",
+          "url": "https://www.headspace.com/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        },
+        {
+          "nombre": "Graza",
+          "url": "https://www.graza.co/"
+        },
+        {
+          "nombre": "Glossier",
+          "url": "https://www.glossier.com/"
+        }
+      ]
+    },
+    {
+      "slug": "navegacion-experimental",
+      "nombre": "Navegación experimental",
+      "vigencia": "citada-alto-riesgo",
+      "mood": "Exploratoria, espacial, memorable",
+      "mejor_para": [
+        "portfolios",
+        "estudios",
+        "cultura",
+        "microsites",
+        "archivos"
+      ],
+      "evitar_en": [
+        "checkout",
+        "onboarding de productividad",
+        "trámites",
+        "herramientas de uso semanal"
+      ],
+      "fuentes_recomendadas": [
+        "syne",
+        "clash-display",
+        "cabinet-grotesk",
+        "monument-grotesk",
+        "fraunces",
+        "neue-montreal"
+      ],
+      "tokens": {
+        "radius": "al servicio de la idea (radial, dock), no un orb menu de Dribbble sobre un SaaS",
+        "border": "el de la idea",
+        "shadow": "el de la idea",
+        "palette_hints": [
+          "un acento para 'estás acá'",
+          "nav HTML equivalente si la nav es un canvas",
+          "skip link y teclado no son opcionales"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Locomotive",
+          "url": "https://locomotive.ca/"
+        },
+        {
+          "nombre": "Google Arts & Culture",
+          "url": "https://artsandculture.google.com/"
+        },
+        {
+          "nombre": "Are.na",
+          "url": "https://www.are.na/"
+        },
+        {
+          "nombre": "Cosmos",
+          "url": "https://www.cosmos.so/"
+        }
+      ]
+    },
+    {
+      "slug": "risografia-impreso",
+      "nombre": "Risografía / impreso",
+      "vigencia": "nicho-editorial",
+      "mood": "Tinta, granulado, limitado",
+      "mejor_para": [
+        "editoriales independientes",
+        "café",
+        "cultura",
+        "música",
+        "zines",
+        "eventos"
+      ],
+      "evitar_en": [
+        "productos de datos",
+        "checkouts",
+        "forms de signup",
+        "filtros riso sobre stock + Inter"
+      ],
+      "fuentes_recomendadas": [
+        "karrik",
+        "sprat",
+        "obviously",
+        "zodiak",
+        "bricolage-grotesque",
+        "space-mono"
+      ],
+      "tokens": {
+        "radius": "0 (esquina de papel cortado)",
+        "border": "ninguno, o un filete de una sola tinta",
+        "shadow": "ninguna; la superposición multiply hace el trabajo",
+        "palette_hints": [
+          "dos o tres tintas planas (rosa flúo, azul, negro, mostaza)",
+          "fondo papel #f3ecd9",
+          "mix-blend-mode: multiply"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "It's Nice That",
+          "url": "https://www.itsnicethat.com/"
+        },
+        {
+          "nombre": "Byline",
+          "url": "https://www.bylinebyline.com/"
+        },
+        {
+          "nombre": "basement.studio",
+          "url": "https://basement.studio/"
+        },
+        {
+          "nombre": "Graza",
+          "url": "https://www.graza.co/"
+        }
+      ]
+    },
+    {
+      "slug": "expresivo-minimo",
+      "nombre": "Minimalismo expresivo",
+      "vigencia": "util-en-2026",
+      "mood": "Limpio con una rareza",
+      "mejor_para": [
+        "landing PyME",
+        "estudios chicos",
+        "SaaS sin demo cinematográfica",
+        "servicios",
+        "profesionales"
+      ],
+      "evitar_en": [
+        "cuando hay cinco gestos a la vez",
+        "cuando no hay nada que decir y se espera que el look lo suplante"
+      ],
+      "fuentes_recomendadas": [
+        "cabinet-grotesk",
+        "fraunces",
+        "bricolage-grotesque",
+        "clash-display",
+        "zodiak",
+        "satoshi",
+        "switzer",
+        "newsreader",
+        "figtree"
+      ],
+      "tokens": {
+        "radius": "4–8 px constante, o 0; no rounded-2xl de plantilla",
+        "border": "un filete, no una card en cada sección",
+        "shadow": "no, o una sola y corta en el objeto que es el gesto",
+        "palette_hints": [
+          "un neutro crema o gris cálido",
+          "un acento que no sea violeta de UI kit",
+          "el acento sale del mundo de la marca"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Cal.com",
+          "url": "https://cal.com/"
+        },
+        {
+          "nombre": "Stripe",
+          "url": "https://stripe.com/"
+        },
+        {
+          "nombre": "The Gentlewoman",
+          "url": "https://thegentlewoman.co.uk/"
+        },
+        {
+          "nombre": "Vitsœ",
+          "url": "https://www.vitsoe.com/"
+        }
+      ]
+    },
+    {
+      "slug": "realismo-tactil",
+      "nombre": "Realismo táctil",
+      "vigencia": "establecido",
+      "mood": "Material, irregular, creíble",
+      "mejor_para": [
+        "comida",
+        "belleza",
+        "craft",
+        "moda",
+        "hospitalidad"
+      ],
+      "evitar_en": [
+        "dashboards de métricas",
+        "forms largos",
+        "texturas pesadas sin comprimir",
+        "skeuomorfismo de 2009"
+      ],
+      "fuentes_recomendadas": [
+        "signifier",
+        "reckless",
+        "tiempos-headline",
+        "tiempos-text",
+        "founders-grotesk",
+        "fraunces",
+        "zodiak",
+        "newsreader",
+        "cabinet-grotesk"
+      ],
+      "tokens": {
+        "radius": "recorte de papel o etiqueta (radio chico o corte recto); no rounded-3xl",
+        "border": "filete de tinta, o el borde real de una etiqueta fotografiada",
+        "shadow": "cálida, corta, de objeto sobre una mesa; nunca un glow",
+        "palette_hints": [
+          "paleta del material",
+          "fondos papel",
+          "tile de ruido liviano, no un overlay al 40%"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "Graza",
+          "url": "https://www.graza.co/"
+        },
+        {
+          "nombre": "Seed",
+          "url": "https://seed.com/"
+        },
+        {
+          "nombre": "SPELL",
+          "url": "https://usa.spell.co/"
+        },
+        {
+          "nombre": "Patagonia",
+          "url": "https://www.patagonia.com/"
+        }
+      ]
+    },
+    {
+      "slug": "grilla-rota",
+      "nombre": "Grilla rota / layouts orgánicos",
+      "vigencia": "en-auge",
+      "mood": "Asimétrico, compuesto, editorial",
+      "mejor_para": [
+        "portfolios",
+        "agencias",
+        "landings culturales",
+        "editoriales",
+        "héroes de campaña"
+      ],
+      "evitar_en": [
+        "checkout",
+        "dashboards",
+        "artículos largos de lectura",
+        "overlaps ilegibles en mobile"
+      ],
+      "fuentes_recomendadas": [
+        "editorial-new",
+        "fraunces",
+        "syne",
+        "bricolage-grotesque",
+        "clash-display",
+        "reckless",
+        "newsreader",
+        "satoshi"
+      ],
+      "tokens": {
+        "radius": "pueden mezclarse si hay criterio; evitar el radio uniforme de card",
+        "border": "al servicio de las capas (un filete, una superposición)",
+        "shadow": "no shadow-xl en cada pieza",
+        "palette_hints": [
+          "la de la marca; la ruptura es formal, no un arcoíris"
+        ]
+      },
+      "ejemplos": [
+        {
+          "nombre": "basement.studio",
+          "url": "https://basement.studio/"
+        },
+        {
+          "nombre": "Locomotive",
+          "url": "https://locomotive.ca/"
+        },
+        {
+          "nombre": "Ghia",
+          "url": "https://drinkghia.com/"
+        },
+        {
+          "nombre": "The Gentlewoman",
+          "url": "https://thegentlewoman.co.uk/"
+        },
+        {
+          "nombre": "Starface World",
+          "url": "https://starface.world/"
+        }
+      ]
+    }
+  ]
+}
