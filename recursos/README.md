@@ -20,6 +20,7 @@ Hay **54 recursos** en 9 grupos. Las licencias se anotan con lo que se pudo cont
 | [capturas.md](./capturas.md) | shots.so, ray.so, Carbon, snappify, Screenzy |
 | [favicon-og.md](./favicon-og.md) | RealFaviconGenerator, favicon.io, opengraph.xyz, @vercel/og, OG Playground |
 | [recursos.json](./recursos.json) | El mismo catálogo, legible por máquinas |
+| [repos-referencia.md](./repos-referencia.md) | 40 repos de referencia (skills, DESIGN.md, awesome lists, tokens, tipo, motion) que todavía no estaban en el kit, con estrellas y licencia verificadas. Índice en [repos-referencia.json](./repos-referencia.json) |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes, con links y fechas |
 
 ## Cómo elegir
