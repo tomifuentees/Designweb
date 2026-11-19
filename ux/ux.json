@@ -1,0 +1,1272 @@
+{
+  "meta": {
+    "titulo": "Designweb · UX (enciclopedia para humanos y agentes)",
+    "consultado": "2026-11-19",
+    "consultado_label": "19 de noviembre de 2026, hora de Salta (UTC-3)",
+    "idioma": "es",
+    "uso": "La skill frontend-design lee problema_a_archivo para abrir el archivo correcto y checklist para la revisión final. Severidad 0–4 de Nielsen.",
+    "aviso": "No es asesoramiento legal. Estados normativos verificados el 19/11/2026; revisar fuentes antes de afirmar cumplimiento."
+  },
+  "problema_a_archivo": [
+    {
+      "problema": "No sé por dónde empezar / qué principio aplica",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "problema": "Revisar una UI existente y priorizar problemas",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "problema": "La gente no encuentra cosas / navegación confusa",
+      "archivo": "arquitectura-informacion-navegacion.md"
+    },
+    {
+      "problema": "Formulario con errores, abandono o validación molesta",
+      "archivo": "formularios-inputs.md"
+    },
+    {
+      "problema": "Login, contraseñas, passkeys, OTP",
+      "archivo": "formularios-inputs.md"
+    },
+    {
+      "problema": "Abandono en carrito o checkout",
+      "archivo": "checkout-ecommerce.md"
+    },
+    {
+      "problema": "Búsqueda que no encuentra / filtros confusos",
+      "archivo": "busqueda-filtros.md"
+    },
+    {
+      "problema": "Usuarios nuevos que no vuelven / activación baja",
+      "archivo": "onboarding-activacion.md"
+    },
+    {
+      "problema": "Pantallas vacías, cargas, errores, offline, optimistic UI",
+      "archivo": "estados.md"
+    },
+    {
+      "problema": "Toast vs modal vs inline; confirmaciones; notificaciones",
+      "archivo": "feedback-notificaciones.md"
+    },
+    {
+      "problema": "Dashboard que nadie usa / tablas densas",
+      "archivo": "tablas-datos-dashboards.md"
+    },
+    {
+      "problema": "Problemas en celular: toques, gestos, teclado",
+      "archivo": "mobile-touch.md"
+    },
+    {
+      "problema": "Cumplir WCAG 2.2 / ADA / EAA; teclado y lector de pantalla",
+      "archivo": "accesibilidad.md"
+    },
+    {
+      "problema": "Textos de botones, errores, vacíos, confirmaciones",
+      "archivo": "ux-writing-microcopy.md"
+    },
+    {
+      "problema": "Se siente lento / Core Web Vitals",
+      "archivo": "rendimiento-percibido.md"
+    },
+    {
+      "problema": "Diseñar chat, copiloto, agente o búsqueda con IA",
+      "archivo": "ux-ia.md"
+    },
+    {
+      "problema": "¿Esto es manipulador o ilegal? Cancelaciones, cookies, precios",
+      "archivo": "patrones-oscuros-etica.md"
+    },
+    {
+      "problema": "Elegir método de investigación / test con usuarios / A/B",
+      "archivo": "investigacion-testing.md"
+    },
+    {
+      "problema": "Qué medir: SUS, UMUX-Lite, HEART, NPS",
+      "archivo": "metricas.md"
+    },
+    {
+      "problema": "Revisión final antes de publicar",
+      "archivo": "checklist-ux.md"
+    },
+    {
+      "problema": "Errores típicos de UX que genera la IA",
+      "archivo": "anti-patrones-ux.md"
+    },
+    {
+      "problema": "Más recursos y repos",
+      "archivo": "recursos-ux.md"
+    }
+  ],
+  "heuristicas": [
+    {
+      "id": "H1",
+      "nombre": "Visibilidad del estado del sistema",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H2",
+      "nombre": "Coincidencia entre el sistema y el mundo real",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H3",
+      "nombre": "Control y libertad del usuario",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H4",
+      "nombre": "Consistencia y estándares",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H5",
+      "nombre": "Prevención de errores",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H6",
+      "nombre": "Reconocer antes que recordar",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H7",
+      "nombre": "Flexibilidad y eficiencia de uso",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H8",
+      "nombre": "Diseño estético y minimalista",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H9",
+      "nombre": "Ayudar a reconocer, diagnosticar y recuperarse de errores",
+      "archivo": "heuristicas.md"
+    },
+    {
+      "id": "H10",
+      "nombre": "Ayuda y documentación",
+      "archivo": "heuristicas.md"
+    }
+  ],
+  "escala_severidad": [
+    {
+      "nivel": 0,
+      "nombre": "No es problema"
+    },
+    {
+      "nivel": 1,
+      "nombre": "Cosmético"
+    },
+    {
+      "nivel": 2,
+      "nombre": "Menor"
+    },
+    {
+      "nivel": 3,
+      "nombre": "Mayor"
+    },
+    {
+      "nivel": 4,
+      "nombre": "Catástrofe (bloquea release)"
+    }
+  ],
+  "leyes": [
+    {
+      "id": "jakob",
+      "nombre": "Ley de Jakob",
+      "aplicacion": "Usá convenciones en navegación, carrito, login y formularios; diferenciá en contenido y marca.",
+      "evidencia": "Observacional (NN/g).",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "hick",
+      "nombre": "Ley de Hick",
+      "aplicacion": "Menos opciones visibles, opción recomendada, divulgación progresiva.",
+      "evidencia": "Experimentos de tiempo de reacción (1952); no escala lineal a menús escaneables.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "fitts",
+      "nombre": "Ley de Fitts",
+      "aplicacion": "Objetivos grandes y cerca del punto de partida; esquinas y bordes en desktop.",
+      "evidencia": "Muy robusta; base de WCAG 2.5.8.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "miller",
+      "nombre": "Ley de Miller",
+      "aplicacion": "No hagas recordar datos entre pantallas; agrupá en chunks.",
+      "evidencia": "Mal citada; Cowan (2001) estima ~4 chunks; no limita menús a 7.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "tesler",
+      "nombre": "Ley de Tesler",
+      "aplicacion": "Que el sistema absorba la complejidad (deducir, autocompletar).",
+      "evidencia": "Principio de diseño.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "doherty",
+      "nombre": "Umbral de Doherty",
+      "aplicacion": "Feedback <100 ms; respuesta <400 ms; INP ≤200 ms.",
+      "evidencia": "Paper de IBM 1982.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "peak-end",
+      "nombre": "Regla pico-final",
+      "aplicacion": "Cuidá el peor momento y la confirmación final.",
+      "evidencia": "Kahneman et al. 1993; extrapolación a productos razonable.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "postel",
+      "nombre": "Ley de Postel",
+      "aplicacion": "Aceptá formatos variados (espacios, guiones, mayúsculas).",
+      "evidencia": "Principio de ingeniería.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "goal-gradient",
+      "nombre": "Gradiente de meta",
+      "aplicacion": "Progreso visible y real en onboarding y multipaso.",
+      "evidencia": "Kivetz et al. 2006.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "zeigarnik",
+      "nombre": "Efecto Zeigarnik",
+      "aplicacion": "Checklists de activación y borradores, sin culpa.",
+      "evidencia": "Replicación mixta.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "serial-position",
+      "nombre": "Posición serial",
+      "aplicacion": "Lo clave al principio y al final de listas y navegaciones.",
+      "evidencia": "Robusto en memoria de listas.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "von-restorff",
+      "nombre": "Efecto Von Restorff",
+      "aplicacion": "Un solo acento para la acción primaria (no solo por color).",
+      "evidencia": "Robusto.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "aesthetic-usability",
+      "nombre": "Estético-usable",
+      "aplicacion": "La terminación visual suma, pero tapa problemas en tests.",
+      "evidencia": "Kurosu y Kashimura 1995; M3 Expressive 2025–2026.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "choice-overload",
+      "nombre": "Sobrecarga de opciones",
+      "aplicacion": "Comparadores, recomendados, filtros.",
+      "evidencia": "Replicaciones débiles; depende del contexto.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "active-user",
+      "nombre": "Paradoja del usuario activo",
+      "aplicacion": "Ayuda en contexto, no manuales ni tours largos.",
+      "evidencia": "Carroll y Rosson 1987.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "cognitive-load",
+      "nombre": "Carga cognitiva",
+      "aplicacion": "Reconocer > recordar, defaults, un foco por pantalla.",
+      "evidencia": "Sweller.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "gestalt",
+      "nombre": "Gestalt (proximidad, región común, similitud, conexión, Prägnanz)",
+      "aplicacion": "Ver layout/jerarquia-composicion.md.",
+      "evidencia": "Robusta.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "pareto",
+      "nombre": "Pareto",
+      "aplicacion": "Optimizá primero los flujos más frecuentes.",
+      "evidencia": "Heurística.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "selective-attention",
+      "nombre": "Atención selectiva / ceguera de banners",
+      "aplicacion": "Lo crítico inline, no en banners promocionales.",
+      "evidencia": "Eye tracking (NN/g).",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "parkinson",
+      "nombre": "Ley de Parkinson",
+      "aplicacion": "Autocompletar y checkout exprés acortan la tarea.",
+      "evidencia": "Heurística.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "occam",
+      "nombre": "Navaja de Occam",
+      "aplicacion": "La solución con menos partes móviles.",
+      "evidencia": "Heurística.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "mental-model",
+      "nombre": "Modelo mental",
+      "aplicacion": "Investigá antes de inventar un modelo nuevo.",
+      "evidencia": "NN/g.",
+      "archivo": "fundamentos.md"
+    },
+    {
+      "id": "flow",
+      "nombre": "Flow",
+      "aplicacion": "Sin interrupciones en tareas largas.",
+      "evidencia": "Csikszentmihalyi.",
+      "archivo": "fundamentos.md"
+    }
+  ],
+  "umbrales": {
+    "core_web_vitals_p75": {
+      "LCP_s": {
+        "bueno": 2.5,
+        "malo_mayor_a": 4.0
+      },
+      "INP_ms": {
+        "bueno": 200,
+        "malo_mayor_a": 500
+      },
+      "CLS": {
+        "bueno": 0.1,
+        "malo_mayor_a": 0.25
+      },
+      "fuente": "https://web.dev/articles/vitals",
+      "nota": "Soft navigations de SPA experimentales en CrUX; inclusión planeada desde mayo de 2027."
+    },
+    "tiempos_respuesta_s": {
+      "instantaneo": 0.1,
+      "flujo_continuo": 1,
+      "limite_atencion": 10,
+      "fuente": "https://www.nngroup.com/articles/response-times-3-important-limits/"
+    },
+    "indicador_carga_ms": {
+      "sin_indicador_menor_a": 300,
+      "skeleton_o_spinner": [
+        300,
+        10000
+      ],
+      "progreso_determinado_mayor_a": 10000
+    },
+    "objetivo_tactil_px": {
+      "wcag_2_5_8_minimo": 24,
+      "wcag_2_5_5_aaa": 44,
+      "apple_pt": 44,
+      "material_dp": 48,
+      "kit_principal": 44
+    },
+    "contraste": {
+      "texto_normal": 4.5,
+      "texto_grande": 3.0,
+      "no_textual": 3.0
+    },
+    "toast_min_s": 5,
+    "checkout_baymard": {
+      "campos_ideal": [
+        7,
+        8
+      ],
+      "elementos_ideal": [
+        12,
+        14
+      ],
+      "campos_promedio_us": 14.88,
+      "elementos_promedio_us": 23.48,
+      "abandono_promedio_pct": 70.22,
+      "fuente": "https://baymard.com/blog/cart-abandonment-rate",
+      "actualizado": "2026-10-28"
+    },
+    "sus_promedio": 68,
+    "test_usabilidad_cualitativo_por_perfil": 5
+  },
+  "wcag_22_nuevos": [
+    {
+      "id": "2.4.11",
+      "nombre": "Focus Not Obscured (Minimum)",
+      "nivel": "AA"
+    },
+    {
+      "id": "2.4.12",
+      "nombre": "Focus Not Obscured (Enhanced)",
+      "nivel": "AAA"
+    },
+    {
+      "id": "2.4.13",
+      "nombre": "Focus Appearance",
+      "nivel": "AAA"
+    },
+    {
+      "id": "2.5.7",
+      "nombre": "Dragging Movements",
+      "nivel": "AA"
+    },
+    {
+      "id": "2.5.8",
+      "nombre": "Target Size (Minimum)",
+      "nivel": "AA"
+    },
+    {
+      "id": "3.2.6",
+      "nombre": "Consistent Help",
+      "nivel": "A"
+    },
+    {
+      "id": "3.3.7",
+      "nombre": "Redundant Entry",
+      "nivel": "A"
+    },
+    {
+      "id": "3.3.8",
+      "nombre": "Accessible Authentication (Minimum)",
+      "nivel": "AA"
+    },
+    {
+      "id": "3.3.9",
+      "nombre": "Accessible Authentication (Enhanced)",
+      "nivel": "AAA"
+    }
+  ],
+  "normativa": [
+    {
+      "id": "wcag-3",
+      "estado": "Working Draft 10/09/2026; CR apuntada a fines de 2027, publicación inicios de 2028",
+      "usar_para_cumplimiento": false,
+      "fuente": "https://www.w3.org/TR/wcag-3.0/"
+    },
+    {
+      "id": "ada-title-ii",
+      "estado": "WCAG 2.1 AA; plazos extendidos a 26/04/2027 (≥50.000 hab.) y 26/04/2028",
+      "fuente": "https://www.federalregister.gov/documents/2026/04/20/2026-07663/extension-of-compliance-dates-for-nondiscrimination-on-the-basis-of-disability-accessibility-of-web"
+    },
+    {
+      "id": "eaa",
+      "estado": "Aplicable desde 28/06/2025; EN 301 549 V4.1.1 (WCAG 2.2) publicada 09/2026 pero aún no citada en el DOUE",
+      "fuente": "https://accessible-eu-centre.ec.europa.eu/content-corner/news/european-accessibility-standard-en-301-549-has-been-updated-2026-09-07_en"
+    },
+    {
+      "id": "ftc-click-to-cancel",
+      "estado": "Anulada 08/07/2025; regla de 1973 restaurada 12/02/2026; ANPRM 13/03/2026; ROSCA vigente",
+      "fuente": "https://www.federalregister.gov/documents/2026/02/12/2026-02866/revision-of-the-negative-option-rule-withdrawal-of-the-cars-rule-removal-of-the-non-compete-rule-to"
+    },
+    {
+      "id": "ca-ab-2863",
+      "estado": "Vigente desde 01/07/2025: click to cancel junto a ofertas de retención",
+      "fuente": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+    },
+    {
+      "id": "ftc-fees",
+      "estado": "Vigente desde 12/05/2025 (entradas y alojamiento corto): precio total",
+      "fuente": "https://www.federalregister.gov/documents/2025/01/10/2024-30293/trade-regulation-rule-on-unfair-or-deceptive-fees"
+    },
+    {
+      "id": "eu-dsa-25",
+      "estado": "Vigente desde 17/02/2024 para plataformas online",
+      "fuente": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj"
+    },
+    {
+      "id": "eu-dfa",
+      "estado": "Propuesta de la Comisión (11/2026); pendiente de Parlamento y Consejo",
+      "fuente": "https://commission.europa.eu/news-and-media/news/making-your-online-experience-fairer-2026-11-11_en"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "F-01",
+      "area": "Flujo",
+      "texto": "La tarea principal de cada pantalla se entiende en 5 segundos y tiene una sola acción primaria.",
+      "severidad_si_falla": 3,
+      "archivo": "fundamentos.md",
+      "refs": [
+        "H8"
+      ]
+    },
+    {
+      "id": "F-02",
+      "area": "Flujo",
+      "texto": "Se sabe dónde estoy, qué pasó y qué sigue (estado visible, paso actual, ítem activo).",
+      "severidad_si_falla": 3,
+      "archivo": "heuristicas.md",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "F-03",
+      "area": "Flujo",
+      "texto": "Toda acción reversible tiene deshacer; lo irreversible pide confirmación específica con verbo.",
+      "severidad_si_falla": 4,
+      "archivo": "feedback-notificaciones.md",
+      "refs": [
+        "H3",
+        "H5"
+      ]
+    },
+    {
+      "id": "F-04",
+      "area": "Flujo",
+      "texto": "El botón Atrás del navegador funciona; filtros, pestañas y páginas viven en la URL.",
+      "severidad_si_falla": 3,
+      "archivo": "arquitectura-informacion-navegacion.md",
+      "refs": [
+        "H3"
+      ]
+    },
+    {
+      "id": "F-05",
+      "area": "Flujo",
+      "texto": "No se pierde trabajo: borradores, campos que no se vacían, aviso antes de expirar la sesión.",
+      "severidad_si_falla": 4,
+      "archivo": "estados.md",
+      "refs": [
+        "H5",
+        "WCAG 2.2.1"
+      ]
+    },
+    {
+      "id": "F-06",
+      "area": "Flujo",
+      "texto": "Se pide solo lo necesario y cuando hace falta (registro, permisos, datos personales).",
+      "severidad_si_falla": 3,
+      "archivo": "onboarding-activacion.md",
+      "refs": []
+    },
+    {
+      "id": "N-01",
+      "area": "Navegación",
+      "texto": "Rótulos descriptivos en el lenguaje de la persona; navegación consistente entre páginas.",
+      "severidad_si_falla": 3,
+      "archivo": "arquitectura-informacion-navegacion.md",
+      "refs": [
+        "H2",
+        "H4",
+        "WCAG 3.2.3"
+      ]
+    },
+    {
+      "id": "N-02",
+      "area": "Navegación",
+      "texto": "Hay búsqueda si hay mucho contenido; 'sin resultados' ofrece salidas.",
+      "severidad_si_falla": 3,
+      "archivo": "busqueda-filtros.md",
+      "refs": []
+    },
+    {
+      "id": "N-03",
+      "area": "Navegación",
+      "texto": "Skip link, landmarks y título de página por ruta.",
+      "severidad_si_falla": 3,
+      "archivo": "accesibilidad.md",
+      "refs": [
+        "WCAG 2.4.1",
+        "WCAG 2.4.2"
+      ]
+    },
+    {
+      "id": "FO-01",
+      "area": "Formularios",
+      "texto": "Labels visibles arriba del campo; nada de placeholder como label.",
+      "severidad_si_falla": 3,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "WCAG 3.3.2"
+      ]
+    },
+    {
+      "id": "FO-02",
+      "area": "Formularios",
+      "texto": "type, inputmode y autocomplete correctos en cada campo.",
+      "severidad_si_falla": 2,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "WCAG 1.3.5"
+      ]
+    },
+    {
+      "id": "FO-03",
+      "area": "Formularios",
+      "texto": "Errores en texto junto al campo + resumen arriba al enviar; foco al resumen; nada se borra.",
+      "severidad_si_falla": 4,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "H9",
+        "WCAG 3.3.1",
+        "WCAG 3.3.3"
+      ]
+    },
+    {
+      "id": "FO-04",
+      "area": "Formularios",
+      "texto": "Sin validación mientras escribe; inline solo al salir de un campo con contenido.",
+      "severidad_si_falla": 2,
+      "archivo": "formularios-inputs.md",
+      "refs": []
+    },
+    {
+      "id": "FO-05",
+      "area": "Formularios",
+      "texto": "El botón de enviar no se deshabilita para indicar errores; evita doble envío con estado pending.",
+      "severidad_si_falla": 3,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "FO-06",
+      "area": "Formularios",
+      "texto": "Login permite pegar y gestores; passkeys ofrecidas; sin CAPTCHA cognitivo sin alternativa.",
+      "severidad_si_falla": 3,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "WCAG 3.3.8"
+      ]
+    },
+    {
+      "id": "FO-07",
+      "area": "Formularios",
+      "texto": "No se pide dos veces el mismo dato en un proceso.",
+      "severidad_si_falla": 2,
+      "archivo": "formularios-inputs.md",
+      "refs": [
+        "WCAG 3.3.7"
+      ]
+    },
+    {
+      "id": "E-01",
+      "area": "Estados",
+      "texto": "Cada vista con datos tiene estados: vacío inicial, sin resultados, cargando, error, parcial, éxito.",
+      "severidad_si_falla": 3,
+      "archivo": "estados.md",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "E-02",
+      "area": "Estados",
+      "texto": "Cargas >300 ms con skeleton de forma real; >10 s con progreso y estimación.",
+      "severidad_si_falla": 2,
+      "archivo": "estados.md",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "E-03",
+      "area": "Estados",
+      "texto": "Errores con causa, si se perdió algo y acción (Reintentar / pedir acceso / soporte).",
+      "severidad_si_falla": 3,
+      "archivo": "estados.md",
+      "refs": [
+        "H9"
+      ]
+    },
+    {
+      "id": "E-04",
+      "area": "Estados",
+      "texto": "Offline o red inestable: banner persistente y cambios en cola.",
+      "severidad_si_falla": 2,
+      "archivo": "estados.md",
+      "refs": []
+    },
+    {
+      "id": "FB-01",
+      "area": "Feedback",
+      "texto": "Feedback en <100 ms a toda interacción (pressed, pending).",
+      "severidad_si_falla": 3,
+      "archivo": "rendimiento-percibido.md",
+      "refs": [
+        "H1"
+      ]
+    },
+    {
+      "id": "FB-02",
+      "area": "Feedback",
+      "texto": "Toasts solo para no crítico, duran ≥5 s, se pausan con hover/foco, anunciados con role=status.",
+      "severidad_si_falla": 2,
+      "archivo": "feedback-notificaciones.md",
+      "refs": [
+        "WCAG 4.1.3",
+        "WCAG 2.2.1"
+      ]
+    },
+    {
+      "id": "FB-03",
+      "area": "Feedback",
+      "texto": "Ningún modal al cargar; dialog nativo con foco atrapado, Esc y foco de vuelta al cerrar.",
+      "severidad_si_falla": 3,
+      "archivo": "feedback-notificaciones.md",
+      "refs": [
+        "WCAG 2.1.2"
+      ]
+    },
+    {
+      "id": "A11-01",
+      "area": "Accesibilidad",
+      "texto": "Todo operable con teclado; foco visible y no tapado por headers o banners.",
+      "severidad_si_falla": 4,
+      "archivo": "accesibilidad.md",
+      "refs": [
+        "WCAG 2.1.1",
+        "WCAG 2.4.7",
+        "WCAG 2.4.11"
+      ]
+    },
+    {
+      "id": "A11-02",
+      "area": "Accesibilidad",
+      "texto": "Contraste 4,5:1 texto y 3:1 componentes; color nunca es el único medio.",
+      "severidad_si_falla": 3,
+      "archivo": "accesibilidad.md",
+      "refs": [
+        "WCAG 1.4.3",
+        "WCAG 1.4.11",
+        "WCAG 1.4.1"
+      ]
+    },
+    {
+      "id": "A11-03",
+      "area": "Accesibilidad",
+      "texto": "HTML semántico; componentes custom con nombre, rol y valor; ARIA solo si no hay nativo.",
+      "severidad_si_falla": 3,
+      "archivo": "accesibilidad.md",
+      "refs": [
+        "WCAG 4.1.2",
+        "WCAG 1.3.1"
+      ]
+    },
+    {
+      "id": "A11-04",
+      "area": "Accesibilidad",
+      "texto": "Zoom 200% y reflow a 320 px sin pérdida; prefers-reduced-motion respetado.",
+      "severidad_si_falla": 3,
+      "archivo": "accesibilidad.md",
+      "refs": [
+        "WCAG 1.4.4",
+        "WCAG 1.4.10"
+      ]
+    },
+    {
+      "id": "A11-05",
+      "area": "Accesibilidad",
+      "texto": "axe sin violaciones A/AA y una pasada manual con lector de pantalla del flujo crítico.",
+      "severidad_si_falla": 3,
+      "archivo": "accesibilidad.md",
+      "refs": []
+    },
+    {
+      "id": "M-01",
+      "area": "Mobile",
+      "texto": "Objetivos táctiles ≥24 px (principales ≥44 px) y separados.",
+      "severidad_si_falla": 3,
+      "archivo": "mobile-touch.md",
+      "refs": [
+        "WCAG 2.5.8"
+      ]
+    },
+    {
+      "id": "M-02",
+      "area": "Mobile",
+      "texto": "Gestos y arrastres con alternativa de un toque; nada solo al hover.",
+      "severidad_si_falla": 3,
+      "archivo": "mobile-touch.md",
+      "refs": [
+        "WCAG 2.5.1",
+        "WCAG 2.5.7"
+      ]
+    },
+    {
+      "id": "M-03",
+      "area": "Mobile",
+      "texto": "Acción primaria al alcance del pulgar; teclado correcto; sin user-scalable=no.",
+      "severidad_si_falla": 2,
+      "archivo": "mobile-touch.md",
+      "refs": [
+        "WCAG 1.4.4"
+      ]
+    },
+    {
+      "id": "C-01",
+      "area": "Copy",
+      "texto": "Botones con verbo + objeto; links que dicen adónde llevan.",
+      "severidad_si_falla": 2,
+      "archivo": "ux-writing-microcopy.md",
+      "refs": [
+        "WCAG 2.4.4"
+      ]
+    },
+    {
+      "id": "C-02",
+      "area": "Copy",
+      "texto": "Errores y vacíos con fórmula qué pasó + qué hago; sin jerga, sin culpa, sin 'Algo salió mal'.",
+      "severidad_si_falla": 3,
+      "archivo": "ux-writing-microcopy.md",
+      "refs": [
+        "H9"
+      ]
+    },
+    {
+      "id": "C-03",
+      "area": "Copy",
+      "texto": "Terminología consistente; idioma y formatos locales (Intl).",
+      "severidad_si_falla": 2,
+      "archivo": "ux-writing-microcopy.md",
+      "refs": [
+        "H4",
+        "WCAG 3.1.1"
+      ]
+    },
+    {
+      "id": "P-01",
+      "area": "Rendimiento",
+      "texto": "LCP ≤2,5 s, INP ≤200 ms, CLS ≤0,1 en p75 (o presupuesto equivalente en lab con CPU 4×).",
+      "severidad_si_falla": 3,
+      "archivo": "rendimiento-percibido.md",
+      "refs": []
+    },
+    {
+      "id": "P-02",
+      "area": "Rendimiento",
+      "texto": "Espacio reservado para imágenes, embeds y contenido tardío (sin saltos).",
+      "severidad_si_falla": 2,
+      "archivo": "rendimiento-percibido.md",
+      "refs": []
+    },
+    {
+      "id": "D-01",
+      "area": "Datos",
+      "texto": "KPIs con comparación, período y última actualización; tablas con números a la derecha y tabular-nums.",
+      "severidad_si_falla": 2,
+      "archivo": "tablas-datos-dashboards.md",
+      "refs": []
+    },
+    {
+      "id": "IA-01",
+      "area": "IA",
+      "texto": "Si hay IA: capacidades y límites claros, fuentes, Detener, editar/regenerar, contenido marcado.",
+      "severidad_si_falla": 3,
+      "archivo": "ux-ia.md",
+      "refs": [
+        "AI-01",
+        "AI-04",
+        "AI-05",
+        "AI-06",
+        "AI-07"
+      ]
+    },
+    {
+      "id": "IA-02",
+      "area": "IA",
+      "texto": "Si hay agentes: plan visible, permisos mínimos, aprobación antes de lo irreversible, traspaso a humano.",
+      "severidad_si_falla": 4,
+      "archivo": "ux-ia.md",
+      "refs": [
+        "AI-08",
+        "AI-09"
+      ]
+    },
+    {
+      "id": "ET-01",
+      "area": "Ética",
+      "texto": "Sin patrones oscuros: rechazar = aceptar en esfuerzo, cancelar = contratar, nada pre-tildado con costo, urgencia real.",
+      "severidad_si_falla": 4,
+      "archivo": "patrones-oscuros-etica.md",
+      "refs": []
+    },
+    {
+      "id": "ET-02",
+      "area": "Ética",
+      "texto": "Precio total visible antes del pago (envío, impuestos, fees).",
+      "severidad_si_falla": 4,
+      "archivo": "checkout-ecommerce.md",
+      "refs": []
+    }
+  ],
+  "checklist_accesibilidad_ids": "A-01…A-28 en accesibilidad.md",
+  "checklist_ia_ids": "AI-01…AI-12 en ux-ia.md",
+  "soporte_web_platform": {
+    "fuente": "web-features 3.46.0 (19/11/2026)",
+    "items": [
+      {
+        "feature": "dialog",
+        "baseline": "high"
+      },
+      {
+        "feature": "invoker-commands (commandfor/command)",
+        "baseline": "low",
+        "desde": "2025-12-12"
+      },
+      {
+        "feature": "popover",
+        "baseline": "low",
+        "desde": "2025-01-27"
+      },
+      {
+        "feature": "dialog closedby",
+        "baseline": false,
+        "nota": "sin Safari"
+      },
+      {
+        "feature": "customizable-select (appearance: base-select)",
+        "baseline": false,
+        "nota": "Chrome 135+, Safari 27; sin Firefox"
+      },
+      {
+        "feature": "interestfor / popover=hint",
+        "baseline": false,
+        "nota": "solo Chromium"
+      },
+      {
+        "feature": "field-sizing",
+        "baseline": "low",
+        "desde": "2026-06-16"
+      },
+      {
+        "feature": "view-transitions (mismo documento)",
+        "baseline": "low",
+        "desde": "2025-10-14"
+      },
+      {
+        "feature": "details name (acordeón exclusivo)",
+        "baseline": "low",
+        "desde": "2024-09-03"
+      },
+      {
+        "feature": "inert",
+        "baseline": "high"
+      },
+      {
+        "feature": "search element",
+        "baseline": "high"
+      },
+      {
+        "feature": "speculation-rules",
+        "baseline": false,
+        "nota": "solo Chromium"
+      }
+    ]
+  },
+  "recursos_repos": {
+    "consultado": "2026-11-19T17:46+00:00",
+    "fuente": "GitHub API",
+    "repos": [
+      {
+        "name": "thedaviddias/Front-End-Checklist",
+        "url": "https://github.com/thedaviddias/Front-End-Checklist",
+        "stars": 74780,
+        "pushed_at": "2026-10-31T05:44:22Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "checklists",
+        "para_que": "Checklist de frontend \"para humanos y agentes\"; usala junto a checklist-ux.md para lo técnico (meta, perf, seguridad)."
+      },
+      {
+        "name": "react-hook-form/react-hook-form",
+        "url": "https://github.com/react-hook-form/react-hook-form",
+        "stars": 44925,
+        "pushed_at": "2026-11-18T00:15:09Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "formularios",
+        "para_que": "Estado y validación de formularios en React con modos onTouched/onBlur para la validación del kit."
+      },
+      {
+        "name": "GoogleChrome/lighthouse",
+        "url": "https://github.com/GoogleChrome/lighthouse",
+        "stars": 31164,
+        "pushed_at": "2026-11-19T14:11:49Z",
+        "license": "Apache-2.0",
+        "archived": false,
+        "categoria": "medicion",
+        "para_que": "Auditoría de rendimiento, accesibilidad y buenas prácticas; Lighthouse CI para presupuestos."
+      },
+      {
+        "name": "usablica/intro.js",
+        "url": "https://github.com/usablica/intro.js",
+        "stars": 23459,
+        "pushed_at": "2026-11-12T17:40:51Z",
+        "license": "NOASSERTION",
+        "archived": false,
+        "categoria": "onboarding",
+        "para_que": "Tours de producto. Usalo poco: el kit desaconseja tours largos; sirve para un tooltip contextual puntual. Revisá la licencia (AGPL/comercial)."
+      },
+      {
+        "name": "GoogleChrome/web-vitals",
+        "url": "https://github.com/GoogleChrome/web-vitals",
+        "stars": 8698,
+        "pushed_at": "2026-11-12T03:40:47Z",
+        "license": "Apache-2.0",
+        "archived": false,
+        "categoria": "medicion",
+        "para_que": "Medir LCP, INP y CLS reales (RUM) con atribución."
+      },
+      {
+        "name": "dequelabs/axe-core",
+        "url": "https://github.com/dequelabs/axe-core",
+        "stars": 7858,
+        "pushed_at": "2026-11-18T21:59:26Z",
+        "license": "MPL-2.0",
+        "archived": false,
+        "categoria": "accesibilidad",
+        "para_que": "Motor de tests automáticos de accesibilidad (Playwright, Jest, CI)."
+      },
+      {
+        "name": "uswds/uswds",
+        "url": "https://github.com/uswds/uswds",
+        "stars": 7248,
+        "pushed_at": "2026-11-04T22:10:11Z",
+        "license": "NOASSERTION",
+        "archived": false,
+        "categoria": "sistemas-de-diseno",
+        "para_que": "U.S. Web Design System: componentes y patrones accesibles probados en servicios federales de EE.UU."
+      },
+      {
+        "name": "thedaviddias/Front-End-Design-Checklist",
+        "url": "https://github.com/thedaviddias/Front-End-Design-Checklist",
+        "stars": 5382,
+        "pushed_at": "2024-12-10T17:02:47Z",
+        "license": "CC0-1.0",
+        "archived": false,
+        "categoria": "checklists",
+        "para_que": "Checklist de diseño para handoff (estados, tipografía, assets)."
+      },
+      {
+        "name": "pa11y/pa11y",
+        "url": "https://github.com/pa11y/pa11y",
+        "stars": 4603,
+        "pushed_at": "2026-11-16T02:43:59Z",
+        "license": "LGPL-3.0",
+        "archived": false,
+        "categoria": "accesibilidad",
+        "para_que": "Tests de accesibilidad por línea de comandos y en CI."
+      },
+      {
+        "name": "openui/open-ui",
+        "url": "https://github.com/openui/open-ui",
+        "stars": 4546,
+        "pushed_at": "2026-11-19T17:43:43Z",
+        "license": "NOASSERTION",
+        "archived": false,
+        "categoria": "estandares",
+        "para_que": "Investigación de componentes nativos (select personalizable, popover, invokers): por qué los nuevos primitivos funcionan como funcionan."
+      },
+      {
+        "name": "Jakubantalik/thinking-orbs",
+        "url": "https://github.com/Jakubantalik/thinking-orbs",
+        "stars": 4048,
+        "pushed_at": "2026-08-16T08:19:07Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "ia",
+        "para_que": "Indicadores de \"pensando\" para UIs de IA y agentes; alternativa a spinners mudos (combinar con texto de estado)."
+      },
+      {
+        "name": "a11yproject/a11yproject.com",
+        "url": "https://github.com/a11yproject/a11yproject.com",
+        "stars": 3913,
+        "pushed_at": "2026-11-09T01:19:40Z",
+        "license": "Apache-2.0",
+        "archived": false,
+        "categoria": "accesibilidad",
+        "para_que": "The A11Y Project: checklist WCAG en lenguaje llano, posts y recursos."
+      },
+      {
+        "name": "oil-oil/oil-ui",
+        "url": "https://github.com/oil-oil/oil-ui",
+        "stars": 3550,
+        "pushed_at": "2026-11-18T17:33:21Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Skill de UI para agentes que explora direcciones y compara antes de construir."
+      },
+      {
+        "name": "Owl-Listener/designer-skills",
+        "url": "https://github.com/Owl-Listener/designer-skills",
+        "stars": 3428,
+        "pushed_at": "2026-11-19T09:50:22Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Colección de skills de diseño para agentes (investigación a sistemas). Comparar con la skill del kit."
+      },
+      {
+        "name": "brunopulis/awesome-a11y",
+        "url": "https://github.com/brunopulis/awesome-a11y",
+        "stars": 2005,
+        "pushed_at": "2026-08-03T22:10:04Z",
+        "license": "CC0-1.0",
+        "archived": false,
+        "categoria": "accesibilidad",
+        "para_que": "Lista curada de recursos de accesibilidad (CC0)."
+      },
+      {
+        "name": "raunofreiberg/interfaces",
+        "url": "https://github.com/raunofreiberg/interfaces",
+        "stars": 1963,
+        "pushed_at": "2023-09-07T17:56:26Z",
+        "license": null,
+        "archived": false,
+        "categoria": "detalles",
+        "para_que": "Lista de detalles de interacción que hacen buena una interfaz web (sin licencia declarada: leer y linkear, no copiar)."
+      },
+      {
+        "name": "alphagov/govuk-frontend",
+        "url": "https://github.com/alphagov/govuk-frontend",
+        "stars": 1485,
+        "pushed_at": "2026-11-19T17:11:46Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "sistemas-de-diseno",
+        "para_que": "Código de GOV.UK Frontend: error summary, validación, preguntas de a una, todo testeado con usuarios."
+      },
+      {
+        "name": "hendurhance/ui-ux",
+        "url": "https://github.com/hendurhance/ui-ux",
+        "stars": 1469,
+        "pushed_at": "2026-10-13T11:00:31Z",
+        "license": "CC0-1.0",
+        "archived": false,
+        "categoria": "aprendizaje",
+        "para_que": "Ruta de aprendizaje UI/UX en tres niveles (CC0)."
+      },
+      {
+        "name": "w3c/aria-practices",
+        "url": "https://github.com/w3c/aria-practices",
+        "stars": 1365,
+        "pushed_at": "2026-11-18T14:27:28Z",
+        "license": "NOASSERTION",
+        "archived": false,
+        "categoria": "accesibilidad",
+        "para_que": "Fuente del WAI-ARIA Authoring Practices Guide (patrones y ejemplos de teclado)."
+      },
+      {
+        "name": "vercel-labs/web-interface-guidelines",
+        "url": "https://github.com/vercel-labs/web-interface-guidelines",
+        "stars": 1220,
+        "pushed_at": "2026-10-05T20:49:17Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "detalles",
+        "para_que": "Guías de interfaz web de Vercel (teclado, foco, formularios, animación); se usan como reglas para agentes."
+      },
+      {
+        "name": "uxchecklist/uxchecklist.github.io",
+        "url": "https://github.com/uxchecklist/uxchecklist.github.io",
+        "stars": 960,
+        "pushed_at": "2026-04-22T03:28:47Z",
+        "license": "GPL-3.0",
+        "archived": false,
+        "categoria": "checklists",
+        "para_que": "Checklist de proyecto UX por etapas (GPL-3.0)."
+      },
+      {
+        "name": "alphagov/govuk-design-system",
+        "url": "https://github.com/alphagov/govuk-design-system",
+        "stars": 692,
+        "pushed_at": "2026-11-19T17:35:07Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "sistemas-de-diseno",
+        "para_que": "Sitio y guías del GOV.UK Design System (patrones, investigación detrás de cada componente)."
+      },
+      {
+        "name": "felipebasurto/unslop-ui",
+        "url": "https://github.com/felipebasurto/unslop-ui",
+        "stars": 524,
+        "pushed_at": "2026-11-18T11:59:06Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Skill que saca tells de IA de la copy de UI, gráficos y dashboards (complementa ux-writing-microcopy.md)."
+      },
+      {
+        "name": "tommyjepsen/awesome-ux-skills",
+        "url": "https://github.com/tommyjepsen/awesome-ux-skills",
+        "stars": 322,
+        "pushed_at": "2026-08-10T09:27:20Z",
+        "license": null,
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Lista de skills de UX y producto para Claude, Codex, etc. (sin licencia declarada)."
+      },
+      {
+        "name": "cuellarfr/design-skills",
+        "url": "https://github.com/cuellarfr/design-skills",
+        "stars": 128,
+        "pushed_at": "2026-09-30T23:58:25Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Skills de UX: investigación, crítica, accesibilidad, journey mapping."
+      },
+      {
+        "name": "quietloudlab/ai-interaction-atlas",
+        "url": "https://github.com/quietloudlab/ai-interaction-atlas",
+        "stars": 126,
+        "pushed_at": "2026-08-24T13:07:40Z",
+        "license": "Apache-2.0",
+        "archived": false,
+        "categoria": "ia",
+        "para_que": "Lenguaje compartido para diseñar experiencias con IA (Apache-2.0)."
+      },
+      {
+        "name": "artouc/stop-describing-ui",
+        "url": "https://github.com/artouc/stop-describing-ui",
+        "stars": 94,
+        "pushed_at": "2026-10-11T08:06:16Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Skill que quita texto explicativo innecesario de interfaces."
+      },
+      {
+        "name": "mohsen-rafiei/UX_datasets",
+        "url": "https://github.com/mohsen-rafiei/UX_datasets",
+        "stars": 63,
+        "pushed_at": "2025-11-03T04:24:55Z",
+        "license": "NOASSERTION",
+        "archived": false,
+        "categoria": "investigacion",
+        "para_que": "Datasets de investigación UX para practicar análisis."
+      },
+      {
+        "name": "marvinrez/ux-wise-agent",
+        "url": "https://github.com/marvinrez/ux-wise-agent",
+        "stars": 52,
+        "pushed_at": "2026-10-29T02:02:33Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Pack de skills para diseñadores y PMs (estrategia, discovery)."
+      },
+      {
+        "name": "keysjoao/laws-of-ux-skills",
+        "url": "https://github.com/keysjoao/laws-of-ux-skills",
+        "stars": 30,
+        "pushed_at": "2026-05-08T16:51:37Z",
+        "license": "MIT",
+        "archived": false,
+        "categoria": "skills-agentes",
+        "para_que": "Tres skills de Claude Code basadas en las 30 leyes de UX (asesor, auditoría, prompts)."
+      }
+    ]
+  }
+}
