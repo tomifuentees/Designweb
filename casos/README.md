@@ -16,6 +16,7 @@ Ninguno de esos nombres se toma como caso escrito hasta que exista el markdown, 
 | Archivo | Contenido |
 |---|---|
 | [plantilla.md](./plantilla.md) | Molde para un caso: contexto, antes, decisiones, después, qué no hacer la próxima |
+| [plantilla-design-md.md](./plantilla-design-md.md) | Molde de `DESIGN.md` para la raíz de un proyecto: tokens en YAML y secciones fijas que el agente lee antes de tocar la UI (formato adaptado de awesome-design-md, MIT) |
 
 ## Cómo se documenta un caso
 

@@ -5,7 +5,7 @@ Alta saturación, pero **con regla 70-30-10**. Dopamina no es “rainbow vomit�
 El magenta de Y2K es una decisión de estilo, no el violeta de plantilla. No lo uses en un hero de “AI platform”.
 
 
-Hay **4 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
+Hay **6 paletas** (las dos últimas, bauhaus primario y memphis pastel, son propias para los estilos nuevos de noviembre de 2026) en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
 
 
 ---
@@ -16,7 +16,7 @@ Hay **4 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas
 
 **Mejor para:** campañas, portfolios ruidosos, educación joven, anti-plantilla.  
 **Evitá en:** banca, salud, lujo silencioso, como tema completo de un SaaS serio.  
-**Estilos:** [`neo-brutalismo`](../estilos/neo-brutalismo.md), [`anti-diseno`](../estilos/anti-diseno.md), [`dopamina-saturado`](../estilos/dopamina-saturado.md).
+**Estilos:** [`neo-brutalismo`](../estilos/neo-brutalismo.md), [`anti-diseno`](../estilos/anti-diseno.md), [`dopamina-saturado`](../estilos/dopamina-saturado.md), [`bauhaus`](../estilos/bauhaus.md), [`memphis`](../estilos/memphis.md).
 
 Amarillo de señal + negro. El acento en claro es casi negro (botón sólido) o el amarillo con texto negro. Nada de sombra suave ni radios altos.
 
@@ -101,7 +101,7 @@ Amarillo de señal + negro. El acento en claro es casi negro (botón sólido) o 
 
 **Mejor para:** marcas jóvenes, consumo, campañas, eventos.  
 **Evitá en:** sistemas densos, banca, gobierno.  
-**Estilos:** [`dopamina-saturado`](../estilos/dopamina-saturado.md), [`maximalismo`](../estilos/maximalismo.md), [`retrofuturismo-y2k`](../estilos/retrofuturismo-y2k.md).
+**Estilos:** [`dopamina-saturado`](../estilos/dopamina-saturado.md), [`maximalismo`](../estilos/maximalismo.md), [`retrofuturismo-y2k`](../estilos/retrofuturismo-y2k.md), [`memphis`](../estilos/memphis.md).
 
 Dopamina no es rainbow vomit. Un coral (70) + un apoyo muy puntual, el resto neutro cálido. Si metés lima y violeta y cian juntos, volviste al slop.
 
@@ -271,7 +271,7 @@ El magenta acá es deliberado (Y2K), no el violeta de plantilla. No lo uses en u
 
 **Mejor para:** cultura, eventos, editorial ruidosa, campañas.  
 **Evitá en:** dashboards, onboarding de producto.  
-**Estilos:** [`maximalismo`](../estilos/maximalismo.md), [`editorial-revista`](../estilos/editorial-revista.md), [`tipografia-kinetica`](../estilos/tipografia-kinetica.md), [`grilla-rota`](../estilos/grilla-rota.md).
+**Estilos:** [`maximalismo`](../estilos/maximalismo.md), [`editorial-revista`](../estilos/editorial-revista.md), [`tipografia-kinetica`](../estilos/tipografia-kinetica.md), [`grilla-rota`](../estilos/grilla-rota.md), [`bauhaus`](../estilos/bauhaus.md).
 
 70-30-10. El rojo póster es el 10. El fondo papel sucio es el 70. Si cada bloque pide atención, no es maximalismo: es ruido.
 
@@ -341,6 +341,172 @@ El magenta acá es deliberado (Y2K), no el violeta de plantilla. No lo uses en u
   --accent: oklch(0.5903 0.21299 26.78); /* #e02e2e */
   --accent-foreground: oklch(1.0000 0.00000 0.00); /* #ffffff */
   --accent-text: oklch(0.7897 0.12162 26.88); /* #ff9b90 */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Bauhaus primario
+
+`bauhaus-primario` — Rojo, amarillo y azul ajustados, con negro y blanco
+
+**Mejor para:** cultura y museos, escuelas de diseño, festivales, educación.  
+**Evitá en:** salud, banca, dashboards densos.  
+**Estilos:** [`bauhaus`](../estilos/bauhaus.md), [`suizo-internacional`](../estilos/suizo-internacional.md), [`expresivo-minimo`](../estilos/expresivo-minimo.md).
+
+Paleta propia de Designweb para el estilo bauhaus. Secundarios para bloques de color (no para texto): azul #1f4fa3 y amarillo #f2c230. El amarillo nunca lleva texto blanco.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#fafaf8` | `oklch(0.9845 0.00264 106.45)` |
+| Superficie | `#efefec` | `oklch(0.9513 0.00399 106.48)` |
+| Borde | `#d6d6d2` | `oklch(0.8750 0.00543 106.51)` |
+| Texto | `#111111` | `oklch(0.1776 0.00000 0.00)` |
+| Muted | `#4a4a48` | `oklch(0.4084 0.00328 106.54)` |
+| Acento (sólido) | `#c8321e` | `oklch(0.5494 0.18963 31.05)` |
+| Acento foreground | `#ffffff` | `oklch(1.0000 0.00000 0.00)` |
+| Acento texto/link | `#b02a18` | `oklch(0.4987 0.17319 31.09)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#111111` | `oklch(0.1776 0.00000 0.00)` |
+| Superficie | `#1c1c1c` | `oklch(0.2264 0.00000 0.00)` |
+| Borde | `#333333` | `oklch(0.3211 0.00000 0.00)` |
+| Texto | `#f5f5f2` | `oklch(0.9693 0.00397 106.47)` |
+| Muted | `#bababa` | `oklch(0.7889 0.00000 0.00)` |
+| Acento (sólido) | `#f2c230` | `oklch(0.8340 0.15843 88.96)` |
+| Acento foreground | `#111111` | `oklch(0.1776 0.00000 0.00)` |
+| Acento texto/link | `#f2c230` | `oklch(0.8340 0.15843 88.96)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 18.07:1, APCA Lc 102.3 (oscuro-sobre-claro); texto sobre superficie WCAG 16.39:1, APCA Lc 95.7 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 5.34:1, APCA Lc -80.5 (claro-sobre-oscuro). Muted sobre fondo WCAG 8.50:1, APCA Lc 87.3 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 5.11:1, APCA Lc 72.0 (oscuro-sobre-claro)). `accent-text` está igualado o derivado para ese rol.
+
+**Oscuro:** texto sobre fondo WCAG 17.29:1, APCA Lc -100.7 (claro-sobre-oscuro); texto sobre superficie WCAG 15.60:1, APCA Lc -99.6 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 11.27:1, APCA Lc 73.8 (oscuro-sobre-claro). Muted sobre fondo WCAG 9.73:1, APCA Lc -64.7 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 11.27:1, APCA Lc -72.9 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Bauhaus primario — claro */
+  --bg: oklch(0.9845 0.00264 106.45); /* #fafaf8 */
+  --surface: oklch(0.9513 0.00399 106.48); /* #efefec */
+  --border: oklch(0.8750 0.00543 106.51); /* #d6d6d2 */
+  --text: oklch(0.1776 0.00000 0.00); /* #111111 */
+  --muted: oklch(0.4084 0.00328 106.54); /* #4a4a48 */
+  --accent: oklch(0.5494 0.18963 31.05); /* #c8321e */
+  --accent-foreground: oklch(1.0000 0.00000 0.00); /* #ffffff */
+  --accent-text: oklch(0.4987 0.17319 31.09); /* #b02a18 */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Bauhaus primario — oscuro */
+  --bg: oklch(0.1776 0.00000 0.00); /* #111111 */
+  --surface: oklch(0.2264 0.00000 0.00); /* #1c1c1c */
+  --border: oklch(0.3211 0.00000 0.00); /* #333333 */
+  --text: oklch(0.9693 0.00397 106.47); /* #f5f5f2 */
+  --muted: oklch(0.7889 0.00000 0.00); /* #bababa */
+  --accent: oklch(0.8340 0.15843 88.96); /* #f2c230 */
+  --accent-foreground: oklch(0.1776 0.00000 0.00); /* #111111 */
+  --accent-text: oklch(0.8340 0.15843 88.96); /* #f2c230 */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Memphis pastel
+
+`memphis-pastel` — Rosa chicle, menta y amarillo pollito, con negro de estructura
+
+**Mejor para:** eventos y festivales, juguetes y kids, música, campañas de temporada.  
+**Evitá en:** salud, finanzas, legal, B2B.  
+**Estilos:** [`memphis`](../estilos/memphis.md), [`dopamina-saturado`](../estilos/dopamina-saturado.md), [`maximalismo`](../estilos/maximalismo.md).
+
+Paleta propia de Designweb para el estilo memphis. Pasteles para formas y patrones (nunca bajo texto): rosa #ff8fb1, menta #7fe0c3, amarillo #ffe066, celeste #8ecbff.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#ffffff` | `oklch(1.0000 0.00000 0.00)` |
+| Superficie | `#f4f1ee` | `oklch(0.9596 0.00515 67.76)` |
+| Borde | `#dcd7d2` | `oklch(0.8817 0.00876 67.71)` |
+| Texto | `#141414` | `oklch(0.1913 0.00000 0.00)` |
+| Muted | `#4d4a47` | `oklch(0.4110 0.00636 67.65)` |
+| Acento (sólido) | `#c42a63` | `oklch(0.5479 0.19191 4.44)` |
+| Acento foreground | `#ffffff` | `oklch(1.0000 0.00000 0.00)` |
+| Acento texto/link | `#c42a63` | `oklch(0.5479 0.19191 4.44)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#141414` | `oklch(0.1913 0.00000 0.00)` |
+| Superficie | `#1f1d1c` | `oklch(0.2326 0.00364 48.56)` |
+| Borde | `#3a3633` | `oklch(0.3359 0.00768 59.42)` |
+| Texto | `#fbf6f0` | `oklch(0.9753 0.00961 72.66)` |
+| Muted | `#c2bab2` | `oklch(0.7932 0.01439 67.62)` |
+| Acento (sólido) | `#7fe0c3` | `oklch(0.8388 0.10168 172.37)` |
+| Acento foreground | `#141414` | `oklch(0.1913 0.00000 0.00)` |
+| Acento texto/link | `#7fe0c3` | `oklch(0.8388 0.10168 172.37)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 18.42:1, APCA Lc 105.1 (oscuro-sobre-claro); texto sobre superficie WCAG 16.37:1, APCA Lc 97.0 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 5.44:1, APCA Lc -81.0 (claro-sobre-oscuro). Muted sobre fondo WCAG 8.80:1, APCA Lc 90.1 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 5.44:1, APCA Lc 75.7 (oscuro-sobre-claro)). `accent-text` está igualado o derivado para ese rol.
+
+**Oscuro:** texto sobre fondo WCAG 17.14:1, APCA Lc -101.6 (claro-sobre-oscuro); texto sobre superficie WCAG 15.62:1, APCA Lc -100.6 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 11.71:1, APCA Lc 76.8 (oscuro-sobre-claro). Muted sobre fondo WCAG 9.62:1, APCA Lc -65.1 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 11.71:1, APCA Lc -76.4 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Memphis pastel — claro */
+  --bg: oklch(1.0000 0.00000 0.00); /* #ffffff */
+  --surface: oklch(0.9596 0.00515 67.76); /* #f4f1ee */
+  --border: oklch(0.8817 0.00876 67.71); /* #dcd7d2 */
+  --text: oklch(0.1913 0.00000 0.00); /* #141414 */
+  --muted: oklch(0.4110 0.00636 67.65); /* #4d4a47 */
+  --accent: oklch(0.5479 0.19191 4.44); /* #c42a63 */
+  --accent-foreground: oklch(1.0000 0.00000 0.00); /* #ffffff */
+  --accent-text: oklch(0.5479 0.19191 4.44); /* #c42a63 */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Memphis pastel — oscuro */
+  --bg: oklch(0.1913 0.00000 0.00); /* #141414 */
+  --surface: oklch(0.2326 0.00364 48.56); /* #1f1d1c */
+  --border: oklch(0.3359 0.00768 59.42); /* #3a3633 */
+  --text: oklch(0.9753 0.00961 72.66); /* #fbf6f0 */
+  --muted: oklch(0.7932 0.01439 67.62); /* #c2bab2 */
+  --accent: oklch(0.8388 0.10168 172.37); /* #7fe0c3 */
+  --accent-foreground: oklch(0.1913 0.00000 0.00); /* #141414 */
+  --accent-text: oklch(0.8388 0.10168 172.37); /* #7fe0c3 */
   --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
   --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
   --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */

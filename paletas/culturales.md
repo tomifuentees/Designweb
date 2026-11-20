@@ -5,7 +5,7 @@ Voces más específicas: sumi y sello, hielo nórdico, vino de noche, bosque, ar
 `cera-suave` usa un violeta a propósito, porque el claymorfismo vive en pasteles. No es el degradé índigo de hero: es un relleno sólido con contraste chequeado, y está documentada como nicho, no como tendencia 2026. `niebla-vidrio` es para un panel sobre una foto, no para un sitio entero de glass.
 
 
-Hay **11 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
+Hay **12 paletas** (la última, rosa del desierto, adaptada en noviembre de 2026 de la skill theme-factory de Anthropic) en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
 
 
 ---
@@ -936,6 +936,89 @@ Los pasteles de clay suelen fallar contraste. Acá el acento y el texto están f
   --accent: oklch(0.7634 0.13517 294.60); /* #b8a0ff */
   --accent-foreground: oklch(0.1448 0.00000 0.00); /* #0a0a0a */
   --accent-text: oklch(0.7830 0.12342 295.01); /* #bea8ff */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Rosa del desierto
+
+`rosa-desierto` — Rosa viejo, arcilla y ciruela, cálido sin ser beige
+
+**Mejor para:** cosmética y estética, bodas y eventos, moda, hospitality boutique.  
+**Evitá en:** devtools, industria, salud clínica.  
+**Estilos:** [`editorial-revista`](../estilos/editorial-revista.md), [`organico-terroso`](../estilos/organico-terroso.md), [`expresivo-minimo`](../estilos/expresivo-minimo.md), [`realismo-tactil`](../estilos/realismo-tactil.md).
+
+Adaptada del tema 'Desert Rose' de theme-factory (Anthropic, Apache 2.0): rosa #d4a5a5, arcilla #b87d6d, arena #e8d5c4, ciruela #5d2e46. La ciruela es el acento sólido en claro; el rosa viejo, en oscuro. La arena queda para superficies de foto, no de fondo.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#faf6f5` | `oklch(0.9759 0.00450 34.31)` |
+| Superficie | `#f2e8e6` | `oklch(0.9383 0.01123 31.07)` |
+| Borde | `#e0cdca` | `oklch(0.8631 0.02174 28.35)` |
+| Texto | `#2a1620` | `oklch(0.2317 0.03629 348.94)` |
+| Muted | `#6b5058` | `oklch(0.4622 0.03799 359.16)` |
+| Acento (sólido) | `#5d2e46` | `oklch(0.3713 0.07548 349.48)` |
+| Acento foreground | `#fbeff3` | `oklch(0.9626 0.01392 355.00)` |
+| Acento texto/link | `#5d2e46` | `oklch(0.3713 0.07548 349.48)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#170d12` | `oklch(0.1751 0.01951 347.87)` |
+| Superficie | `#22141b` | `oklch(0.2129 0.02601 348.12)` |
+| Borde | `#3d2830` | `oklch(0.3052 0.03390 354.72)` |
+| Texto | `#f5e9ec` | `oklch(0.9443 0.01357 0.27)` |
+| Muted | `#ccb3ba` | `oklch(0.7902 0.03018 359.00)` |
+| Acento (sólido) | `#dbb0b0` | `oklch(0.7956 0.05023 18.26)` |
+| Acento foreground | `#1c0c14` | `oklch(0.1816 0.03080 349.26)` |
+| Acento texto/link | `#e2b8b8` | `oklch(0.8196 0.04861 18.19)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 15.85:1, APCA Lc 98.9 (oscuro-sobre-claro); texto sobre superficie WCAG 14.15:1, APCA Lc 91.4 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 9.64:1, APCA Lc -90.1 (claro-sobre-oscuro). Muted sobre fondo WCAG 6.72:1, APCA Lc 80.1 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 10.06:1, APCA Lc 89.8 (oscuro-sobre-claro)). `accent-text` está igualado o derivado para ese rol.
+
+**Oscuro:** texto sobre fondo WCAG 16.10:1, APCA Lc -94.9 (claro-sobre-oscuro); texto sobre superficie WCAG 14.99:1, APCA Lc -94.2 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 9.76:1, APCA Lc 66.1 (oscuro-sobre-claro). Muted sobre fondo WCAG 9.73:1, APCA Lc -64.3 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 9.84:1, APCA Lc -64.9 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Rosa del desierto — claro */
+  --bg: oklch(0.9759 0.00450 34.31); /* #faf6f5 */
+  --surface: oklch(0.9383 0.01123 31.07); /* #f2e8e6 */
+  --border: oklch(0.8631 0.02174 28.35); /* #e0cdca */
+  --text: oklch(0.2317 0.03629 348.94); /* #2a1620 */
+  --muted: oklch(0.4622 0.03799 359.16); /* #6b5058 */
+  --accent: oklch(0.3713 0.07548 349.48); /* #5d2e46 */
+  --accent-foreground: oklch(0.9626 0.01392 355.00); /* #fbeff3 */
+  --accent-text: oklch(0.3713 0.07548 349.48); /* #5d2e46 */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Rosa del desierto — oscuro */
+  --bg: oklch(0.1751 0.01951 347.87); /* #170d12 */
+  --surface: oklch(0.2129 0.02601 348.12); /* #22141b */
+  --border: oklch(0.3052 0.03390 354.72); /* #3d2830 */
+  --text: oklch(0.9443 0.01357 0.27); /* #f5e9ec */
+  --muted: oklch(0.7902 0.03018 359.00); /* #ccb3ba */
+  --accent: oklch(0.7956 0.05023 18.26); /* #dbb0b0 */
+  --accent-foreground: oklch(0.1816 0.03080 349.26); /* #1c0c14 */
+  --accent-text: oklch(0.8196 0.04861 18.19); /* #e2b8b8 */
   --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
   --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
   --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */

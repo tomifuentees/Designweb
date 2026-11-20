@@ -27,6 +27,12 @@
   --shadow-md: 0 8px 24px -8px oklch(0 0 0 / 0.12);
   --shadow-lg: 0 24px 48px -12px oklch(0 0 0 / 0.18);
 
+  /* Sombra en capas (idea de Open Props): varias cortas y tenues en vez de una grande */
+  --shadow-layered:
+    0 1px 2px -1px oklch(0.2 0.01 250 / 0.08),
+    0 3px 5px -2px oklch(0.2 0.01 250 / 0.05),
+    0 7px 14px -5px oklch(0.2 0.01 250 / 0.07);
+
   /* Tipo fluido → text-body, text-h1, text-display… */
   --text-caption: clamp(0.8125rem, 0.7908rem + 0.1087vw, 0.8750rem);
   --text-sm:      clamp(0.8750rem, 0.8533rem + 0.1087vw, 0.9375rem);
@@ -55,6 +61,11 @@
   --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
   --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Sumado el 20/11/2026: easings de Open Props (MIT, Adam Argyle), sin elastic ni squish */
+  --ease-out-3: cubic-bezier(0, 0, 0.3, 1);
+  --ease-out-5: cubic-bezier(0, 0, 0, 1);
+  --ease-in-out-3: cubic-bezier(0.5, 0, 0.5, 1);
 
   /* Breakpoints v4 (rem). Un 3xl es opcional, no default. */
   --breakpoint-sm: 40rem;

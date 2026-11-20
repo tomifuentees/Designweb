@@ -5,10 +5,13 @@ Bloque reutilizable. Está escrito para que un agente lo siga en cada sesión, n
 ```md
 ## Diseño frontend (obligatorio)
 
-Leé, antes de diseñar o de tocar UI, el kit de este repo:
-- tipografias/README.md y tipografias/fonts.json
+Modo: si el pedido es solo visual sobre una UI que ya existe ("rediseño sin tocar interfaces", "que se vea mejor"), es restyling: leé como máximo 3 archivos del kit (indice-rapido.json primero), escribí un brief de 5 líneas sin pedir aprobación y editá tema, CSS y className enseguida. No cambies estructura, textos, props, lógica ni rutas. Nunca termines sin diffs. Detalle: skills/frontend-design/restyling.md.
+
+Leé, antes de diseñar UI nueva, el kit de este repo:
+- indice-rapido.json (estilos, paletas y fuentes resumidos: para elegir alcanza)
+- tipografias/README.md; de tipografias/fonts.json solo la ficha elegida (jq por id; el archivo pesa ~135 KB)
 - estilos/README.md y estilos/estilos.json
-- paletas/README.md, paletas/evadir-degrade-violeta.md y paletas/paletas.json
+- paletas/README.md y paletas/evadir-degrade-violeta.md; de paletas/paletas.json solo la paleta elegida (jq por slug; ~390 KB)
 - tokens/escalas.md, tokens/tokens.css (o tokens/theme-tailwind-v4.css)
 - anti-patrones/README.md, anti-patrones/checklist-revision.md y anti-patrones/catalogo.md
 - recursos/README.md (íconos, texturas, OG; no Lucide por default)
@@ -32,15 +35,21 @@ Leé, antes de diseñar o de tocar UI, el kit de este repo:
 - Copy de hype: Elevate, Seamless, Next-Generation, Supercharge, Unleash, Empower, cutting-edge, “build the future of…”, “Welcome to your Dashboard ✨”.
 - Copy que recicla el chat (“Built with…”, “written in Neovim”, “no mocks”).
 - Hex, px o duraciones sueltos cuando existe un token. z-[9999].
+- Fondo crema + serif display + acento terracota (#D97757) por reflejo; casi negro + un acento ácido; look de diario en algo que no es de lectura.
+- Una palabra del titular en itálica o color; serif itálica gigante en el hero; pastilla "Nuevo ✨" arriba del H1; ícono en cuadradito arriba de cada card.
+- Glows y sombras de color; borde fino + sombra ancha en toda una fila; fondos de grilla o rayas decorativos; marquee en loop; cursor parpadeante; easing con rebote.
+- Copy de segunda generación: tira de cifras, titulares "X. Y.", "no es X, es Y" repetido, palabras de virtud (honesto, cuidado, de verdad), cifras o clientes inventados, signos de exclamación.
 
 ### Pisos
 - Contraste de cuerpo y de accent-foreground sobre accent: al menos WCAG 4.5:1. Muted por debajo de 4.5 no se usa como párrafo.
 - prefers-reduced-motion: las animaciones se apagan.
 - Meta, alt, favicon y OG no salen de la plantilla.
+- Texto funcional ≥ 11 px, cuerpo ≥ 14 px, leading de párrafo ≥ 1.5, text-wrap: balance en títulos, tabular-nums en cifras, radio interior = exterior − padding.
+- El contenido es visible sin JS; ninguna animación decide si existe.
 - Cerca del inicio tiene que haber prueba real: un precio, un horario, un nombre, una captura o un dato que solo este producto tiene.
 
 ### Al cerrar una UI
-Pasá anti-patrones/checklist-revision.md. Si hay tres o más tells, arreglalos antes de dar por terminado el trabajo. No respondas “hacelo más único”: aplicá las decisiones de arriba.
+Pasá anti-patrones/checklist-revision.md (incluye el orden de las pasadas). En restyling es un reporte, no un portón. Si hay tres o más tells, arreglalos antes de dar por terminado el trabajo. No respondas “hacelo más único”: aplicá las decisiones de arriba.
 ```
 
 Si el proyecto todavía no copió el kit, dejá estas reglas y un path claro a `tokens.css` y a la paleta elegida. Un modelo sin valores fijos vuelve al promedio en la sesión siguiente (lo documentan [thanor.ai](https://thanor.ai/blog/design-tokens-for-ai-websites), [Motif](https://motif.asv-labs.com/answers/design-tokens-for-ai-built-frontends/) y [Alex Madrazo, 12 de agosto de 2026](https://x.com/alextechhub/status/2087643439382864025)).

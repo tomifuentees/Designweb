@@ -10,8 +10,8 @@ Los archivos de acá siguen el [Design Tokens Format Module 2025.10](https://www
 
 | Archivo | Contenido |
 |---|---|
-| [escalas.md](./escalas.md) | El porqué de cada escala, y por qué le gana al default de IA |
-| [tokens.css](./tokens.css) | Custom properties listas, con `prefers-reduced-motion` |
+| [escalas.md](./escalas.md) | El porqué de cada escala, y por qué le gana al default de IA. Desde el 20/11/2026 también compara Carbon, Primer, Polaris y GOV.UK, y suma medidas de app, rampas neutras, radios anidados y easings minados (ver [minado](../recursos/minado-repos.md)) |
+| [tokens.css](./tokens.css) | Custom properties listas, con `prefers-reduced-motion`; suma `--ease-out-3/5`, `--ease-in-out-3`, `--shadow-layered` y `--size-*` (medidas de app) |
 | [theme-tailwind-v4.css](./theme-tailwind-v4.css) | Bloque `@theme` + `@theme inline` para Tailwind v4 |
 | [tokens.json](./tokens.json) | El mismo sistema en formato DTCG 2025.10 |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes, con links y fechas |

@@ -4,18 +4,20 @@ Catálogo de paletas con tokens de rol, armado en noviembre de 2026. El objetivo
 
 Esta carpeta se lee junto a [`../estilos/`](../estilos/README.md) y [`../tipografias/`](../tipografias/README.md). Las escalas de espacio, radio, sombra y tipo están en [`../tokens/`](../tokens/README.md). Las señales de “AI slop” que estas paletas ayudan a cortar están en [`../anti-patrones/`](../anti-patrones/README.md).
 
-Hay **35 paletas**. Cada una trae modo claro y oscuro, tokens de rol (incluido `accent-text` para links), contraste WCAG 2.1 y APCA-W3, estilos del catálogo con los que combina y un bloque CSS listo para pegar. Ninguna usa el degradé violeta-índigo como identidad. Una sola —[cera suave](./culturales.md)— tiene un violeta sólido, y está marcada como nicho de claymorfismo, no como default.
+Hay **41 paletas** (35 originales y 6 sumadas el 20 de noviembre de 2026; ver [`../recursos/minado-repos.md`](../recursos/minado-repos.md)). Cada una trae modo claro y oscuro, tokens de rol (incluido `accent-text` para links), contraste WCAG 2.1 y APCA-W3, estilos del catálogo con los que combina y un bloque CSS listo para pegar. Ninguna usa el degradé violeta-índigo como identidad. Una sola —[cera suave](./culturales.md)— tiene un violeta sólido, y está marcada como nicho de claymorfismo, no como default.
+
+> **Ojo con el crema.** 19 de las 35 paletas originales tienen en modo claro un fondo cálido crema o beige. En noviembre de 2026 la skill oficial de Anthropic e [impeccable](https://github.com/pbakaus/impeccable) marcan ese fondo (sobre todo con serif display y acento terracota) como el nuevo default de IA. Usalas cuando el rubro es papel, materia o editorial, no por reflejo (ver `crema-por-reflejo` en [`../anti-patrones/catalogo.md`](../anti-patrones/catalogo.md)). Las 6 paletas nuevas no usan fondo crema. Para elegir por rubro, mirá [`../estilos/direccion-por-rubro.md`](../estilos/direccion-por-rubro.md).
 
 ## Qué hay acá
 
 | Archivo | Contenido |
 |---|---|
-| [saas-producto.md](./saas-producto.md) | 6 paletas de producto: lima, rojo de comando, cian de terminal, oro, señal, menta |
+| [saas-producto.md](./saas-producto.md) | 7 paletas de producto: lima, rojo de comando, cian de terminal, oro, señal, menta, océano profundo |
 | [editoriales.md](./editoriales.md) | 5 paletas de papel y tinta: crema, diario, riso, pergamino, cobalto de sello |
-| [organicas.md](./organicas.md) | 5 paletas de materia: terracota, oliva, café, cobre, matcha |
+| [organicas.md](./organicas.md) | 7 paletas de materia: terracota, oliva, café, cobre, matcha, jardín botánico, hora dorada |
 | [monocromas.md](./monocromas.md) | 4 paletas quietas: suizo neutro, cálido, frío, hueso y ocre |
-| [expresivas.md](./expresivas.md) | 4 paletas altas: brutal amarillo, dopamina coral, Y2K cromo, póster |
-| [culturales.md](./culturales.md) | 11 paletas de nicho: sumi, nórdico, vino, bosque, arcilla, durazno, acero, arena, teja, niebla, cera |
+| [expresivas.md](./expresivas.md) | 6 paletas altas: brutal amarillo, dopamina coral, Y2K cromo, póster, bauhaus primario, memphis pastel |
+| [culturales.md](./culturales.md) | 12 paletas de nicho: sumi, nórdico, vino, bosque, arcilla, durazno, acero, arena, teja, niebla, cera, rosa del desierto |
 | [herramientas.md](./herramientas.md) | Generadores y pickers verificados en 2025–2026 (OKLCH, Radix, tweakcn, shadcn, Huemint, etc.) |
 | [evadir-degrade-violeta.md](./evadir-degrade-violeta.md) | Por qué la IA cae en el índigo y cómo no dejarla |
 | [paletas.json](./paletas.json) | El mismo catálogo, legible por máquinas |

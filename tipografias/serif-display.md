@@ -469,3 +469,73 @@ Snippet de import:
 /* Preferí autohospedar los archivos oficiales. La API de Fontshare no garantiza uptime.
    La licencia FFL no permite subsetear ni convertir el archivo. */
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 20. Bodoni Moda
+
+- **Diseño:** Owen Earl
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Bodoni+Moda
+- **Estilo / personalidad:** Bodoni didona con eje óptico (opsz 6–96): los trazos finos se engrosan en tamaño chico. Lujo y moda sin caer en Playfair.
+- **Mejor uso:** Lujo, Moda, Editorial
+- **Pesos / ejes:** Variable (opsz: 6..96 | wght: 400..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Jost
+- **Nota:** Ranking de popularidad en Google Fonts: 153 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&display=swap" rel="stylesheet">
+/* font-family: "Bodoni Moda", serif; */
+```
+
+## 21. Libre Bodoni
+
+- **Diseño:** Pablo Impallari, Rodrigo Fuenzalida
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Libre+Bodoni
+- **Estilo / personalidad:** Bodoni pensada para texto en pantalla (Impallari y Fuenzalida). Titulares de revista y bajadas.
+- **Mejor uso:** Editorial, Revistas, Cultura
+- **Pesos / ejes:** Variable (wght: 400..700)
+- **Variable:** Sí
+- **Pareja recomendada:** Public Sans
+- **Nota:** Ranking de popularidad en Google Fonts: 198 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400..700&display=swap" rel="stylesheet">
+/* font-family: "Libre Bodoni", serif; */
+```
+
+## 22. Abril Fatface
+
+- **Diseño:** TypeTogether
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Abril+Fatface
+- **Estilo / personalidad:** Didona display muy pesada (TypeTogether). Carteles, menús, cervecerías: solo titulares.
+- **Mejor uso:** Gastronomía, Cervecerías, Posters
+- **Pesos / ejes:** Estáticos: 400
+- **Variable:** No
+- **Pareja recomendada:** Merriweather
+- **Nota:** Ranking de popularidad en Google Fonts: 100 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+/* font-family: "Abril Fatface", serif; */
+```
+

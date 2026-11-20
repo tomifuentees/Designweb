@@ -4,7 +4,7 @@ Catálogo de estilos visuales para web y producto, armado en noviembre de 2026. 
 
 Esta carpeta es la segunda pieza del kit de diseño frontend, pensada para leerse junto a [`../tipografias/`](../tipografias/README.md). Las fichas están escritas para personas y, también, para que una skill de Claude o de otro agente las consuma a través de `estilos.json`.
 
-Hay **27 estilos**. Cada ficha trae cuándo usarlo y cuándo no, reglas concretas (grilla, espaciado, radios, bordes, sombras, color y tipografía del catálogo), al menos tres sitios reales con link verificado, errores comunes y un snippet mínimo en HTML + Tailwind (CDN) o CSS. La tipografía recomendada sale de [`../tipografias/fonts.json`](../tipografias/fonts.json); los links relativos apuntan a la categoría correspondiente.
+Hay **31 estilos** (27 originales y 4 sumados el 20 de noviembre de 2026: bauhaus, memphis, papel / e-ink y denso de datos). Antes de elegir, leé [direccion-por-rubro.md](./direccion-por-rubro.md): tipo de negocio, dirección en cinco líneas y una tabla rubro → estilo → paleta → pareja. Cada ficha trae cuándo usarlo y cuándo no, reglas concretas (grilla, espaciado, radios, bordes, sombras, color y tipografía del catálogo), al menos tres sitios reales con link verificado, errores comunes y un snippet mínimo en HTML + Tailwind (CDN) o CSS. La tipografía recomendada sale de [`../tipografias/fonts.json`](../tipografias/fonts.json); los links relativos apuntan a la categoría correspondiente.
 
 No todos están “en auge”. Algunos son el default de 2026 (bento, tipo cinética, SaaS oscuro). Otros son contrapesos útiles (editorial, orgánico, anti-diseño). Un par —neo-brutalismo de página completa, claymorfismo, glassmorfismo como tema— están en enfriamiento o en nicho, y se documentan para usarlos con oficio, no por default.
 
@@ -38,6 +38,11 @@ No todos están “en auge”. Algunos son el default de 2026 (bento, tipo ciné
 | [risografia-impreso.md](./risografia-impreso.md) | Risografía / impreso: paleta corta, grano de tinta, registro imperfecto |
 | [expresivo-minimo.md](./expresivo-minimo.md) | Minimalismo expresivo: limpieza + una sola rareza |
 | [realismo-tactil.md](./realismo-tactil.md) | Realismo táctil: materia, papel, irregularidad creíble |
+| [bauhaus.md](./bauhaus.md) | Bauhaus: geometría primaria, formas con función |
+| [memphis.md](./memphis.md) | Memphis: pasteles, patrones con humor, como acento |
+| [papel-e-ink.md](./papel-e-ink.md) | Papel / e-ink: lectura calma, sin brillo ni motion decorativo |
+| [denso-de-datos.md](./denso-de-datos.md) | Denso de datos: back-office, monitoreo, cifras tabulares |
+| [direccion-por-rubro.md](./direccion-por-rubro.md) | Tipo de negocio, dirección en cinco líneas y tabla rubro → estilo, paleta y pareja |
 | [grilla-rota.md](./grilla-rota.md) | Grilla rota / layouts orgánicos: asimetría controlada |
 | [estilos.json](./estilos.json) | El mismo catálogo, legible por máquinas |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes consultadas, con links |

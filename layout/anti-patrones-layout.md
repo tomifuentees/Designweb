@@ -1,6 +1,6 @@
 # Anti-patrones de layout + checklist
 
-Tells de **composición** que delatan una UI generada sin criterio. Complementa el catálogo general de [`../anti-patrones/catalogo.md`](../anti-patrones/catalogo.md) (30 tells); los que ya están ahí se citan por número y no se repiten. Slugs con prefijo `L-` para que la skill los pueda nombrar.
+Tells de **composición** que delatan una UI generada sin criterio. Complementa el catálogo general de [`../anti-patrones/catalogo.md`](../anti-patrones/catalogo.md) (59 tells); los que ya están ahí se citan por número y no se repiten. Slugs con prefijo `L-` para que la skill los pueda nombrar.
 
 ## Catálogo
 

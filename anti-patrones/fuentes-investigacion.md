@@ -37,8 +37,17 @@ Investigación hecha el 19 de noviembre de 2026 (zona America/Argentina/Salta). 
 - El espejo hereticpleb.vercel.app que HN usó como URL del post de Desai: el texto completo se tomó de [godobject.dev](https://godobject.dev/blog/10-tells-of-slop/), que respondió bien en esta pasada.
 - Un corpus exhaustivo de X más allá de las búsquedas del 19 de noviembre de 2026. Hay mucho marketing de “tools that kill AI slop”; no se usó como fuente de tells.
 - El repo [funboy322/avoid-ai-design](https://github.com/funboy322/avoid-ai-design) aparece en búsquedas de “anti AI design”; no se usó como autoridad (0 estrellas al consultarlo, README breve). Se menciona acá solo para no fingir que no existe.
-- “Impeccable” aparece citado por Drop The Hassle y por posts de X como detector; no se tomó como fuente primaria de tells en esta pasada (confirmar el repo/comando antes de dependerlo).
+- “Impeccable” aparece citado por Drop The Hassle y por posts de X como detector; no se tomó como fuente primaria de tells en esta pasada (confirmar el repo/comando antes de dependerlo). **Actualización del 20 de noviembre de 2026:** el repo se confirmó ([pbakaus/impeccable](https://github.com/pbakaus/impeccable), Apache 2.0, 62 reglas con `npx impeccable detect --list-rules`) y se minó para las fichas 31–59.
 
 ## Verificación HTTP (19 de noviembre de 2026)
 
 Los hilos de Reddit citados, godobject.dev, Drop The Hassle, Utsubo, prg.sh, thanor.ai, Motif y los posts de X con id respondieron 200 (HN: 405 al HEAD, 200 al GET). La calculadora APCA se cita como [apcacontrast.com](https://apcacontrast.com/) porque `www.myndex.com/APCA` no resolvió desde este entorno.
+
+## Minado de repos (20 de noviembre de 2026)
+
+Clonados con `git clone --depth 1` el 20 de noviembre de 2026 y leídos en su rama principal:
+
+- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache 2.0): lista de reglas del detector, `skill/reference/critique.md` y `polish.md`.
+- [anthropics/skills, `frontend-design`](https://github.com/anthropics/skills/tree/main/skills/frontend-design) (Apache 2.0): la lista de clusters de diseño generado y el proceso en dos pasadas.
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT): `references/copy-tells.md`.
+- [heydamir/unslop](https://github.com/heydamir/unslop) (CC BY 4.0, Damir Sokolovsky): `skills/unslop/SKILL.md`.

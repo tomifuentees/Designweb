@@ -2,13 +2,15 @@
   "meta": {
     "titulo": "Catálogo de paletas con tokens de rol — frontend-design-kit",
     "idioma": "es-AR",
-    "actualizado": "2026-11-19",
+    "actualizado": "2026-11-20",
     "zona_horaria": "America/Argentina/Salta",
-    "total": 35,
+    "total": 41,
     "objetivo": "Dar paletas con roles (bg, surface, border, text, muted, accent, accent-foreground, success, warn, danger) en claro y oscuro, con OKLCH + hex y notas de contraste, para que un agente no improvise un degradé índigo.",
     "color_space": "oklch",
     "contraste": "WCAG 2.1 contraste relativo y APCA-W3 (Lc). El cuerpo pide ≥4.5:1 y |Lc| alto (objetivo ≥75, mínimo documentado 60).",
-    "fuente_estilos": "../estilos/estilos.json"
+    "fuente_estilos": "../estilos/estilos.json",
+    "minado_repos": "Paletas 36–41: cuatro adaptadas de los temas de la skill theme-factory de anthropics/skills (Apache-2.0; se cambiaron fondos y se recalcularon roles y contraste) y dos propias para los estilos bauhaus y memphis. Ver ../recursos/minado-repos.md",
+    "aviso_crema": "19 de las 35 paletas originales tienen en claro un fondo cálido crema/beige (matiz OKLCH 50–100, croma ≥ 0.008). La skill de Anthropic e impeccable lo marcan como default de IA: usalas solo si el rubro es papel, materia o editorial (ver anti-patrones 'crema-por-reflejo'). Las paletas 36–41 no usan fondo crema."
   },
   "paletas": [
     {
@@ -33,7 +35,8 @@
         "estilo-linear",
         "bento-grids",
         "ui-casi-invisible",
-        "catalogo-tecnico"
+        "catalogo-tecnico",
+        "denso-de-datos"
       ],
       "nota": "Pariente de la disciplina ‘un acento sobre negro’ (Mercury/Linear), pero el lima no es el púrpura de Linear ni el índigo de Tailwind. Un solo acento.",
       "modos": {
@@ -1932,7 +1935,8 @@
         "ui-casi-invisible",
         "saas-oscuro-premium",
         "estilo-linear",
-        "minimalismo-monocromo"
+        "minimalismo-monocromo",
+        "denso-de-datos"
       ],
       "nota": "Menta desaturada, no el emerald-400 de Tailwind en todo. El borde hace más trabajo que el color.",
       "modos": {
@@ -3451,7 +3455,8 @@
         "risografia-impreso",
         "ilustrado-humano",
         "anti-diseno",
-        "grano-ruido"
+        "grano-ruido",
+        "memphis"
       ],
       "nota": "Dos tintas, no un arcoíris. El fucsia y el menta no se mezclan en un degradé digital: se superponen como capas de tinta. Sumá grano.",
       "modos": {
@@ -6112,7 +6117,10 @@
         "suizo-internacional",
         "minimalismo-monocromo",
         "ui-casi-invisible",
-        "catalogo-tecnico"
+        "catalogo-tecnico",
+        "denso-de-datos",
+        "papel-e-ink",
+        "bauhaus"
       ],
       "nota": "Sin acento de moda. El ‘acento’ es el negro mismo o un rojo muy puntual de señal (acá, un rojo de corrección, usado con extrema tacañería).",
       "modos": {
@@ -6869,7 +6877,9 @@
         "suizo-internacional",
         "catalogo-tecnico",
         "ui-casi-invisible",
-        "minimalismo-monocromo"
+        "minimalismo-monocromo",
+        "denso-de-datos",
+        "papel-e-ink"
       ],
       "nota": "Un azul-gris de piedra, no slate-900 + sky-500. El acento es un azul de ingeniería, bajo en croma.",
       "modos": {
@@ -7628,7 +7638,9 @@
       "estilos": [
         "neo-brutalismo",
         "anti-diseno",
-        "dopamina-saturado"
+        "dopamina-saturado",
+        "bauhaus",
+        "memphis"
       ],
       "nota": "Amarillo de señal + negro. El acento en claro es casi negro (botón sólido) o el amarillo con texto negro. Nada de sombra suave ni radios altos.",
       "modos": {
@@ -8007,7 +8019,8 @@
       "estilos": [
         "dopamina-saturado",
         "maximalismo",
-        "retrofuturismo-y2k"
+        "retrofuturismo-y2k",
+        "memphis"
       ],
       "nota": "Dopamina no es rainbow vomit. Un coral (70) + un apoyo muy puntual, el resto neutro cálido. Si metés lima y violeta y cian juntos, volviste al slop.",
       "modos": {
@@ -8768,7 +8781,8 @@
         "maximalismo",
         "editorial-revista",
         "tipografia-kinetica",
-        "grilla-rota"
+        "grilla-rota",
+        "bauhaus"
       ],
       "nota": "70-30-10. El rojo póster es el 10. El fondo papel sucio es el 70. Si cada bloque pide atención, no es maximalismo: es ruido.",
       "modos": {
@@ -13300,6 +13314,2303 @@
           }
         }
       }
+    },
+    {
+      "slug": "jardin-botanico",
+      "nombre": "Jardín botánico",
+      "familia": "organica",
+      "mood": "Verde helecho, caléndula y tierra, sobre un blanco verdoso (no crema)",
+      "mejor_para": [
+        "viveros y jardinería",
+        "farmacia natural y herboristería",
+        "gastronomía de huerta",
+        "educación ambiental"
+      ],
+      "evitar_en": [
+        "devtools",
+        "fintech",
+        "lujo urbano"
+      ],
+      "estilos": [
+        "organico-terroso",
+        "ilustrado-humano",
+        "realismo-tactil",
+        "expresivo-minimo"
+      ],
+      "nota": "Adaptada del tema 'Botanical Garden' de la skill theme-factory de Anthropic (Apache 2.0): helecho #4a7c59, caléndula #f9a620, terracota #b7472a. Se cambió el fondo crema por un blanco verdoso para no caer en el cluster crema + terracota. La caléndula es el acento del modo oscuro; la terracota queda para ilustración o un dato.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#f3f6f2",
+              "oklch": "oklch(0.9698 0.00615 137.77)",
+              "oklch_components": [
+                0.9698,
+                0.00615,
+                137.77
+              ]
+            },
+            "surface": {
+              "hex": "#e7ede6",
+              "oklch": "oklch(0.9396 0.01128 141.26)",
+              "oklch_components": [
+                0.9396,
+                0.01128,
+                141.26
+              ]
+            },
+            "border": {
+              "hex": "#c9d3c7",
+              "oklch": "oklch(0.8558 0.01961 140.50)",
+              "oklch_components": [
+                0.8558,
+                0.01961,
+                140.5
+              ]
+            },
+            "text": {
+              "hex": "#142018",
+              "oklch": "oklch(0.2292 0.02296 155.02)",
+              "oklch_components": [
+                0.2292,
+                0.02296,
+                155.02
+              ]
+            },
+            "muted": {
+              "hex": "#4f5f53",
+              "oklch": "oklch(0.4681 0.02749 152.83)",
+              "oklch_components": [
+                0.4681,
+                0.02749,
+                152.83
+              ]
+            },
+            "accent": {
+              "hex": "#3f6e4d",
+              "oklch": "oklch(0.4948 0.07410 152.46)",
+              "oklch_components": [
+                0.4948,
+                0.0741,
+                152.46
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#f4fbf5",
+              "oklch": "oklch(0.9812 0.01080 149.86)",
+              "oklch_components": [
+                0.9812,
+                0.0108,
+                149.86
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#3f6e4d",
+              "oklch": "oklch(0.4948 0.07410 152.46)",
+              "oklch_components": [
+                0.4948,
+                0.0741,
+                152.46
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 15.43,
+              "apca_lc": 97.8,
+              "apca_abs": 97.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.13,
+              "apca_lc": 92.0,
+              "apca_abs": 92.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 6.23,
+              "apca_lc": 77.5,
+              "apca_abs": 77.5,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 5.63,
+              "apca_lc": -80.8,
+              "apca_abs": 80.8,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 5.43,
+              "apca_lc": 73.6,
+              "apca_abs": 73.6,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 5.98,
+              "apca_lc": 76.1,
+              "apca_abs": 76.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.44,
+              "apca_lc": 73.4,
+              "apca_abs": 73.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.03,
+              "apca_lc": 75.0,
+              "apca_abs": 75.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 5.43,
+              "apca_lc": 73.6,
+              "apca_abs": 73.6,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#0d1410",
+              "oklch": "oklch(0.1824 0.01346 159.67)",
+              "oklch_components": [
+                0.1824,
+                0.01346,
+                159.67
+              ]
+            },
+            "surface": {
+              "hex": "#152019",
+              "oklch": "oklch(0.2304 0.02069 156.47)",
+              "oklch_components": [
+                0.2304,
+                0.02069,
+                156.47
+              ]
+            },
+            "border": {
+              "hex": "#2a3a2f",
+              "oklch": "oklch(0.3306 0.02851 154.56)",
+              "oklch_components": [
+                0.3306,
+                0.02851,
+                154.56
+              ]
+            },
+            "text": {
+              "hex": "#e8efe8",
+              "oklch": "oklch(0.9449 0.01190 145.48)",
+              "oklch_components": [
+                0.9449,
+                0.0119,
+                145.48
+              ]
+            },
+            "muted": {
+              "hex": "#aebdb1",
+              "oklch": "oklch(0.7833 0.02355 151.55)",
+              "oklch_components": [
+                0.7833,
+                0.02355,
+                151.55
+              ]
+            },
+            "accent": {
+              "hex": "#f9a620",
+              "oklch": "oklch(0.7882 0.16195 71.76)",
+              "oklch_components": [
+                0.7882,
+                0.16195,
+                71.76
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#1a1405",
+              "oklch": "oklch(0.1942 0.02913 88.96)",
+              "oklch_components": [
+                0.1942,
+                0.02913,
+                88.96
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#f9b84a",
+              "oklch": "oklch(0.8238 0.14389 77.20)",
+              "oklch_components": [
+                0.8238,
+                0.14389,
+                77.2
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 15.95,
+              "apca_lc": -95.5,
+              "apca_abs": 95.5,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.33,
+              "apca_lc": -94.3,
+              "apca_abs": 94.3,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 9.53,
+              "apca_lc": -64.0,
+              "apca_abs": 64.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 9.16,
+              "apca_lc": 64.4,
+              "apca_abs": 64.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 9.34,
+              "apca_lc": -63.4,
+              "apca_abs": 63.4,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 11.0,
+              "apca_lc": -72.0,
+              "apca_abs": 72.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 10.12,
+              "apca_lc": -67.4,
+              "apca_abs": 67.4,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 8.18,
+              "apca_lc": -56.9,
+              "apca_abs": 56.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 10.65,
+              "apca_lc": -70.3,
+              "apca_abs": 70.3,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "slug": "rosa-desierto",
+      "nombre": "Rosa del desierto",
+      "familia": "cultural",
+      "mood": "Rosa viejo, arcilla y ciruela, cálido sin ser beige",
+      "mejor_para": [
+        "cosmética y estética",
+        "bodas y eventos",
+        "moda",
+        "hospitality boutique"
+      ],
+      "evitar_en": [
+        "devtools",
+        "industria",
+        "salud clínica"
+      ],
+      "estilos": [
+        "editorial-revista",
+        "organico-terroso",
+        "expresivo-minimo",
+        "realismo-tactil"
+      ],
+      "nota": "Adaptada del tema 'Desert Rose' de theme-factory (Anthropic, Apache 2.0): rosa #d4a5a5, arcilla #b87d6d, arena #e8d5c4, ciruela #5d2e46. La ciruela es el acento sólido en claro; el rosa viejo, en oscuro. La arena queda para superficies de foto, no de fondo.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#faf6f5",
+              "oklch": "oklch(0.9759 0.00450 34.31)",
+              "oklch_components": [
+                0.9759,
+                0.0045,
+                34.31
+              ]
+            },
+            "surface": {
+              "hex": "#f2e8e6",
+              "oklch": "oklch(0.9383 0.01123 31.07)",
+              "oklch_components": [
+                0.9383,
+                0.01123,
+                31.07
+              ]
+            },
+            "border": {
+              "hex": "#e0cdca",
+              "oklch": "oklch(0.8631 0.02174 28.35)",
+              "oklch_components": [
+                0.8631,
+                0.02174,
+                28.35
+              ]
+            },
+            "text": {
+              "hex": "#2a1620",
+              "oklch": "oklch(0.2317 0.03629 348.94)",
+              "oklch_components": [
+                0.2317,
+                0.03629,
+                348.94
+              ]
+            },
+            "muted": {
+              "hex": "#6b5058",
+              "oklch": "oklch(0.4622 0.03799 359.16)",
+              "oklch_components": [
+                0.4622,
+                0.03799,
+                359.16
+              ]
+            },
+            "accent": {
+              "hex": "#5d2e46",
+              "oklch": "oklch(0.3713 0.07548 349.48)",
+              "oklch_components": [
+                0.3713,
+                0.07548,
+                349.48
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#fbeff3",
+              "oklch": "oklch(0.9626 0.01392 355.00)",
+              "oklch_components": [
+                0.9626,
+                0.01392,
+                355.0
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#5d2e46",
+              "oklch": "oklch(0.3713 0.07548 349.48)",
+              "oklch_components": [
+                0.3713,
+                0.07548,
+                349.48
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 15.85,
+              "apca_lc": 98.9,
+              "apca_abs": 98.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.15,
+              "apca_lc": 91.4,
+              "apca_abs": 91.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 6.72,
+              "apca_lc": 80.1,
+              "apca_abs": 80.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 9.64,
+              "apca_lc": -90.1,
+              "apca_abs": 90.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 10.06,
+              "apca_lc": 89.8,
+              "apca_abs": 89.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 6.07,
+              "apca_lc": 77.1,
+              "apca_abs": 77.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.52,
+              "apca_lc": 74.4,
+              "apca_abs": 74.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.13,
+              "apca_lc": 76.0,
+              "apca_abs": 76.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 10.06,
+              "apca_lc": 89.8,
+              "apca_abs": 89.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#170d12",
+              "oklch": "oklch(0.1751 0.01951 347.87)",
+              "oklch_components": [
+                0.1751,
+                0.01951,
+                347.87
+              ]
+            },
+            "surface": {
+              "hex": "#22141b",
+              "oklch": "oklch(0.2129 0.02601 348.12)",
+              "oklch_components": [
+                0.2129,
+                0.02601,
+                348.12
+              ]
+            },
+            "border": {
+              "hex": "#3d2830",
+              "oklch": "oklch(0.3052 0.03390 354.72)",
+              "oklch_components": [
+                0.3052,
+                0.0339,
+                354.72
+              ]
+            },
+            "text": {
+              "hex": "#f5e9ec",
+              "oklch": "oklch(0.9443 0.01357 0.27)",
+              "oklch_components": [
+                0.9443,
+                0.01357,
+                0.27
+              ]
+            },
+            "muted": {
+              "hex": "#ccb3ba",
+              "oklch": "oklch(0.7902 0.03018 359.00)",
+              "oklch_components": [
+                0.7902,
+                0.03018,
+                359.0
+              ]
+            },
+            "accent": {
+              "hex": "#dbb0b0",
+              "oklch": "oklch(0.7956 0.05023 18.26)",
+              "oklch_components": [
+                0.7956,
+                0.05023,
+                18.26
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#1c0c14",
+              "oklch": "oklch(0.1816 0.03080 349.26)",
+              "oklch_components": [
+                0.1816,
+                0.0308,
+                349.26
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#e2b8b8",
+              "oklch": "oklch(0.8196 0.04861 18.19)",
+              "oklch_components": [
+                0.8196,
+                0.04861,
+                18.19
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 16.1,
+              "apca_lc": -94.9,
+              "apca_abs": 94.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.99,
+              "apca_lc": -94.2,
+              "apca_abs": 94.2,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 9.73,
+              "apca_lc": -64.3,
+              "apca_abs": 64.3,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 9.76,
+              "apca_lc": 66.1,
+              "apca_abs": 66.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 9.84,
+              "apca_lc": -64.9,
+              "apca_abs": 64.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 11.21,
+              "apca_lc": -72.2,
+              "apca_abs": 72.2,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 10.32,
+              "apca_lc": -67.6,
+              "apca_abs": 67.6,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 8.34,
+              "apca_lc": -57.0,
+              "apca_abs": 57.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 10.68,
+              "apca_lc": -69.3,
+              "apca_abs": 69.3,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "slug": "hora-dorada",
+      "nombre": "Hora dorada",
+      "familia": "organica",
+      "mood": "Mostaza y chocolate; mejor en oscuro",
+      "mejor_para": [
+        "cafeterías y panaderías",
+        "cervecerías",
+        "restaurantes",
+        "artesanía"
+      ],
+      "evitar_en": [
+        "salud",
+        "banca",
+        "SaaS B2B"
+      ],
+      "estilos": [
+        "organico-terroso",
+        "risografia-impreso",
+        "realismo-tactil",
+        "maximalismo"
+      ],
+      "nota": "Adaptada del tema 'Golden Hour' de theme-factory (Anthropic, Apache 2.0): mostaza #f4a900, terracota #c1666b, beige #d4b896, chocolate #4a403a. Pensada oscuro-primero: fondo chocolate y botón mostaza con texto oscuro. En claro, la mostaza sólo funciona como botón con texto oscuro; para links se usa un ocre más oscuro.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#f6f5f3",
+              "oklch": "oklch(0.9704 0.00287 84.56)",
+              "oklch_components": [
+                0.9704,
+                0.00287,
+                84.56
+              ]
+            },
+            "surface": {
+              "hex": "#ece9e4",
+              "oklch": "oklch(0.9350 0.00745 80.72)",
+              "oklch_components": [
+                0.935,
+                0.00745,
+                80.72
+              ]
+            },
+            "border": {
+              "hex": "#d5cfc6",
+              "oklch": "oklch(0.8568 0.01398 78.25)",
+              "oklch_components": [
+                0.8568,
+                0.01398,
+                78.25
+              ]
+            },
+            "text": {
+              "hex": "#1f1a17",
+              "oklch": "oklch(0.2225 0.00979 52.96)",
+              "oklch_components": [
+                0.2225,
+                0.00979,
+                52.96
+              ]
+            },
+            "muted": {
+              "hex": "#5c524a",
+              "oklch": "oklch(0.4459 0.01843 60.99)",
+              "oklch_components": [
+                0.4459,
+                0.01843,
+                60.99
+              ]
+            },
+            "accent": {
+              "hex": "#f4a900",
+              "oklch": "oklch(0.7872 0.16481 76.81)",
+              "oklch_components": [
+                0.7872,
+                0.16481,
+                76.81
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#1f1a17",
+              "oklch": "oklch(0.2225 0.00979 52.96)",
+              "oklch_components": [
+                0.2225,
+                0.00979,
+                52.96
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#8a5f00",
+              "oklch": "oklch(0.5180 0.10801 77.90)",
+              "oklch_components": [
+                0.518,
+                0.10801,
+                77.9
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 15.82,
+              "apca_lc": 98.2,
+              "apca_abs": 98.2,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.23,
+              "apca_lc": 91.3,
+              "apca_abs": 91.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 6.98,
+              "apca_lc": 80.5,
+              "apca_abs": 80.5,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 8.64,
+              "apca_lc": 63.7,
+              "apca_abs": 63.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 1.83,
+              "apca_lc": 32.3,
+              "apca_abs": 32.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "falla AA",
+              "ok_cuerpo": false
+            },
+            "success_on_bg": {
+              "wcag": 5.98,
+              "apca_lc": 76.0,
+              "apca_abs": 76.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.44,
+              "apca_lc": 73.4,
+              "apca_abs": 73.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.03,
+              "apca_lc": 74.9,
+              "apca_abs": 74.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 5.18,
+              "apca_lc": 72.0,
+              "apca_abs": 72.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#1f1a17",
+              "oklch": "oklch(0.2225 0.00979 52.96)",
+              "oklch_components": [
+                0.2225,
+                0.00979,
+                52.96
+              ]
+            },
+            "surface": {
+              "hex": "#2a2420",
+              "oklch": "oklch(0.2656 0.01166 55.83)",
+              "oklch_components": [
+                0.2656,
+                0.01166,
+                55.83
+              ]
+            },
+            "border": {
+              "hex": "#4a403a",
+              "oklch": "oklch(0.3798 0.01713 52.95)",
+              "oklch_components": [
+                0.3798,
+                0.01713,
+                52.95
+              ]
+            },
+            "text": {
+              "hex": "#f3ebe0",
+              "oklch": "oklch(0.9433 0.01704 76.11)",
+              "oklch_components": [
+                0.9433,
+                0.01704,
+                76.11
+              ]
+            },
+            "muted": {
+              "hex": "#c2b3a1",
+              "oklch": "oklch(0.7744 0.03033 72.38)",
+              "oklch_components": [
+                0.7744,
+                0.03033,
+                72.38
+              ]
+            },
+            "accent": {
+              "hex": "#f4a900",
+              "oklch": "oklch(0.7872 0.16481 76.81)",
+              "oklch_components": [
+                0.7872,
+                0.16481,
+                76.81
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#1f1a17",
+              "oklch": "oklch(0.2225 0.00979 52.96)",
+              "oklch_components": [
+                0.2225,
+                0.00979,
+                52.96
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#f4b733",
+              "oklch": "oklch(0.8150 0.15386 81.70)",
+              "oklch_components": [
+                0.815,
+                0.15386,
+                81.7
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 14.59,
+              "apca_lc": -94.0,
+              "apca_abs": 94.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 12.96,
+              "apca_lc": -92.5,
+              "apca_abs": 92.5,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 8.42,
+              "apca_lc": -61.0,
+              "apca_abs": 61.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 8.64,
+              "apca_lc": 63.7,
+              "apca_abs": 63.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 8.64,
+              "apca_lc": -62.7,
+              "apca_abs": 62.7,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 10.15,
+              "apca_lc": -71.2,
+              "apca_abs": 71.2,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 9.34,
+              "apca_lc": -66.6,
+              "apca_abs": 66.6,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 7.55,
+              "apca_lc": -56.0,
+              "apca_abs": 56.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 9.58,
+              "apca_lc": -68.0,
+              "apca_abs": 68.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "slug": "oceano-profundo",
+      "nombre": "Océano profundo",
+      "familia": "saas-producto",
+      "mood": "Azul marino, verde azulado y espuma; frío y tranquilo",
+      "mejor_para": [
+        "logística y puertos",
+        "salud digital",
+        "SaaS B2B",
+        "turismo de costa"
+      ],
+      "evitar_en": [
+        "comida",
+        "moda",
+        "marcas infantiles"
+      ],
+      "estilos": [
+        "saas-oscuro-premium",
+        "ui-casi-invisible",
+        "denso-de-datos",
+        "suizo-internacional"
+      ],
+      "nota": "Adaptada del tema 'Ocean Depths' de theme-factory (Anthropic, Apache 2.0): marino #1a2332, teal #2d8b8b, espuma #a8dadc. En claro el teal se oscurece para llegar a 4.5:1 con texto blanco; en oscuro el fondo es el marino del tema y el acento la espuma.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#f3f7f8",
+              "oklch": "oklch(0.9734 0.00447 214.33)",
+              "oklch_components": [
+                0.9734,
+                0.00447,
+                214.33
+              ]
+            },
+            "surface": {
+              "hex": "#e6eef0",
+              "oklch": "oklch(0.9437 0.00897 214.34)",
+              "oklch_components": [
+                0.9437,
+                0.00897,
+                214.34
+              ]
+            },
+            "border": {
+              "hex": "#c8d6da",
+              "oklch": "oklch(0.8667 0.01615 216.69)",
+              "oklch_components": [
+                0.8667,
+                0.01615,
+                216.69
+              ]
+            },
+            "text": {
+              "hex": "#111a24",
+              "oklch": "oklch(0.2140 0.02389 251.57)",
+              "oklch_components": [
+                0.214,
+                0.02389,
+                251.57
+              ]
+            },
+            "muted": {
+              "hex": "#4b5b66",
+              "oklch": "oklch(0.4618 0.02671 238.20)",
+              "oklch_components": [
+                0.4618,
+                0.02671,
+                238.2
+              ]
+            },
+            "accent": {
+              "hex": "#1f6f70",
+              "oklch": "oklch(0.4958 0.07437 196.25)",
+              "oklch_components": [
+                0.4958,
+                0.07437,
+                196.25
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#f1faf9",
+              "oklch": "oklch(0.9781 0.00959 189.07)",
+              "oklch_components": [
+                0.9781,
+                0.00959,
+                189.07
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#1f6f70",
+              "oklch": "oklch(0.4958 0.07437 196.25)",
+              "oklch_components": [
+                0.4958,
+                0.07437,
+                196.25
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 16.27,
+              "apca_lc": 99.1,
+              "apca_abs": 99.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 14.91,
+              "apca_lc": 93.4,
+              "apca_abs": 93.4,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 6.52,
+              "apca_lc": 79.1,
+              "apca_abs": 79.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 5.55,
+              "apca_lc": -79.8,
+              "apca_abs": 79.8,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 5.46,
+              "apca_lc": 73.9,
+              "apca_abs": 73.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 6.04,
+              "apca_lc": 76.7,
+              "apca_abs": 76.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.5,
+              "apca_lc": 74.1,
+              "apca_abs": 74.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.1,
+              "apca_lc": 75.6,
+              "apca_abs": 75.6,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 5.46,
+              "apca_lc": 73.9,
+              "apca_abs": 73.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#1a2332",
+              "oklch": "oklch(0.2549 0.03134 260.42)",
+              "oklch_components": [
+                0.2549,
+                0.03134,
+                260.42
+              ]
+            },
+            "surface": {
+              "hex": "#222d3e",
+              "oklch": "oklch(0.2950 0.03470 258.93)",
+              "oklch_components": [
+                0.295,
+                0.0347,
+                258.93
+              ]
+            },
+            "border": {
+              "hex": "#36445a",
+              "oklch": "oklch(0.3840 0.04193 259.29)",
+              "oklch_components": [
+                0.384,
+                0.04193,
+                259.29
+              ]
+            },
+            "text": {
+              "hex": "#eef5f6",
+              "oklch": "oklch(0.9652 0.00757 207.14)",
+              "oklch_components": [
+                0.9652,
+                0.00757,
+                207.14
+              ]
+            },
+            "muted": {
+              "hex": "#afbecb",
+              "oklch": "oklch(0.7940 0.02480 244.21)",
+              "oklch_components": [
+                0.794,
+                0.0248,
+                244.21
+              ]
+            },
+            "accent": {
+              "hex": "#a8dadc",
+              "oklch": "oklch(0.8542 0.05170 199.29)",
+              "oklch_components": [
+                0.8542,
+                0.0517,
+                199.29
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#1a2332",
+              "oklch": "oklch(0.2549 0.03134 260.42)",
+              "oklch_components": [
+                0.2549,
+                0.03134,
+                260.42
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#a8dadc",
+              "oklch": "oklch(0.8542 0.05170 199.29)",
+              "oklch_components": [
+                0.8542,
+                0.0517,
+                199.29
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 14.3,
+              "apca_lc": -97.8,
+              "apca_abs": 97.8,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 12.58,
+              "apca_lc": -96.0,
+              "apca_abs": 96.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 8.31,
+              "apca_lc": -63.7,
+              "apca_abs": 63.7,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 10.32,
+              "apca_lc": 75.9,
+              "apca_abs": 75.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 10.32,
+              "apca_lc": -76.1,
+              "apca_abs": 76.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 9.3,
+              "apca_lc": -70.1,
+              "apca_abs": 70.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 8.56,
+              "apca_lc": -65.5,
+              "apca_abs": 65.5,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.91,
+              "apca_lc": -54.9,
+              "apca_abs": 54.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 10.32,
+              "apca_lc": -76.1,
+              "apca_abs": 76.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "anthropics/skills"
+      ]
+    },
+    {
+      "slug": "bauhaus-primario",
+      "nombre": "Bauhaus primario",
+      "familia": "expresiva",
+      "mood": "Rojo, amarillo y azul ajustados, con negro y blanco",
+      "mejor_para": [
+        "cultura y museos",
+        "escuelas de diseño",
+        "festivales",
+        "educación"
+      ],
+      "evitar_en": [
+        "salud",
+        "banca",
+        "dashboards densos"
+      ],
+      "estilos": [
+        "bauhaus",
+        "suizo-internacional",
+        "expresivo-minimo"
+      ],
+      "nota": "Paleta propia de Designweb para el estilo bauhaus. Secundarios para bloques de color (no para texto): azul #1f4fa3 y amarillo #f2c230. El amarillo nunca lleva texto blanco.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#fafaf8",
+              "oklch": "oklch(0.9845 0.00264 106.45)",
+              "oklch_components": [
+                0.9845,
+                0.00264,
+                106.45
+              ]
+            },
+            "surface": {
+              "hex": "#efefec",
+              "oklch": "oklch(0.9513 0.00399 106.48)",
+              "oklch_components": [
+                0.9513,
+                0.00399,
+                106.48
+              ]
+            },
+            "border": {
+              "hex": "#d6d6d2",
+              "oklch": "oklch(0.8750 0.00543 106.51)",
+              "oklch_components": [
+                0.875,
+                0.00543,
+                106.51
+              ]
+            },
+            "text": {
+              "hex": "#111111",
+              "oklch": "oklch(0.1776 0.00000 0.00)",
+              "oklch_components": [
+                0.1776,
+                0.0,
+                0.0
+              ]
+            },
+            "muted": {
+              "hex": "#4a4a48",
+              "oklch": "oklch(0.4084 0.00328 106.54)",
+              "oklch_components": [
+                0.4084,
+                0.00328,
+                106.54
+              ]
+            },
+            "accent": {
+              "hex": "#c8321e",
+              "oklch": "oklch(0.5494 0.18963 31.05)",
+              "oklch_components": [
+                0.5494,
+                0.18963,
+                31.05
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#ffffff",
+              "oklch": "oklch(1.0000 0.00000 0.00)",
+              "oklch_components": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#b02a18",
+              "oklch": "oklch(0.4987 0.17319 31.09)",
+              "oklch_components": [
+                0.4987,
+                0.17319,
+                31.09
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 18.07,
+              "apca_lc": 102.3,
+              "apca_abs": 102.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 16.39,
+              "apca_lc": 95.7,
+              "apca_abs": 95.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 8.5,
+              "apca_lc": 87.3,
+              "apca_abs": 87.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 5.34,
+              "apca_lc": -80.5,
+              "apca_abs": 80.5,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 5.11,
+              "apca_lc": 72.0,
+              "apca_abs": 72.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 6.24,
+              "apca_lc": 78.9,
+              "apca_abs": 78.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.67,
+              "apca_lc": 76.3,
+              "apca_abs": 76.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.29,
+              "apca_lc": 77.8,
+              "apca_abs": 77.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 6.3,
+              "apca_lc": 78.1,
+              "apca_abs": 78.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#111111",
+              "oklch": "oklch(0.1776 0.00000 0.00)",
+              "oklch_components": [
+                0.1776,
+                0.0,
+                0.0
+              ]
+            },
+            "surface": {
+              "hex": "#1c1c1c",
+              "oklch": "oklch(0.2264 0.00000 0.00)",
+              "oklch_components": [
+                0.2264,
+                0.0,
+                0.0
+              ]
+            },
+            "border": {
+              "hex": "#333333",
+              "oklch": "oklch(0.3211 0.00000 0.00)",
+              "oklch_components": [
+                0.3211,
+                0.0,
+                0.0
+              ]
+            },
+            "text": {
+              "hex": "#f5f5f2",
+              "oklch": "oklch(0.9693 0.00397 106.47)",
+              "oklch_components": [
+                0.9693,
+                0.00397,
+                106.47
+              ]
+            },
+            "muted": {
+              "hex": "#bababa",
+              "oklch": "oklch(0.7889 0.00000 0.00)",
+              "oklch_components": [
+                0.7889,
+                0.0,
+                0.0
+              ]
+            },
+            "accent": {
+              "hex": "#f2c230",
+              "oklch": "oklch(0.8340 0.15843 88.96)",
+              "oklch_components": [
+                0.834,
+                0.15843,
+                88.96
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#111111",
+              "oklch": "oklch(0.1776 0.00000 0.00)",
+              "oklch_components": [
+                0.1776,
+                0.0,
+                0.0
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#f2c230",
+              "oklch": "oklch(0.8340 0.15843 88.96)",
+              "oklch_components": [
+                0.834,
+                0.15843,
+                88.96
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 17.29,
+              "apca_lc": -100.7,
+              "apca_abs": 100.7,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 15.6,
+              "apca_lc": -99.6,
+              "apca_abs": 99.6,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 9.73,
+              "apca_lc": -64.7,
+              "apca_abs": 64.7,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 11.27,
+              "apca_lc": 73.8,
+              "apca_abs": 73.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 11.27,
+              "apca_lc": -72.9,
+              "apca_abs": 72.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 11.12,
+              "apca_lc": -72.1,
+              "apca_abs": 72.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 10.24,
+              "apca_lc": -67.5,
+              "apca_abs": 67.5,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 8.27,
+              "apca_lc": -57.0,
+              "apca_abs": 57.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 11.27,
+              "apca_lc": -72.9,
+              "apca_abs": 72.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "propia (estilo de ui-ux-pro-max-skill)"
+      ]
+    },
+    {
+      "slug": "memphis-pastel",
+      "nombre": "Memphis pastel",
+      "familia": "expresiva",
+      "mood": "Rosa chicle, menta y amarillo pollito, con negro de estructura",
+      "mejor_para": [
+        "eventos y festivales",
+        "juguetes y kids",
+        "música",
+        "campañas de temporada"
+      ],
+      "evitar_en": [
+        "salud",
+        "finanzas",
+        "legal",
+        "B2B"
+      ],
+      "estilos": [
+        "memphis",
+        "dopamina-saturado",
+        "maximalismo"
+      ],
+      "nota": "Paleta propia de Designweb para el estilo memphis. Pasteles para formas y patrones (nunca bajo texto): rosa #ff8fb1, menta #7fe0c3, amarillo #ffe066, celeste #8ecbff.",
+      "modos": {
+        "light": {
+          "tokens": {
+            "bg": {
+              "hex": "#ffffff",
+              "oklch": "oklch(1.0000 0.00000 0.00)",
+              "oklch_components": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "surface": {
+              "hex": "#f4f1ee",
+              "oklch": "oklch(0.9596 0.00515 67.76)",
+              "oklch_components": [
+                0.9596,
+                0.00515,
+                67.76
+              ]
+            },
+            "border": {
+              "hex": "#dcd7d2",
+              "oklch": "oklch(0.8817 0.00876 67.71)",
+              "oklch_components": [
+                0.8817,
+                0.00876,
+                67.71
+              ]
+            },
+            "text": {
+              "hex": "#141414",
+              "oklch": "oklch(0.1913 0.00000 0.00)",
+              "oklch_components": [
+                0.1913,
+                0.0,
+                0.0
+              ]
+            },
+            "muted": {
+              "hex": "#4d4a47",
+              "oklch": "oklch(0.4110 0.00636 67.65)",
+              "oklch_components": [
+                0.411,
+                0.00636,
+                67.65
+              ]
+            },
+            "accent": {
+              "hex": "#c42a63",
+              "oklch": "oklch(0.5479 0.19191 4.44)",
+              "oklch_components": [
+                0.5479,
+                0.19191,
+                4.44
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#ffffff",
+              "oklch": "oklch(1.0000 0.00000 0.00)",
+              "oklch_components": [
+                1.0,
+                0.0,
+                0.0
+              ]
+            },
+            "success": {
+              "hex": "#1f6b3a",
+              "oklch": "oklch(0.4689 0.10756 151.36)",
+              "oklch_components": [
+                0.4689,
+                0.10756,
+                151.36
+              ]
+            },
+            "warn": {
+              "hex": "#8a5a00",
+              "oklch": "oklch(0.5078 0.10800 73.30)",
+              "oklch_components": [
+                0.5078,
+                0.108,
+                73.3
+              ]
+            },
+            "danger": {
+              "hex": "#b42318",
+              "oklch": "oklch(0.5003 0.18205 29.51)",
+              "oklch_components": [
+                0.5003,
+                0.18205,
+                29.51
+              ]
+            },
+            "accent_text": {
+              "hex": "#c42a63",
+              "oklch": "oklch(0.5479 0.19191 4.44)",
+              "oklch_components": [
+                0.5479,
+                0.19191,
+                4.44
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 18.42,
+              "apca_lc": 105.1,
+              "apca_abs": 105.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 16.37,
+              "apca_lc": 97.0,
+              "apca_abs": 97.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 8.8,
+              "apca_lc": 90.1,
+              "apca_abs": 90.1,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 5.44,
+              "apca_lc": -81.0,
+              "apca_abs": 81.0,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 5.44,
+              "apca_lc": 75.7,
+              "apca_abs": 75.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 6.52,
+              "apca_lc": 82.0,
+              "apca_abs": 82.0,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 5.93,
+              "apca_lc": 79.3,
+              "apca_abs": 79.3,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 6.57,
+              "apca_lc": 80.9,
+              "apca_abs": 80.9,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_text_on_bg": {
+              "wcag": 5.44,
+              "apca_lc": 75.7,
+              "apca_abs": 75.7,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        },
+        "dark": {
+          "tokens": {
+            "bg": {
+              "hex": "#141414",
+              "oklch": "oklch(0.1913 0.00000 0.00)",
+              "oklch_components": [
+                0.1913,
+                0.0,
+                0.0
+              ]
+            },
+            "surface": {
+              "hex": "#1f1d1c",
+              "oklch": "oklch(0.2326 0.00364 48.56)",
+              "oklch_components": [
+                0.2326,
+                0.00364,
+                48.56
+              ]
+            },
+            "border": {
+              "hex": "#3a3633",
+              "oklch": "oklch(0.3359 0.00768 59.42)",
+              "oklch_components": [
+                0.3359,
+                0.00768,
+                59.42
+              ]
+            },
+            "text": {
+              "hex": "#fbf6f0",
+              "oklch": "oklch(0.9753 0.00961 72.66)",
+              "oklch_components": [
+                0.9753,
+                0.00961,
+                72.66
+              ]
+            },
+            "muted": {
+              "hex": "#c2bab2",
+              "oklch": "oklch(0.7932 0.01439 67.62)",
+              "oklch_components": [
+                0.7932,
+                0.01439,
+                67.62
+              ]
+            },
+            "accent": {
+              "hex": "#7fe0c3",
+              "oklch": "oklch(0.8388 0.10168 172.37)",
+              "oklch_components": [
+                0.8388,
+                0.10168,
+                172.37
+              ]
+            },
+            "accent_foreground": {
+              "hex": "#141414",
+              "oklch": "oklch(0.1913 0.00000 0.00)",
+              "oklch_components": [
+                0.1913,
+                0.0,
+                0.0
+              ]
+            },
+            "success": {
+              "hex": "#7dda9a",
+              "oklch": "oklch(0.8138 0.12756 152.72)",
+              "oklch_components": [
+                0.8138,
+                0.12756,
+                152.72
+              ]
+            },
+            "warn": {
+              "hex": "#e8b849",
+              "oklch": "oklch(0.8060 0.13714 85.03)",
+              "oklch_components": [
+                0.806,
+                0.13714,
+                85.03
+              ]
+            },
+            "danger": {
+              "hex": "#ff8a80",
+              "oklch": "oklch(0.7594 0.14351 26.08)",
+              "oklch_components": [
+                0.7594,
+                0.14351,
+                26.08
+              ]
+            },
+            "accent_text": {
+              "hex": "#7fe0c3",
+              "oklch": "oklch(0.8388 0.10168 172.37)",
+              "oklch_components": [
+                0.8388,
+                0.10168,
+                172.37
+              ]
+            }
+          },
+          "contraste": {
+            "text_on_bg": {
+              "wcag": 17.14,
+              "apca_lc": -101.6,
+              "apca_abs": 101.6,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "text_on_surface": {
+              "wcag": 15.62,
+              "apca_lc": -100.6,
+              "apca_abs": 100.6,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "muted_on_bg": {
+              "wcag": 9.62,
+              "apca_lc": -65.1,
+              "apca_abs": 65.1,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "accent_fg_on_accent": {
+              "wcag": 11.71,
+              "apca_lc": 76.8,
+              "apca_abs": 76.8,
+              "polarity": "oscuro-sobre-claro",
+              "nivel": "AA cuerpo",
+              "ok_cuerpo": true
+            },
+            "accent_on_bg": {
+              "wcag": 11.71,
+              "apca_lc": -76.4,
+              "apca_abs": 76.4,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "success_on_bg": {
+              "wcag": 10.85,
+              "apca_lc": -71.9,
+              "apca_abs": 71.9,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "warn_on_bg": {
+              "wcag": 9.99,
+              "apca_lc": -67.3,
+              "apca_abs": 67.3,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            },
+            "danger_on_bg": {
+              "wcag": 8.07,
+              "apca_lc": -56.8,
+              "apca_abs": 56.8,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": false
+            },
+            "accent_text_on_bg": {
+              "wcag": 11.71,
+              "apca_lc": -76.4,
+              "apca_abs": 76.4,
+              "polarity": "claro-sobre-oscuro",
+              "nivel": "AA cuerpo / link",
+              "ok_cuerpo": true
+            }
+          }
+        }
+      },
+      "origen": [
+        "propia (estilo de ui-ux-pro-max-skill)"
+      ]
     }
   ]
 }

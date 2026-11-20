@@ -16,7 +16,7 @@ Hay **4 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas
 
 **Mejor para:** estudios, arquitectura, institucional, sistemas de diseño.  
 **Evitá en:** marcas que necesitan calor o juventud ruidosa.  
-**Estilos:** [`suizo-internacional`](../estilos/suizo-internacional.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md).
+**Estilos:** [`suizo-internacional`](../estilos/suizo-internacional.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md), [`denso-de-datos`](../estilos/denso-de-datos.md), [`papel-e-ink`](../estilos/papel-e-ink.md), [`bauhaus`](../estilos/bauhaus.md).
 
 Sin acento de moda. El ‘acento’ es el negro mismo o un rojo muy puntual de señal (acá, un rojo de corrección, usado con extrema tacañería).
 
@@ -186,7 +186,7 @@ El combo cream+terracotta ya lo marcan algunos detectores como el ‘anti-slop�
 
 **Mejor para:** arquitectura, museos, docs, producto serio.  
 **Evitá en:** hospitality cálida, comida.  
-**Estilos:** [`suizo-internacional`](../estilos/suizo-internacional.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md).
+**Estilos:** [`suizo-internacional`](../estilos/suizo-internacional.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md), [`denso-de-datos`](../estilos/denso-de-datos.md), [`papel-e-ink`](../estilos/papel-e-ink.md).
 
 Un azul-gris de piedra, no slate-900 + sky-500. El acento es un azul de ingeniería, bajo en croma.
 

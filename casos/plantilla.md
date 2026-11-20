@@ -50,3 +50,5 @@ _Errores, atajos que no valieron, cosas que un agente no debería volver a propo
 ## Notas para el agente
 
 _Tres líneas, imperativo: “En un producto así, no uses X; partí de Y; el cliente rechazó Z.” Es lo que se va a leer rápido en un contexto._
+
+> Si el proyecto tiene (o va a tener) un `DESIGN.md` en la raíz, linkealo acá. El molde está en [plantilla-design-md.md](./plantilla-design-md.md).

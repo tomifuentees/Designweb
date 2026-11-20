@@ -329,3 +329,115 @@ Snippet de import:
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 /* font-family: "Unbounded", sans-serif; */
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 15. Bebas Neue
+
+- **Diseño:** Ryoichi Tsunekawa
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Bebas+Neue
+- **Estilo / personalidad:** Condensada de mayúsculas, de cartel. Funciona en titulares cortos; en un párrafo es ilegible.
+- **Mejor uso:** Eventos, Deportes, Campañas
+- **Pesos / ejes:** Estáticos: 400
+- **Variable:** No
+- **Pareja recomendada:** Source Sans 3 o Barlow
+- **Nota:** Ranking de popularidad en Google Fonts: 44 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+/* font-family: "Bebas Neue", sans-serif; */
+```
+
+## 16. Barlow Condensed
+
+- **Diseño:** Jeremy Tribby
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Barlow+Condensed
+- **Estilo / personalidad:** Condensada de la familia Barlow, inspirada en señalética de rutas de California. Titulares deportivos y numerales grandes.
+- **Mejor uso:** Deportes, Fitness, Logística
+- **Pesos / ejes:** Estáticos: 100, 100i, 200, 200i, 300, 300i, 400, 400i, 500, 500i, 600, 600i, 700, 700i, 800, 800i, 900, 900i
+- **Variable:** No
+- **Pareja recomendada:** Barlow
+- **Nota:** Ranking de popularidad en Google Fonts: 29 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+/* font-family: "Barlow Condensed", sans-serif; */
+```
+
+## 17. Anton
+
+- **Diseño:** Vernon Adams
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Anton
+- **Estilo / personalidad:** Grotesca de cartel muy condensada y pesada (Vernon Adams). Impacto puro en titulares cortos.
+- **Mejor uso:** Campañas, Streetwear, Gen z
+- **Pesos / ejes:** Estáticos: 400
+- **Variable:** No
+- **Pareja recomendada:** Epilogue
+- **Nota:** Ranking de popularidad en Google Fonts: 83 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+/* font-family: "Anton", sans-serif; */
+```
+
+## 18. Fredoka
+
+- **Diseño:** Milena Brandão, Hafontia
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Fredoka
+- **Estilo / personalidad:** Redondeada y gordita, con eje de ancho. Infantil y amable sin ser Comic Sans.
+- **Mejor uso:** Kids, Educación, Juegos
+- **Pesos / ejes:** Variable (wdth: 75..125 | wght: 300..700)
+- **Variable:** Sí
+- **Pareja recomendada:** Nunito
+- **Nota:** Ranking de popularidad en Google Fonts: 42 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+/* font-family: "Fredoka", sans-serif; */
+```
+
+## 19. Syncopate
+
+- **Diseño:** Astigmatic
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Syncopate
+- **Estilo / personalidad:** Display ancha de mayúsculas (Astigmatic), con aire tecno-retro. Solo titulares cortos.
+- **Mejor uso:** Festivales, Automotriz, Música
+- **Pesos / ejes:** Estáticos: 400, 700
+- **Variable:** No
+- **Pareja recomendada:** Space Mono
+- **Nota:** Ranking de popularidad en Google Fonts: 119 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+/* font-family: "Syncopate", sans-serif; */
+```
+
