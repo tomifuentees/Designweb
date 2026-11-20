@@ -380,3 +380,73 @@ Snippet de import:
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 /* font-family: "Space Grotesk", sans-serif; */
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 17. Lexend
+
+- **Diseño:** Bonnie Shaver-Troup, Thomas Jockin, Santiago Orozco, Héctor Gómez, Superunion
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Lexend
+- **Estilo / personalidad:** Geométrica ancha, diseñada a partir de investigación sobre fluidez de lectura (Bonnie Shaver-Troup). Clara en tamaños chicos, con un aire amable y serio a la vez.
+- **Mejor uso:** Salud, Gobierno, Educación, Dashboard
+- **Pesos / ejes:** Variable (wght: 100..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Source Sans 3 o Source Serif 4
+- **Nota:** Ranking de popularidad en Google Fonts: 98 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+/* font-family: "Lexend", sans-serif; */
+```
+
+## 18. Jost
+
+- **Diseño:** Owen Earl
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Jost
+- **Estilo / personalidad:** Geométrica de inspiración Futura (Owen Earl), variable. Clásica y limpia; el par natural de una didona.
+- **Mejor uso:** Lujo, Marca, Landing
+- **Pesos / ejes:** Variable (wght: 100..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Bodoni Moda
+- **Nota:** Ranking de popularidad en Google Fonts: 16 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+/* font-family: "Jost", sans-serif; */
+```
+
+## 19. Nunito
+
+- **Diseño:** Vernon Adams, Cyreal, Jacques Le Bailly
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Nunito
+- **Estilo / personalidad:** Sans redondeada muy popular (Vernon Adams y otros). Amable; por su popularidad, usala como cuerpo, no como voz.
+- **Mejor uso:** Kids, Bienestar, Apps
+- **Pesos / ejes:** Variable (wght: 200..1000)
+- **Variable:** Sí
+- **Pareja recomendada:** Fredoka
+- **Nota:** Ranking de popularidad en Google Fonts: 15 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+/* font-family: "Nunito", sans-serif; */
+```
+

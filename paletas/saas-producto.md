@@ -5,7 +5,7 @@ Estas paletas sirven cuando el producto (un recorte de UI, un dato, una consola)
 Ninguna usa índigo ni un degradé violeta-azul. El acento es lima, rojo de comando, cian de terminal, oro de baja croma, naranja de señal o menta. Si el brief pide “que se vea como Linear”, partí de acá y cambiale la voz: no copies el púrpura.
 
 
-Hay **6 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
+Hay **7 paletas** (la última, océano profundo, adaptada en noviembre de 2026 de la skill theme-factory de Anthropic) en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
 
 
 ---
@@ -16,7 +16,7 @@ Hay **6 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas
 
 **Mejor para:** devtools, fintech técnica, SaaS B2B, dashboards.  
 **Evitá en:** marca cálida, comida, estudio jurídico, salud infantil.  
-**Estilos:** [`saas-oscuro-premium`](../estilos/saas-oscuro-premium.md), [`estilo-linear`](../estilos/estilo-linear.md), [`bento-grids`](../estilos/bento-grids.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md).
+**Estilos:** [`saas-oscuro-premium`](../estilos/saas-oscuro-premium.md), [`estilo-linear`](../estilos/estilo-linear.md), [`bento-grids`](../estilos/bento-grids.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`catalogo-tecnico`](../estilos/catalogo-tecnico.md), [`denso-de-datos`](../estilos/denso-de-datos.md).
 
 Pariente de la disciplina ‘un acento sobre negro’ (Mercury/Linear), pero el lima no es el púrpura de Linear ni el índigo de Tailwind. Un solo acento.
 
@@ -441,7 +441,7 @@ El naranja es de señal (un dato, un CTA), no un fondo. El resto es acero.
 
 **Mejor para:** editores, productos de escritura, herramientas quietas.  
 **Evitá en:** landings que necesitan gritar, marcas de dopamina.  
-**Estilos:** [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`saas-oscuro-premium`](../estilos/saas-oscuro-premium.md), [`estilo-linear`](../estilos/estilo-linear.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md).
+**Estilos:** [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`saas-oscuro-premium`](../estilos/saas-oscuro-premium.md), [`estilo-linear`](../estilos/estilo-linear.md), [`minimalismo-monocromo`](../estilos/minimalismo-monocromo.md), [`denso-de-datos`](../estilos/denso-de-datos.md).
 
 Menta desaturada, no el emerald-400 de Tailwind en todo. El borde hace más trabajo que el color.
 
@@ -511,6 +511,89 @@ Menta desaturada, no el emerald-400 de Tailwind en todo. El borde hace más trab
   --accent: oklch(0.8268 0.12140 177.17); /* #5ee0c5 */
   --accent-foreground: oklch(0.2212 0.03424 175.34); /* #06201a */
   --accent-text: oklch(0.8268 0.12140 177.17); /* #5ee0c5 */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Océano profundo
+
+`oceano-profundo` — Azul marino, verde azulado y espuma; frío y tranquilo
+
+**Mejor para:** logística y puertos, salud digital, SaaS B2B, turismo de costa.  
+**Evitá en:** comida, moda, marcas infantiles.  
+**Estilos:** [`saas-oscuro-premium`](../estilos/saas-oscuro-premium.md), [`ui-casi-invisible`](../estilos/ui-casi-invisible.md), [`denso-de-datos`](../estilos/denso-de-datos.md), [`suizo-internacional`](../estilos/suizo-internacional.md).
+
+Adaptada del tema 'Ocean Depths' de theme-factory (Anthropic, Apache 2.0): marino #1a2332, teal #2d8b8b, espuma #a8dadc. En claro el teal se oscurece para llegar a 4.5:1 con texto blanco; en oscuro el fondo es el marino del tema y el acento la espuma.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#f3f7f8` | `oklch(0.9734 0.00447 214.33)` |
+| Superficie | `#e6eef0` | `oklch(0.9437 0.00897 214.34)` |
+| Borde | `#c8d6da` | `oklch(0.8667 0.01615 216.69)` |
+| Texto | `#111a24` | `oklch(0.2140 0.02389 251.57)` |
+| Muted | `#4b5b66` | `oklch(0.4618 0.02671 238.20)` |
+| Acento (sólido) | `#1f6f70` | `oklch(0.4958 0.07437 196.25)` |
+| Acento foreground | `#f1faf9` | `oklch(0.9781 0.00959 189.07)` |
+| Acento texto/link | `#1f6f70` | `oklch(0.4958 0.07437 196.25)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#1a2332` | `oklch(0.2549 0.03134 260.42)` |
+| Superficie | `#222d3e` | `oklch(0.2950 0.03470 258.93)` |
+| Borde | `#36445a` | `oklch(0.3840 0.04193 259.29)` |
+| Texto | `#eef5f6` | `oklch(0.9652 0.00757 207.14)` |
+| Muted | `#afbecb` | `oklch(0.7940 0.02480 244.21)` |
+| Acento (sólido) | `#a8dadc` | `oklch(0.8542 0.05170 199.29)` |
+| Acento foreground | `#1a2332` | `oklch(0.2549 0.03134 260.42)` |
+| Acento texto/link | `#a8dadc` | `oklch(0.8542 0.05170 199.29)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 16.27:1, APCA Lc 99.1 (oscuro-sobre-claro); texto sobre superficie WCAG 14.91:1, APCA Lc 93.4 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 5.55:1, APCA Lc -79.8 (claro-sobre-oscuro). Muted sobre fondo WCAG 6.52:1, APCA Lc 79.1 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 5.46:1, APCA Lc 73.9 (oscuro-sobre-claro)). `accent-text` está igualado o derivado para ese rol.
+
+**Oscuro:** texto sobre fondo WCAG 14.30:1, APCA Lc -97.8 (claro-sobre-oscuro); texto sobre superficie WCAG 12.58:1, APCA Lc -96.0 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 10.32:1, APCA Lc 75.9 (oscuro-sobre-claro). Muted sobre fondo WCAG 8.31:1, APCA Lc -63.7 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 10.32:1, APCA Lc -76.1 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Océano profundo — claro */
+  --bg: oklch(0.9734 0.00447 214.33); /* #f3f7f8 */
+  --surface: oklch(0.9437 0.00897 214.34); /* #e6eef0 */
+  --border: oklch(0.8667 0.01615 216.69); /* #c8d6da */
+  --text: oklch(0.2140 0.02389 251.57); /* #111a24 */
+  --muted: oklch(0.4618 0.02671 238.20); /* #4b5b66 */
+  --accent: oklch(0.4958 0.07437 196.25); /* #1f6f70 */
+  --accent-foreground: oklch(0.9781 0.00959 189.07); /* #f1faf9 */
+  --accent-text: oklch(0.4958 0.07437 196.25); /* #1f6f70 */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Océano profundo — oscuro */
+  --bg: oklch(0.2549 0.03134 260.42); /* #1a2332 */
+  --surface: oklch(0.2950 0.03470 258.93); /* #222d3e */
+  --border: oklch(0.3840 0.04193 259.29); /* #36445a */
+  --text: oklch(0.9652 0.00757 207.14); /* #eef5f6 */
+  --muted: oklch(0.7940 0.02480 244.21); /* #afbecb */
+  --accent: oklch(0.8542 0.05170 199.29); /* #a8dadc */
+  --accent-foreground: oklch(0.2549 0.03134 260.42); /* #1a2332 */
+  --accent-text: oklch(0.8542 0.05170 199.29); /* #a8dadc */
   --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
   --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
   --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */

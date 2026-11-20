@@ -230,3 +230,31 @@ Snippet de import:
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 /* font-family: "Space Mono", sans-serif; */
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 11. Fira Code
+
+- **Diseño:** The Mozilla Foundation, Telefonica S.A., Nikita Prokopov
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Fira+Code
+- **Estilo / personalidad:** Mono derivada de Fira Mono con ligaduras de programación (Nikita Prokopov).
+- **Mejor uso:** Código, Dashboard, Devtools
+- **Pesos / ejes:** Variable (wght: 300..700)
+- **Variable:** Sí
+- **Pareja recomendada:** Fira Sans
+- **Nota:** Ranking de popularidad en Google Fonts: 60 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+/* font-family: "Fira Code", monospace; */
+```
+

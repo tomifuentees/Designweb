@@ -17,7 +17,8 @@
       "unslop",
       "open-props"
     ],
-    "licencias_aviso": "No copiar de forma literal contenido de licencias no permisivas, sin SPDX, CC-BY sin atribución, o identidades de marca (aunque el wrapper sea MIT). Resumir y linkear."
+    "licencias_aviso": "No copiar de forma literal contenido de licencias no permisivas, sin SPDX, CC-BY sin atribución, o identidades de marca (aunque el wrapper sea MIT). Resumir y linkear.",
+    "minado": "2026-11-20: los 8 top se minaron; ver recursos/minado-repos.md"
   },
   "descartados_ya_en_designweb": [
     {
@@ -155,7 +156,17 @@
       "pushed_at_utc": "2026-11-16T14:22:50Z",
       "pushed_at_salta": "2026-11-16 11:22",
       "pushed_at_precision": "datetime",
-      "mine_first_rank": 1
+      "mine_first_rank": 1,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "e4bb5d9",
+        "destinos": [
+          "anti-patrones (6)",
+          "paletas (4)",
+          "skills/frontend-design (revisión del plan)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "ui-ux-pro-max",
@@ -187,7 +198,17 @@
       "pushed_at_utc": "2026-11-19T00:00:00Z",
       "pushed_at_salta": "2026-11-19",
       "pushed_at_precision": "day",
-      "mine_first_rank": 2
+      "mine_first_rank": 2,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "2de1134",
+        "destinos": [
+          "estilos (4)",
+          "tipografias (20 fuentes, 14 parejas)",
+          "estilos/direccion-por-rubro.md (idea)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "taste-skill",
@@ -218,7 +239,16 @@
       "pushed_at_utc": "2026-11-08T00:00:00Z",
       "pushed_at_salta": "2026-11-08",
       "pushed_at_precision": "day",
-      "mine_first_rank": 4
+      "mine_first_rank": 4,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "f6b7657",
+        "destinos": [
+          "anti-patrones (6)",
+          "estilos (tipos_de_negocio)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "impeccable",
@@ -247,7 +277,17 @@
       "pushed_at_utc": "2026-11-18T00:00:00Z",
       "pushed_at_salta": "2026-11-18",
       "pushed_at_precision": "day",
-      "mine_first_rank": 5
+      "mine_first_rank": 5,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "b49177d",
+        "destinos": [
+          "anti-patrones (18)",
+          "anti-patrones/checklist-revision.md",
+          "skills/frontend-design/restyling.md"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "unslop",
@@ -275,7 +315,18 @@
       "pushed_at_utc": "2026-11-15T00:00:00Z",
       "pushed_at_salta": "2026-11-15",
       "pushed_at_precision": "day",
-      "mine_first_rank": 7
+      "mine_first_rank": 7,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "620163e",
+        "destinos": [
+          "anti-patrones (8)",
+          "skills/frontend-design",
+          "estilos/direccion-por-rubro.md",
+          "tokens (size, rampas, radios anidados)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "awesome-design-skills",
@@ -528,7 +579,15 @@
       "pushed_at_utc": "2026-10-28T15:45:40Z",
       "pushed_at_salta": "2026-10-28 12:45",
       "pushed_at_precision": "datetime",
-      "mine_first_rank": 3
+      "mine_first_rank": 3,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "fcc7028",
+        "destinos": [
+          "casos/plantilla-design-md.md"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "fudge-design-md",
@@ -612,7 +671,15 @@
       "pushed_at_utc": "2026-11-13T13:47:50Z",
       "pushed_at_salta": "2026-11-13 10:47",
       "pushed_at_precision": "datetime",
-      "mine_first_rank": 6
+      "mine_first_rank": 6,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "5f21c29",
+        "destinos": [
+          "tokens/escalas.md (4 escalas)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "klaufel-awesome-ds",
@@ -903,7 +970,15 @@
       "pushed_at_utc": "2026-10-11T00:00:00Z",
       "pushed_at_salta": "2026-10-11",
       "pushed_at_precision": "day",
-      "mine_first_rank": 8
+      "mine_first_rank": 8,
+      "minado": {
+        "fecha": "2026-11-20",
+        "commit": "f39ab7c",
+        "destinos": [
+          "tokens (3 easings, shadow-layered)"
+        ],
+        "detalle": "recursos/minado-repos.md"
+      }
     },
     {
       "id": "design-extract",

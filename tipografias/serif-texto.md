@@ -194,3 +194,52 @@ Snippet de import:
   font-display: swap;
 }
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 10. Crimson Pro
+
+- **Diseño:** Jacques Le Bailly
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Crimson+Pro
+- **Estilo / personalidad:** Serif de libro de inspiración garalda (Jacques Le Bailly), variable 200–900. Lectura larga académica.
+- **Mejor uso:** Academia, Editorial, Docs largos
+- **Pesos / ejes:** Variable (wght: 200..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Atkinson Hyperlegible
+- **Nota:** Ranking de popularidad en Google Fonts: 112 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap" rel="stylesheet">
+/* font-family: "Crimson Pro", serif; */
+```
+
+## 11. Merriweather
+
+- **Diseño:** Sorkin Type
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Merriweather
+- **Estilo / personalidad:** Serif de texto robusta (Sorkin Type), pensada para pantalla, con ejes de tamaño óptico y ancho. De las más usadas de Google Fonts.
+- **Mejor uso:** Blogs, Editorial, Cuerpo
+- **Pesos / ejes:** Variable (opsz: 18..144 | wdth: 87..112 | wght: 300..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Abril Fatface
+- **Nota:** Ranking de popularidad en Google Fonts: 9 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300..900&display=swap" rel="stylesheet">
+/* font-family: "Merriweather", serif; */
+```
+

@@ -1,6 +1,6 @@
 # Combinaciones titular + cuerpo
 
-Más de veinte parejas que funcionan en web y producto, armadas a partir de sistemas de foundry, recomendaciones de Typewolf, guías de 2025-2026 y usos reales detectados. La lógica de 2026 es estable: **una cara para expresar, otra para aguantar la lectura**. Contrastá el rol (display vs. texto), no el clima (no pelees una fashion serif con una geométrica infantil).
+Cuarenta y dos parejas que funcionan en web y producto, armadas a partir de sistemas de foundry, recomendaciones de Typewolf, guías de 2025-2026 y usos reales detectados. La lógica de 2026 es estable: **una cara para expresar, otra para aguantar la lectura**. Contrastá el rol (display vs. texto), no el clima (no pelees una fashion serif con una geométrica infantil).
 
 Cómo usarla: elegí primero el tipo de proyecto, después la pareja. Si el presupuesto no alcanza para la comercial, hay un plan B gratis debajo de casi todas.
 
@@ -175,6 +175,90 @@ Cómo usarla: elegí primero el tipo de proyecto, después la pareja. Si el pres
 - **Para qué:** Producto digital premium, estudios, landings B2B con más carácter que Plus Jakarta + Inter.
 - **Plan B:** Aspekta o Sora + Newsreader.
 
+## Parejas 29–42: minadas de ui-ux-pro-max-skill (noviembre de 2026)
+
+Todas gratis (Google Fonts, SIL OFL). Las combinaciones salen del `typography.csv` de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT). Se descartaron las que usan Inter, Roboto, Poppins, Montserrat, Lato, Open Sans o Playfair Display, y las que ya estaban acá. El porqué y los cuidados son propios. Las fichas de cada fuente están en su categoría y en [`fonts.json`](./fonts.json).
+
+## 29. Lexend + Source Sans 3
+
+- **Por qué funciona:** Lexend nació de investigación sobre fluidez de lectura y es clara en tamaños chicos; Source Sans 3 es un cuerpo humanista que no compite.
+- **Para qué:** Salud, farmacia, gobierno, trámites, educación, cualquier producto donde leer bien es la tarea.
+- **Plan B:** Lexend + Source Serif 4 si hay texto largo.
+
+## 30. Bebas Neue + Source Sans 3
+
+- **Por qué funciona:** Bebas es cartel puro en mayúsculas condensadas; Source Sans 3 baja el tono en el cuerpo.
+- **Para qué:** Eventos, deportes, agendas, campañas cortas.
+- **Cuidado:** Bebas solo en titulares de 1 a 5 palabras. Nunca en botones largos ni en párrafos.
+
+## 31. Barlow Condensed + Barlow
+
+- **Por qué funciona:** Misma superfamilia, inspirada en la señalética de rutas: la condensada para titulares y números, la normal para el cuerpo.
+- **Para qué:** Deportes, fitness, logística, transporte, tableros de turnos.
+- **Cuidado:** Barlow está entre las 20 más usadas de Google Fonts: el carácter lo tiene que poner la condensada.
+
+## 32. Bodoni Moda + Jost
+
+- **Por qué funciona:** Didona con tamaño óptico real + geométrica de inspiración Futura: el contraste clásico de la moda, sin Playfair.
+- **Para qué:** Lujo minimalista, moda, joyería, hotelería boutique.
+- **Plan B:** Libre Bodoni + Jost si el titular va en tamaños medios.
+
+## 33. Libre Bodoni + Public Sans
+
+- **Por qué funciona:** Una Bodoni pensada para pantalla en los titulares y una grotesca institucional (la del gobierno de EE. UU.) en el cuerpo.
+- **Para qué:** Revistas, medios, publicaciones culturales.
+
+## 34. Crimson Pro + Atkinson Hyperlegible
+
+- **Por qué funciona:** Serif de libro para leer largo y una sans diseñada para baja visión en la interfaz.
+- **Para qué:** Universidades, papers, bibliotecas, cursos.
+
+## 35. Archivo + Space Grotesk
+
+- **Por qué funciona:** Archivo tiene eje de ancho (62–125): un titular expandido y un cuerpo normal salen de la misma familia; Space Grotesk suma un detalle técnico.
+- **Para qué:** Portfolios, estudios chicos, marcas minimalistas.
+- **Cuidado:** [impeccable](https://github.com/pbakaus/impeccable) pone a Space Grotesk en su lista de fuentes gastadas. **Plan B:** Archivo (expandida) + IBM Plex Mono para los datos.
+
+## 36. Anton + Epilogue
+
+- **Por qué funciona:** Anton es impacto condensado; Epilogue tiene una rareza editorial en pesos altos que acompaña sin apagar.
+- **Para qué:** Streetwear, marketing Gen Z, campañas virales, música.
+
+## 37. Fira Sans + Fira Code
+
+- **Por qué funciona:** Superfamilia de Mozilla: la sans es legible en tablas y la mono trae ligaduras para ids y código.
+- **Para qué:** Dashboards, analítica, back-office, documentación técnica (ver [`../estilos/denso-de-datos.md`](../estilos/denso-de-datos.md)).
+
+## 38. Fredoka + Nunito
+
+- **Por qué funciona:** Dos redondeadas de distinto peso: Fredoka juega en titulares, Nunito sostiene el cuerpo.
+- **Para qué:** Apps infantiles, educación inicial, juegos, mascotas.
+- **Cuidado:** Nunito es de las más usadas: el carácter lo da Fredoka.
+
+## 39. Abril Fatface + Merriweather
+
+- **Por qué funciona:** Didona de cartel muy pesada para el nombre y una serif de texto robusta para menús y notas.
+- **Para qué:** Cervecerías, bodegones, restaurantes, marcas vintage.
+- **Cuidado:** Abril solo en titulares. Merriweather también es muy popular: si el menú es corto, probá Crimson Pro.
+
+## 40. Syncopate + Space Mono
+
+- **Por qué funciona:** Display ancha en mayúsculas con aire tecno-retro y una mono de datos.
+- **Para qué:** Festivales electrónicos, automotriz, marcas de alta energía.
+- **Cuidado:** Syncopate solo para palabras sueltas; en frases cansa.
+
+## 41. Noto Serif / Noto Sans por escritura (CJK, árabe, hebreo, tailandés)
+
+- **Por qué funciona:** Si el producto tiene japonés, chino, coreano, árabe, hebreo o tailandés, Noto da cobertura y métricas consistentes con un par serif/sans por escritura.
+- **Para qué:** Sitios multilingües, mercados de Asia y Medio Oriente.
+- **Cómo:** Usá la display latina del proyecto para el latín y la Noto de cada escritura como respaldo en el `font-family`. Links: [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP), [Noto Sans Arabic](https://fonts.google.com/noto/specimen/Noto+Sans+Arabic), [Noto Sans Hebrew](https://fonts.google.com/noto/specimen/Noto+Sans+Hebrew).
+
+## 42. Lexend Mega + Public Sans
+
+- **Por qué funciona:** Lexend Mega es el ancho más expandido de la familia Lexend: un titular plano y gráfico que va bien con bordes duros; Public Sans es neutra y seria.
+- **Para qué:** Neo-brutalismo de acento, marcas Gen Z que igual necesitan leerse bien.
+- **Cómo:** `https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400..900&display=swap`.
+
 ---
 
 ## Atajos por tipo de proyecto
@@ -188,6 +272,10 @@ Cómo usarla: elegí primero el tipo de proyecto, después la pareja. Si el pres
 | Lujo / moda / hospitality | Canela + Graphik, o Signifier + Söhne | Boska + Switzer, o Melodrama + Satoshi |
 | Cultura / estudio | Monument Grotesk + Reckless, o Karrik + Newsreader | Bricolage + Newsreader, o Sprat + Apfel Grotezk |
 | Gobierno / salud / educación | Public Sans + Source Serif 4 | Atkinson Hyperlegible + Source Serif 4 |
+| Salud, farmacia, trámites | Lexend + Source Sans 3 | Las mismas (gratis) |
+| Deportes, fitness, eventos | Barlow Condensed + Barlow, o Bebas Neue + Source Sans 3 | Las mismas (gratis) |
+| Gastronomía de barrio, cervecería | Abril Fatface + Merriweather | Abril Fatface + Crimson Pro |
+| Kids, educación inicial | Fredoka + Nunito | Las mismas (gratis) |
 | Dashboard denso | Untitled Sans o Inter *como UI*, con un display aparte en marketing | Figtree, Onest o Geist en la app; nunca el display en una tabla |
 
 Una sola regla final: **mostrá la pareja en el hero y en un párrafo de 150 palabras** antes de enamorarte del specimen.

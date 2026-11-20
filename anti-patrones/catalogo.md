@@ -1,6 +1,6 @@
 # Catálogo de anti-patrones (AI slop / vibe-coded UI)
 
-Lista de **30 tells** documentados en 2025–2026. No es una estética personal: cada entrada cita hilos o artículos reales (Desai y Hacker News, el tuit de Wathan, Reddit, Utsubo, Drop The Hassle, posts de X recuperados con id). El objetivo es que un agente —o una pasada humana— pueda nombrar lo que está viendo y cortarlo.
+Lista de **59 tells** documentados en 2025–2026 (las fichas 31–59 se sumaron el 20 de noviembre de 2026 desde repos de referencia, con atribución). No es una estética personal: cada entrada cita hilos o artículos reales (Desai y Hacker News, el tuit de Wathan, Reddit, Utsubo, Drop The Hassle, posts de X recuperados con id). El objetivo es que un agente —o una pasada humana— pueda nombrar lo que está viendo y cortarlo.
 
 Una sola de estas cosas, elegida a propósito, no hace un sitio “de IA”. Tres o cuatro apiladas, sí: es el promedio de un primer draft sin dirección. Varios comentarios del hilo de HN lo dicen: el problema no es usar un modelo, es shippear la primera salida sin oficio.
 
@@ -426,3 +426,414 @@ Fuentes: [fuente](https://www.utsubo.com/blog/built-with-ai-trust-signals-2026)
 
 Fuentes: [fuente](https://x.com/jimmyyangrz/status/2113722648744304914)
 
+---
+
+## Fichas 31–59: minadas de repos de referencia (noviembre de 2026)
+
+Resumidas y adaptadas al español de [impeccable](https://github.com/pbakaus/impeccable) (Apache 2.0), la skill oficial [`frontend-design` de Anthropic](https://github.com/anthropics/skills/tree/main/skills/frontend-design) (Apache 2.0), [taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT) y [unslop](https://github.com/heydamir/unslop) de Damir Sokolovsky (CC BY 4.0). Qué se tomó de cada uno: [`../recursos/minado-repos.md`](../recursos/minado-repos.md).
+
+## 31. Fondo crema 'con gusto' por reflejo
+
+`crema-por-reflejo`
+
+**Síntoma.** Fondo beige o crema cálido (cerca de #F4F1EA) con un serif display de alto contraste y un acento terracota o arcilla (cerca de #D97757), sin que el rubro lo pida.
+
+**Por qué pasa.** Es la salida 'elegante' que encontraron los modelos para escapar del índigo. La skill oficial de Anthropic lo nombra como el primer cluster de diseño generado, y aclara que #D97757 es el acento de la propia interfaz de Claude, así que en un brief ajeno se lee como firma de IA. impeccable lo detecta como 'cream-palette'.
+
+**Cómo arreglarlo.** Sacá el fondo de la dirección (mundo y material del producto), no del 'tono seguro'. Probá un blanco frío, un gris tintado hacia el acento o un fondo de color pleno. Si el rubro sí es papel o materia, que sea una decisión escrita en el brief.
+
+**Regla para el agente.** No uses un fondo crema o beige cálido con serif display y acento terracota como default. Si el brief no habla de papel, materia o editorial, elegí otro fondo y justificá el que uses.
+
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md), [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 32. Casi negro con un solo acento ácido o neón
+
+`negro-con-acento-acido`
+
+**Síntoma.** Fondo #0B0B0B o #111 con un único acento verde ácido, bermellón o cian brillante en botones, cifras y bordes.
+
+**Por qué pasa.** Es el segundo cluster que describe Anthropic y el 'cyan-on-dark' que impeccable marca como paleta de IA. Parece técnico sin decidir nada sobre el producto.
+
+**Cómo arreglarlo.** Si el producto es técnico, que el acento salga del mundo del producto y viva en un lugar chico (selección, una cifra clave). El botón primario puede ser un blanco roto de la rampa con texto oscuro. Usá negro real o un neutro tintado con intención.
+
+**Regla para el agente.** No armes la identidad con casi negro + un acento ácido o neón. Si es oscuro, el acento se usa poco y se justifica en el brief.
+
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md), [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 33. Diario de plantilla (filetes, radio 0, columnas densas)
+
+`broadsheet-de-plantilla`
+
+**Síntoma.** Layout tipo periódico en cualquier rubro: filetes finos por todos lados, border-radius 0, columnas apretadas y metadatos en mono.
+
+**Por qué pasa.** Tercer cluster de la skill oficial de Anthropic. Es la respuesta del modelo a 'hacelo editorial', aplicada aunque el contenido no sea de lectura.
+
+**Cómo arreglarlo.** Usá el estilo editorial solo cuando hay contenido largo de verdad (ver ../estilos/editorial-revista.md). Si no, elegí la densidad y el radio por el tipo de producto.
+
+**Regla para el agente.** No apliques el look de diario (filetes, radio 0, columnas densas) si el producto no es de lectura. Editorial es una decisión del brief, no un escape del default.
+
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+
+## 34. Cromo de plantilla: 'A · B · C', 'PALABRA — fragmento' y mono para etiquetas
+
+`metadatos-con-punto-medio`
+
+**Síntoma.** Metadatos unidos con punto medio, etiquetas armadas como 'PALABRA — fragmento' con raya espaciada, y una mono chiquita para cada dato menor, en cualquier tema.
+
+**Por qué pasa.** La skill oficial de Anthropic lo lista como 'template chrome' que aparece sin importar el tema. Son tics de formato, no decisiones.
+
+**Cómo arreglarlo.** Escribí los metadatos como texto normal o en una tabla chica. Una mono solo si el producto es de código o datos. Separadores de un solo tipo y solo donde ordenan.
+
+**Regla para el agente.** No unas metadatos con ' · ' ni armes etiquetas 'PALABRA — fragmento' por costumbre. La mono para etiquetas solo si el producto es técnico.
+
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+
+## 35. Una sola palabra del titular en itálica, negrita u otro color
+
+`una-palabra-acentuada`
+
+**Síntoma.** 'Diseñá *más rápido*': una palabra o frase del H1 en itálica serif, en el color de acento o subrayada a mano.
+
+**Por qué pasa.** La skill oficial de Anthropic la nombra como el tell tipográfico más común. Es la versión 'sobria' del texto en degradé.
+
+**Cómo arreglarlo.** Que el titular funcione entero en un solo tratamiento. El énfasis va en la escala, el peso del bloque o la composición.
+
+**Regla para el agente.** No resaltes una sola palabra del titular con itálica, color o subrayado decorativo, salvo que el brief lo pida.
+
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+
+## 36. Serif itálica gigante como titular de hero
+
+`serif-italica-de-hero`
+
+**Síntoma.** Hero con un titular enorme en serif itálica (Fraunces, Recoleta, Playfair, Newsreader italic) en una startup que no es editorial.
+
+**Por qué pasa.** impeccable lo marca como el hero universal de startup de IA: parece gusto aislado, pero ya es el promedio.
+
+**Cómo arreglarlo.** Romana en vez de itálica, o un display sans con carácter. En una revista o un sello editorial puede quedar: que sea una decisión.
+
+**Regla para el agente.** No uses una serif itálica gigante como titular del hero salvo que el registro sea editorial y esté en el brief.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 37. Chip o pastilla 'Nuevo ✨' encima del titular
+
+`chip-eyebrow-en-hero`
+
+**Síntoma.** Una pastilla chica con texto en versales o 'New ✨ Presentamos…' justo arriba del H1 del hero.
+
+**Por qué pasa.** impeccable lo detecta como 'hero-eyebrow-chip', el hero default de SaaS generado. unslop pide sacar los badges 'PRO', 'New ✨' o 'Beta 🚀' salvo que el producto los necesite.
+
+**Cómo arreglarlo.** Borrala. Si la novedad importa, integrala al titular o al subtítulo, o usá un breadcrumb real.
+
+**Regla para el agente.** No pongas una pastilla o eyebrow arriba del titular del hero. Si el dato importa, va en el texto.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 38. Ícono en un cuadradito redondeado arriba de cada título
+
+`icono-en-cuadradito`
+
+**Síntoma.** Cada card de features empieza con un ícono dentro de un cuadrado redondeado de color suave, y abajo el título.
+
+**Por qué pasa.** impeccable lo llama la plantilla universal de feature card: todos los generadores sacan esa forma exacta.
+
+**Cómo arreglarlo.** Ícono al lado del título y en el color del texto, o sin contenedor. Mejor todavía, un recorte real del producto en lugar del ícono.
+
+**Regla para el agente.** No apiles un ícono en un cuadradito de color sobre cada título de card. Ícono en línea, del color del texto, o un recorte del producto.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 39. Sombras de color y glows en botones y cards
+
+`glow-de-color-en-sombras`
+
+**Síntoma.** box-shadow o text-shadow de color con offset cero (un halo), o sombras de color difusas sobre fondo oscuro, en botones, cards e inputs.
+
+**Por qué pasa.** impeccable lo marca como el look 'cool' default de las UIs generadas. Complementa al halo detrás del hero (ficha 3): acá el brillo está en cada componente.
+
+**Cómo arreglarlo.** Sombras neutras y cortas, o ninguna. En oscuro, profundidad con pasos de superficie y bordes finos.
+
+**Regla para el agente.** No uses sombras de color ni glows de acento en componentes. Elevación neutra o superficies escalonadas.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 40. Borde finito más sombra ancha en toda la fila
+
+`borde-fino-y-sombra-ancha`
+
+**Síntoma.** Todas las cards de una fila llevan un borde de 1 px y además una sombra amplia y difusa.
+
+**Por qué pasa.** impeccable lo registra como firma recurrente de UI generada: un panel flotante puede tener las dos cosas; una fila entera, no.
+
+**Cómo arreglarlo.** Elegí una: borde definido o elevación suave, para toda la fila.
+
+**Regla para el agente.** No combines borde fino y sombra ancha en todas las cards de una fila. Una sola señal de borde por familia de componentes.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 41. Fondo de grilla de líneas o de rayas decorativas
+
+`fondo-de-grilla-o-rayas`
+
+**Síntoma.** Un fondo de cuadrícula finita hecha con linear-gradient repetido, o rayas con repeating-gradient, detrás de secciones que no son un canvas ni un plano.
+
+**Por qué pasa.** impeccable los marca como firmas recurrentes de UI generada ('codex-grid-background', 'repeating-stripes-gradient'): textura sin significado.
+
+**Cómo arreglarlo.** Reservá la grilla para superficies que miden algo (canvas, mapa, plano). En el resto, superficie lisa o una textura deliberada de ../recursos/texturas.md.
+
+**Regla para el agente.** No uses fondos de grilla ni rayas como decoración. Solo en superficies que miden o dibujan.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 42. Marquee que se desplaza solo
+
+`marquee-automatico`
+
+**Síntoma.** Una cinta de logos, testimonios o palabras que se mueve en loop sin que nadie la toque.
+
+**Por qué pasa.** impeccable lo marca: pide atención que no ganó y esconde la mitad del contenido en todo momento. Además rompe WCAG 2.2.2 si no se puede pausar.
+
+**Cómo arreglarlo.** Fila estática o grilla. Si queda, que se pueda pausar y que se apague con prefers-reduced-motion.
+
+**Regla para el agente.** No uses marquees en loop. Si el brief lo exige, con pausa y apagado en prefers-reduced-motion.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 43. Cursor que parpadea en un hero que no es un input
+
+`cursor-parpadeante-decorativo`
+
+**Síntoma.** Un titular que se 'tipea' solo, con un cursor parpadeando, sin ningún campo editable.
+
+**Por qué pasa.** impeccable lo marca como estética de devtool usada de adorno: simula una entrada que no existe.
+
+**Cómo arreglarlo.** Sacalo. Si el producto es una terminal, mostrá una sesión real o una captura.
+
+**Regla para el agente.** No simules tipeo ni cursores parpadeantes fuera de un campo real.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 44. Easing con rebote o elástico
+
+`easing-con-rebote`
+
+**Síntoma.** Botones, modales o cards que entran con bounce o elastic (cubic-bezier con valores > 1).
+
+**Por qué pasa.** impeccable lo marca como fechado: los objetos reales desaceleran suave. unslop pide una sola curva y nada de motion que rebote.
+
+**Cómo arreglarlo.** Una curva de salida del kit (../tokens/tokens.json → easing.standard o enter). Elastic solo para un juego o un personaje.
+
+**Regla para el agente.** No uses easings con rebote o elásticos en UI. Una curva de salida del sistema.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 45. Ilustración armada con formas primitivas
+
+`ilustracion-de-formas-primitivas`
+
+**Síntoma.** Un SVG grande en el hero, hecho con un montón de círculos, rectángulos y blobs que intentan ser una escena.
+
+**Por qué pasa.** impeccable lo marca: se lee como clip art de relleno. Es lo que dibuja un modelo cuando no tiene imagen.
+
+**Cómo arreglarlo.** Una foto, una captura real, una ilustración hecha de verdad o nada. Los íconos, logos y gráficos de datos están bien a su escala.
+
+**Regla para el agente.** No armes la imagen principal con formas SVG primitivas. Foto, captura o ilustración real.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 46. Una oración entera en tamaño display
+
+`h1-oracion-gigante`
+
+**Síntoma.** El H1 es una frase larga (dos o tres líneas) a tamaño display y se come el viewport.
+
+**Por qué pasa.** impeccable lo marca: el display va bien con una o dos palabras; una oración larga necesita otro tamaño o menos texto.
+
+**Cómo arreglarlo.** Achicá el tamaño o el texto. Usá text-wrap: balance y medí que el CTA quede arriba del pliegue a 390 px.
+
+**Regla para el agente.** Si el titular tiene más de ~8 palabras, no lo pongas en tamaño display. Achicá el tamaño o la frase.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 47. Contenido que nunca aparece (reveal fallido)
+
+`contenido-invisible-en-reposo`
+
+**Síntoma.** Buena parte del texto queda en opacity 0 o visibility hidden porque la animación de entrada no se disparó (JS que falló, observer que no corre, captura headless).
+
+**Por qué pasa.** impeccable lo detecta como firma de reveal fallido. Pasa cuando la animación gobierna si el contenido existe.
+
+**Cómo arreglarlo.** Contenido visible por defecto; JS solo mejora la entrada. Probá con JS apagado y con prefers-reduced-motion.
+
+**Regla para el agente.** Nunca escondas contenido por defecto esperando una animación. Visible sin JS; la animación es una mejora.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 48. Texto diminuto, tracking abierto en cuerpo o interlineado apretado
+
+`texto-diminuto-o-apretado`
+
+**Síntoma.** Labels de 9–10 px, cuerpo con letter-spacing amplio, párrafos con line-height por debajo de 1.3, texto largo en versales o justificado sin cortes.
+
+**Por qué pasa.** impeccable los marca como fallas de legibilidad, no de estilo: texto funcional por debajo de 11 px, tracking > 0.05em en cuerpo, leading < 1.3. unslop agrega: nunca tracking negativo en texto chico.
+
+**Cómo arreglarlo.** Cuerpo 16 px (14 como mínimo en UI densa), funcional ≥ 11 px, leading 1.5–1.7 en párrafos, tracking 0 en cuerpo, alineado a la izquierda.
+
+**Regla para el agente.** Nada funcional por debajo de 11 px; cuerpo ≥ 14 px; leading de párrafo ≥ 1.5; sin tracking abierto ni negativo en texto chico; sin justificar sin guiones.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 49. Viudas y titulares desbalanceados
+
+`viudas-y-titulos-desparejos`
+
+**Síntoma.** Párrafos que terminan con una sola palabra en la última línea; titulares cuya última línea es una palabra suelta.
+
+**Por qué pasa.** impeccable lo marca como aviso ('straggler', 'unbalanced-heading'). Hoy se arregla con una línea de CSS.
+
+**Cómo arreglarlo.** text-wrap: balance en títulos y text-wrap: pretty en párrafos. Si el navegador no lo soporta, un espacio duro entre las dos últimas palabras.
+
+**Regla para el agente.** Poné text-wrap: balance en headings y text-wrap: pretty en párrafos.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 50. Cards pegadas al borde de un carrusel o panel
+
+`cards-cortadas-en-el-scroller`
+
+**Síntoma.** En un scroller horizontal o un tab panel, la primera card toca el borde y se le cortan las esquinas, mientras del otro lado hay margen.
+
+**Por qué pasa.** impeccable lo detecta ('edge-flush-cards'): el panel es más ancho que su caja de recorte.
+
+**Cómo arreglarlo.** Mismo inset de los dos lados (scroll-padding y padding-inline iguales).
+
+**Regla para el agente.** En scrollers y paneles, el mismo inset a los dos lados; ninguna card cortada en reposo.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+
+## 51. Radios anidados que no suman
+
+`radios-anidados-que-no-suman`
+
+**Síntoma.** Una card con rounded-2xl tiene adentro una imagen o un botón con el mismo radio, y las esquinas se ven 'hinchadas' o desparejas.
+
+**Por qué pasa.** unslop lo pone en su checklist: el radio interior tiene que ser el exterior menos el padding.
+
+**Cómo arreglarlo.** radio interior = radio exterior − padding (con un mínimo de 0). Un radio por tipo de control.
+
+**Regla para el agente.** En elementos anidados, el radio interior es el exterior menos el padding. Los botones comparten el radio de control.
+
+Fuentes: [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 52. Números en formatos mezclados y sin cifras tabulares
+
+`cifras-en-formatos-mezclados`
+
+**Síntoma.** '$48.210' al lado de '$124,860.40', porcentajes con y sin decimales, columnas de números que bailan.
+
+**Por qué pasa.** unslop lo marca: el modelo escribe cada número por separado.
+
+**Cómo arreglarlo.** Un solo formato por pantalla (Intl.NumberFormat con el locale del producto) y font-variant-numeric: tabular-nums en cifras y tablas.
+
+**Regla para el agente.** Un formato numérico por pantalla, con el locale del producto, y tabular-nums en cifras.
+
+Fuentes: [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 53. Signos de exclamación y punto final en labels
+
+`exclamaciones-y-puntos-en-labels`
+
+**Síntoma.** '¡Guardado con éxito!', '¡Empezá ya!', títulos y botones que terminan en punto.
+
+**Por qué pasa.** unslop lo pide fuera: la interfaz no grita, y los strings cortos no llevan punto final.
+
+**Cómo arreglarlo.** Sin exclamaciones en la interfaz. Títulos, labels, botones y captions sin punto; los párrafos sí.
+
+**Regla para el agente.** Sin signos de exclamación en la UI. Sin punto final en títulos, botones, labels y captions.
+
+Fuentes: [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 54. Tira de cifras bajo el hero
+
+`tira-de-cifras`
+
+**Síntoma.** Una fila de tres o cuatro números grandes con una etiqueta de una palabra ('10k+ usuarios · 99,9 % uptime · 24/7').
+
+**Por qué pasa.** taste-skill (copy-tells) la llama 'the strip of figures': aparece en casi todas las páginas de modelo. La skill de Anthropic también avisa que 'número grande + label chico + acento' es el tratamiento default.
+
+**Cómo arreglarlo.** Cada número en la oración que prueba. Una tira solo con datos reales del brief (precio, horario, cantidad).
+
+**Regla para el agente.** No armes una tira de cifras con etiquetas de una palabra. Cada dato en la frase que lo prueba, y solo si es real.
+
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+
+## 55. Titulares 'X. Y.' y pares numéricos
+
+`titulos-en-dos-fragmentos`
+
+**Síntoma.** 'Doce habitaciones. Tres formas de quedarse.' o 'Cuatro proyectos, cuatro problemas distintos.' en varias secciones.
+
+**Por qué pasa.** taste-skill los cuenta como tells de segunda generación: parecen buena copy, por eso pasan la revisión. Una vez está bien; el patrón es la señal.
+
+**Cómo arreglarlo.** Otras formas de título: un nombre con una afirmación debajo, un verbo y la cosa, una oración simple que diga qué tiene la sección.
+
+**Regla para el agente.** Como mucho un titular de dos fragmentos ('X. Y.') por página y ningún par numérico ('cuatro X, cuatro Y').
+
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md)
+
+## 56. Contrastes fabricados y aforismos
+
+`contrastes-fabricados`
+
+**Síntoma.** 'No es una herramienta. Es una plataforma.', 'Sin formularios, sin vueltas.', 'en lugar de…', 'sin el…' cerrando varias secciones.
+
+**Por qué pasa.** impeccable lo detecta como 'aphoristic-cadence' y taste-skill como 'contrast frames' y 'negation runs': si se prohíbe 'no X sino Y', vuelve como 'en lugar de'.
+
+**Cómo arreglarlo.** Decí el hecho positivo solo. Una negación queda si cada ítem es algo que la persona puede verificar.
+
+**Regla para el agente.** Como mucho dos contrastes ('no X, sino Y', 'en lugar de', 'sin…') por página, y nunca para cerrar secciones.
+
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md)
+
+## 57. Palabras de virtud sobre uno mismo
+
+`palabras-de-virtud`
+
+**Síntoma.** La página se describe como 'honesta', 'tranquila', 'cuidada', 'de verdad', 'pensada', 'confiable'.
+
+**Por qué pasa.** taste-skill las prohíbe cuando hablan de la propia marca: una página nunca se llama honesta, lo muestra.
+
+**Cómo arreglarlo.** Reemplazá cada virtud por el hecho que la prueba (una política, un plazo, un dato).
+
+**Regla para el agente.** No describas el producto con palabras de virtud (honesto, tranquilo, cuidado, de verdad). Mostralo con un hecho.
+
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md)
+
+## 58. Detalles específicos inventados
+
+`especificos-inventados`
+
+**Síntoma.** 'Lote N.º 047', 'a las 6:12 desde la ventana de la habitación 9', '38 % menos reintentos', '10x más rápido', 'Más de 10.000 equipos' sin fuente.
+
+**Por qué pasa.** taste-skill lo prohíbe: el modelo produce detalle de adorno porque el detalle convence. unslop pide sacar o confirmar cada afirmación que no se puede verificar.
+
+**Cómo arreglarlo.** Solo los datos del brief o del cliente. Sin ellos, una frase más simple. Listá en el reporte las afirmaciones a confirmar.
+
+**Regla para el agente.** No inventes cifras, nombres, horarios, lotes ni clientes. Si un dato no está en el brief, no va o se marca para confirmar.
+
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+
+## 59. Remate ingenioso, firma de footer y origen de plantilla
+
+`cierre-ingenioso-y-firma-de-footer`
+
+**Síntoma.** Párrafos que terminan con un chiste seco, un footer 'Hecho en Salta, horneado a 220 °C', o una historia 'En 2019, Ana y Luis encontraron una vieja ferretería…' sin que el brief la cuente.
+
+**Por qué pasa.** taste-skill los lista como tells de segunda generación: la misma voz cálida e ingeniosa para cualquier cliente.
+
+**Cómo arreglarlo.** Cerrá con información. El footer lleva la fila legal y de contacto. La historia, solo si es la real.
+
+**Regla para el agente.** No cierres secciones con remates, no firmes el footer con una frase y no inventes la historia de origen.
+
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md)

@@ -15,11 +15,11 @@ Esta carpeta es la primera pieza de un kit de diseño frontend. Las fichas está
 | [mono.md](./mono.md) | Monoespaciadas de producto y de código (Geist Mono, JetBrains Mono, Berkeley Mono…) |
 | [display-experimental.md](./display-experimental.md) | Display, flares, pixel, lettering e indies (Clash Display, Druk, Obviously, Karrik…) |
 | [variable.md](./variable.md) | Fichas variable-first (Recursive, Roboto Flex) y guía de ejes |
-| [pairings.md](./pairings.md) | Más de 20 combinaciones titular + cuerpo, con el porqué y el tipo de proyecto |
+| [pairings.md](./pairings.md) | 42 combinaciones titular + cuerpo, con el porqué y el tipo de proyecto (14 sumadas en noviembre de 2026, todas gratis) |
 | [fonts.json](./fonts.json) | El mismo catálogo, legible por máquinas |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes consultadas, con links |
 
-Hay **101 familias**. 58 son gratis (Google Fonts OFL, Fontshare FFL, GitHub, IBM, repos OFL). 43 son comerciales. 48 tienen corte variable. Cada ficha trae foundry, licencia, link oficial verificado, estilo, usos, pesos, una pareja recomendada y un snippet de import. Si encontramos un sitio real que la usa, también está anotado.
+Hay **121 familias**. 78 son gratis (Google Fonts OFL, Fontshare FFL, GitHub, IBM, repos OFL). 43 son comerciales. 61 tienen corte variable. Las últimas 20 (Google Fonts) entraron el 20 de noviembre de 2026 para las parejas nuevas; ver [`../recursos/minado-repos.md`](../recursos/minado-repos.md). Cada ficha trae foundry, licencia, link oficial verificado, estilo, usos, pesos, una pareja recomendada y un snippet de import. Si encontramos un sitio real que la usa, también está anotado.
 
 ## Cómo elegir una tipografía
 
@@ -68,22 +68,29 @@ Estas caras no están "prohibidas". Varias son excelentes. El problema es usarla
 
 ## Índice de familias
 
-Las 101 fichas, en orden alfabético, con su categoría y tipo de licencia.
+Las 121 fichas, en orden alfabético, con su categoría y tipo de licencia.
 
 | Familia | Categoría | Licencia | Oficial |
 |---|---|---|---|
 | ABC Arizona Flare | display-experimental | Comercial | https://abcdinamo.com/typefaces/arizona |
 | ABC Diatype | sans-grotesk | Comercial | https://abcdinamo.com/typefaces/diatype |
 | ABC Oracle | sans-grotesk | Comercial | https://abcdinamo.com/typefaces/oracle |
+| Abril Fatface | serif-display | Gratis | https://fonts.google.com/specimen/Abril+Fatface |
 | Aeonik | sans-geometrica | Comercial | https://cotypefoundry.com/our-fonts/aeonik |
 | Agipo | display-experimental | Comercial | https://radimpesko.com/fonts/agipo |
 | Agrandir | sans-geometrica | Comercial | https://pangrampangram.com/products/agrandir |
+| Anton | display-experimental | Gratis | https://fonts.google.com/specimen/Anton |
 | Aperçu | sans-grotesk | Comercial | https://www.myfonts.com/collections/apercu-font-colophon-foundry |
 | Apfel Grotezk | sans-geometrica | Gratis | https://www.collletttivo.it/typefaces/apfel-grotezk |
+| Archivo | sans-grotesk | Gratis | https://fonts.google.com/specimen/Archivo |
 | Aspekta | sans-geometrica | Gratis | https://github.com/ivodolenc/aspekta |
 | Atkinson Hyperlegible | sans-grotesk | Gratis | https://fonts.google.com/specimen/Atkinson+Hyperlegible |
 | Atlas Grotesk | sans-grotesk | Comercial | https://commercialtype.com/catalog/atlas |
+| Barlow | sans-grotesk | Gratis | https://fonts.google.com/specimen/Barlow |
+| Barlow Condensed | display-experimental | Gratis | https://fonts.google.com/specimen/Barlow+Condensed |
+| Bebas Neue | display-experimental | Gratis | https://fonts.google.com/specimen/Bebas+Neue |
 | Berkeley Mono | mono | Comercial | https://usgraphics.com/products/berkeley-mono |
+| Bodoni Moda | serif-display | Gratis | https://fonts.google.com/specimen/Bodoni+Moda |
 | Boska | serif-display | Gratis | https://www.fontshare.com/fonts/boska |
 | Bricolage Grotesque | sans-grotesk | Gratis | https://fonts.google.com/specimen/Bricolage+Grotesque |
 | Cabinet Grotesk | sans-grotesk | Gratis | https://www.fontshare.com/fonts/cabinet-grotesk |
@@ -94,6 +101,7 @@ Las 101 fichas, en orden alfabético, con su categoría y tipo de licencia.
 | Clash Display | display-experimental | Gratis | https://www.fontshare.com/fonts/clash-display |
 | Clash Grotesk | sans-geometrica | Gratis | https://www.fontshare.com/fonts/clash-grotesk |
 | Commit Mono | mono | Gratis | https://commitmono.com/ |
+| Crimson Pro | serif-texto | Gratis | https://fonts.google.com/specimen/Crimson+Pro |
 | Degular | sans-geometrica | Comercial | https://ohnotype.co/fonts/degular |
 | Departure Mono | mono | Gratis | https://departuremono.com/ |
 | Dia | display-experimental | Comercial | https://www.schick-toikka.com/dia |
@@ -104,12 +112,16 @@ Las 101 fichas, en orden alfabético, con su categoría y tipo de licencia.
 | EB Garamond | serif-texto | Gratis | https://fonts.google.com/specimen/EB+Garamond |
 | Editorial New | serif-display | Comercial | https://pangrampangram.com/products/editorial-new |
 | Editorial Old | serif-display | Comercial | https://pangrampangram.com/products/editorial-old |
+| Epilogue | sans-grotesk | Gratis | https://fonts.google.com/specimen/Epilogue |
 | Favorit | sans-grotesk | Comercial | https://abcdinamo.com/typefaces/favorit |
 | Feature | serif-display | Comercial | https://commercialtype.com/catalog/feature |
 | Figtree | sans-grotesk | Gratis | https://fonts.google.com/specimen/Figtree |
+| Fira Code | mono | Gratis | https://fonts.google.com/specimen/Fira+Code |
+| Fira Sans | sans-grotesk | Gratis | https://fonts.google.com/specimen/Fira+Sans |
 | Founders Grotesk | sans-grotesk | Comercial | https://klim.co.nz/fonts/founders-grotesk/ |
 | Fragment Mono | mono | Gratis | https://fonts.google.com/specimen/Fragment+Mono |
 | Fraunces | serif-display | Gratis | https://fonts.google.com/specimen/Fraunces |
+| Fredoka | display-experimental | Gratis | https://fonts.google.com/specimen/Fredoka |
 | Geist | sans-grotesk | Gratis | https://fonts.google.com/specimen/Geist |
 | Geist Mono | mono | Gratis | https://fonts.google.com/specimen/Geist+Mono |
 | General Sans | sans-grotesk | Gratis | https://www.fontshare.com/fonts/general-sans |
@@ -127,19 +139,24 @@ Las 101 fichas, en orden alfabético, con su categoría y tipo de licencia.
 | Instrument Serif | serif-display | Gratis | https://fonts.google.com/specimen/Instrument+Serif |
 | Inter | sans-grotesk | Gratis | https://rsms.me/inter/ |
 | JetBrains Mono | mono | Gratis | https://fonts.google.com/specimen/JetBrains+Mono |
+| Jost | sans-geometrica | Gratis | https://fonts.google.com/specimen/Jost |
 | Karrik | display-experimental | Gratis | https://gitlab.com/phantomfoundry/karrik_fonts |
+| Lexend | sans-geometrica | Gratis | https://fonts.google.com/specimen/Lexend |
 | Libre Baskerville | serif-texto | Gratis | https://fonts.google.com/specimen/Libre+Baskerville |
+| Libre Bodoni | serif-display | Gratis | https://fonts.google.com/specimen/Libre+Bodoni |
 | Literata | serif-texto | Gratis | https://fonts.google.com/specimen/Literata |
 | Lora | serif-texto | Gratis | https://fonts.google.com/specimen/Lora |
 | Maison Neue | sans-grotesk | Comercial | https://www.myfonts.com/collections/maison-neue-font-milieu-grotesque/ |
 | Manrope | sans-grotesk | Gratis | https://fonts.google.com/specimen/Manrope |
 | Melodrama | display-experimental | Gratis | https://www.fontshare.com/fonts/melodrama |
+| Merriweather | serif-texto | Gratis | https://fonts.google.com/specimen/Merriweather |
 | Migra | serif-display | Comercial | https://www.sharptype.co/typefaces/migra |
 | Mona Sans | sans-grotesk | Gratis | https://fonts.google.com/specimen/Mona+Sans |
 | Monument Grotesk | sans-grotesk | Comercial | https://abcdinamo.com/typefaces/monument-grotesk |
 | Necto Mono | mono | Gratis | https://www.collletttivo.it/typefaces/necto-mono |
 | Neue Montreal | sans-grotesk | Comercial | https://pangrampangram.com/products/neue-montreal |
 | Newsreader | serif-texto | Gratis | https://fonts.google.com/specimen/Newsreader |
+| Nunito | sans-geometrica | Gratis | https://fonts.google.com/specimen/Nunito |
 | Obviously | display-experimental | Comercial | https://ohnotype.co/fonts/obviously |
 | Ogg | serif-display | Comercial | https://www.sharptype.co/typefaces/ogg |
 | Onest | sans-geometrica | Gratis | https://fonts.google.com/specimen/Onest |
@@ -158,20 +175,23 @@ Las 101 fichas, en orden alfabético, con su categoría y tipo de licencia.
 | Shantell Sans | display-experimental | Gratis | https://fonts.google.com/specimen/Shantell+Sans |
 | Signifier | serif-display | Comercial | https://klim.co.nz/fonts/signifier/ |
 | Sora | sans-geometrica | Gratis | https://fonts.google.com/specimen/Sora |
+| Source Sans 3 | sans-grotesk | Gratis | https://fonts.google.com/specimen/Source+Sans+3 |
 | Source Serif 4 | serif-texto | Gratis | https://fonts.google.com/specimen/Source+Serif+4 |
+| Söhne | sans-grotesk | Comercial | https://klim.co.nz/fonts/soehne/ |
 | Space Grotesk | sans-geometrica | Gratis | https://fonts.google.com/specimen/Space+Grotesk |
 | Space Mono | mono | Gratis | https://fonts.google.com/specimen/Space+Mono |
 | Sprat | display-experimental | Gratis | https://www.collletttivo.it/typefaces/sprat |
 | Suisse Int'l | sans-grotesk | Comercial | https://www.swisstypefaces.com/fonts/suisse/ |
 | Switzer | sans-grotesk | Gratis | https://www.fontshare.com/fonts/switzer |
+| Syncopate | display-experimental | Gratis | https://fonts.google.com/specimen/Syncopate |
 | Syne | display-experimental | Gratis | https://fonts.google.com/specimen/Syne |
-| Söhne | sans-grotesk | Comercial | https://klim.co.nz/fonts/soehne/ |
 | Tiempos Headline | serif-display | Comercial | https://klim.co.nz/fonts/tiempos-headline/ |
 | Tiempos Text | serif-texto | Comercial | https://klim.co.nz/fonts/tiempos-text/ |
 | Topol | display-experimental | Comercial | https://heavyweight-type.com/stuff/topol-poster |
 | TWK Lausanne | sans-grotesk | Comercial | https://weltkern.com/typefaces/twk-lausanne |
 | Unbounded | display-experimental | Gratis | https://fonts.google.com/specimen/Unbounded |
 | Untitled Sans | sans-grotesk | Comercial | https://klim.co.nz/fonts/untitled-sans/ |
+| Work Sans | sans-grotesk | Gratis | https://fonts.google.com/specimen/Work+Sans |
 | Zodiak | serif-display | Gratis | https://www.fontshare.com/fonts/zodiak |
 
 ## Cómo usarlo desde un agente

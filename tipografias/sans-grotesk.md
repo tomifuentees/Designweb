@@ -753,3 +753,136 @@ Snippet de import:
   font-display: swap;
 }
 ```
+
+---
+
+## Sumadas el 20 de noviembre de 2026
+
+Fuentes de Google Fonts (SIL OFL) que entraron para las parejas 29–42 de [`pairings.md`](./pairings.md). El diseñador, los ejes y el ranking de popularidad salen del dataset de [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (MIT); la descripción es propia.
+
+## 32. Source Sans 3
+
+- **Diseño:** Paul D. Hunt
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Source+Sans+3
+- **Estilo / personalidad:** Humanista de Adobe, sobria y muy legible. No tiene personalidad propia: es cuerpo, no voz.
+- **Mejor uso:** Cuerpo, Dashboard, Gobierno, Docs
+- **Pesos / ejes:** Variable (wght: 200..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Lexend, Bebas Neue o Source Serif 4
+- **Nota:** Ranking de popularidad en Google Fonts: 15 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
+/* font-family: "Source Sans 3", sans-serif; */
+```
+
+## 33. Barlow
+
+- **Diseño:** Jeremy Tribby
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Barlow
+- **Estilo / personalidad:** Grotesca un poco redondeada, de la misma superfamilia que Barlow Condensed. Muy usada: necesita una display con carácter al lado.
+- **Mejor uso:** Cuerpo, Deportes, Industria
+- **Pesos / ejes:** Estáticos: 100, 100i, 200, 200i, 300, 300i, 400, 400i, 500, 500i, 600, 600i, 700, 700i, 800, 800i, 900, 900i
+- **Variable:** No
+- **Pareja recomendada:** Barlow Condensed
+- **Nota:** Ranking de popularidad en Google Fonts: 14 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+/* font-family: "Barlow", sans-serif; */
+```
+
+## 34. Archivo
+
+- **Diseño:** Omnibus-Type
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Archivo
+- **Estilo / personalidad:** Grotesca de Omnibus-Type con eje de ancho (62–125) y peso: de muy condensada a expandida en una sola familia.
+- **Mejor uso:** Portfolio, Marca, Editorial, Dashboard
+- **Pesos / ejes:** Variable (wdth: 62..125 | wght: 100..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Space Grotesk o una serif de texto
+- **Nota:** Ranking de popularidad en Google Fonts: 58 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
+/* font-family: "Archivo", sans-serif; */
+```
+
+## 35. Epilogue
+
+- **Diseño:** Tyler Finck, ETC
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Epilogue
+- **Estilo / personalidad:** Grotesca de Etcetera Type Co., variable, con un aire editorial y un poco excéntrico en pesos altos.
+- **Mejor uso:** Marca, Editorial, Campañas
+- **Pesos / ejes:** Variable (wght: 100..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Anton
+- **Nota:** Ranking de popularidad en Google Fonts: 72 (dataset de ui-ux-pro-max-skill, nov. 2026).
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap" rel="stylesheet">
+/* font-family: "Epilogue", sans-serif; */
+```
+
+## 36. Fira Sans
+
+- **Diseño:** Carrois Apostrophe
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Fira+Sans
+- **Estilo / personalidad:** Humanista de Erik Spiekermann y Carrois para Mozilla. Legible en pantallas chicas y tablas.
+- **Mejor uso:** Dashboard, Docs, Producto
+- **Pesos / ejes:** Estáticos: 100, 100i, 200, 200i, 300, 300i, 400, 400i, 500, 500i, 600, 600i, 700, 700i, 800, 800i, 900, 900i
+- **Variable:** No
+- **Pareja recomendada:** Fira Code
+- **Nota:** Ranking de popularidad en Google Fonts: 19 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+/* font-family: "Fira Sans", sans-serif; */
+```
+
+## 37. Work Sans
+
+- **Diseño:** Wei Huang
+- **Licencia:** Gratis. SIL Open Font License, Google Fonts.
+- **Link oficial:** https://fonts.google.com/specimen/Work+Sans
+- **Estilo / personalidad:** Grotesca de Wei Huang, optimizada para pantalla en pesos medios. Muy popular: buena como cuerpo, no como voz.
+- **Mejor uso:** Cuerpo, Agencias, Landing
+- **Pesos / ejes:** Variable (wght: 100..900)
+- **Variable:** Sí
+- **Pareja recomendada:** Outfit
+- **Nota:** Ranking de popularidad en Google Fonts: 10 (dataset de ui-ux-pro-max-skill, nov. 2026). Muy usada: tratala como cuerpo, no como voz de marca.
+
+Snippet de import:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+/* font-family: "Work Sans", sans-serif; */
+```
+

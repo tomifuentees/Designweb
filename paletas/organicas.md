@@ -3,7 +3,7 @@
 Colores que parecen sacados de un material: barro, aceituna, café, cobre, matcha. Van con [`organico-terroso`](../estilos/organico-terroso.md), [`realismo-tactil`](../estilos/realismo-tactil.md), [`japones-inspirado`](../estilos/japones-inspirado.md) y marcas locales (comida, belleza, craft, hospitality). El truco es **no** tomar una rampa `orange-*` o `emerald-*` de Tailwind: tomá el color de una foto de la materia y construí los roles alrededor.
 
 
-Hay **5 paletas** en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
+Hay **7 paletas** (las dos últimas, jardín botánico y hora dorada, adaptadas en noviembre de 2026 de la skill theme-factory de Anthropic) en este grupo. Los valores salen de [`paletas.json`](./paletas.json). Los links de estilo apuntan a las fichas de [`../estilos/`](../estilos/README.md).
 
 
 ---
@@ -424,6 +424,172 @@ El matcha no es el lime de SaaS: es más apagado, más tierra. Mucho aire (ma).
   --accent: oklch(0.7792 0.12080 123.37); /* #a8c46a */
   --accent-foreground: oklch(0.2007 0.02343 123.48); /* #14180c */
   --accent-text: oklch(0.7792 0.12080 123.37); /* #a8c46a */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Jardín botánico
+
+`jardin-botanico` — Verde helecho, caléndula y tierra, sobre un blanco verdoso (no crema)
+
+**Mejor para:** viveros y jardinería, farmacia natural y herboristería, gastronomía de huerta, educación ambiental.  
+**Evitá en:** devtools, fintech, lujo urbano.  
+**Estilos:** [`organico-terroso`](../estilos/organico-terroso.md), [`ilustrado-humano`](../estilos/ilustrado-humano.md), [`realismo-tactil`](../estilos/realismo-tactil.md), [`expresivo-minimo`](../estilos/expresivo-minimo.md).
+
+Adaptada del tema 'Botanical Garden' de la skill theme-factory de Anthropic (Apache 2.0): helecho #4a7c59, caléndula #f9a620, terracota #b7472a. Se cambió el fondo crema por un blanco verdoso para no caer en el cluster crema + terracota. La caléndula es el acento del modo oscuro; la terracota queda para ilustración o un dato.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#f3f6f2` | `oklch(0.9698 0.00615 137.77)` |
+| Superficie | `#e7ede6` | `oklch(0.9396 0.01128 141.26)` |
+| Borde | `#c9d3c7` | `oklch(0.8558 0.01961 140.50)` |
+| Texto | `#142018` | `oklch(0.2292 0.02296 155.02)` |
+| Muted | `#4f5f53` | `oklch(0.4681 0.02749 152.83)` |
+| Acento (sólido) | `#3f6e4d` | `oklch(0.4948 0.07410 152.46)` |
+| Acento foreground | `#f4fbf5` | `oklch(0.9812 0.01080 149.86)` |
+| Acento texto/link | `#3f6e4d` | `oklch(0.4948 0.07410 152.46)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#0d1410` | `oklch(0.1824 0.01346 159.67)` |
+| Superficie | `#152019` | `oklch(0.2304 0.02069 156.47)` |
+| Borde | `#2a3a2f` | `oklch(0.3306 0.02851 154.56)` |
+| Texto | `#e8efe8` | `oklch(0.9449 0.01190 145.48)` |
+| Muted | `#aebdb1` | `oklch(0.7833 0.02355 151.55)` |
+| Acento (sólido) | `#f9a620` | `oklch(0.7882 0.16195 71.76)` |
+| Acento foreground | `#1a1405` | `oklch(0.1942 0.02913 88.96)` |
+| Acento texto/link | `#f9b84a` | `oklch(0.8238 0.14389 77.20)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 15.43:1, APCA Lc 97.8 (oscuro-sobre-claro); texto sobre superficie WCAG 14.13:1, APCA Lc 92.0 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 5.63:1, APCA Lc -80.8 (claro-sobre-oscuro). Muted sobre fondo WCAG 6.23:1, APCA Lc 77.5 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 5.43:1, APCA Lc 73.6 (oscuro-sobre-claro)). `accent-text` está igualado o derivado para ese rol.
+
+**Oscuro:** texto sobre fondo WCAG 15.95:1, APCA Lc -95.5 (claro-sobre-oscuro); texto sobre superficie WCAG 14.33:1, APCA Lc -94.3 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 9.16:1, APCA Lc 64.4 (oscuro-sobre-claro). Muted sobre fondo WCAG 9.53:1, APCA Lc -64.0 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 9.34:1, APCA Lc -63.4 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Jardín botánico — claro */
+  --bg: oklch(0.9698 0.00615 137.77); /* #f3f6f2 */
+  --surface: oklch(0.9396 0.01128 141.26); /* #e7ede6 */
+  --border: oklch(0.8558 0.01961 140.50); /* #c9d3c7 */
+  --text: oklch(0.2292 0.02296 155.02); /* #142018 */
+  --muted: oklch(0.4681 0.02749 152.83); /* #4f5f53 */
+  --accent: oklch(0.4948 0.07410 152.46); /* #3f6e4d */
+  --accent-foreground: oklch(0.9812 0.01080 149.86); /* #f4fbf5 */
+  --accent-text: oklch(0.4948 0.07410 152.46); /* #3f6e4d */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Jardín botánico — oscuro */
+  --bg: oklch(0.1824 0.01346 159.67); /* #0d1410 */
+  --surface: oklch(0.2304 0.02069 156.47); /* #152019 */
+  --border: oklch(0.3306 0.02851 154.56); /* #2a3a2f */
+  --text: oklch(0.9449 0.01190 145.48); /* #e8efe8 */
+  --muted: oklch(0.7833 0.02355 151.55); /* #aebdb1 */
+  --accent: oklch(0.7882 0.16195 71.76); /* #f9a620 */
+  --accent-foreground: oklch(0.1942 0.02913 88.96); /* #1a1405 */
+  --accent-text: oklch(0.8238 0.14389 77.20); /* #f9b84a */
+  --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
+  --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
+  --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */
+}
+```
+
+---
+
+## Hora dorada
+
+`hora-dorada` — Mostaza y chocolate; mejor en oscuro
+
+**Mejor para:** cafeterías y panaderías, cervecerías, restaurantes, artesanía.  
+**Evitá en:** salud, banca, SaaS B2B.  
+**Estilos:** [`organico-terroso`](../estilos/organico-terroso.md), [`risografia-impreso`](../estilos/risografia-impreso.md), [`realismo-tactil`](../estilos/realismo-tactil.md), [`maximalismo`](../estilos/maximalismo.md).
+
+Adaptada del tema 'Golden Hour' de theme-factory (Anthropic, Apache 2.0): mostaza #f4a900, terracota #c1666b, beige #d4b896, chocolate #4a403a. Pensada oscuro-primero: fondo chocolate y botón mostaza con texto oscuro. En claro, la mostaza sólo funciona como botón con texto oscuro; para links se usa un ocre más oscuro.
+
+### Claro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#f6f5f3` | `oklch(0.9704 0.00287 84.56)` |
+| Superficie | `#ece9e4` | `oklch(0.9350 0.00745 80.72)` |
+| Borde | `#d5cfc6` | `oklch(0.8568 0.01398 78.25)` |
+| Texto | `#1f1a17` | `oklch(0.2225 0.00979 52.96)` |
+| Muted | `#5c524a` | `oklch(0.4459 0.01843 60.99)` |
+| Acento (sólido) | `#f4a900` | `oklch(0.7872 0.16481 76.81)` |
+| Acento foreground | `#1f1a17` | `oklch(0.2225 0.00979 52.96)` |
+| Acento texto/link | `#8a5f00` | `oklch(0.5180 0.10801 77.90)` |
+| Success | `#1f6b3a` | `oklch(0.4689 0.10756 151.36)` |
+| Warn | `#8a5a00` | `oklch(0.5078 0.10800 73.30)` |
+| Danger | `#b42318` | `oklch(0.5003 0.18205 29.51)` |
+
+### Oscuro
+
+| Rol | Hex | OKLCH |
+|---|---|---|
+| Fondo | `#1f1a17` | `oklch(0.2225 0.00979 52.96)` |
+| Superficie | `#2a2420` | `oklch(0.2656 0.01166 55.83)` |
+| Borde | `#4a403a` | `oklch(0.3798 0.01713 52.95)` |
+| Texto | `#f3ebe0` | `oklch(0.9433 0.01704 76.11)` |
+| Muted | `#c2b3a1` | `oklch(0.7744 0.03033 72.38)` |
+| Acento (sólido) | `#f4a900` | `oklch(0.7872 0.16481 76.81)` |
+| Acento foreground | `#1f1a17` | `oklch(0.2225 0.00979 52.96)` |
+| Acento texto/link | `#f4b733` | `oklch(0.8150 0.15386 81.70)` |
+| Success | `#7dda9a` | `oklch(0.8138 0.12756 152.72)` |
+| Warn | `#e8b849` | `oklch(0.8060 0.13714 85.03)` |
+| Danger | `#ff8a80` | `oklch(0.7594 0.14351 26.08)` |
+
+### Contraste
+
+**Claro:** texto sobre fondo WCAG 15.82:1, APCA Lc 98.2 (oscuro-sobre-claro); texto sobre superficie WCAG 14.23:1, APCA Lc 91.3 (oscuro-sobre-claro); accent-foreground sobre acento WCAG 8.64:1, APCA Lc 63.7 (oscuro-sobre-claro). Muted sobre fondo WCAG 6.98:1, APCA Lc 80.5 (oscuro-sobre-claro): sirve para cuerpo secundario. El acento sólido no llega a 4.5:1 como texto sobre el fondo (1.8:1). Para botones usá `accent` + `accent-foreground`. Para links usá `accent-text` (5.18:1, Lc 72.0).
+
+**Oscuro:** texto sobre fondo WCAG 14.59:1, APCA Lc -94.0 (claro-sobre-oscuro); texto sobre superficie WCAG 12.96:1, APCA Lc -92.5 (claro-sobre-oscuro); accent-foreground sobre acento WCAG 8.64:1, APCA Lc 63.7 (oscuro-sobre-claro). Muted sobre fondo WCAG 8.42:1, APCA Lc -61.0 (claro-sobre-oscuro): sirve para cuerpo secundario. El acento también funciona como texto/link sobre el fondo (WCAG 8.64:1, APCA Lc -62.7 (claro-sobre-oscuro)). `accent-text` está igualado o derivado para ese rol.
+
+### Tokens CSS
+
+```css
+:root {
+  /* Hora dorada — claro */
+  --bg: oklch(0.9704 0.00287 84.56); /* #f6f5f3 */
+  --surface: oklch(0.9350 0.00745 80.72); /* #ece9e4 */
+  --border: oklch(0.8568 0.01398 78.25); /* #d5cfc6 */
+  --text: oklch(0.2225 0.00979 52.96); /* #1f1a17 */
+  --muted: oklch(0.4459 0.01843 60.99); /* #5c524a */
+  --accent: oklch(0.7872 0.16481 76.81); /* #f4a900 */
+  --accent-foreground: oklch(0.2225 0.00979 52.96); /* #1f1a17 */
+  --accent-text: oklch(0.5180 0.10801 77.90); /* #8a5f00 */
+  --success: oklch(0.4689 0.10756 151.36); /* #1f6b3a */
+  --warn: oklch(0.5078 0.10800 73.30); /* #8a5a00 */
+  --danger: oklch(0.5003 0.18205 29.51); /* #b42318 */
+}
+.dark {
+  /* Hora dorada — oscuro */
+  --bg: oklch(0.2225 0.00979 52.96); /* #1f1a17 */
+  --surface: oklch(0.2656 0.01166 55.83); /* #2a2420 */
+  --border: oklch(0.3798 0.01713 52.95); /* #4a403a */
+  --text: oklch(0.9433 0.01704 76.11); /* #f3ebe0 */
+  --muted: oklch(0.7744 0.03033 72.38); /* #c2b3a1 */
+  --accent: oklch(0.7872 0.16481 76.81); /* #f4a900 */
+  --accent-foreground: oklch(0.2225 0.00979 52.96); /* #1f1a17 */
+  --accent-text: oklch(0.8150 0.15386 81.70); /* #f4b733 */
   --success: oklch(0.8138 0.12756 152.72); /* #7dda9a */
   --warn: oklch(0.8060 0.13714 85.03); /* #e8b849 */
   --danger: oklch(0.7594 0.14351 26.08); /* #ff8a80 */

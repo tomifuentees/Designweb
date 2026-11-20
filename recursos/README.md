@@ -21,6 +21,8 @@ Hay **54 recursos** en 9 grupos. Las licencias se anotan con lo que se pudo cont
 | [favicon-og.md](./favicon-og.md) | RealFaviconGenerator, favicon.io, opengraph.xyz, @vercel/og, OG Playground |
 | [recursos.json](./recursos.json) | El mismo catálogo, legible por máquinas |
 | [repos-referencia.md](./repos-referencia.md) | 40 repos de referencia (skills, DESIGN.md, awesome lists, tokens, tipo, motion) que todavía no estaban en el kit, con estrellas y licencia verificadas. Índice en [repos-referencia.json](./repos-referencia.json) |
+| [minado-repos.md](./minado-repos.md) | Qué se tomó de cada uno de los 8 repos top el 20/11/2026, con licencia, commit y destino en el kit |
+| [generar-indice-rapido.py](./generar-indice-rapido.py) | Regenera [`../indice-rapido.json`](../indice-rapido.json) cuando cambian los JSON de estilos, paletas o fuentes |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes, con links y fechas |
 
 ## Cómo elegir
