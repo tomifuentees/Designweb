@@ -5,7 +5,7 @@
     "consultado_label": "19 de noviembre de 2026, 10:45 hora de Salta (UTC-3)",
     "fuente_numeros": "GitHub API (search_repositories / get_repository) el 19 de noviembre de 2026. Estrellas, last push y licencia no están inventados.",
     "criterio": "Solo repos y herramientas que no estaban ya en los JSON ni en el markdown de /workspace/frontend-design-kit. Cruzado por nombre y URL.",
-    "total_incluidos": 40,
+    "total_incluidos": 41,
     "total_descartados_duplicados": 27,
     "top_8": [
       "anthropics-skills",
@@ -18,7 +18,8 @@
       "open-props"
     ],
     "licencias_aviso": "No copiar de forma literal contenido de licencias no permisivas, sin SPDX, CC-BY sin atribución, o identidades de marca (aunque el wrapper sea MIT). Resumir y linkear.",
-    "minado": "2026-11-20: los 8 top se minaron; ver recursos/minado-repos.md"
+    "minado": "2026-11-20: los 8 top se minaron; ver recursos/minado-repos.md",
+    "novedades": "2026-11-23: diego3g/craft (estrellas leídas el 23/11/2026). Ver ../novedades/2026-11-23.md"
   },
   "descartados_ya_en_designweb": [
     {
@@ -1302,6 +1303,36 @@
       "pushed_at_salta": "2026-11-19 08:01",
       "pushed_at_precision": "datetime",
       "mine_first_rank": null
+    },
+    {
+      "id": "craft",
+      "name": "diego3g/craft",
+      "url": "https://github.com/diego3g/craft",
+      "category": "skills-agentes",
+      "category_label": "Skills y reglas para agentes",
+      "stars": 434,
+      "pushed_at": "2026-11-21T21:19:25Z",
+      "license": "MIT",
+      "license_spdx": "NOASSERTION",
+      "license_caveat": "GitHub no detecta SPDX porque el LICENSE suma un aviso de porciones de obra/superpowers; el texto es MIT (Diego Fernandes, 2026). Resumir y atribuir.",
+      "what": "Skills de diseño para agentes (Claude Code, Codex, Cursor, OpenCode, Gemini CLI): craft-setup escribe un brief en DESIGN.md, craft diseña pantallas con todos sus estados usando el design system, y craft-critique, craft-explore, craft-states, craft-system y craft-sync revisan, dan alternativas, listan estados faltantes y sincronizan el sistema. Trae una tabla de ruteo pegable para AGENTS.md y frena para pedir el 'sí' de la persona.",
+      "take": "Comparar su tabla de ruteo (qué skill según el pedido) y su paso de 'estados faltantes' con skills/frontend-design y ux/estados.md. Tomar la idea de paradas explícitas de aprobación para el modo nuevo. No instalarlo encima de la skill propia.",
+      "folders": [
+        "skills/",
+        "ux/",
+        "casos/"
+      ],
+      "mine_first": false,
+      "notes": "Creado el 15/11/2026 17:08 hora de Salta (un día antes de la ventana); 434 estrellas y 22 forks al 23/11/2026 (GitHub API). Sumado en novedades/2026-11-23.md.",
+      "sources": [
+        "GitHub API (cursor-github get_repository, 23/11/2026)",
+        "README del repo"
+      ],
+      "pushed_at_utc": "2026-11-21T21:19:25Z",
+      "pushed_at_salta": "2026-11-21 18:19",
+      "pushed_at_precision": "datetime",
+      "mine_first_rank": null,
+      "agregado": "2026-11-23"
     }
   ]
 }

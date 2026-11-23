@@ -1,6 +1,6 @@
 # Catálogo de anti-patrones (AI slop / vibe-coded UI)
 
-Lista de **59 tells** documentados en 2025–2026 (las fichas 31–59 se sumaron el 20 de noviembre de 2026 desde repos de referencia, con atribución). No es una estética personal: cada entrada cita hilos o artículos reales (Desai y Hacker News, el tuit de Wathan, Reddit, Utsubo, Drop The Hassle, posts de X recuperados con id). El objetivo es que un agente —o una pasada humana— pueda nombrar lo que está viendo y cortarlo.
+Lista de **60 tells** documentados en 2025–2026 (las fichas 31–59 se sumaron el 20 de noviembre de 2026 desde repos de referencia, con atribución; la 60, el 23 de noviembre de 2026). No es una estética personal: cada entrada cita hilos o artículos reales (Desai y Hacker News, el tuit de Wathan, Reddit, Utsubo, Drop The Hassle, posts de X recuperados con id). El objetivo es que un agente —o una pasada humana— pueda nombrar lo que está viendo y cortarlo.
 
 Una sola de estas cosas, elegida a propósito, no hace un sitio “de IA”. Tres o cuatro apiladas, sí: es el promedio de un primer draft sin dirección. Varios comentarios del hilo de HN lo dicen: el problema no es usar un modelo, es shippear la primera salida sin oficio.
 
@@ -32,7 +32,7 @@ Fuentes: [fuente](https://x.com/adamwathan/status/1953510802159219096), [fuente]
 
 **Regla para el agente.** No uses bg-clip-text ni texto en degradé en headings. Si hace falta énfasis, cambiale el peso, la familia o el color sólido de un segmento, no un degradé.
 
-Fuentes: [fuente](https://dropthehassle.com/guides/make-website-look-less-ai)
+Fuentes: [fuente](https://dropthehassle.com/guides/make-website-look-less-ai), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 3. Halo o glow de acento detrás del hero
 
@@ -74,7 +74,7 @@ Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/)
 
 **Regla para el agente.** No uses animate-pulse en badges. No agregues chips 'Active', 'Verified' o 'Live' si ese estado no puede no cumplirse.
 
-Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/)
+Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 6. Fingernail cards (raya de acento a la izquierda)
 
@@ -88,7 +88,7 @@ Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/)
 
 **Regla para el agente.** No le pongas una franja de acento al borde izquierdo de cada card.
 
-Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/)
+Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 7. Emoji slop (como ícono, bullet o saludo)
 
@@ -102,7 +102,7 @@ Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/)
 
 **Regla para el agente.** No uses emojis como íconos de features, ni en títulos, ni en saludos de dashboard. Un set de íconos del proyecto, de una sola familia.
 
-Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/), [fuente](https://dropthehassle.com/guides/make-website-look-less-ai), [fuente](https://www.utsubo.com/blog/built-with-ai-trust-signals-2026)
+Fuentes: [fuente](https://godobject.dev/blog/10-tells-of-slop/), [fuente](https://dropthehassle.com/guides/make-website-look-less-ai), [fuente](https://www.utsubo.com/blog/built-with-ai-trust-signals-2026), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 8. Elementos sueltos desalineados
 
@@ -424,7 +424,7 @@ Fuentes: [fuente](https://www.utsubo.com/blog/built-with-ai-trust-signals-2026)
 
 **Regla para el agente.** No anides cards con borde y sombra dentro de otras cards. Un nivel de caja por grupo; el resto, aire y tipo.
 
-Fuentes: [fuente](https://x.com/jimmyyangrz/status/2113722648744304914)
+Fuentes: [fuente](https://x.com/jimmyyangrz/status/2113722648744304914), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ---
 
@@ -500,7 +500,7 @@ Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skil
 
 **Regla para el agente.** No resaltes una sola palabra del titular con itálica, color o subrayado decorativo, salvo que el brief lo pida.
 
-Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+Fuentes: [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 36. Serif itálica gigante como titular de hero
 
@@ -528,7 +528,7 @@ Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
 **Regla para el agente.** No pongas una pastilla o eyebrow arriba del titular del hero. Si el dato importa, va en el texto.
 
-Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 38. Ícono en un cuadradito redondeado arriba de cada título
 
@@ -542,7 +542,7 @@ Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [heydamir/
 
 **Regla para el agente.** No apiles un ícono en un cuadradito de color sobre cada título de card. Ícono en línea, del color del texto, o un recorte del producto.
 
-Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 39. Sombras de color y glows en botones y cards
 
@@ -598,7 +598,7 @@ Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
 **Regla para el agente.** No uses marquees en loop. Si el brief lo exige, con pausa y apagado en prefers-reduced-motion.
 
-Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+Fuentes: [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 43. Cursor que parpadea en un hero que no es un input
 
@@ -766,7 +766,7 @@ Fuentes: [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/u
 
 **Regla para el agente.** No armes una tira de cifras con etiquetas de una palabra. Cada dato en la frase que lo prueba, y solo si es real.
 
-Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md)
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 55. Titulares 'X. Y.' y pares numéricos
 
@@ -822,7 +822,7 @@ Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/mai
 
 **Regla para el agente.** No inventes cifras, nombres, horarios, lotes ni clientes. Si un dato no está en el brief, no va o se marca para confirmar.
 
-Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md)
+Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md), [heydamir/unslop](https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md), [Slopstrap](https://slopstrap.mikelacher.com/) (parodia, 20/11/2026)
 
 ## 59. Remate ingenioso, firma de footer y origen de plantilla
 
@@ -837,3 +837,21 @@ Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/mai
 **Regla para el agente.** No cierres secciones con remates, no firmes el footer con una frase y no inventes la historia de origen.
 
 Fuentes: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md)
+
+## Fichas sumadas en las novedades semanales
+
+Ver [`../novedades/`](../novedades/README.md).
+
+## 60. Borde giratorio (border beam) alrededor de cards
+
+`borde-giratorio-beam`
+
+**Síntoma.** Un haz de luz o un degradé cónico que gira sin parar por el borde de una card o un botón (`@property` + `conic-gradient` animado), a veces junto al spotlight que sigue al cursor.
+
+**Por qué pasa.** Viene de los kits animados copy-paste (Magic UI, Badtz) y el modelo lo agrega como "premium" por default. [Slopstrap](https://slopstrap.mikelacher.com/) (en [Hacker News](https://news.ycombinator.com/item?id=50576012) el 20 de noviembre de 2026, 790 puntos) lo incluye como `.slop-card-beam` en su parodia del look vibe-coded.
+
+**Cómo arreglarlo.** Bordes quietos. Si algo tiene que llamar la atención, que sea un estado real (foco, seleccionado, cargando) con un cambio de color o de grosor, y nada infinito.
+
+**Regla para el agente.** No animes bordes en loop (border beam, conic-gradient giratorio). Un borde solo cambia por un estado real y respeta prefers-reduced-motion.
+
+Fuentes: [Slopstrap](https://slopstrap.mikelacher.com/), [Hacker News, 20/11/2026](https://news.ycombinator.com/item?id=50576012)

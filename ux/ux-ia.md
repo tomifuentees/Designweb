@@ -7,6 +7,7 @@ La IA cambia el contrato con la persona: las salidas son **probabilísticas**, p
 - NN/g, *State of UX 2026* (16/01/2026): 2026 es "el año de la fatiga de IA"; los equipos que ganan usan IA de forma selectiva, con transparencia, control, consistencia y soporte cuando falla ([NN/g](https://www.nngroup.com/articles/state-of-ux-2026/)).
 - NN/g define agente como un sistema que persigue una meta tomando acciones, evaluando el progreso y decidiendo los próximos pasos ([03/04/2026](https://www.nngroup.com/articles/definition-ai-agent/)), y el *harness* como el loop que maneja contexto, permisos y límites del agente ([06/11/2026](https://www.nngroup.com/articles/agent-harness/)).
 - Los agentes ya son usuarios de tus interfaces ([NN/g, 10/04/2026](https://www.nngroup.com/articles/ai-agents-as-users/)): semántica y accesibilidad = legibilidad para agentes.
+- NN/g, *Can AI Generate Good Designs from Raw User Data?* (20/11/2026): con el mismo prompt y el mismo design system, las UIs generadas a partir de **hallazgos y recomendaciones sintetizados** cumplieron 77,9 % de los criterios contra 69,5 % con ~100 comentarios crudos de usuarios (+8,4 puntos, p < 0,001; dos tareas, 8 diseños por condición) ([NN/g](https://www.nngroup.com/articles/raw-data-vs-synthesized-data/)). Regla para agentes: pasale al modelo la síntesis (problema, evidencia, recomendación), no el volcado de feedback.
 - Baymard 2026: IA bienvenida para investigar productos, humanos preferidos para resolver problemas ([27/10/2026](https://baymard.com/research-articles/ai-engagement-quantitative-ux-insights-2026)).
 - r/UXDesign en 2026 discute mucho el *design drift* de interfaces generadas con vibe coding: patrones inventados, sistemas de diseño ignorados, accesibilidad rota ([hilo](https://www.reddit.com/r/UXDesign/comments/1s7e3d1/the_design_drift_created_by_vibe_coding_is_insane/)). Es una discusión de comunidad, no un estudio.
 
@@ -46,6 +47,7 @@ NN/g y Smashing coinciden: las interfaces solo-chat cargan a la persona con escr
 - **Contexto visible**: qué archivos, páginas o datos va a usar ("Usando: Ventas_nov.xlsx ✕").
 - **Controles explícitos** (tono, largo, formato, alcance) en vez de esperar que la persona los escriba.
 - **Aclaración** ante ambigüedad antes de gastar tiempo.
+- **Si generás UI con IA, dale investigación sintetizada**: hallazgos priorizados y recomendaciones, no comentarios crudos. Es lo que mejoró los diseños en el estudio de NN/g del 20/11/2026 (ver Contexto 2026).
 
 ### Durante (generación)
 - **Streaming** del texto para que la espera se sienta corta; **botón Detener** siempre visible.

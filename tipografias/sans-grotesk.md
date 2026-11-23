@@ -1,6 +1,6 @@
 # Sans grotesk / neo-grotesk
 
-31 familias en esta categoría. Catálogo armado en noviembre 2026 para el repo de diseño frontend. Solo se incluyen datos verificados (links oficiales que resolvieron, o —en el caso de Sharp Type— la URL canónica de la foundry, que respondió 429 por un challenge de bot, no 404).
+38 familias en esta categoría. Catálogo armado en noviembre 2026 para el repo de diseño frontend. Solo se incluyen datos verificados (links oficiales que resolvieron, o —en el caso de Sharp Type— la URL canónica de la foundry, que respondió 429 por un challenge de bot, no 404).
 
 Las grotescas (y neo-grotescas) son el caballo de batalla del producto digital: neutras, legibles, fáciles de sistematizar. El riesgo, en 2026, es que *neutra* se lea como *genérica*. Inter, y cada vez más Geist, cumplen muy bien en UI, pero no pueden ser la voz de todas las marcas.
 
@@ -886,3 +886,28 @@ Snippet de import:
 /* font-family: "Work Sans", sans-serif; */
 ```
 
+## 38. CoFo Friend
+
+- **Foundry:** Contrast Foundry
+- **Diseño:** Maria Doreuli
+- **Licencia:** Comercial. Licencia de Contrast Foundry (desktop y web por separado); confirmar términos y precio en la foundry.
+- **Link oficial:** https://contrastfoundry.com/typeface/cofo-friend
+- **Estilo / personalidad:** Neo-grotesca digital-first, pariente más redonda y cálida de CoFo Sans: óvalos y puntos redondeados, x-height alta y ascendentes/descendentes compactas. Amable sin ser infantil.
+- **Mejor uso:** SaaS, Dashboard / UI, Landing, Branding
+- **Pesos / ejes:** 7 estilos, de Thin/Hairline a Extra Black, con variable. Latín y cirílico, cifras tabulares y un set de íconos y flechas que sigue cada peso.
+- **Variable:** Sí
+- **Pareja recomendada:** JetBrains Mono o Geist Mono para datos; Newsreader si hay texto largo
+- **Nota:** Lanzada el 18 de noviembre de 2026 ([The Font News](https://www.thefontnews.com/archive), [D1S1](https://d1s1.com/studio/Contrast%20Foundry/cofo-friend-Is-it-the-curves-or-are-we-just-getting-along)). Sumada en la [novedad del 23/11/2026](../novedades/2026-11-23.md). Los íconos que acompañan cada peso son una salida al combo Inter + Lucide.
+
+Snippet de import:
+
+```html
+/* Comprá la licencia web en Contrast Foundry y autohospedá el WOFF2 oficial. */
+@font-face {
+  font-family: "CoFo Friend";
+  src: url("/fonts/cofo-friend-variable.woff2") format("woff2");
+  font-weight: 100 950;
+  font-style: normal;
+  font-display: swap;
+}
+```

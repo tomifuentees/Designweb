@@ -37,7 +37,7 @@ Leé, antes de diseñar UI nueva, el kit de este repo:
 - Hex, px o duraciones sueltos cuando existe un token. z-[9999].
 - Fondo crema + serif display + acento terracota (#D97757) por reflejo; casi negro + un acento ácido; look de diario en algo que no es de lectura.
 - Una palabra del titular en itálica o color; serif itálica gigante en el hero; pastilla "Nuevo ✨" arriba del H1; ícono en cuadradito arriba de cada card.
-- Glows y sombras de color; borde fino + sombra ancha en toda una fila; fondos de grilla o rayas decorativos; marquee en loop; cursor parpadeante; easing con rebote.
+- Glows y sombras de color; borde fino + sombra ancha en toda una fila; fondos de grilla o rayas decorativos; marquee en loop; bordes que giran o brillan en loop (border beam); cursor parpadeante; easing con rebote.
 - Copy de segunda generación: tira de cifras, titulares "X. Y.", "no es X, es Y" repetido, palabras de virtud (honesto, cuidado, de verdad), cifras o clientes inventados, signos de exclamación.
 
 ### Pisos

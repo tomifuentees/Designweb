@@ -2,7 +2,7 @@
 
 Lista de repos bien calificados, del mismo tipo que Designweb, para seguir alimentando el kit. **Ninguno de estos estaba ya en los JSON ni en el markdown del kit** (se cruzó por nombre y URL). Los números de estrellas, la fecha de último push y la licencia salen de la API de GitHub, consultada el **19 de noviembre de 2026, 10:45 hora de Salta (UTC-3)**. No están inventados.
 
-Hay **40 repos** agrupados abajo, y **27 candidatos se descartaron** porque ya estaban en Designweb.
+Hay **41 repos** agrupados abajo (el último, [diego3g/craft](#diego3gcraft), sumado el 23 de noviembre de 2026 con estrellas leídas ese día), y **27 candidatos se descartaron** porque ya estaban en Designweb.
 
 El índice machine-readable está en [`repos-referencia.json`](./repos-referencia.json).
 
@@ -163,6 +163,16 @@ Ordenados por qué tan útil es su contenido para las carpetas del kit (no solo 
 - **Qué tiene:** Skill 'opinada' para Claude Code: anti-UI genérica, 'probador de estilos' y una librería de 58 design systems de sitios reales. Incluye tipografía china.
 - **Qué tomar y a qué carpeta:** El probador de estilos (elegir una dirección y vestir el UI) encaja con estilos/. Los 58 sitios se pueden cruzar con inspiracion/sitios.md. La parte de tipografía china es un hueco del kit actual. → `estilos/, inspiracion/, tipografias/, skills/`
 - **Cuidado con la licencia:** Los 58 sistemas de sitios reales describen marcas de terceros: resumir patrones, no clonar identidades.
+
+### [diego3g/craft](https://github.com/diego3g/craft)
+
+- **Estrellas:** 434 (23 nov 2026, GitHub API)
+- **Creado:** 15 nov 2026, 17:08 hora de Salta (UTC-3)
+- **Último push:** 21 nov 2026, 18:19 hora de Salta (UTC-3)
+- **Licencia:** MIT (GitHub no detecta el SPDX porque el LICENSE suma un aviso de porciones de obra/superpowers)
+- **Qué tiene:** Skills de diseño para agentes (Claude Code, Codex, Cursor, OpenCode, Gemini CLI): `craft-setup` escribe el brief en `DESIGN.md`, `craft` diseña pantallas con todos sus estados desde el design system, y `craft-critique`, `craft-explore`, `craft-states`, `craft-system` y `craft-sync` revisan, dan alternativas, listan estados faltantes y sincronizan. Trae una tabla de ruteo pegable para `AGENTS.md`.
+- **Qué tomar y a qué carpeta:** Comparar la tabla de ruteo y el paso de "estados faltantes" con la skill propia y con `ux/estados.md`; adoptar las paradas explícitas de aprobación en el modo nuevo. No instalarlo encima de la skill de Designweb. → `skills/, ux/, casos/`
+- **Nota:** Sumado en [novedades del 23/11/2026](../novedades/2026-11-23.md).
 
 ## Bibliotecas DESIGN.md
 

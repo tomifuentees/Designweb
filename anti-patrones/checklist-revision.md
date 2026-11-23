@@ -76,6 +76,7 @@ Minadas de impeccable, de la skill oficial de Anthropic, de taste-skill y de uns
 - [ ] ¿Cifras, lotes, horarios o clientes que no están en el brief? (`especificos-inventados`)
 - [ ] ¿Remates ingeniosos, firma poética en el footer o historia de origen inventada? (`cierre-ingenioso-y-firma-de-footer`)
 - [ ] ¿Signos de exclamación en la UI o punto final en botones y títulos? (`exclamaciones-y-puntos-en-labels`)
+- [ ] ¿Algún borde que gira o brilla en loop (border beam, conic-gradient animado)? (`borde-giratorio-beam`)
 
 ## Cómo pasar la revisión (orden y método)
 
