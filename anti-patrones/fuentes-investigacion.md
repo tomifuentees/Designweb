@@ -51,3 +51,7 @@ Clonados con `git clone --depth 1` el 20 de noviembre de 2026 y leídos en su ra
 - [anthropics/skills, `frontend-design`](https://github.com/anthropics/skills/tree/main/skills/frontend-design) (Apache 2.0): la lista de clusters de diseño generado y el proceso en dos pasadas.
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT): `references/copy-tells.md`.
 - [heydamir/unslop](https://github.com/heydamir/unslop) (CC BY 4.0, Damir Sokolovsky): `skills/unslop/SKILL.md`.
+
+## Novedades del 23 de noviembre de 2026
+
+- [Slopstrap](https://slopstrap.mikelacher.com/) (Mike Lacher) y su hilo en [Hacker News](https://news.ycombinator.com/item?id=50576012) (20/11/2026, 790 puntos y 148 comentarios al 23/11/2026, API de HN). Ambos respondieron 200 el 23/11/2026. Se sumó como fuente de 11 fichas existentes y originó la ficha 60 (`borde-giratorio-beam`). Es una parodia: se cita como validación de que esos tells se reconocen a simple vista, no como estudio.

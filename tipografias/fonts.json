@@ -2,9 +2,9 @@
  "meta": {
   "titulo": "Catálogo de tipografías — frontend-design-kit",
   "idioma": "es-AR",
-  "actualizado": "2026-11-20",
+  "actualizado": "2026-11-23",
   "zona_horaria": "America/Argentina/Salta",
-  "total": 121,
+  "total": 122,
   "objetivo": "Ayudar a agentes de código a elegir tipografías con oficio, evitando los defaults genéricos de IA (Inter, Poppins, Montserrat + gradiente violeta).",
   "categorias": {
    "sans-grotesk": "Sans grotesk / neo-grotesk",
@@ -15,7 +15,8 @@
    "display-experimental": "Display y experimentales",
    "variable": "Variables (fichas específicas)"
   },
-  "minado_repos": "20 fuentes de Google Fonts sumadas el 2026-11-20 para las parejas 29–42 de pairings.md (datos de diseñador, ejes y popularidad del dataset de ui-ux-pro-max-skill, MIT). Ver ../recursos/minado-repos.md"
+  "minado_repos": "20 fuentes de Google Fonts sumadas el 2026-11-20 para las parejas 29–42 de pairings.md (datos de diseñador, ejes y popularidad del dataset de ui-ux-pro-max-skill, MIT). Ver ../recursos/minado-repos.md",
+  "novedades": "2026-11-23: CoFo Friend (Contrast Foundry, 18/11/2026). Ver ../novedades/2026-11-23.md"
  },
  "fuentes": [
   {
@@ -2945,6 +2946,36 @@
    "snippet_import": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap\" rel=\"stylesheet\">\n/* font-family: \"Syncopate\", sans-serif; */",
    "notas": "Ranking de popularidad en Google Fonts: 119 (dataset de ui-ux-pro-max-skill, nov. 2026).",
    "origen": "nextlevelbuilder/ui-ux-pro-max-skill (typography.csv y google-fonts.csv, MIT); ficha redactada para Designweb"
+  },
+  {
+   "id": "cofo-friend",
+   "nombre": "CoFo Friend",
+   "categoria": "sans-grotesk",
+   "foundry": "Contrast Foundry",
+   "disenador": "Maria Doreuli",
+   "licencia": "comercial",
+   "licencia_detalle": "Licencia comercial de Contrast Foundry (desktop/web por separado). Confirmar términos y precio en la foundry.",
+   "precio_aprox": null,
+   "link_oficial": "https://contrastfoundry.com/typeface/cofo-friend",
+   "link_uso_real": null,
+   "uso_real_nota": null,
+   "estilo": "Neo-grotesca digital-first, pariente más redonda y cálida de CoFo Sans: óvalos y puntos redondeados, x-height alta y ascendentes/descendentes compactas. Amable sin ser infantil.",
+   "mejor_uso": [
+    "SaaS",
+    "dashboard",
+    "landing",
+    "branding"
+   ],
+   "pesos": "7 estilos, de Thin/Hairline a Extra Black, con variable. Latín y cirílico (formas locales para búlgaro, serbio y bashkir), cifras tabulares (ancho 600) y un set de íconos e flechas que sigue cada peso.",
+   "variable": true,
+   "pareja_recomendada": "JetBrains Mono o Geist Mono para datos; Newsreader si hay texto largo",
+   "snippet_import": "/* Comprá la licencia web en Contrast Foundry y autohospedá el WOFF2 oficial. */\n@font-face {\n  font-family: \"CoFo Friend\";\n  src: url(\"/fonts/cofo-friend-variable.woff2\") format(\"woff2\");\n  font-weight: 100 950;\n  font-style: normal;\n  font-display: swap;\n}",
+   "notas": "Lanzada el 18/11/2026 (The Font News, 18/11/2026; D1S1, 18/11/2026). Alternativa con calidez a Inter/Geist para UI: los íconos que acompañan cada peso evitan el combo Inter + Lucide.",
+   "fuente_novedad": [
+    "https://www.thefontnews.com/archive",
+    "https://d1s1.com/studio/Contrast%20Foundry/cofo-friend-Is-it-the-curves-or-are-we-just-getting-along"
+   ],
+   "agregada": "2026-11-23"
   }
  ],
  "parejas_extra": [

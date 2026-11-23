@@ -169,6 +169,15 @@ De la guía del W3C [*Making Content Usable for People with Cognitive and Learni
 5. **Contraste**: con las herramientas de `../paletas/`; revisá estados hover/disabled/focus.
 6. **Personas con discapacidad** en tests de usabilidad: nada lo reemplaza.
 
+### Si la UI la genera o la edita un agente
+
+Smashing Magazine, *AI Sped Up The Build: How Can Accessibility Testing Keep Up?* (Andrew Chung, Level Access, 17/11/2026): en su encuesta a más de 2.500 profesionales, la IA aceleró diseño (61 %) y desarrollo (51 %), pero solo 30 % vio acelerado QA/testing; el artículo cita además el informe de WebAIM con más errores detectados por home page (de 51 a 56,1) ([Smashing](https://www.smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/)). Es encuesta de un proveedor: correlación, no causa. Lo útil para el kit:
+
+- **Antes de generar**: escribí orden de foco, nombres accesibles, estados, jerarquía de headings y qué se anuncia ante un cambio o un error **donde el modelo lo lee** (`CLAUDE.md`, `AGENTS.md`, reglas de Cursor, componentes del design system). Lo que quede vago, el modelo lo completa con sus defaults.
+- **En el PR**: gate automático (eslint-plugin-jsx-a11y, axe/Pa11y/Lighthouse CI) comparando contra una línea base, porque los PRs de agentes llegan más rápido de lo que se leen.
+- **Al arreglar**: el arreglo de la IA es un borrador. Volvé a correr el check y revisá la semántica: un verde puede venir de `role="button"` en un `div`, ARIA redundante o un alt inventado.
+- **Recibo**: test de regresión con el fix y una nota en el PR con qué se probó y con qué tecnología asistiva.
+
 ```ts
 // Playwright + axe
 import { test, expect } from "@playwright/test";

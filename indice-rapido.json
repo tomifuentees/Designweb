@@ -1,7 +1,7 @@
 {
   "meta": {
     "descripcion": "Índice compacto del kit Designweb para elegir sin abrir los JSON grandes. Es el único archivo del kit que la skill frontend-design lee entero en modo restyling.",
-    "generado": "2026-11-20",
+    "generado": "2026-11-23",
     "generador": "recursos/generar-indice-rapido.py",
     "fuentes": [
       "estilos/estilos.json",
@@ -17,7 +17,7 @@
       "estilos": 31,
       "por_rubro": 22,
       "paletas": 41,
-      "fuentes": 121
+      "fuentes": 122
     }
   },
   "estilos": [
@@ -241,6 +241,7 @@
     {"id":"merriweather","nombre":"Merriweather","categoria":"serif-texto","licencia":"gratis","mejor_uso":["blogs","editorial","cuerpo"],"pareja_recomendada":"Abril Fatface"},
     {"id":"abril-fatface","nombre":"Abril Fatface","categoria":"serif-display","licencia":"gratis","mejor_uso":["gastronomía","cervecerías","posters"],"pareja_recomendada":"Merriweather"},
     {"id":"work-sans","nombre":"Work Sans","categoria":"sans-grotesk","licencia":"gratis","mejor_uso":["cuerpo","agencias","landing"],"pareja_recomendada":"Outfit"},
-    {"id":"syncopate","nombre":"Syncopate","categoria":"display-experimental","licencia":"gratis","mejor_uso":["festivales","automotriz","música"],"pareja_recomendada":"Space Mono"}
+    {"id":"syncopate","nombre":"Syncopate","categoria":"display-experimental","licencia":"gratis","mejor_uso":["festivales","automotriz","música"],"pareja_recomendada":"Space Mono"},
+    {"id":"cofo-friend","nombre":"CoFo Friend","categoria":"sans-grotesk","licencia":"comercial","mejor_uso":["SaaS","dashboard","landing","branding"],"pareja_recomendada":"JetBrains Mono o Geist Mono para datos; Newsreader si hay texto largo"}
   ]
 }

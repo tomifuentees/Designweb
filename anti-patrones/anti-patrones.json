@@ -2,9 +2,9 @@
  "meta": {
   "titulo": "Catálogo de anti-patrones de UI de IA — frontend-design-kit",
   "idioma": "es-AR",
-  "actualizado": "2026-11-20",
+  "actualizado": "2026-11-23",
   "zona_horaria": "America/Argentina/Salta",
-  "total": 59,
+  "total": 60,
   "objetivo": "Nombrar tells de 'AI slop' / vibe-coded UI documentados en 2025–2026, con el arreglo y una regla pegable para un agente. No se inventaron posts.",
   "fuentes_principales": [
    "https://godobject.dev/blog/10-tells-of-slop/",
@@ -14,7 +14,8 @@
    "https://www.utsubo.com/blog/built-with-ai-trust-signals-2026",
    "https://dropthehassle.com/guides/make-website-look-less-ai"
   ],
-  "minado_repos": "Las fichas 31–59 (campo 'origen') se resumieron en español de pbakaus/impeccable (Apache-2.0), anthropics/skills frontend-design (Apache-2.0), Leonxlnx/taste-skill (MIT) y heydamir/unslop (CC BY 4.0, Damir Sokolovsky). Sin texto copiado literal. Detalle: ../recursos/minado-repos.md"
+  "minado_repos": "Las fichas 31–59 (campo 'origen') se resumieron en español de pbakaus/impeccable (Apache-2.0), anthropics/skills frontend-design (Apache-2.0), Leonxlnx/taste-skill (MIT) y heydamir/unslop (CC BY 4.0, Damir Sokolovsky). Sin texto copiado literal. Detalle: ../recursos/minado-repos.md",
+  "novedades": "2026-11-23: ficha 60 (borde-giratorio-beam) y Slopstrap sumado como fuente de 11 fichas existentes. Ver ../novedades/2026-11-23.md"
  },
  "anti_patrones": [
   {
@@ -40,7 +41,8 @@
    "como_arreglar": "El titular se lee en el color de texto (o, como mucho, en el acento sólido). La personalidad la pone la familia tipográfica, no un shader sobre la letra.",
    "regla_agente": "No uses bg-clip-text ni texto en degradé en headings. Si hace falta énfasis, cambiale el peso, la familia o el color sólido de un segmento, no un degradé.",
    "fuentes": [
-    "https://dropthehassle.com/guides/make-website-look-less-ai"
+    "https://dropthehassle.com/guides/make-website-look-less-ai",
+    "https://slopstrap.mikelacher.com/"
    ]
   },
   {
@@ -74,7 +76,8 @@
    "como_arreglar": "Un badge solo si el estado puede ser otro. Sin pulse, salvo que el pulso comunique algo que se actualiza de verdad.",
    "regla_agente": "No uses animate-pulse en badges. No agregues chips 'Active', 'Verified' o 'Live' si ese estado no puede no cumplirse.",
    "fuentes": [
-    "https://godobject.dev/blog/10-tells-of-slop/"
+    "https://godobject.dev/blog/10-tells-of-slop/",
+    "https://slopstrap.mikelacher.com/"
    ]
   },
   {
@@ -85,7 +88,8 @@
    "como_arreglar": "Si una card necesita énfasis, cambiá el peso del título, un dato o el orden, no una uña de color en cada una.",
    "regla_agente": "No le pongas una franja de acento al borde izquierdo de cada card.",
    "fuentes": [
-    "https://godobject.dev/blog/10-tells-of-slop/"
+    "https://godobject.dev/blog/10-tells-of-slop/",
+    "https://slopstrap.mikelacher.com/"
    ]
   },
   {
@@ -98,7 +102,8 @@
    "fuentes": [
     "https://godobject.dev/blog/10-tells-of-slop/",
     "https://dropthehassle.com/guides/make-website-look-less-ai",
-    "https://www.utsubo.com/blog/built-with-ai-trust-signals-2026"
+    "https://www.utsubo.com/blog/built-with-ai-trust-signals-2026",
+    "https://slopstrap.mikelacher.com/"
    ]
   },
   {
@@ -369,7 +374,8 @@
    "como_arreglar": "Una superficie por grupo. El anidado, si existe, se resuelve con espacio y tipografía, no con otra caja.",
    "regla_agente": "No anides cards con borde y sombra dentro de otras cards. Un nivel de caja por grupo; el resto, aire y tipo.",
    "fuentes": [
-    "https://x.com/jimmyyangrz/status/2113722648744304914"
+    "https://x.com/jimmyyangrz/status/2113722648744304914",
+    "https://slopstrap.mikelacher.com/"
    ]
   },
   {
@@ -440,7 +446,8 @@
    "como_arreglar": "Que el titular funcione entero en un solo tratamiento. El énfasis va en la escala, el peso del bloque o la composición.",
    "regla_agente": "No resaltes una sola palabra del titular con itálica, color o subrayado decorativo, salvo que el brief lo pida.",
    "fuentes": [
-    "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md"
+    "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "anthropics/skills"
@@ -469,7 +476,8 @@
    "regla_agente": "No pongas una pastilla o eyebrow arriba del titular del hero. Si el dato importa, va en el texto.",
    "fuentes": [
     "https://github.com/pbakaus/impeccable",
-    "https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md"
+    "https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "pbakaus/impeccable",
@@ -484,7 +492,8 @@
    "como_arreglar": "Ícono al lado del título y en el color del texto, o sin contenedor. Mejor todavía, un recorte real del producto en lugar del ícono.",
    "regla_agente": "No apiles un ícono en un cuadradito de color sobre cada título de card. Ícono en línea, del color del texto, o un recorte del producto.",
    "fuentes": [
-    "https://github.com/pbakaus/impeccable"
+    "https://github.com/pbakaus/impeccable",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "pbakaus/impeccable"
@@ -542,7 +551,8 @@
    "como_arreglar": "Fila estática o grilla. Si queda, que se pueda pausar y que se apague con prefers-reduced-motion.",
    "regla_agente": "No uses marquees en loop. Si el brief lo exige, con pausa y apagado en prefers-reduced-motion.",
    "fuentes": [
-    "https://github.com/pbakaus/impeccable"
+    "https://github.com/pbakaus/impeccable",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "pbakaus/impeccable"
@@ -715,7 +725,8 @@
    "regla_agente": "No armes una tira de cifras con etiquetas de una palabra. Cada dato en la frase que lo prueba, y solo si es real.",
    "fuentes": [
     "https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md",
-    "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md"
+    "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "Leonxlnx/taste-skill",
@@ -775,7 +786,8 @@
    "regla_agente": "No inventes cifras, nombres, horarios, lotes ni clientes. Si un dato no está en el brief, no va o se marca para confirmar.",
    "fuentes": [
     "https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/references/copy-tells.md",
-    "https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md"
+    "https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md",
+    "https://slopstrap.mikelacher.com/"
    ],
    "origen": [
     "Leonxlnx/taste-skill",
@@ -794,6 +806,21 @@
    ],
    "origen": [
     "Leonxlnx/taste-skill"
+   ]
+  },
+  {
+   "slug": "borde-giratorio-beam",
+   "nombre": "Borde giratorio (border beam) alrededor de cards",
+   "sintoma": "Un haz de luz o un degradé cónico que gira sin parar por el borde de una card o un botón (`@property` + `conic-gradient` animado), a veces junto al spotlight que sigue al cursor.",
+   "por_que": "Viene de los kits animados copy-paste (Magic UI, Badtz) y el modelo lo agrega como 'premium' por default. Slopstrap (HN, 20/11/2026, 790 puntos) lo incluye como `.slop-card-beam` en su parodia del look vibe-coded.",
+   "como_arreglar": "Bordes quietos. Si algo tiene que llamar la atención, que sea un estado real (foco, seleccionado, cargando) con un cambio de color o de grosor, y nada infinito.",
+   "regla_agente": "No animes bordes en loop (border beam, conic-gradient giratorio). Un borde solo cambia por un estado real y respeta prefers-reduced-motion.",
+   "fuentes": [
+    "https://slopstrap.mikelacher.com/",
+    "https://news.ycombinator.com/item?id=50576012"
+   ],
+   "origen": [
+    "Slopstrap (Mike Lacher)"
    ]
   }
  ]

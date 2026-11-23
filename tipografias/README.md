@@ -19,7 +19,7 @@ Esta carpeta es la primera pieza de un kit de diseño frontend. Las fichas está
 | [fonts.json](./fonts.json) | El mismo catálogo, legible por máquinas |
 | [fuentes-investigacion.md](./fuentes-investigacion.md) | Fuentes consultadas, con links |
 
-Hay **121 familias**. 78 son gratis (Google Fonts OFL, Fontshare FFL, GitHub, IBM, repos OFL). 43 son comerciales. 61 tienen corte variable. Las últimas 20 (Google Fonts) entraron el 20 de noviembre de 2026 para las parejas nuevas; ver [`../recursos/minado-repos.md`](../recursos/minado-repos.md). Cada ficha trae foundry, licencia, link oficial verificado, estilo, usos, pesos, una pareja recomendada y un snippet de import. Si encontramos un sitio real que la usa, también está anotado.
+Hay **122 familias**. 78 son gratis (Google Fonts OFL, Fontshare FFL, GitHub, IBM, repos OFL). 44 son comerciales. 62 tienen corte variable. Las 20 de Google Fonts entraron el 20 de noviembre de 2026 para las parejas nuevas (ver [`../recursos/minado-repos.md`](../recursos/minado-repos.md)); CoFo Friend entró el 23 de noviembre de 2026 (ver [`../novedades/2026-11-23.md`](../novedades/2026-11-23.md)). Cada ficha trae foundry, licencia, link oficial verificado, estilo, usos, pesos, una pareja recomendada y un snippet de import. Si encontramos un sitio real que la usa, también está anotado.
 
 ## Cómo elegir una tipografía
 
@@ -68,7 +68,7 @@ Estas caras no están "prohibidas". Varias son excelentes. El problema es usarla
 
 ## Índice de familias
 
-Las 121 fichas, en orden alfabético, con su categoría y tipo de licencia.
+Las 122 fichas, en orden alfabético, con su categoría y tipo de licencia.
 
 | Familia | Categoría | Licencia | Oficial |
 |---|---|---|---|
@@ -100,6 +100,7 @@ Las 121 fichas, en orden alfabético, con su categoría y tipo de licencia.
 | Circular | sans-geometrica | Comercial | https://lineto.com/typefaces/circular |
 | Clash Display | display-experimental | Gratis | https://www.fontshare.com/fonts/clash-display |
 | Clash Grotesk | sans-geometrica | Gratis | https://www.fontshare.com/fonts/clash-grotesk |
+| CoFo Friend | sans-grotesk | Comercial | https://contrastfoundry.com/typeface/cofo-friend |
 | Commit Mono | mono | Gratis | https://commitmono.com/ |
 | Crimson Pro | serif-texto | Gratis | https://fonts.google.com/specimen/Crimson+Pro |
 | Degular | sans-geometrica | Comercial | https://ohnotype.co/fonts/degular |
